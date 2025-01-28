@@ -165,10 +165,67 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า</title>
+</head>
+<body>
+    <header>
+        <h1 id="top">แกลเลอรีสินค้า</h1>
+        <nav>
+            <!-- ลิงก์นำทางพื้นฐาน -->
+            <a href="index.html">หน้าหลัก</a>
+            <a href="pages/about.html">เกี่ยวกับเรา</a>
+            <a href="pages/contact.html">ติดต่อเรา</a>
+            <a href="https://github.com/Kritternai/Software-Design-and-Develop-1-HTML.git" target="_blank">ไปยัง GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- แกลเลอรีสินค้า -->
+        <section id="gallery">
+            <h2>แกลเลอรีสินค้า</h2>
+            <p>คลิกที่รูปภาพเพื่อดูขนาดใหญ่</p>
+            <div>
+                <!-- รูปที่ 1 -->
+                <figure>
+                    <a href="images/products/product1.jpeg">
+                        <img src="images/products/product1.jpeg" alt="สินค้า 1" width="200">
+                    </a>
+                    <figcaption>สินค้า 1</figcaption>
+                </figure>
+
+                <!-- รูปที่ 2 -->
+                <figure>
+                    <a href="images/products/product2.jpeg">
+                        <img src="images/products/product2.jpeg" alt="สินค้า 2" width="200">
+                    </a>
+                    <figcaption>สินค้า 2</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <br>
+        <!-- ลิงก์ภายในหน้า -->
+        <a href="#top">กลับด้านบน</a>
+    </main>
+
+    <footer>
+        <hr>
+        <p>ติดต่อเรา: <a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p>โทร: <a href="tel:+66812345678">081-234-5678</a></p>
+        <p>
+            <a href="files/document.pdf" download>ดาวน์โหลดเอกสาร</a>
+        </p>
+    </footer>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![Lab4](/html-workshop/screenshot/Lab4.gif)
 
 
 
