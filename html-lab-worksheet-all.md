@@ -74,7 +74,7 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![basic.html](/HTML/Software-Design-and-Develop-1-HTML/html-workshop/screenshot/basic.png)
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -100,6 +100,7 @@
 3. บันทึกไฟล์และเปิดด้วย Live Server
 
 
+
 ### คำอธิบายเพิ่มเติม
 - `<!DOCTYPE html>` คือการประกาศประเภทเอกสารเป็น HTML5
 - `<html>` เป็น tag หลักที่ครอบคลุมทั้งเอกสาร
@@ -111,12 +112,25 @@
 - `<strong>` ใช้เน้นข้อความ (แสดงเป็นตัวหนา)
   
   ### บันทึกผลการทดลอง
-- รหัสเอกสาร HTML ที่เขียน:
+- รหัสเอกสาร HTML ที่เขียนindex.html
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to KRITTANAI B. web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![index.html](/HTML/Software-Design-and-Develop-1-HTML/html-workshop/screenshot/index.png)
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
