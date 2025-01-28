@@ -1,16 +1,3 @@
-# ใบงานการทดลอง HTML
-
-## จุดประสงค์การเรียนรู้
-1. อธิบายโครงสร้างของ HTML ได้
-2. สามารถใช้งาน HTML tag พื้นฐานได้
-3. สามารถสร้างหน้าเว็บเพจอย่างง่ายได้
-
-## เครื่องมือที่ใช้
-1. Visual Studio Code
-2. Web Browser 
-3. Extension Live Server
-
-
 ## การทดลองที่ 1: การติดตั้งและเตรียมเครื่องมือ
 
 ### ขั้นตอนที่ 1: การติดตั้ง Visual Studio Code
@@ -76,7 +63,6 @@
 ### บันทึกผลการทดลอง
 ![basic.html](/html-workshop/screenshot/Lab1_basic.png)
 
-
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
 ### ขั้นตอนการทดลอง
 1. สร้างไฟล์ index.html
@@ -131,7 +117,9 @@
 ```
 - ภาพผลลัพธ์:
 ![index.html](html-workshop/screenshot/Lab2_index.png)
-  
+
+# ใบงานการทดลอง HTML
+ 
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
 1. ทดลองใช้ tag ต่างๆ:
@@ -163,10 +151,43 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง</title>
+</head>
+<body>
+    <h1>แนะนำตัวเอง</h1>
+    <h2>ชื่อ-นามสกุล</h2>
+    <p>ชื่อ: กฤตนัย บุญน้อย</p>
+    <h2>ประวัติการศึกษา</h2>
+    <p>จบการศึกษาระดับมัธยมศึกษาจากโรงเรียนหาดใหญ่วิทยาลัย</p>
+    <p>กำลังศึกษาระดับปริญญาตรีที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+    <hr>
+    <h2>งานอดิเรก</h2>
+    <p>งานอดิเรกที่ชอบ:</p>
+    <ul>
+        <li>เล่นเกม</li>
+        <li>เขียนโค้ด</li>
+        <li>อ่านหนังสือ</li>
+    </ul>
+    <hr>
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>เป้าหมายของฉันคือ:</p>
+    <p><strong>สร้างธุรกิจ</strong> ที่ประสบความสำเร็จในด้านเทคโนโลยี</p>
+    <p>และช่วยพัฒนาสังคมด้วย <em>การให้ความรู้</em> ผ่านช่องทางออนไลน์</p>
+    <br>
+    <p>Have a nice day!</p>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![Lab3.html](/html-workshop/screenshot/Lab3_index.png)
+
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -333,11 +354,70 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า</title>
+</head>
+<body>
+    <header>
+        <h1 id="top">แกลเลอรีสินค้า</h1>
+        <nav>
+            <!-- ลิงก์นำทางพื้นฐาน -->
+            <a href="index.html">หน้าหลัก</a>
+            <a href="pages/about.html">เกี่ยวกับเรา</a>
+            <a href="pages/contact.html">ติดต่อเรา</a>
+            <a href="https://github.com/Kritternai/Software-Design-and-Develop-1-HTML.git" target="_blank">ไปยัง GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- แกลเลอรีสินค้า -->
+        <section id="gallery">
+            <h2>แกลเลอรีสินค้า</h2>
+            <p>คลิกที่รูปภาพเพื่อดูขนาดใหญ่</p>
+            <div>
+                <!-- รูปที่ 1 -->
+                <figure>
+                    <a href="images/products/product1.jpeg">
+                        <img src="images/products/product1.jpeg" alt="สินค้า 1" width="200">
+                    </a>
+                    <figcaption>สินค้า 1</figcaption>
+                </figure>
+
+                <!-- รูปที่ 2 -->
+                <figure>
+                    <a href="images/products/product2.jpeg">
+                        <img src="images/products/product2.jpeg" alt="สินค้า 2" width="200">
+                    </a>
+                    <figcaption>สินค้า 2</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <br>
+        <!-- ลิงก์ภายในหน้า -->
+        <a href="#top">กลับด้านบน</a>
+    </main>
+
+    <footer>
+        <hr>
+        <p>ติดต่อเรา: <a href="mailto:contact@example.com">contact@example.com</a></p>
+        <p>โทร: <a href="tel:+66812345678">081-234-5678</a></p>
+        <p>
+            <a href="files/document.pdf" download>ดาวน์โหลดเอกสาร</a>
+        </p>
+    </footer>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![Lab4](/html-workshop/screenshot/Lab4.gif)
 
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
 ### วัตถุประสงค์
@@ -407,11 +487,72 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางข้อมูลส่วนตัวและเมนูอาหาร</title>
+</head>
+<body>
+    <header>
+        <h1>ข้อมูลส่วนตัวและเมนูอาหาร</h1>
+    </header>
 
+    <main>
+        <!-- ตารางข้อมูลส่วนตัว -->
+        <section>
+            <h2>ตารางข้อมูลส่วนตัว</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ชื่อ</th>
+                        <th>นามสกุล</th>
+                        <th>อายุ</th>
+                        <th>อาชีพ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>กฤตนัย</td>
+                        <td>บุญน้อย</td>
+                        <td>25</td>
+                        <td>นักพัฒนา</td>
+                    </tr>
+                    <tr>
+                        <td>บุญน้อย</td>
+                        <td>กฤตนัย</td>
+                        <td>30</td>
+                        <td>นักออกแบบ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- รายการเมนูอาหาร -->
+        <section>
+            <h2>รายการเมนูอาหาร</h2>
+            <ul>
+                <li>ข้าวผัด</li>
+                <li>ก๋วยเตี๋ยว</li>
+                <li>ส้มตำ</li>
+                <li>ต้มยำกุ้ง</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>จัดทำโดย: กฤตนัย บุญน้อย 67030011</p>
+    </footer>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![Lab5_tablelist.html](/html-workshop/screenshot/Lab5_tablelist.png)
 
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
@@ -636,10 +777,140 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register-shop" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            </div>
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลบัญชีผู้ใช้</legend>
+            <div class="form-group">
+                <label for="username">ชื่อผู้ใช้:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="profileImage">เลือกรูปโปรไฟล์:</label>
+                <input type="file" id="profileImage" name="profileImage" accept="image/*" required onchange="validateImage()">
+                <span id="imageError" style="color:red;"></span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+            <div class="form-group">
+                <label for="category">หมวดหมู่สินค้า:</label>
+                <select id="category" name="category" required>
+                    <option value="">เลือกหมวดหมู่สินค้า</option>
+                    <option value="electronics">อิเล็กทรอนิกส์</option>
+                    <option value="clothing">เสื้อผ้า</option>
+                    <option value="home">ของใช้ในบ้าน</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>การยอมรับเงื่อนไข</legend>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">ข้าพเจ้ายอมรับเงื่อนไขและข้อตกลง</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">สมัครสมาชิก</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script>
+        function validateImage() {
+            const fileInput = document.getElementById('profileImage');
+            const file = fileInput.files[0];
+            const errorMessage = document.getElementById('imageError');
+            if (file) {
+                const fileSize = file.size / 1024 / 1024;
+                if (fileSize > 2) {
+                    errorMessage.textContent = "ขนาดไฟล์รูปภาพต้องไม่เกิน 2MB";
+                    fileInput.setCustomValidity("ขนาดไฟล์รูปภาพต้องไม่เกิน 2MB");
+                } else {
+                    errorMessage.textContent = "";
+                    fileInput.setCustomValidity("");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![Lab6_form](/html-workshop/screenshot/Lab6_form.gif)
 
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 7: HTML Layout
 ### วัตถุประสงค์
@@ -726,5 +997,4 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![Lab7_layout](/html-workshop/screenshot/Lab7_layout.gif)
