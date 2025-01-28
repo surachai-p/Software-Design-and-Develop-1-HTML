@@ -74,7 +74,7 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-![basic.html](/html-workshop/screenshot/basic.png)
+![basic.html](/html-workshop/screenshot/Lab1_basic.png)
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -130,7 +130,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![index.html](html-workshop/screenshot/index.png)
+![index.html](html-workshop/screenshot/Lab2_index.png)
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
