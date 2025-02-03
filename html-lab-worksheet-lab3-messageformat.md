@@ -109,7 +109,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-  ![คำอธิบายรูป](https://drive.google.com/uc?export=view&id=1C_zPZZdD3Mr_56qFHU7h6nijO7bMzo8M)
+  ![คำอธิบายรูป](https://drive.google.com/uc?export=view&id=1CzPZZdD3Mr56qFHU7h6nijO7bMzo8M)
 
 
 
