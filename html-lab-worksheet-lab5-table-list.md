@@ -120,5 +120,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![คำอธิบายรูป](![Screenshot 2025-02-04 025929](https://github.com/user-attachments/assets/74a5e04a-601f-491b-bc28-a7977e8c15a4)
+
+)
 
