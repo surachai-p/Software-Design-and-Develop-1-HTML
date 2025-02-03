@@ -109,7 +109,8 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-  ![คำอธิบายรูป](https://drive.google.com/uc?export=view&id=1CzPZZdD3Mr56qFHU7h6nijO7bMzo8M)
+  ![คำอธิบายรูป](![Screenshot 2025-02-04 013119](https://github.com/user-attachments/assets/b92ac42e-b5e7-463b-a440-a8843abf05fe)
+)
 
 
 
