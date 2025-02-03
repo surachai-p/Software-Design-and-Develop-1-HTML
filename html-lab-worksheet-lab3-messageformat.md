@@ -31,9 +31,85 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง - Kanruethai Kaewsawang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: white; /* ปรับพื้นหลังเป็นสีขาว */
+        }
+        header {
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: black; /* ปรับสีตัวอักษรเป็นสีดำ */
+        }
+        hr {
+            border: 1px solid #ddd;
+        }
+        p {
+            font-size: 16px;
+            color: black; /* ปรับสีตัวอักษรเป็นสีดำ */
+        }
+        ul {
+            list-style-type: square;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>แนะนำตัวเอง</h1>
+</header>
+
+<main>
+    <h2>ข้อมูลส่วนตัว</h2>
+    <p><strong>ชื่อ-นามสกุล:</strong> Kanruethai Kaewsawang</p>
+
+    <h2>ประวัติการศึกษา</h2>
+    <p>จบจาก <strong>โรงเรียนสุรวิทยาคาร</strong> ปัจจุบันกำลังศึกษาอยู่ในสาขา <strong>เทคโนโลยีคอมพิวเตอร์</strong> คณะ <strong>ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</strong> สถาบัน <strong>เทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</strong></p>
+
+    <h2>งานอดิเรก</h2>
+    <ul>
+        <li>ดูหนัง</li>
+        <li>อ่านนิยาย</li>
+        <li>ฟังเพลง</li>
+    </ul>
+
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>อยากเป็น <strong>ครูคอมพิวเตอร์</strong> เพื่อที่จะมีโอกาสในการช่วยเหลือนักเรียนในการเรียนรู้และเข้าใจเทคโนโลยีคอมพิวเตอร์อย่างลึกซึ้ง</p>
+
+    <hr>
+</main>
+
+<footer>
+    <p>&copy; 2025 Kanruethai Kaewsawang</p>
+</footer>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![คำอธิบายรูป](https://drive.google.com/file/d/1C_zPZZdD3Mr_56qFHU7h6nijO7bMzo8M/view?usp=drive_link)
+
 
 
