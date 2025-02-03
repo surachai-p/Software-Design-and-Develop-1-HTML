@@ -109,7 +109,8 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![แนะนำตัวเอง]("C:\Users\kaimook\OneDrive\Pictures\Screenshots 1\Screenshot 2025-02-04 013119.png")
+![แนะนำตัวเอง](path/to/"C:\Users\kaimook\OneDrive\Pictures\Screenshots 1\Screenshot 2025-02-04 013119.png")
+
 
 
 
