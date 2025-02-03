@@ -226,7 +226,10 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![คำอธิบายรูป](![Screenshot 2025-02-04 024342](https://github.com/user-attachments/assets/107e2d21-18a4-4003-afe1-56d248e51bad)
+)
+![คำอธิบายรูป](![Screenshot 2025-02-04 024353](https://github.com/user-attachments/assets/1fa21e52-31a6-4984-974a-60aa25bc0a94)
+)
 
 
 
