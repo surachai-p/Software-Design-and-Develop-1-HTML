@@ -487,7 +487,12 @@
 ### แบบฝึกหัด
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
+[- ภาพผลลัพธ์:]
+[![image](https://github.com/user-attachments/assets/38f61acc-4e6c-4d76-92c0-c73f1256f25e)
+]
+[-วางโค้ด HTML ที่นี่]
 [
+<p>
 <table border="1">
     <thead>
         <tr>
@@ -518,9 +523,9 @@
         </tr>
     </tbody>
 </table>
-<pre>
+<pre></p>
     
-    <table border="1">
+    <table border="2">
     <thead>
         <tr>
             <th>
@@ -548,13 +553,11 @@
         </tr> 
     </tbody>
 </table>
-</pre> ]
+</pre>]
 ```html
 
 ```
-- ภาพผลลัพธ์:
-[![Screenshot 2025-02-03 190353](https://github.com/user-attachments/assets/83986633-ffe1-4fad-9101-0eded2380b61)
-]
+
 
 
 
