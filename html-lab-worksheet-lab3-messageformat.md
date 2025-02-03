@@ -109,7 +109,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![คำอธิบายรูป](https://drive.google.com/file/d/1C_zPZZdD3Mr_56qFHU7h6nijO7bMzo8M)
+![แนะนำตัวเอง]("C:\Users\kaimook\OneDrive\Pictures\Screenshots 1\Screenshot 2025-02-04 013119.png")
 
 
 
