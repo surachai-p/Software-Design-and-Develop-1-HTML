@@ -67,4 +67,4 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![ทดสอบ LiveServer](Screenshot3.png)
+![ทดลองใช้ tag ต่างๆ](Screenshot3.png)

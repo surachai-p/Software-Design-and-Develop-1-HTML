@@ -51,4 +51,4 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![ทดสอบ LiveServer](Screenshot2.png)
+![index.html](Screenshot2.png)

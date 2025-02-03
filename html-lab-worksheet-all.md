@@ -127,7 +127,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![ทดสอบ LiveServer](Screenshot2.png)
+![index.html](Screenshot2.png)
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -196,7 +196,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![ทดสอบ LiveServer](Screenshot3.png)
+![ทดลองใช้ tag ต่างๆ](Screenshot3.png)
 
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
@@ -364,10 +364,95 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <section id="tops">
+        <h1>IC Center </H1>
+        <figure>
+            <img src="images/logo.png" alt="logo website" width="300" height="300">
+            
+        </figure>
+    </section>
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+    <h3>IC ที่ใช้ในรายวิชา FUNDAMENTAL OF DIGITAL DEVICES AND CIRCUITS</h3>
+    <div>
+        <figure>
+            <a href="images/gallery/7400.png" >
+                <img src="images/gallery/7400.png" alt="สินค้า 7400" width="200">
+            </a>
+            <figcaption>IC 7400 NAND Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7400.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+        
+    </div>
+    <div>
+        <figure>
+            <a href="images/gallery/7402.png">
+                <img src="images/gallery/7402.png" alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200">
+            </a>
+            <figcaption>IC 7402 NOR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7402.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+        
+    </div>
+    <div>
+        <figure>
+            <a href="images/gallery/7404.png">
+                <img src="images/gallery/7404.png" alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200">
+            </a>
+            <figcaption>IC 7404 NOT Gate หรือ Inverter มี 6 วงจร</figcaption>
+            <a href="files/7404.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+        
+    </div>
+    <div>
+        <figure>
+            <a href="images/gallery/7408.png">
+                <img src="images/gallery/7408.png" alt="คลิกเพื่อดูรูปขนาดใหญ่"" width="200">
+            </a>
+            <figcaption>IC 7408 AND Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7408.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+        
+    </div>
+    <div>
+        <figure>
+            <a href="images/gallery/7432.png">
+                <img src="images/gallery/7432.png" alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200">
+            </a>
+            <figcaption>IC 7432 OR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7432.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+        
+    </div>
+    <div>
+        <figure>
+            <a href="images/gallery/7486.png">
+                <img src="images/gallery/7486.png" alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200">
+            </a>
+            <figcaption>IC 7486 NOR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7486.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+        
+    </div>
+
+    <a href="#top">กลับ
+    </section>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![สร้างแกลเลอรีสินค้า](Screenshot4.png)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
