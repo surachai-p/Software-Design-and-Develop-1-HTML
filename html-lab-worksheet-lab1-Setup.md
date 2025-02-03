@@ -74,6 +74,6 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-![ทดสอบ LiveServer](Screenshot1.png)
+![ทดสอบ LiveServer](Screenshot/Screenshot1.png)
 
 
