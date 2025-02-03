@@ -35,10 +35,26 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ...... (student name) web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 [วางโค้ด HTML ที่นี่]
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/dca2255b-00d3-4e90-8e3a-4e2b29819d06)
+
 
 
 
