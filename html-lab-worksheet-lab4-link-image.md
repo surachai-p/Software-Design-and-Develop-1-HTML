@@ -165,7 +165,65 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า</title>
+</head>
+<body>
+    <header>
+        <h1 id="top">แกลเลอรีสินค้า</h1>
+        <nav>
+            <a href="index.html">หน้าหลัก</a>
+            <a href="pages/about.html">เกี่ยวกับเรา</a>
+            <a href="pages/contact.html">ติดต่อเรา</a>
+            <a href="https://github.com/gunruethaiz/Software-Design-and-Develop-1-HTML.git" target="_blank">ไปยัง GitHub</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallery">
+            <h2>แกลเลอรีสินค้า</h2>
+            <p>ดูรูปภาพด้านล่างนี้</p>
+            <div>
+                <figure>
+                    <img src="https://raw.githubusercontent.com/gunruethaiz/images/main/phone1.jpg" alt="โทรศัพท์รุ่น A" width="200">
+                    <figcaption>โทรศัพท์รุ่น A</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="https://raw.githubusercontent.com/gunruethaiz/images/main/phone2.jpg" alt="โทรศัพท์รุ่น B" width="200">
+                    <figcaption>โทรศัพท์รุ่น B</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="https://raw.githubusercontent.com/gunruethaiz/images/main/phone3.jpg" alt="โทรศัพท์รุ่น C" width="200">
+                    <figcaption>โทรศัพท์รุ่น C</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="https://raw.githubusercontent.com/gunruethaiz/images/main/phone4.jpg" alt="โทรศัพท์รุ่น D" width="200">
+                    <figcaption>โทรศัพท์รุ่น D</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <br>
+        <a href="#top">กลับด้านบน</a>
+    </main>
+
+    <footer>
+        <hr>
+        <p>ติดต่อเรา: <a href="mailto:contactkub@example.com">contact@example.com</a></p>
+        <p>โทร: <a href="tel:+66648761254">064-876-1254</a></p>
+        <p>
+            <a href="files/document.pdf" download>ดาวน์โหลดเอกสาร</a>
+        </p>
+    </footer>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
