@@ -418,6 +418,7 @@
 ```
 - ภาพผลลัพธ์:
 [![image](https://github.com/user-attachments/assets/98804ff1-b75c-4289-84a0-9efbe40e6337)
+![image](https://github.com/user-attachments/assets/b1f707bc-1a4d-4a77-ade3-237d68881a8f)
 ]
 
 
