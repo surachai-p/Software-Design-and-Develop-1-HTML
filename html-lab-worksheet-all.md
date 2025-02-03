@@ -488,12 +488,73 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
+[<table border="1">
+    <thead>
+        <tr>
+            <th>ชื่อ-นามสกุล</th>
+            <th>วิศวะ กำจร</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>อายุ</td>
+            <td>19ปี</td>
+        </tr>
+        <tr>
+            <td>ส่วนสูง</td>
+            <td>167เซนติเมตร</td>
+        </tr>
+        <tr>
+            <td>น้ำหนัก</td>
+            <td>63กิโลกรัม</td>
+            <tr>
+                <td>ศาสนา</td>
+                <td>พุทธ</td>
+                <tr>
+                    <td>สัญชาติ</td>
+                    <td>ไทย</td>
+                </tr>
+            </tr>
+        </tr>
+    </tbody>
+</table>
+<pre>
+    
+    <table border="1">
+    <thead>
+        <tr>
+            <th>
+             <pre>       รายการอาหาร       </pre></th>
+             <tr>
+                <td>ผัดกระเพรา</td>
+                <td>40บาท</td>
+            </tr>
+            <tr>
+                <td>ผัดกระเพราไข่ดาว</td>
+                <td>50บาท</td>
+            </tr>
+            <tr>
+                <td>ข้าวผัด</td>
+                <td>45บาท</td>
+            </tr>
+            <tr>
+                <td>ข้าวมันไก่</td>
+                <td>40บาท</td>
+            </tr>
+            <tr>
+                <td>ข้าวมันไก่ทอด</td>
+                <td>40บาท</td>
+            </tr>
+        </tr> 
+    </tbody>
+</table>
+</pre>]
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![image](https://github.com/user-attachments/assets/4bb5f970-4ab0-48ad-b5a7-912dfd87b593)
+]
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
