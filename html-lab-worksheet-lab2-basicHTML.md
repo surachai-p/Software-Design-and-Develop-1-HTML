@@ -40,5 +40,7 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![image](https://github.com/user-attachments/assets/346b51c0-5643-454b-b5a2-0c641f63cd89)
+
 
 
