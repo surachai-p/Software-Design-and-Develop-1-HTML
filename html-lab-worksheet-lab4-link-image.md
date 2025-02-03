@@ -253,4 +253,4 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![สร้างแกลเลอรีสินค้า](Screenshot4.png)
+![สร้างแกลเลอรีสินค้า](Screenshot/Screenshot4.png)

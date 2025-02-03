@@ -336,6 +336,6 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![ฟอร์มสมัครสมาชิก](Screenshot7.png)
+![ฟอร์มสมัครสมาชิก](Screenshot/Screenshot7.png)
 
 

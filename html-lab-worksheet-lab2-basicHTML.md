@@ -51,4 +51,4 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![index.html](Screenshot2.png)
+![index.html](Screenshot/Screenshot2.png)
