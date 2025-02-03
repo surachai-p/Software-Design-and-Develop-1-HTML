@@ -227,7 +227,8 @@
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![คำอธิบายรูป](![Recording-2025-02-04-031127](https://github.com/user-attachments/assets/9b4dd76a-16ff-4065-84eb-41fce3d7ba45)
+)
 
 
 
