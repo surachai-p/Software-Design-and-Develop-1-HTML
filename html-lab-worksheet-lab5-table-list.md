@@ -186,4 +186,4 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![เนนูอาหาร](Screenshot/Screenshot6.png)
+![เนนูอาหาร](Screenshot6.png)

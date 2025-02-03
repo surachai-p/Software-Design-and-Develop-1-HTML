@@ -73,7 +73,7 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-![ทดสอบ LiveServer](Screenshot/Screenshot1.png)
+![ทดสอบ LiveServer](Screenshot1.png)
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
 ### ขั้นตอนการทดลอง
@@ -127,7 +127,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![index.html](Screenshot/Screenshot2.png)
+![index.html](Screenshot2.png)
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -196,7 +196,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![ทดลองใช้ tag ต่างๆ](Screenshot/Screenshot3.png)
+![ทดลองใช้ tag ต่างๆ](Screenshot3.png)
 
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
@@ -452,7 +452,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![สร้างแกลเลอรีสินค้า](Screenshot/Screenshot4.png)
+![สร้างแกลเลอรีสินค้า](Screenshot4.png)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -579,7 +579,7 @@
 </html>l
 ```
 - ภาพผลลัพธ์:
-![ตารางข้อมูลส่วนตัว](Screenshot/Screenshot5.png)
+![ตารางข้อมูลส่วนตัว](Screenshot5.png)
 2. สร้างรายการเมนูอาหาร
 [วางโค้ด HTML ที่นี่]
 ```html
@@ -641,7 +641,7 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![เนนูอาหาร](Screenshot/Screenshot6.png)
+![เนนูอาหาร](Screenshot6.png)
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -868,10 +868,120 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+</head>
+<body>
+    <h1>สมัครสมาชิก</h1>
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" required pattern="0[0-9]{9}">
+            </div>
+
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="profilePicture">อัพโหลดรูปโปรไฟล์:</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+                <small>รองรับไฟล์ภาพเท่านั้น</small>
+            </div>
+        </fieldset>
+      
+        <fieldset>
+            <legend>การยืนยันรหัสผ่าน</legend>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8">
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+            <div class="form-group">
+                <label>เลือกหมวดหมู่ที่สนใจ:</label>
+                <input type="checkbox" id="electronics" name="interests" value="electronics">
+                <label for="electronics">อิเล็กทรอนิกส์</label>
+                <input type="checkbox" id="fashion" name="interests" value="fashion">
+                <label for="fashion">แฟชั่น</label>
+                <input type="checkbox" id="home" name="interests" value="home">
+                <label for="home">บ้านและสวน</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>เงื่อนไขการใช้งาน</legend>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน</label>
+            </div>
+        </fieldset>
+        
+        <div class="form-group">
+            
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+          
+         </div>
+
+    </form>
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![ฟอร์มสมัครสมาชิก](Screenshot7.png)
 
 ## การทดลองที่ 7: HTML Layout
 ### วัตถุประสงค์

@@ -67,4 +67,4 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![ทดลองใช้ tag ต่างๆ](Screenshot/Screenshot3.png)
+![ทดลองใช้ tag ต่างๆ](Screenshot3.png)
