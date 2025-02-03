@@ -343,10 +343,82 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <!-- ส่วนของเนื้อหา -->
+</body>
+</html>
+<!-- รูปภาพในโฟลเดอร์ images -->
+<img src="images/bbb.png" 
+     width="50">ร้านค้าเถื่อน
+
+<!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>ขนมกรุปกรอบ</h1>
+</section>
+
+
+<a href="#products">ไปยังสินค้า</a>
+
+
+
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+<p>รายการที่1</p>
+<p><img src="images/ดาวน์โหลด.jpg" 
+     width="200"
+     height="200">
+     <p>เลย์รสสาหร่าย</p>
+    </figcaption>
+</figure>
+<a href="images/ดาวน์โหลด.jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+<p>รายการที่2</p>
+<p><img src="images/ดาวน์โหลด (1).jpg" 
+     width="200"
+     height="200">
+<p>เลย์รสหมึกย่างฮอตชิลลี่</p>
+</figcaption>
+</figure>
+<a href="images/ดาวน์โหลด (1).jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+<p>รายการที่3</p>
+<p><img src="images/ดาวน์โหลด (2).jpg" 
+     width="200"
+     height="200">
+<p>เลย์รสเอ็กซ์ตร้าบาร์บีคิว</p>
+</figcaption>
+</figure>
+<a href="images/ดาวน์โหลด (2).jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+<p>รายการที่4</p>
+<p><img src="images/ดาวน์โหลด (3).jpg" 
+     width="200"
+     height="200">
+<p>เลย์รสซาวครีมและหัวหอม</p>
+ </figcaption>
+    </figure>
+    <a href="images/ดาวน์โหลด (3).jpg">
+        <img src="images/products/product1.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+    </a>
+    <!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<p><a href="#top">กลับด้านบน</a></p>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![image](https://github.com/user-attachments/assets/98804ff1-b75c-4289-84a0-9efbe40e6337)
+]
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
