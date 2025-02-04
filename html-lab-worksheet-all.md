@@ -75,7 +75,7 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-![image](https://github.com/user-attachments/assets/789c596d-d652-4169-bbe0-6978e1981c26)
+![image](https://github.com/user-attachments/assets/2aac6e5b-6197-482b-ac08-db1191a844c5)
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -131,7 +131,8 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![image](https://github.com/user-attachments/assets/16692a2a-63c8-4adb-9121-909baaef8715)
+![image](https://github.com/user-attachments/assets/437e2200-e1ef-4918-9240-e22a3fbbeb7d)
+
 
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
