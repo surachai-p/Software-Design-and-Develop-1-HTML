@@ -910,7 +910,8 @@
 
 ```
 - ภาพผลลัพธ์:
-<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-04 เวลา 18 58 08" src="https://github.com/user-attachments/assets/97196e8e-b437-400a-8576-d7fd5736368f" />
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-04 เวลา 18 58 08" src="https://github.com/user-attachments/assets/0c991269-ee07-4a3b-95f1-b00d531a2113" />
+```
 
 
 
