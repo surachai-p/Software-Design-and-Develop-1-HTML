@@ -890,6 +890,7 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
     </footer>
 </body>
 ```
+![Screenshot 2025-02-05 014740](https://github.com/user-attachments/assets/a2c67f05-c148-4ed0-9fa3-f2be6be5d26c)
 
 
 ### บันทึกผลการทดลอง
