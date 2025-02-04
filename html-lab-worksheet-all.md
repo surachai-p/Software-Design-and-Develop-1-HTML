@@ -747,10 +747,171 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const photo = document.getElementById('photo').files[0];
+
+            if (!email.endsWith('@gmail.com')) {
+                alert('อีเมลต้องลงท้ายด้วย @gmail.com');
+                return false;
+            }
+
+            if (password.length <= 8) {
+                alert('รหัสผ่านต้องมีความยาวมากกว่า 8 ตัว');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert('รหัสผ่านและการยืนยันรหัสผ่านไม่ตรงกัน');
+                return false;
+            }
+
+            if (photo && photo.size > 10 * 1024 * 1024) {
+                alert('ขนาดไฟล์รูปภาพต้องไม่เกิน 10 MB');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="/register" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <!-- ข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+    
+        <!-- ข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+    
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">เบอร์โทร:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+        </fieldset>
+    
+        <!-- รูปโปรไฟล์ -->
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="photo">รูปถ่าย:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+        </fieldset>
+    
+        <!-- การยืนยันรหัสผ่าน -->
+        <fieldset>
+            <legend>การยืนยันรหัสผ่าน</legend>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="9" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="9" required>
+            </div>
+        </fieldset>
+    
+        <!-- ความสนใจในหมวดหมู่สินค้า -->
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+            <div class="form-group">
+                <label>ความสนใจ:</label>
+                <input type="checkbox" id="electronics" name="interests" value="electronics">
+                <label for="electronics">อิเล็กทรอนิกส์</label>
+                <input type="checkbox" id="fashion" name="interests" value="fashion">
+                <label for="fashion">แฟชั่น</label>
+                <input type="checkbox" id="home" name="interests" value="home">
+                <label for="home">ของใช้ในบ้าน</label>
+                <input type="checkbox" id="beauty" name="interests" value="beauty">
+                <label for="beauty">ความงาม</label>
+            </div>
+        </fieldset>
+    
+        <!-- การยอมรับเงื่อนไขการใช้งาน -->
+        <fieldset>
+            <legend>การยอมรับเงื่อนไขการใช้งาน</legend>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน</label>
+            </div>
+        </fieldset>
+    
+        <!-- การยืนยัน -->
+        <fieldset>
+            <legend>การยืนยัน</legend>
+            <div class="form-group">
+                <button type="submit">ลงทะเบียน</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-04 เวลา 18 58 08" src="https://github.com/user-attachments/assets/97196e8e-b437-400a-8576-d7fd5736368f" />
+
 
 
 ## การทดลองที่ 7: HTML Layout
