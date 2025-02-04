@@ -166,9 +166,121 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+</head>
+<body>
+    <nav id="nav">
+        <img src="./images/logo.jpg" alt="logo" width="50" height="50">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    </nav>
+    <hr>
+    <section>
+        <h1>Gallery</h1>
+        <figure>
+            <a href="images/gallery/product1.webp">
+                <img src="images/gallery/product1.webp" alt="product1" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>Brand:</strong>
+                    Canon
+                </p>
+                <p>
+                    <strong>Model:</strong>
+                    Canon Eos R1
+                </p>
+                <p>
+                   
+                    <strong>PRICE:</strong>
+                    235,900 THB
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/product2.jpg">
+                <img src="images/gallery/product2.jpg" alt="product2" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>Brand:</strong>
+                    Sony
+                </p>
+                <p>
+                    <strong>Model:</strong>
+                    Sony a7 iv
+                </p>
+                <p>
+                   
+                    <strong>PRICE:</strong>
+                    82,990 THB
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/product3.webp">
+                <img src="images/gallery/product3.webp" alt="product3" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>Brand:</strong>
+                    Nikon
+                </p>
+                <p>
+                    <strong>Model:</strong>
+                    Nikon D850
+                </p>
+                <p>
+                   
+                    <strong>PRICE:</strong>
+                    111,000 THB
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/product4.jpg">
+                <img src="images/gallery/product4.jpg" alt="product4" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>Brand:</strong>
+                    Fujifilm
+                </p>
+                <p>
+                    <strong>Model:</strong>
+                    Fujifilm GFX 100S II
+                </p>
+                <p>
+                   
+                    <strong>PRICE:</strong>
+                    184,990 THB
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+        <hr>
+    </section>
+    
+    <a href="#nav">กลับด้านบน</a>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![image](https://github.com/user-attachments/assets/05fc549a-e054-423a-971c-fa377faa4394)
+
+![image](https://github.com/user-attachments/assets/d101f628-edca-4572-b0ef-36b9992193c5)
 
 
 
