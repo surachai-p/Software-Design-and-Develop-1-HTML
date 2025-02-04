@@ -131,7 +131,8 @@
 ```
 - ภาพผลลัพธ์:
 
-![Screenshot 2025-02-04 230440](https://github.com/user-attachments/assets/91a9606f-15c5-47f4-90f9-ed7165bb207f)
+![Screenshot 2025-02-04 232540](https://github.com/user-attachments/assets/3c506996-75c6-4548-9154-20a8bcae6b73)
+
 
 
 
