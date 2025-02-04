@@ -393,8 +393,8 @@
             <figcaption>IC 7400 NAND Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7400.pdf" download>ดาวน์โหลด Datasheet</a>
         </figure>
-        
     </div>
+    
     <div>
         <figure>
             <a href="images/gallery/7402.png">
@@ -403,8 +403,8 @@
             <figcaption>IC 7402 NOR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7402.pdf" download>ดาวน์โหลด Datasheet</a>
         </figure>
-        
     </div>
+
     <div>
         <figure>
             <a href="images/gallery/7404.png">
@@ -412,9 +412,9 @@
             </a>
             <figcaption>IC 7404 NOT Gate หรือ Inverter มี 6 วงจร</figcaption>
             <a href="files/7404.pdf" download>ดาวน์โหลด Datasheet</a>
-        </figure>
-        
+        </figure>  
     </div>
+
     <div>
         <figure>
             <a href="images/gallery/7408.png">
@@ -423,8 +423,8 @@
             <figcaption>IC 7408 AND Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7408.pdf" download>ดาวน์โหลด Datasheet</a>
         </figure>
-        
     </div>
+
     <div>
         <figure>
             <a href="images/gallery/7432.png">
@@ -433,8 +433,8 @@
             <figcaption>IC 7432 OR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7432.pdf" download>ดาวน์โหลด Datasheet</a>
         </figure>
-        
     </div>
+
     <div>
         <figure>
             <a href="images/gallery/7486.png">
@@ -443,7 +443,6 @@
             <figcaption>IC 7486 NOR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7486.pdf" download>ดาวน์โหลด Datasheet</a>
         </figure>
-        
     </div>
 
     <a href="#top">
@@ -521,7 +520,8 @@
 ### แบบฝึกหัด
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 [วางโค้ด HTML ที่นี่]
-```<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -972,7 +972,7 @@
             
             <button type="submit">สมัครสมาชิก</button>
             <button type="reset">ล้างข้อมูล</button>
-          
+
          </div>
 
     </form>
