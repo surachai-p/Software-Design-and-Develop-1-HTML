@@ -53,7 +53,7 @@
    <!DOCTYPE html>
    <html>
    <head>
-       <title>เว็บเทสของ Nithi thipprasoet</title>
+       <title>เว็บเทสของ Nithi thipprasoet!</title>
    </head>
    <body>
        <h1>สวัสดี ผม Nithi thipprasoet!</h1>
