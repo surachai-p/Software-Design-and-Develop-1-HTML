@@ -165,10 +165,42 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีสินค้า</title>
+</head>
+<body>
+
+    <h1>แกลเลอรีสินค้า</h1>
+
+    <div>
+        <figure>
+            <img src="images/image1.jpeg" alt="สินค้า 1" width="200" height="200">
+            <figcaption>คำอธิบายสินค้า 1</figcaption>
+        </figure>
+        <figure>
+            <img src="images/image2.jpeg" alt="สินค้า 2" width="200" height="200">
+            <figcaption>คำอธิบายสินค้า 2</figcaption>
+        </figure>
+        <figure>
+            <img src="images/image3.jpeg" alt="สินค้า 3" width="200" height="200">
+            <figcaption>คำอธิบายสินค้า 3</figcaption>
+        </figure>
+        <figure>
+            <img src="images/image4.jpeg" alt="สินค้า 4" width="200" height="200">
+            <figcaption>คำอธิบายสินค้า 4</figcaption>
+        </figure>
+    </div>
+
+    <a href="#">กลับไปข้างบน</a>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![การสร้างลิงก์และการแทรกรูปภาพ](Screenshot/8.png)![การสร้างลิงก์และการแทรกรูปภาพ](Screenshot/9.png)
 
 
 

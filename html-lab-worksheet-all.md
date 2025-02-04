@@ -113,11 +113,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Preeyaporn web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-  
+  ![index.html](Screenshot/7.png)
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
 1. ทดลองใช้ tag ต่างๆ:
@@ -319,10 +332,42 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีสินค้า</title>
+</head>
+<body>
+
+    <h1>แกลเลอรีสินค้า</h1>
+
+    <div>
+        <figure>
+            <img src="images/image1.jpeg" alt="สินค้า 1" width="200" height="200">
+            <figcaption>คำอธิบายสินค้า 1</figcaption>
+        </figure>
+        <figure>
+            <img src="images/image2.jpeg" alt="สินค้า 2" width="200" height="200">
+            <figcaption>คำอธิบายสินค้า 2</figcaption>
+        </figure>
+        <figure>
+            <img src="images/image3.jpeg" alt="สินค้า 3" width="200" height="200">
+            <figcaption>คำอธิบายสินค้า 3</figcaption>
+        </figure>
+        <figure>
+            <img src="images/image4.jpeg" alt="สินค้า 4" width="200" height="200">
+            <figcaption>คำอธิบายสินค้า 4</figcaption>
+        </figure>
+    </div>
+
+    <a href="#">กลับไปข้างบน</a>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+ ![การสร้างลิงก์และการแทรกรูปภาพ](Screenshot/8.png)![การสร้างลิงก์และการแทรกรูปภาพ](Screenshot/9.png)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -393,11 +438,49 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ข้อมูลส่วนตัวและเมนูอาหาร</title>
+</head>
+<body>
 
+    <h2>ข้อมูลส่วนตัว</h2>
+    <table border="1">
+        <tr>
+            <th>ชื่อ</th>
+            <td>ปรียาภรณ์</td>
+        </tr>
+        <tr>
+            <th>อายุ</th>
+            <td>19 ปี</td>
+        </tr>
+        <tr>
+            <th>ชื่อเล่น</th>
+            <td>บิว</td>
+        </tr>
+        <tr>
+            <th>สีที่ชอบ</th>
+            <td>สีม่วง</td>
+        </tr>
+    </table>
+
+    <h2>เมนูอาหาร</h2>
+    <ul>
+        <li>ต้มยำกุ้ง</li>
+        <li>ผัดไทย</li>
+        <li>แกงเขียวหวานไก่</li>
+        <li>ข้าวกะเพราหมูสับ</li>
+        <li>ส้มตำ</li>
+    </ul>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![Lab5](Screenshot/11.png)
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
@@ -621,10 +704,59 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิก</title>
+</head>
+<body>
+
+    <h1>สมัครสมาชิก</h1>
+
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        <h2>ข้อมูลส่วนตัว</h2>
+        <label>ชื่อ-นามสกุล: <input type="text" name="fullname" required></label><br>
+        <label>วันเกิด: <input type="date" name="dob" required></label><br>
+        <label>เพศ: 
+            <input type="radio" name="gender" value="ชาย"> ชาย
+            <input type="radio" name="gender" value="หญิง"> หญิง
+        </label><br>
+
+        <h2>ข้อมูลการติดต่อ</h2>
+        <label>อีเมล: <input type="email" name="email" required></label><br>
+        <label>เบอร์โทรศัพท์: <input type="tel" name="phone" required></label><br>
+        <label>ที่อยู่จัดส่ง: <textarea name="address" rows="3"></textarea></label><br>
+
+        <h2>รูปโปรไฟล์</h2>
+        <label>อัปโหลดรูปภาพ: <input type="file" name="profile_pic" accept="image/*"></label><br>
+
+        <h2>ความปลอดภัย</h2>
+        <label>รหัสผ่าน: <input type="password" name="password" required></label><br>
+        <label>ยืนยันรหัสผ่าน: <input type="password" name="confirm_password" required></label><br>
+
+        <h2>ความสนใจ</h2>
+        <label>เลือกหมวดหมู่ที่สนใจ:
+            <select name="interest">
+                <option value="flowers">ดอกไม้</option>
+                <option value="plants">ต้นไม้</option>
+                <option value="decorations">ของตกแต่ง</option>
+            </select>
+        </label><br>
+
+        <h2>ข้อตกลงและเงื่อนไข</h2>
+        <label><input type="checkbox" name="terms" required> ยอมรับเงื่อนไขการใช้งาน</label><br>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![การสร้างลิงก์และการแทรกรูปภาพ](Screenshot/10.png)
 
 
 ## การทดลองที่ 7: HTML Layout
