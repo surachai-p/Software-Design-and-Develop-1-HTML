@@ -493,10 +493,41 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <table border="20">
+        <thead>
+            <tr>
+                <th>ข้อมูลส่วนตัว</th>
+                <th>รายการเมนูอาหาร</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ นายเทพทัต</td>
+                <td>ข้าวมันไก่</td>
+            </tr>
+            <tr>
+                <td>อายุ 19</td>
+                <td>ข้าวแกง</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-05 012251](https://github.com/user-attachments/assets/1ea652df-4194-4859-984c-80aa6fcb1824)
+
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
