@@ -127,8 +127,8 @@
     <em>This text is emphasized</em>
     <strong>This text is strong</strong>    
 </body>
-</html>```
-- ภาพผลลัพธ์:
+</html>```-
+ภาพผลลัพธ์:
 
 ![Screenshot 2025-02-04 230440](https://github.com/user-attachments/assets/cb94f604-d471-4284-8cf7-597cf081ea96)
 
