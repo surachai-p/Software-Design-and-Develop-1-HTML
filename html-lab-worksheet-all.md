@@ -752,10 +752,60 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+```
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิก</title>
+</head>
+<body>
+
+    <h1>สมัครสมาชิก</h1>
+
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        <h2>ข้อมูลส่วนตัว</h2>
+        <label>ชื่อ-นามสกุล: <input type="text" name="fullname" required></label><br>
+        <label>วันเกิด: <input type="date" name="dob" required></label><br>
+        <label>เพศ: 
+            <input type="radio" name="gender" value="ชาย"> ชาย
+            <input type="radio" name="gender" value="หญิง"> หญิง
+        </label><br>
+
+        <h2>ข้อมูลการติดต่อ</h2>
+        <label>อีเมล: <input type="email" name="email" required></label><br>
+        <label>เบอร์โทรศัพท์: <input type="tel" name="phone" required></label><br>
+        <label>ที่อยู่จัดส่ง: <textarea name="address" rows="3"></textarea></label><br>
+
+        <h2>รูปโปรไฟล์</h2>
+        <label>อัปโหลดรูปภาพ: <input type="file" name="profile_pic" accept="image/*"></label><br>
+
+        <h2>ความปลอดภัย</h2>
+        <label>รหัสผ่าน: <input type="password" name="password" required></label><br>
+        <label>ยืนยันรหัสผ่าน: <input type="password" name="confirm_password" required></label><br>
+
+        <h2>ความสนใจ</h2>
+        <label>เลือกหมวดหมู่ที่สนใจ:
+            <select name="interest">
+                <option value="flowers">ดอกไม้</option>
+                <option value="plants">ต้นไม้</option>
+                <option value="decorations">ของตกแต่ง</option>
+            </select>
+        </label><br>
+
+        <h2>ข้อตกลงและเงื่อนไข</h2>
+        <label><input type="checkbox" name="terms" required> ยอมรับเงื่อนไขการใช้งาน</label><br>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-05 013113](https://github.com/user-attachments/assets/34f9c899-fd57-47de-853b-0327f3fe45c7)
+
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -843,5 +893,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
 
