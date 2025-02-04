@@ -35,7 +35,22 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน: ({D18893CC-B17D-4539-95C3-03154178443A}.png)
 ```html
-[({467BAFA4-C126-4712-B260-E2662AD1FFCA}.png)]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>116 Nithi Website</title>
+</head>
+<body>
+    <h1>Welcome! to My Website</h1>
+    <p>This is my first web page.</p>
+    <div>My name is Nithi Thipprasoet, 67030116</div>
+    <span>I was born and raised in</span>
+    <strong>Phitsanulok.</strong> 
+    <div><strong>Phitsanulok</strong></div>
+    <div>is a province located in the central region of Thailand.</div>
+    <div>In 2018, it had a population of 866,891 people and an area of ​​10,815.854 square kilometers. It is divided into 9 districts.</div>  
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [({50538558-B315-4CD6-A514-18B8819B90F7}.png)]
