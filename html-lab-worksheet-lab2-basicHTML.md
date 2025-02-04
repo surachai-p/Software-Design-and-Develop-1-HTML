@@ -35,9 +35,25 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to my website nawapon sawade</h1>
+    <p>My name is Nawapon sawade</p>
+    <div>This is my website</div>
+    <span>I like listen music</span>
+    <em>I like cat</em>
+    <strong>This is my wolrd</strong>    
+</body>
+</html>
 [วางโค้ด HTML ที่นี่]
 ```
 - ภาพผลลัพธ์:
+![image](https://github.com/user-attachments/assets/68a26937-cf65-40a1-8294-dfd8755e175d)
+
 [วางภาพ screenshot ที่นี่]
 
 
