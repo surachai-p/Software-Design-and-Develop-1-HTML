@@ -53,10 +53,10 @@
    <!DOCTYPE html>
    <html>
    <head>
-       <title>ทดสอบ Live Server</title>
+       <title>เว็บเทสของ Nithi thipprasoet</title>
    </head>
    <body>
-       <h1>สวัสดี Live Server</h1>
+       <h1>สวัสดี ผม Nithi thipprasoet!</h1>
    </body>
    </html>
    ```
@@ -75,5 +75,5 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+({913D8E69-E7F5-40A2-9A1D-E61405157453}.png)
 
