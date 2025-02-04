@@ -909,12 +909,12 @@
 </html>
 
 ```
-- ภาพผลลัพธ์:
-<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-04 เวลา 18 58 08" src="https://github.com/user-attachments/assets/0c991269-ee07-4a3b-95f1-b00d531a2113" />
+### ภาพผลลัพธ์:
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-03 เวลา 23 00 34" src="https://github.com/user-attachments/assets/e26d4969-ecf9-431a-a0cb-02b6ca9e55f5" />
+
+
+
 ```
-
-
-
 ## การทดลองที่ 7: HTML Layout
 ### วัตถุประสงค์
 - จัดวางองค์ประกอบในหน้าเว็บได้
