@@ -359,10 +359,70 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a> 
+    </nav>
+<figure>      
+    <a href="images/gallery/2.jpg">
+        <img src="images/gallery/2.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+    </a>
+             <figcaption>
+                ภาพวิว
+            </figcaption>
+    
+</figure>
+
+<figure>      
+    <a href="images/gallery/1.jpg">
+        <img src="images/gallery/1.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+             <figcaption>
+                ภาพวิว
+            </figcaption>
+    </a>
+</figure>
+
+<figure>      
+    <a href="images/gallery/3.jpg">
+        <img src="images/gallery/3.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+             <figcaption>
+                ภาพวิว
+            </figcaption>
+    </a>
+</figure>
+
+<figure>      
+    <a href="images/gallery/4.jpg">
+        <img src="images/gallery/4.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+             <figcaption>
+                ภาพวิว
+            </figcaption>
+    </a>
+</figure>
+
+</body>
+</html>
 ```
+
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-05 010632](https://github.com/user-attachments/assets/c9765e2a-6820-421f-bfdb-5b5a52b01795)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
