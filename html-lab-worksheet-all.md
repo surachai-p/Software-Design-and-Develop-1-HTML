@@ -129,8 +129,10 @@
 </body>
 </html>```
 - ภาพผลลัพธ์:
-[![Screenshot 2025-02-04 230440](https://github.com/user-attachments/assets/c0d19e43-b463-4d0c-8f21-db117c791edf)
-]
+
+![Screenshot 2025-02-04 230440](https://github.com/user-attachments/assets/cb94f604-d471-4284-8cf7-597cf081ea96)
+
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
