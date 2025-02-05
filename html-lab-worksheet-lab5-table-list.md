@@ -117,7 +117,7 @@
 </dl>
 
 ```
-![{38FF754B-9941-467D-9C9C-800818EF6F8E}](https://github.com/user-attachments/assets/14f1e32f-81e5-4c2b-aa82-0b9069e92d30)
+![{38FF754B-9941-467D-9C9C-800818EF6F8E}]
 
 
 
