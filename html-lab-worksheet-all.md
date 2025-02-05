@@ -465,6 +465,7 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -558,6 +559,7 @@
 </dl>
 </body>
 </html>
+```
 - ภาพผลลัพธ์:
 ![image](https://github.com/user-attachments/assets/ca980d10-fff2-4de1-9edf-9363e3a5706c)
 
