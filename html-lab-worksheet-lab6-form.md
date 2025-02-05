@@ -314,7 +314,7 @@
     </fieldset>
 
     <fieldset>
-        <legend>สมัครในตำแหน่ง</legend>
+        <legend>ความสนใจในหมวดหมู่สินค้า</legend>
 
         <div class="form-group">
             <label>ความสนใจในหมวดหมู่สินค้า:</label>
@@ -365,7 +365,7 @@
 
 ```
 - ภาพผลลัพธ์:
-![image](https://github.com/user-attachments/assets/899b5ad9-6ff5-40c2-9f02-0f2495e996be)
+![image](https://github.com/user-attachments/assets/4862e3aa-a6ba-482d-947b-544d119f6230)
 
 [วางภาพ screenshot ที่นี่]
 
