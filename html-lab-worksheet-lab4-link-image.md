@@ -165,10 +165,121 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[Lab 4
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    
+    <nav>
+        <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+       
+        <!-- รูปภาพในโฟลเดอร์ images -->
+            <img src="images/1.jpg" 
+            alt="โลโก้บริษัท"
+            height="80"
+            width="80">
+            <a href="index.html">หน้าหลัก</a>
+        <a href="test.html">กลับ</a>
+        
+        <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+        <a href="https://www.google.com" target="_blank">
+            ไปยัง Google
+        </a>
+    </nav>
+    <!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>Supercar รถที่ใครก็ใครก็คู่ควร</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+
+<!-- กล่องใส่สินค้า -->
+<figure>
+    <!-- รูปภาพที่กดเพื่อดูขนาดใหญ่ -->
+    <a href="images/product/2.jpg">
+        <img src="images/product/2.jpg" 
+             alt="สินค้าชิ้นที่ 1"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>Lamborghini Aventador SVJ</strong>
+        เครื่องยนต์: V12 6.5 ลิตร 770 แรงม้าอัตราเร่ง: 0-100 กม./ชม. ใน 2.8 วินาทีความเร็วสูงสุด: 350 กม./ชม
+        จุดเด่น:
+        ดีไซน์สุดโฉบเฉี่ยวพร้อม Aero Dynamic ที่ล้ำสมัย
+        ระบบขับเคลื่อน 4 ล้อสุดเสถียร
+        ตัวถังคาร์บอนไฟเบอร์ น้ำหนักเบาแต่แข็งแกร่ง
+        เสียงเครื่องยนต์ดุดันสไตล์ Lamborghini</figcaption>
+</figure>
+<hr>
+
+<figure>
+    <a href="images/product/4.jpg">
+        <img src="images/product/4.jpg" 
+             alt="สินค้าชิ้นที่ 1"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>Lamborghini Huracán EVO</strong>
+        เครื่องยนต์: V10 5.2 ลิตร 640 แรงม้าอัตราเร่ง: 0-100 กม./ชม. ใน 2.9 วินาทีความเร็วสูงสุด: 325 กม./ชม.
+        จุดเด่น:
+        ดีไซน์คมชัด โฉบเฉี่ยว พร้อมระบบ Aerodynamics ที่ยอดเยี่ยม
+        ระบบขับเคลื่อน 4 ล้อและเทคโนโลยี LDVI ควบคุมการขับขี่แบบ AI
+        เสียงเครื่องยนต์ V10 ดุดันสะใจ</figcaption>
+</figure>
+
+<figure>
+<hr>
+    <a href="images/product/3.jpg">
+    <img src="images/product/3.jpg" 
+         alt="สินค้าชิ้นที่ 1"
+         width="300"
+         height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>Lamborghini Aventador LP780-4 Ultimae (สี Bianco Canopus)</strong>
+        เครื่องยนต์: V12 6.5 ลิตร 780 แรงม้าอัตราเร่ง: 0-100 กม./ชม. ใน 2.8 วินาทีความเร็วสูงสุด: 355 กม./ชม.
+        จุดเด่น:
+        เป็นรุ่นสุดท้ายของ Aventador ก่อนเปลี่ยนโฉม
+        ดีไซน์ล้ำสมัย พร้อมระบบ Aerodynamics ที่พัฒนาขึ้น
+        ขับเคลื่อน 4 ล้อ ให้ความมั่นใจทุกสภาพถนน
+        สีขาวด้าน (Bianco Canopus) เพิ่มความพิเศษและดุดัน</figcaption>
+</figure>
+
+<hr>
+<figure>
+    <!-- รูปภาพที่กดเพื่อดูขนาดใหญ่ -->
+    <a href="images/product/1.jpg">
+        <img src="images/product/1.jpg" 
+             alt="สินค้าชิ้นที่ 1"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>Lamborghini Aventador SVJ</strong>
+        เครื่องยนต์: V12 6.5 ลิตร 770 แรงม้าอัตราเร่ง: 0-100 กม./ชม. ใน 2.8 วินาทีความเร็วสูงสุด: 350 กม./ชม
+        จุดเด่น:
+        ดีไซน์สุดโฉบเฉี่ยวพร้อม Aero Dynamic ที่ล้ำสมัย
+        ระบบขับเคลื่อน 4 ล้อสุดเสถียร
+        ตัวถังคาร์บอนไฟเบอร์ น้ำหนักเบาแต่แข็งแกร่ง
+        เสียงเครื่องยนต์ดุดันสไตล์ Lamborghini</figcaption>
+</figure>
+<hr>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-5.png)]
+
+![alt text](image-6.png)
 
 
 
