@@ -401,7 +401,8 @@
 
 ```
 - ภาพผลลัพธ์:
-![{90444A25-8347-4308-9776-9C50929B4E25}](https://github.com/user-attachments/assets/658f6380-d8c1-4cb0-8bee-8db89f0294ed)
+![{90444A25-8347-4308-9776-9C50929B4E25}](https://github.com/user-attachments/assets/c814890c-6198-40cb-a888-6f1cd852db31)
+
 
 
 
