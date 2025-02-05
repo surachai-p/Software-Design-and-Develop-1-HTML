@@ -189,7 +189,7 @@
     <div>
         <figure>
             <a href="images/gallery/7400.png" >
-                <img src="images/gallery/7400.png" alt="สินค้า 7400" width="200">
+                <img src="images/gallery/7400.png" alt="IC 7400" width="200">
             </a>
             <figcaption>IC 7400 NAND Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7400.pdf" download>ดาวน์โหลด Datasheet</a>
@@ -199,7 +199,7 @@
     <div>
         <figure>
             <a href="images/gallery/7402.png">
-                <img src="images/gallery/7402.png" alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200">
+                <img src="images/gallery/7402.png" alt="IC 7402" width="200">
             </a>
             <figcaption>IC 7402 NOR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7402.pdf" download>ดาวน์โหลด Datasheet</a>
@@ -209,7 +209,7 @@
     <div>
         <figure>
             <a href="images/gallery/7404.png">
-                <img src="images/gallery/7404.png" alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200">
+                <img src="images/gallery/7404.png" alt="IC 7404" width="200">
             </a>
             <figcaption>IC 7404 NOT Gate หรือ Inverter มี 6 วงจร</figcaption>
             <a href="files/7404.pdf" download>ดาวน์โหลด Datasheet</a>
@@ -219,7 +219,7 @@
     <div>
         <figure>
             <a href="images/gallery/7408.png">
-                <img src="images/gallery/7408.png" alt="คลิกเพื่อดูรูปขนาดใหญ่"" width="200">
+                <img src="images/gallery/7408.png" alt="IC 7408" width="200">
             </a>
             <figcaption>IC 7408 AND Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7408.pdf" download>ดาวน์โหลด Datasheet</a>
@@ -229,22 +229,21 @@
     <div>
         <figure>
             <a href="images/gallery/7432.png">
-                <img src="images/gallery/7432.png" alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200">
+                <img src="images/gallery/7432.png" alt="IC 7432" width="200">
             </a>
             <figcaption>IC 7432 OR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7432.pdf" download>ดาวน์โหลด Datasheet</a>
         </figure>
-        
     </div>
 
     <div>
         <figure>
             <a href="images/gallery/7486.png">
-                <img src="images/gallery/7486.png" alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200">
+                <img src="images/gallery/7486.png" alt="IC 7486" width="200">
             </a>
             <figcaption>IC 7486 NOR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
             <a href="files/7486.pdf" download>ดาวน์โหลด Datasheet</a>
-        </figure>
+        </figure>  
     </div>
 
     <a href="#top">
