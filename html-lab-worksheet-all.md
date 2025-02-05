@@ -75,6 +75,19 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ทดสอบ Live Server</title>
+</head>
+<body>
+    <h1>Hello Live Server</h1>
+    <h1>It's me Chanin Khomvongsa</h1>
+</body>
+</html>
+```
+![image](https://github.com/user-attachments/assets/f37badf4-587f-40aa-8b83-11c524bd072f)
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
