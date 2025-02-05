@@ -166,174 +166,118 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าหลัก</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        
-    
-        nav a:hover {
-            color: #333;
-        }
-
-        h2 {
-            color: #333;
-            margin-top: 20px;
-        }
-
-        /* ======= ส่วนของสินค้า ======= */
-        section {
-            background: white;
-            padding: 30px;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 1200px;
-        }
-
-        /* ======= แกลเลอรีสินค้า ======= */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        figure {
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        img {
-            width: 100%;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
-        }
-        img:hover {
-            transform: scale(1.05);
-        }
-        figcaption {
-            font-size: 14px;
-            font-weight: bold;
-            color: #333;
-            margin-top: 8px;
-        }
-
-        /* ======= ปุ่มกลับด้านบน ======= */
-        .back-to-top {
-            display: inline-block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: background 0.3s ease-in-out;
-        }
-        .back-to-top:hover {
-            background-color: #218838;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- เมนูนำทาง -->
-    <nav>
+<html lang="en">
+    <nav id="nav">
         <a href="index.html">หน้าหลัก</a>
         <a href="pages/about.html">เกี่ยวกับเรา</a>
         <a href="pages/contact.html">ติดต่อเรา</a>
-        <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
     </nav>
+</nav>
+<header>
+    <h1 id="top">แกลเลอรีสินค้า</h1>
+</header>
 
-    <header>
-        <h1 id="top">แกลเลอรีสินค้า</h1>
-    </header>
+    <!-- แกลเลอรีสินค้า -->
+    <div class="gallery">
+        <figure>
+            <a href="images/products/product1.jpg" target="_blank">
+                <img src="images/products/product1.jpg" alt="สินค้าชิ้นที่ 1">
+            </a>
+            <figcaption>สินค้าชิ้นที่ 1 - รายละเอียดสินค้า </figcaption>
+            <p>
+                <strong>ชื่อสินค้า:</strong>
+                Bennett Vitamin C & E Soap
+            </p>
+            <p>
+                <strong>ประเภท:</strong>
+                สบู่ทำความสะอาดผิว
+            </p>
+            <p>
+               
+                <strong>กลิ่น:</strong>
+                ส้ม
+            </p>
+            <p><strong>ราคา:</strong>
+           ประมาณ 50-80 บาท
+        </p>
 
-        <!-- แกลเลอรีสินค้า -->
-        <div class="gallery">
-            <figure>
-                <a href="images/products/product1.jpg" target="_blank">
-                    <img src="images/products/product1.jpg" alt="สินค้าชิ้นที่ 1">
-                </a>
-                <figcaption>สินค้าชิ้นที่ 1 - รายละเอียดสินค้า </figcaption>
-            </figcaption>ชื่อสินค้า: Bennett Vitamin C & E Soap
-                    ประเภท: สบู่ทำความสะอาดผิว
-                    กลิ่น: ส้ม (Orange)
-                    ราคา: ประมาณ 50-80 บาท</figcaption>
-            </figure>
+        </figure>
+        <figure>
+            <a href="images/products/product2.jpg" target="_blank">
+                <img src="images/products/product2.jpg" alt="สินค้าชิ้นที่ 2">
+            </a>
+            <figcaption>สินค้าชิ้นที่ 2 - รายละเอียดสินค้า </figcaption>
 
-            <figure>
-                <a href="images/products/product2.jpg" target="_blank">
-                    <img src="images/products/product2.jpg" alt="สินค้าชิ้นที่ 2">
-                </a>
-                <figcaption>สินค้าชิ้นที่ 2 - รายละเอียดสินค้า </figcaption>
-            </figcaption>ชื่อสินค้า: ไลปอนเอฟ สูตรอนามัย
-                    ประเภท: น้ำยาล้างจาน
-                    กลิ่น: กลิ่นเลมอน (Lemon)
-                    ราคา: ประมาณ 30-50 บาท</figcaption>
-            </figure>
+            <p>
+            <strong>ชื่อสินค้า:</strong>
+            ไลปอนเอฟ สูตรอนามัย
+            </p>
+            <p>
+                <strong>ประเภท:</strong>
+                น้ำยาล้างจาน
+            </p>
+            <p>
+               
+                <strong>กลิ่น:</strong>
+                เลมอน (Lemon)
+            </p>
+            <p><strong>ราคา:</strong>
+                ประมาณ 30-50 บาท
+        </p>
+        </figure>
 
-            <figure>
-                <a href="images/products/product3.jpg" target="_blank">
-                    <img src="images/products/product3.jpg" alt="สินค้าชิ้นที่ 3">
-                </a>
-                <figcaption>สินค้าชิ้นที่ 3 - รายละเอียดสินค้า </figcaption>
-            </figcaption> ชื่อสินค้า: เอเชียนดีไลท์ เผือก
-                    ประเภท: ไอศกรีมแท่ง
-                    รสชาติ: เผือก (Taro)
-                    ราคา: ประมาณ 15-25 บาท </figcaption>
-            </figure>
+        <figure>
+            <a href="images/products/product3.jpg" target="_blank">
+                <img src="images/products/product3.jpg" alt="สินค้าชิ้นที่ 3">
+            </a>
+            <figcaption>สินค้าชิ้นที่ 3 - รายละเอียดสินค้า </figcaption>
 
-            <figure>
-                <a href="images/products/product4.jpg" target="_blank">
-                    <img src="images/products/product4.jpg" alt="สินค้าชิ้นที่ 4">
-                </a>
-                <figcaption>สินค้าชิ้นที่ 4 - รายละเอียดสินค้า</figcaption>
-            </figcaption> ชื่อสินค้า: Oishi Green Tea Honey Lemon (โออิชิ กรีนที น้ำผึ้งมะนาว)
-                        ประเภท: เครื่องดื่มชาเขียวพร้อมดื่ม
-                        รสชาติ: น้ำผึ้งมะนาว (Honey Lemon)
-                        ปริมาณสุทธิ: 380 มล.
-                        ราคา: 20 บาทต่อขวด </figcaption>
-            </figure>
+            <p>
+                <strong>ชื่อสินค้า:</strong>
+                เอเชียนดีไลท์ เผือก
+                </p>
+                <p>
+                    <strong>ประเภท:</strong>
+                    ไอศกรีมแท่ง
+                </p>
+                <p>
+                   
+                    <strong>รสชาติ:</strong>
+                    เผือก (Taro)
+                </p>
+                <p><strong>ราคา:</strong>
+                    ประมาณ 15-25 บาท
+            </p>
+        </figure>
 
-            <figure>
-                <a href="images/products/product5.jpg" target="_blank">
-                    <img src="images/products/product5.jpg" alt="สินค้าชิ้นที่ 5">
-                </a>
-                <figcaption>สินค้าชิ้นที่ 5 - รายละเอียดสินค้า</figcaption>
-            </figcaption>ชื่อสินค้า: CeraVe Facial Moisturising Lotion AM SPF 50
-                    ประเภท: มอยส์เจอไรเซอร์บำรุงผิวหน้าสำหรับผิวธรรมดาถึงผิวแห้ง พร้อมกันแดด SPF 50
-                    กลิ่น: ปราศจากน้ำหอม (Fragrance-Free)
-                    ราคา: 179 บาท</figcaption>
-            </figure>
+        <figure>
+            <a href="images/products/product4.jpg" target="_blank">
+                <img src="images/products/product4.jpg" alt="สินค้าชิ้นที่ 4">
+            </a>
+            <figcaption>สินค้าชิ้นที่ 4 - รายละเอียดสินค้า</figcaption>
 
-            <figure>
-                <a href="images/products/product6.jpg" target="_blank">
-                    <img src="images/products/product6.jpg" alt="สินค้าชิ้นที่ 6">
-                </a>
-                <figcaption>สินค้าชิ้นที่ 6 - รายละเอียดสินค้า </figcaption>
-            </figcaption>ชื่อสินค้า: MizuMi เซรั่มลดรอยสิว 
-                        ประเภท: เซรั่มบำรุงผิวหน้า
-                        กลิ่น: ไม่ได้ระบุบนบรรจุภัณฑ์ แต่เน้นคุณสมบัติช่วยลดรอยแดงและรอยดำจากสิว 
-                        ราคา: 49 บาท</figcaption>
-            </figure>
-        </div>
-    </section>
+            <p>
+                <strong>ชื่อสินค้า:</strong>
+                i Green Tea Honey Lemon (โออิชิ กรีนที น้ำผึ้งมะนาว)
+                </p>
+                <p>
+                    <strong>ประเภท:</strong>
+                    เครื่องดื่มชาเขียวพร้อมดื่มOish
+                </p>
+                <p>
+                   
+                    <strong>รสชาติ:</strong>
+                    น้ำผึ้งมะนาว (Honey Lemon)
+                </p>
+                <p><strong>ราคา:</strong>
+                    ราคา: 20 บาทต่อขวด
+            </p>
+        </figure>
+    </div>
+</section>
 
-    <!-- ปุ่มกลับด้านบน -->
-    <a href="#top" class="back-to-top">กลับด้านบน</a>
+<!-- ปุ่มกลับด้านบน -->
+<a href="#top" class="back-to-top">กลับด้านบน</a>
 
 </body>
 </html>
@@ -341,8 +285,12 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![image](https://github.com/user-attachments/assets/b09161f8-af35-404d-af64-6419d0534524)
-![image](https://github.com/user-attachments/assets/74bdcd0f-93f7-4435-be05-de9467936399)
+![image](https://github.com/user-attachments/assets/89aecfcd-a1cf-4821-b6c8-4c50bc795d8c)
+![image](https://github.com/user-attachments/assets/e4fa268f-f5e5-487d-9497-8e78cdfa0ee7)
+![image](https://github.com/user-attachments/assets/3772343b-c9ec-4521-b77e-48079307f19f)
+
+
+
 
 
 
