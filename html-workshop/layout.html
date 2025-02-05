@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jirawat online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        article {
+            flex: 2;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 5px;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #ddd;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            aside {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jirawat</h1>
+        <nav>
+            <ul>
+                <li><a href="index">หน้าแรก</a></li>
+                <li><a href="about">เกี่ยวกับเรา</a></li>
+                <li><a href="services">บริการ</a></li>
+                <li><a href="contact">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>บทความที่ 1: การใช้ Semantic HTML</h2>
+            <p>ช่วยในการทำ SEO (Search Engine Optimization): เครื่องมือค้นหาสามารถเข้าใจโครงสร้างของเว็บไซต์ได้ดีขึ้น ซึ่งช่วยในการจัดอันดับเว็บไซต์
+                Accessibility: ทำให้ผู้ใช้งานที่มีความต้องการพิเศษสามารถเข้าถึงเว็บไซต์ได้ง่ายขึ้น
+                การออกแบบที่ตอบสนอง (Responsive Design): สามารถทำให้เว็บไซต์แสดงผลได้ดีทั้งในอุปกรณ์ที่มีขนาดหน้าจอใหญ่และเล็ก เช่น โทรศัพท์มือถือและแท็บเล็ต</p>
+        </article>
+
+        <aside>
+            <h3>บทความที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="article1.html">บทความอื่น 1: วิธีการเขียน HTML อย่างมีประสิทธิภาพ</a></li>
+                <li><a href="article2.html">บทความอื่น 2: การใช้ CSS เพื่อทำให้เว็บไซต์สวยงาม</a></li>
+                <li><a href="article3.html">บทความอื่น 3: การทำ SEO ให้เว็บไซต์ของคุณติดอันดับบน Google</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>ลิขสิทธิ์ © 2024 เว็บไซต์ของฉัน</p>
+    </footer>
+</body>
+</html>
