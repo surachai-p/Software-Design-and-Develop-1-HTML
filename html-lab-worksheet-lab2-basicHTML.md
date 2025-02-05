@@ -51,8 +51,8 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
 ![image](https://github.com/user-attachments/assets/5347fc95-c40c-498b-bf72-f067899fe5b9)
+
 
 
 
