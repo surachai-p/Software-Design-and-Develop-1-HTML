@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/256144a9-c331-4e1b-81fc-9e966dc63863)# ใบงานการทดลอง HTML
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
