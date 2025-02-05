@@ -68,8 +68,64 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ข้อมูลส่วนตัว</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>รายละเอียด</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ</td>
+                <td>นายวัทธิกร อินทองคำ</td>
+            </tr>
+            <tr>
+                <td>รหัสประจำตัวนักศึกษา</td>
+                <td>67030207</td>
+            </tr>
+            <tr>
+                <td>คณะ</td>
+                <td>ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+            </tr>
+            <tr>
+                <td>สาขา</td>
+                <td>เทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td>18 ปี</td>
+            </tr>
+            <tr>
+                <td>อีเมล</td>
+                <td>67030207@kmitl.ac.th</td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปี เกิด</td>
+                <td>20 พฤษภาคม ปี พ.ศ.2549</td>
+            </tr>
+            <tr>
+                <td>เบอร์โทร</td>
+                <td>086-306-6053</td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td>บ้านเลขที่:91/578 ตำบล:บางบัวทอง อำเภอ:บางบัวทอง จังหวัด:นนทบุรี</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/fcb7c0b8-16d4-4b6d-95ef-b67e72aabec7)
+
 
