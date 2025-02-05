@@ -165,7 +165,7 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -174,12 +174,19 @@
 <body>
 
     <nav>
+        <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
         <a href="index.html">หน้าหลัก</a>
-        <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+        
+        <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+        <a href="https://www.google.com" target="_blank">
+            ไปยัง Google
+        </a>
     </nav>
 
     <section id="top">
-        <h1>พวงกุญแจอนิเมะ  Tensei shitara Slime Datta Ken</h1>
+        <h1>NewGen Toys</h1>
     </section>
 
     <section id="products">
@@ -218,10 +225,10 @@
 
 </body>
 </html>
-]
 ```
 - ภาพผลลัพธ์:
-![image](https://github.com/user-attachments/assets/871cccd9-655d-4b5c-a311-8e0974b0c274)
+![image](https://github.com/user-attachments/assets/0fe043b9-16ce-41fd-ac15-4e90e536d63a)
+
 
 
 
