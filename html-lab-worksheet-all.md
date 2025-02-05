@@ -74,7 +74,8 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![สกรีนช็อต 2025-02-05 162448](https://github.com/user-attachments/assets/3397522f-5e0c-43fe-ade4-b236d4b5998c)
+
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +114,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ...... (Wattikorn) web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![สกรีนช็อต 2025-02-05 163219](https://github.com/user-attachments/assets/270f29e7-f985-4a45-a38e-d0e6fde117d9)
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +164,23 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<h1>ประวัติการศึกษา</h1>
+<h2>นายวัทธิกร อินทองคำ</h2>
+<p>จบจากโรงเรียนราชวินิต มัธยม</p>
+<p>อายุ 18 ปี</p>
+<p>งานอดิเรก</p>
+<p><strong>เล่นเกม</strong></p>
+<p><strong>นั่งฟังเพลง</strong></p>
+<p><br></p>
+<hr>
+<pre>
+    เป้าหมายในอนาคต
+    1.การหาเงินให้มากที่สุด
+</pre>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![สกรีนช็อต 2025-02-05 164408](https://github.com/user-attachments/assets/e7ed3abe-de3b-42c0-ad51-fa2f7021a417)
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +347,95 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <!-- ส่วนของเนื้อหา -->
+</body>
+</html>
+<nav>
+    <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+    <a href="https://www.google.com" target="_blank">
+        ไปยัง Google
+    </a>
+</nav>
+<!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>เนื้อหาส่วนบน</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+
+<!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<a href="#top">กลับด้านบน</a>
+<a href="#products">ไปยังสินค้า</a>
+<!-- ลิงก์อีเมล -->
+<a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+
+<!-- ลิงก์โทรศัพท์ -->
+<a href="tel:+66812345678">โทร 081-234-5678</a>
+
+<!-- ลิงก์ดาวน์โหลด -->
+<a href="files/document.pdf" download>
+    ดาวน์โหลดเอกสาร
+</a>
+<!-- รูปภาพในโฟลเดอร์ images -->
+<img src="images/products/OIP.jfif" 
+     alt="โลโก้บริษัท"
+     width="200">
+
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+        <img src="images/products/products 1.jfif" 
+             alt="สินค้าชิ้นที่ 1"
+             width="200"
+             height="200">
+            </figure>
+            <a href="images/products/products 1.jfif">คลิกเพื่อดูรูปขนาดใหญ่</a>
+         <figcaption>
+            <a href="files/สินค้าชิ้นนี้มีจำนวนจำกัด หมดแล้ว ห.txt">รายละเอียดสินค้าชิ้นที่ 1</a>
+        </figcaption>
+        <img src="images/products/products 2.avif" 
+             alt="สินค้าชิ้นที่ 2"
+             width="200"
+             height="200">
+            </figure>
+            <a href="images/products/products 2.avif">คลิกเพื่อดูรูปขนาดใหญ่</a>
+        <figcaption>
+            <a href="files/สินค้าชิ้นนี้มีจำนวนจำกัด หมดแล้ว ห.txt">รายละเอียดสินค้าชิ้นที่ 2</a>
+        </figcaption>
+        <img src="images/products/products 3.jfif" 
+             alt="สินค้าชิ้นที่ 3"
+             width="200"
+             height="200">
+            </figure>
+            <a href="images/products/products 3.jfif">คลิกเพื่อดูรูปขนาดใหญ่</a>
+        <figcaption>
+            <a href="files/สินค้าชิ้นนี้มีจำนวนจำกัด หมดแล้ว ห.txt">รายละเอียดสินค้าชิ้นที่ 3</a>
+        <figcaption>
+            <img src="images/products/products 4.jfif" 
+             alt="สินค้าชิ้นที่ 4"
+             width="200"
+             height="200">
+            </figure>
+            <a href="images/products/products 4.jfif">คลิกเพื่อดูรูปขนาดใหญ่</a>
+        <figcaption>
+            <a href="files/สินค้าชิ้นนี้มีจำนวนจำกัด หมดแล้ว ห.txt">รายละเอียดสินค้าชิ้นที่ 4</a>
+        <figcaption>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![สกรีนช็อต 2025-02-05 174548](https://github.com/user-attachments/assets/470fee7d-5c05-447b-b27a-93b43ac14485)
+
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -391,12 +504,55 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
+<table border="1">
+    <thead>
+        <tr>
+            <th>ประวัติส่วนตัว</th>
+            <th>ประวัติการศึกษา</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>อายุ18 ชาย</td>
+            <td>จบ RNM สังคม-อังกฤษ</td>
+            
+        </tr>
+        <tr>
+            <td>ไทย พุทธ</td>
+            <td>ปัจจุบันเรียนสจล ปี1</td>
+            
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <li>ต้มจืดเต้าหู้หมูสับ</li>
+    <li>ต้มไก่</li>
+    <li>ต้มเลือดหมู</li>
+</ul>
+
+
+<ol>
+    <li>ต้มจืดเต้าหู้หมูสับ</li>
+    <li>ต้มไก่</li>
+    <li>ต้มเลือดหมู</li>
+</ol>
+
+
+<dl>
+    <dt>ต้มจืดเต้าหู้หมูสับ</dt>
+    <dd>ซุปใสรสชาติกลมกล่อม ทำจากเต้าหู้และหมูสับ</dd>
+    <dt>ต้มไก่</dt>
+    <dd>ซุปไก่รสชาตินุ่มนวล</dd>
+    <dt>ต้มเลือดหมู</dt>
+    <dd>ซุปใสที่มีเครื่องในและเลือดหมู</dd>
+</dl>
+
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/020e300e-18aa-4584-af53-092106e33356)
+]
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,12 +777,153 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
-```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/7bafb174-d383-4f43-80ef-3919a82d51fc)
 
+```
+    <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
 
+    <body>
+        <form action="/register" method="post">
+            <!-- ส่วนข้อมูลส่วนตัว -->
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                
+                
+        
+                <div class="form-group">
+                    <label for="prefix">คำนำหน้า:</label>
+                     <select id="prefix" name="prefix" required>
+                        <option value="">เลือกคำนำหน้า</option>
+                        <option value="mr">นาย</option>
+                        <option value="ms">นางสาว</option>
+                        <option value="mrs">นาง</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="firstName">ชื่อ:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lastName">นามสกุล:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+        
+                <div class="form-group">
+                    <label>เพศ:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลการติดต่อ -->
+            <fieldset>
+                <legend>ข้อมูลการติดต่อ</legend>
+        
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           pattern="[0-9]{10}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">ที่อยู่จัดส่ง:</label>
+                    <textarea id="address" name="address" 
+                              rows="3" required></textarea> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            
+        
+            <!-- ส่วนความสนใจและกิจกรรม -->
+            <fieldset>
+                <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+        
+                <div class="form-group">
+                    <label>ความสนใจ:</label>
+                    <input type="checkbox" id="sport" name="interests" value="sport">
+                    <label for="sport">เสื้อ</label>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">กางเกง</label>
+                    <input type="checkbox" id="art" name="interests" value="art">
+                    <label for="art">รองเท้า</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">หมวก</label>
+                </div>
+        
+                <div class="form-group">
+                    <label for="club">Size:</label>
+                    <select id="club" name="club" multiple>
+                        <option value="computer">M</option>
+                        <option value="robot">L</option>
+                        <option value="sport">XL</option>
+                        <option value="music">XXL</option>
+                    </select>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนอัพโหลดเอกสาร -->
+            <fieldset>
+                <legend>รูปโปรไฟล์</legend>
+                <div class="form-group">
+                    <label for="photo">รูปถ่าย:</label>
+                    <input type="file" id="photo" name="photo" 
+                           accept="image/*" required><span class="required-mark">*</span>
+                </div>   
+            </fieldset>
+        
+            <!-- ส่วนยืนยันข้อมูล -->
+            <fieldset>
+                <legend>การยอมรับเงื่อนไขการใช้งาน</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        no robot
+                    </label>
+                </div>
+                <legend>การยืนยันรหัสผ่าน</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        ถูกต้อง
+                    </label>
+                </div>
+        
+                
+            </fieldset>
+        </form>
+```
 ## การทดลองที่ 7: HTML Layout
 ### วัตถุประสงค์
 - จัดวางองค์ประกอบในหน้าเว็บได้
@@ -638,7 +935,8 @@
 semantic elements คือ elements ใน HTML5 ที่มีความหมายในตัวเอง ช่วยอธิบายโครงสร้างและความหมายของเนื้อหาในหน้าเว็บ
     ตัวอย่าง Semantic Elements หลักๆ:
 
-```html
+```
+html
 <header>      <!-- ส่วนหัวของหน้าเว็บหรือส่วน -->
 <nav>         <!-- ส่วนเมนูนำทาง -->
 <main>        <!-- เนื้อหาหลักของหน้าเว็บ -->
@@ -646,8 +944,6 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 <section>     <!-- ส่วนของเนื้อหาที่เกี่ยวข้องกัน -->
 <aside>       <!-- เนื้อหาที่เกี่ยวข้องแต่ไม่ใช่เนื้อหาหลัก -->
 <footer>      <!-- ส่วนท้ายของหน้าเว็บหรือส่วน -->
-```
-
 ### ข้อดีของการใช้ Semantic Elements:
 
 
@@ -667,7 +963,8 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### Accessibility:
 
-```html
+```
+html
 <!-- Screen reader จะอ่านและเข้าใจโครงสร้างได้ดีขึ้น -->
 <main>
     <article>
@@ -677,7 +974,8 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 </main>
 ```
 ### ตัวอย่างการใช้งาน
-```html
+```
+html
 <body>
     <header>
         <h1>ชื่อเว็บไซต์</h1>
@@ -712,5 +1010,6 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/17bf50f7-e907-4b50-b2b3-2e2aa1cc48f4)
+
 
