@@ -68,8 +68,72 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางชีวิตประจำวัน</title>
+</head>
+<body>
+    <table border="5">
+        <h1>ตารางชีวิตประจำวัน</h1>
+        <thead>
+            <tr>
+                <th>เวลาตื่นนอน</th>
+                <th>เวลาเรียนไป</th>
+                <th>พักเที่ยง/กินข้าว</th>
+                <th>เวลาเลิกเรียน</th>
+                <th>กลับบ้าน</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>07:00</td>
+                <td>08:00</td>
+                <td>12:00</td>
+                <td>16:00</td>
+                <td>16:30</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th>พัฒนาทักษะ</th>
+                <th>ออกกำลังกาย</th>
+                <th>กินข้าวเย็น</th>
+                <th>ดูหนัง-นอนเล่น</th>
+                <th>เข้านอน</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>17:00-18:00</td>
+                <td>18:30-19:00</td>
+                <td>20:00</td>
+                <td>21:00-23:00</td>
+                <td>00:00</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>สุกี้พี่แว่น</h1>
+    <ul>
+        <li>สุกี้แห้งหมู 50 บาท</li>
+        <li>สุกี้แห้งไก่ 50 บาท</li>
+        <li>สุกี้แห้งเนื้อ 60 บาท</li>
+        <li>สุกี้แห้งพิเศษ 70 บาท</li>
+    </ul>
+    
+    <ol>
+        <li>สุกี้แห้งหมู 50 บาท</li>
+        <li>สุกี้แห้งไก่ 50 บาท</li>
+        <li>สุกี้แห้งเนื้อ 60 บาท</li>
+        <li>สุกี้แห้งพิเศษ 70 บาท</li>
+    </ol>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
+![image](https://github.com/user-attachments/assets/5f237574-8e49-448b-9e4a-a08b131ef66b)
+
 [วางภาพ screenshot ที่นี่]
 
