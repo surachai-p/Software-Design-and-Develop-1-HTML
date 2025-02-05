@@ -164,11 +164,102 @@
 
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
-```html
-[วางโค้ด HTML ที่นี่]
-```
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+
+<body>
+
+    <div style="text-align: center;">
+        <img src="images/BMW-Logo-1997-1600x900.jpg" alt="โลโก้บริษัท" width="150">
+        <h1>Applezzz THAILAND</h1>
+    </div>
+
+    <nav>
+        <p>
+            <a href="index.html">หน้าหลัก</a> |
+            <a href="pages/about.html">เกี่ยวกับเรา</a> |
+            <a href="pages/contact.html">ติดต่อเรา</a> |
+            <a href="https://www.apple.com/" target="_blank">สเปค</a>
+        </p>
+    </nav>
+
+    <hr>
+
+    <section id="top">
+        <h1>ประวัติบริษัท</h1>
+        <p>
+            Apple Inc. ก่อตั้งขึ้นเมื่อวันที่ 1 เมษายน 1976 โดย สตีฟ จอบส์, สตีฟ วอซเนียก และ รอน เวย์น เพื่อพัฒนาและจำหน่ายคอมพิวเตอร์ส่วนบุคคล
+            เครื่องแรกของบริษัทคือ Apple I และตามมาด้วย Apple II ซึ่งประสบความสำเร็จอย่างมาก ปี 1984 Apple เปิดตัว Macintosh คอมพิวเตอร์ที่ใช้กราฟิกอินเทอร์เฟซ (GUI)
+            ตัวแรก แต่ในช่วงปี 1990s บริษัทเผชิญปัญหาทางธุรกิจจนกระทั่งปี 1997 สตีฟ จอบส์กลับมาเป็น CEO และนำ Apple สู่ความสำเร็จอีกครั้ง
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="products">
+        <h2>สินค้าของเรา</h2>
+
+        <figure>
+            <a href="images/iphone-16.png" target="_blank">
+                <img src="images/iphone-16.png" alt="iPhone 16" width="400">
+            </a>
+            <figcaption>
+                <strong>iPhone 16</strong> มาพร้อมดีไซน์ใหม่ที่มีหน้าจอขนาด 6.1 นิ้วสำหรับรุ่นปกติ และ 6.9 นิ้วสำหรับรุ่น Plus
+                กล้องหลัก 48MP และชิป A18 ประสิทธิภาพสูง รองรับ iOS 18
+                <br>
+                <a href="https://www.apple.com/th/iphone-16/" target="_blank">ดูสเปค</a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/ipadpro.jpg" target="_blank">
+                <img src="images/ipadpro.jpg" alt="iPad Pro" width="400">
+            </a>
+            <figcaption>
+                <strong>iPad Pro</strong> มาพร้อมจอ Ultra Retina XDR และชิป M4 รองรับ Apple Pencil Pro และ Magic Keyboard
+                <br>
+                <a href="https://support.apple.com/th-th/119892" target="_blank">ดูสเปค</a>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/Macbookpro.jpg" target="_blank">
+                <img src="images/Macbookpro.jpg" alt="MacBook Pro" width="400">
+            </a>
+            <figcaption>
+                <strong>MacBook Pro</strong> ใช้ชิป M4 หน้าจอคุณภาพสูง รองรับการใช้งานระดับมืออาชีพ
+                <br>
+                <a href="https://www.apple.com/th/macbook-pro/" target="_blank">ดูสเปค</a>
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>© APPLEZZZ THAILAND 2025</p>
+        <p>
+            <a href="index.html">กลับสู่หน้าหลัก</a> |
+            <a href="https://www.apple.com/th/shop/browse/home_th_en">ไปยังสินค้า</a>
+        </p>
+        <p>
+            <a href="mailto:67030142@kmitl.ac.th">ส่งอีเมลหาเรา</a> |
+            <a href="tel:+66623495577">โทร 062-349-5577</a>
+        </p>
+        <p>
+            <a href="files/Doc6652.pdf" download>ดาวน์โหลดเอกสาร</a>
+        </p>
+    </footer>
+
+</body>
+</html>
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-
-
-
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)

@@ -223,11 +223,92 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
-```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มสมัครสมาชิก</title>
+</head>
+<body>
+    <h2>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h2>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <!-- ข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <label for="firstName">ชื่อ:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
 
-```
+            <label for="lastName">นามสกุล:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="dob">วันเกิด:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">เพศ:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="other">อื่นๆ</option>
+            </select>
+        </fieldset><br>
+
+        <!-- ข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">เบอร์โทร:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="กรุณากรอกเบอร์โทรให้ครบ 10 หลัก" required><br><br>
+
+            <label for="address">ที่อยู่จัดส่ง:</label>
+            <textarea id="address" name="address" required></textarea>
+        </fieldset><br>
+
+        <!-- รูปโปรไฟล์ -->
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <label for="profilePic">เลือกรูปโปรไฟล์:</label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+        </fieldset><br>
+
+        <!-- การยืนยันรหัสผ่าน -->
+        <fieldset>
+            <legend>การยืนยันรหัสผ่าน</legend>
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+            <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required><br><br>
+        </fieldset><br>
+
+        <!-- ความสนใจในหมวดหมู่สินค้า -->
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+            <label for="interest">หมวดหมู่ที่สนใจ:</label><br>
+            <input type="checkbox" id="electronics" name="interest" value="electronics">
+            <label for="electronics">อิเล็กทรอนิกส์</label><br>
+            <input type="checkbox" id="fashion" name="interest" value="fashion">
+            <label for="fashion">แฟชั่น</label><br>
+            <input type="checkbox" id="books" name="interest" value="books">
+            <label for="books">หนังสือ</label><br>
+            <input type="checkbox" id="toys" name="interest" value="toys">
+            <label for="toys">ของเล่น</label><br>
+        </fieldset><br>
+
+        <!-- การยอมรับเงื่อนไข -->
+        <fieldset>
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                ยอมรับเงื่อนไขการใช้งาน
+            </label>
+        </fieldset><br>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+</body>
+</html>
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-
-
-
+![alt text](image-8.png)
+![alt text](image-9.png)
