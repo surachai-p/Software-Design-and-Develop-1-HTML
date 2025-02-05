@@ -75,5 +75,6 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![hello](https://github.com/user-attachments/assets/e739927c-a89a-4ef6-bca4-094f138d3c80)
 
 
