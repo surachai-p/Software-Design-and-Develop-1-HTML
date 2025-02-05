@@ -68,8 +68,124 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ข้อมูลส่วนตัว</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>รายละเอียด</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ</td>
+                <td>นายวัทธิกร อินทองคำ</td>
+            </tr>
+            <tr>
+                <td>รหัสประจำตัวนักศึกษา</td>
+                <td>67030207</td>
+            </tr>
+            <tr>
+                <td>คณะ</td>
+                <td>ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+            </tr>
+            <tr>
+                <td>สาขา</td>
+                <td>เทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td>18 ปี</td>
+            </tr>
+            <tr>
+                <td>อีเมล</td>
+                <td>67030207@kmitl.ac.th</td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปี เกิด</td>
+                <td>20 พฤษภาคม ปี พ.ศ.2549</td>
+            </tr>
+            <tr>
+                <td>เบอร์โทร</td>
+                <td>086-306-6053</td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td>บ้านเลขที่:91/578 ตำบล:บางบัวทอง อำเภอ:บางบัวทอง จังหวัด:นนทบุรี</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+- ภาพผลลัพธ์:
+![สกรีนช็อต 2025-02-05 231456](https://github.com/user-attachments/assets/f7fe482d-dd7d-4668-9e1d-27478b7814b0)
+2.สร้างรายการเมนูอาหาร 
+[วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูอาหาร</title>
+</head>
+<body>
+
+    <h1>เมนูอาหาร</h1>
+    <h2>เมนูแนะนำ</h2>
+    <ol>
+        <li>
+            <dt>ข้าวผัด</dt>
+            <dd>หมู / ไก่ / กุ้ง / ปลาหมึก / ทะเล</dd>
+        </li>
+
+        <li>            <dt>กะเพรา</dt>
+            <dd>หมูสับ-ชิ้น/ไก่สับ-ชิ้น/ทะเล/หมูกรอบ</dd>
+        </li>
+        <li>ผัดผักรวม</li>
+    </ol>
+    <h2>เมนูข้าว</h2>
+    <ul>
+        <li>
+            <dt>ข้าวผัด</dt>
+            <dd>หมู/ไก่/กุ้ง/ปลาหมึก/ทะเล</dd>
+        </li>
+        <li>
+            <dt>กะเพรา</dt>
+            <dd>หมูสับ-ชิ้น/ไก่สับ-ชิ้น/ทะเล/หมูกรอบ</dd>
+        </li>
+        <li>
+            <dt>ผัดพริกแกง</dt>
+            <dd>หมูสับ-ชิ้น/ไก่สับ-ชิ้น/ทะเล/หมูกรอบ</dd>
+        </li>
+        <li>
+            <dt>ทอดกระทียม</dt>
+            <dd>หมู/ไก่/ปลาหมึก/กุ้ง</dd>
+        </li>
+        <li>
+            <dt>ผัดพริกหยวก</dt>
+            <dd>หมู/ไก่/ปลาหมึก/กุ้ง/ทะเล</dd>
+        </li>
+        <li>
+            <dt>ไข่เจียว</dt>
+            <dd>หมูสับ/ไก่สับ</dd>
+        </li>
+        <li>ผัดคะน้าหมูกรอบ </li>
+        <li>ผัดผักบุ้ง</li>
+        <li>ผัดผักรวม</li>
+        <li>ผัดผงกะหรี่</li>
+    </ul>
+        
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/3d350969-2245-463b-9249-1adf858daee6)
 
