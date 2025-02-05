@@ -40,5 +40,8 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 22 53 22" src="https://github.com/user-attachments/assets/eb54f5e9-9ab3-45b2-ae8c-bb64eafca42e" />
+
+
 
 
