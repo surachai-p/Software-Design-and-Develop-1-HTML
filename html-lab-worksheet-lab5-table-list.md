@@ -67,9 +67,58 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
-```html
+<table border="4">
+    <h1>ตารางชีวิตในอังคาร</h1>
+    <thead>
+        <tr>
+            <th>เวลาตื่น/นอน</th>
+            <th>เวลาเรียน</th>
+            <th>พักรับประทานข้าว</th>
+            <th>เวลาเรียน</th>
+            <th>กลับบ้านนอน</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>08:00-16:00</td>
+            <td>08:00</td>
+            <td>12:00</td>
+            <td>16:00</td>
+            <td>17:00เป็นต้นไป</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>LAB T.Piya</td>
+            <td>Enjoy Eating</td>
+            <td>Software Design</td>
+            <td>Freetime/sleep</td>
+        </tr>
+    </tbody>
+</table>
+<h1>ตามสั่งลุงเอ</h1>
+<ul>
+    <li>กระเพราไก่ไข่ดาว 50 baht</li>
+    <li>กระเพราหมูกรอบไข่ดาว 60 baht</li>
+    <li>กระเพราทะเลไข่ดาว 60 baht</li>
+    <li>กระเพราหมูสับไข่ดาว 50 baht</li>
+</ul>
+
+<ol>
+    <li>กระเพราไก่ไข่ดาว 50 baht</li>
+    <li>กระเพราหมูกรอบไข่ดาว 60 baht</li>
+    <li>กระเพราทะเลไข่ดาว 60 baht</li>
+    <li>กระเพราหมูสับไข่ดาว 50 baht</li>
+</ol>
+
+<dl>
+    <dt>เจ๊แต๋ว</dt>
+    <dd>สั่งกระเพราหมูสับไข่ดาว</dd>
+    <dt>ลุงตู่</dt>
+    <dd>สั่งกระเพราหมูกรอบไข่ดาว</dd>
+</dl>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![{E389F22B-2713-48BC-9F5D-337969879D1B}](https://github.com/user-attachments/assets/885a1e0c-3606-4b4a-a3ef-6488a99df2b5)
+
 
