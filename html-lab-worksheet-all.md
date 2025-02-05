@@ -75,7 +75,7 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![alt text](image-1.png)
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
 ### ขั้นตอนการทดลอง
@@ -114,10 +114,23 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to NATTHAPONG WEB PAGES </h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-  
+![alt text](image-2.png)  
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
 1. ทดลองใช้ tag ต่างๆ:
@@ -150,9 +163,190 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to NATTHAPONG WEB PAGES </h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![alt text](image-3.png)
+## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
+
+### การเตรียมโครงสร้างโฟลเดอร์และไฟล์
+1. สร้างโครงสร้างโฟลเดอร์:
+   ```
+   html-workshop/
+   ├── index.html
+   ├── pages/
+   │   ├── about.html
+   │   └── contact.html
+   ├── images/
+   │   ├── logo.jpg
+   │   └── products/
+   │       ├── product1.jpg
+   │       └── product2.jpg
+   └── files/
+       └── document.pdf
+   ```
+
+2. ขั้นตอนการสร้างโครงสร้าง:
+   - คลิกขวาในโฟลเดอร์ html-workshop > New Folder > สร้าง "pages"
+   - คลิกขวาในโฟลเดอร์ html-workshop > New Folder > สร้าง "images"
+   - ในโฟลเดอร์ images > New Folder > สร้าง "products"
+   - คลิกขวาในโฟลเดอร์ html-workshop > New Folder > สร้าง "files"
+
+3. สร้างไฟล์ HTML:
+   - ในโฟลเดอร์หลัก: สร้าง index.html (ใช้ไฟล์เดิมที่มีได้)
+   - ในโฟลเดอร์ pages: สร้าง about.html และ contact.html
+
+4. จัดเตรียมไฟล์:
+   - นำรูปภาพที่ต้องการใช้ไปไว้ในโฟลเดอร์ images
+   - นำรูปภาพสินค้าไปไว้ในโฟลเดอร์ products
+   - นำไฟล์เอกสารไปไว้ในโฟลเดอร์ files
+
+### ขั้นตอนการทดลอง
+
+#### ส่วนที่ 1: การสร้างลิงก์
+1. เปิดไฟล์ index.html และใส่โครงสร้างพื้นฐาน:
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <!-- ส่วนของเนื้อหา -->
+</body>
+</html>
+```
+
+2. สร้างเมนูนำทางพื้นฐาน:
+```html
+<nav>
+    <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+    <a href="https://www.google.com" target="_blank">
+        ไปยัง Google
+    </a>
+</nav>
+```
+คำอธิบาย:
+- `href="..."` - กำหนดเส้นทางของลิงก์
+- `target="_blank"` - เปิดลิงก์ในแท็บใหม่
+
+3. สร้างลิงก์ภายในหน้าเดียวกัน:
+```html
+<!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>เนื้อหาส่วนบน</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+
+<!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<a href="#top">กลับด้านบน</a>
+<a href="#products">ไปยังสินค้า</a>
+```
+คำอธิบาย:
+- `id="..."` - กำหนดจุดเชื่อมโยง
+- `href="#..."` - ลิงก์ไปยัง id ที่กำหนด
+
+4. สร้างลิงก์พิเศษ:
+```html
+<!-- ลิงก์อีเมล -->
+<a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+
+<!-- ลิงก์โทรศัพท์ -->
+<a href="tel:+66812345678">โทร 081-234-5678</a>
+
+<!-- ลิงก์ดาวน์โหลด -->
+<a href="files/document.pdf" download>
+    ดาวน์โหลดเอกสาร
+</a>
+```
+คำอธิบาย:
+- `mailto:` - เปิดโปรแกรมอีเมล
+- `tel:` - เปิดโปรแกรมโทรศัพท์
+- `download` - ดาวน์โหลดไฟล์แทนการเปิด
+
+#### ส่วนที่ 2: การแทรกรูปภาพ
+1. แทรกรูปภาพพื้นฐาน:
+```html
+<!-- รูปภาพในโฟลเดอร์ images -->
+<img src="images/logo.jpg" 
+     alt="โลโก้บริษัท"
+     width="200">
+
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+<img src="images/products/product1.jpg" 
+     alt="สินค้าชิ้นที่ 1"
+     width="300"
+     height="200">
+```
+คำอธิบาย:
+- `src="..."` - ระบุตำแหน่งของรูปภาพ
+- `alt="..."` - ข้อความทดแทนเมื่อไม่สามารถแสดงรูปได้
+- `width="..."` - กำหนดความกว้าง
+- `height="..."` - กำหนดความสูง
+
+2. ใช้ figure และ figcaption:
+```html
+<figure>
+    <img src="images/products/product2.jpg" 
+         alt="สินค้าชิ้นที่ 2">
+    <figcaption>
+        รายละเอียดสินค้าชิ้นที่ 2
+    </figcaption>
+</figure>
+```
+คำอธิบาย:
+- `<figure>` - จัดกลุ่มรูปภาพและคำอธิบาย
+- `<figcaption>` - คำอธิบายประกอบรูปภาพ
+
+3. สร้างรูปภาพที่คลิกได้:
+```html
+<a href="images/products/product1.jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+</a>
+```
+
+### หมายเหตุ
+- ตรวจสอบการสะกดชื่อไฟล์และโฟลเดอร์ให้ถูกต้อง
+- path ของรูปภาพต้องถูกต้องตามโครงสร้างโฟลเดอร์
+- ทดสอบการทำงานของลิงก์ทุกจุด
+
+### แบบฝึกหัด
+1. สร้างแกลเลอรีสินค้า:
+   - สร้างโฟลเดอร์ images/gallery
+   - ใส่รูปภาพอย่างน้อย 4 รูป
+   - แต่ละรูปต้องคลิกดูขนาดใหญ่ได้
+   - มีคำอธิบายใต้รูป
+   - มีปุ่มกลับด้านบน
+
+### บันทึกผลการทดลอง
+- รหัสเอกสาร HTML ที่เขียน:
+```html
+[วางโค้ด HTML ที่นี่]
+```# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -320,9 +514,144 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PRODUCTS OF AIRPODS</title>
+    <!-- นำเข้า Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        nav, section, figure, figcaption {
+            margin-bottom: 20px;
+        }
+        nav img {
+            vertical-align: middle;
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+        }
+        figure {
+            text-align: center;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+       
+        <!-- รูปภาพในโฟลเดอร์ images -->
+            <img src="images/logo.png" 
+            alt="โลโก้บริษัท"
+            height="80"
+            width="80">
+            <a href="index.html">หน้าหลัก</a>
+        <a href="test.html">กลับ</a>
+        
+        <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+        <a href="https://www.google.com" target="_blank">
+            ไปยัง Google
+        </a>
+    </nav>
+    <!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>AirPods จาก Apple</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของทางร้านเรา</h2>
+</section>
+
+<!-- กล่องใส่สินค้า -->
+<figure>
+    <!-- รูปภาพที่กดเพื่อดูขนาดใหญ่ -->
+    <a href="images/products/3.jpg">
+        <img src="images/products/3.jpg" 
+             alt="AirPods Pro"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>AirPods Pro</strong>
+        คุณสมบัติ: ระบบตัดเสียงรบกวนแบบ Active, โหมดฟังเสียงภายนอก, กันน้ำและเหงื่อ
+        จุดเด่น:
+        คุณภาพเสียงระดับสูงพร้อม Adaptive EQ
+        ระบบตัดเสียงรบกวนที่ปรับตามสภาพแวดล้อม
+        ชาร์จไร้สายและแบตเตอรี่ใช้ได้นาน</figcaption>
+</figure>
+<hr>
+
+<figure>
+    <a href="images/products/2.jpg">
+        <img src="images/products/2.jpg" 
+             alt="AirPods (รุ่นที่ 3)"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>AirPods (รุ่นที่ 3)</strong>
+        คุณสมบัติ: เสียงรอบทิศทาง, Adaptive EQ, กันน้ำและเหงื่อ
+        จุดเด่น:
+        เสียงทรงพลังและสมดุล
+        ดีไซน์ใหม่ที่กระชับพอดี
+        รองรับการชาร์จ MagSafe</figcaption>
+</figure>
+
+<figure>
+<hr>
+    <a href="images/products/5.jpg">
+    <img src="images/products/5.jpg" 
+         alt="AirPods Max"
+         width="300"
+         height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>AirPods Max</strong>
+        คุณสมบัติ: ระบบตัดเสียงรบกวนแบบ Active, เสียงรอบทิศทาง, โหมดฟังเสียงภายนอก
+        จุดเด่น:
+        คุณภาพเสียง Hi-Fi ระดับสตูดิโอ
+        ดีไซน์พรีเมียมและความสบายเมื่อสวมใส่
+        แบตเตอรี่ใช้งานได้นาน</figcaption>
+</figure>
+
+<hr>
+<figure>
+    <!-- รูปภาพที่กดเพื่อดูขนาดใหญ่ -->
+    <a href="images/products/1.jpg">
+        <img src="images/products/1.jpg" 
+             alt="AirPods (รุ่นที่ 2)"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>AirPods (รุ่นที่ 2)</strong>
+        คุณสมบัติ: ชิป H1, เปิดใช้งาน Siri ด้วยเสียง, แบตเตอรี่ใช้ได้นาน
+        จุดเด่น:
+        สลับอุปกรณ์อย่างราบรื่น
+        คุณภาพเสียงดีและความสะดวกในการใช้งาน
+        ชาร์จเร็วและรองรับชาร์จไร้สาย</figcaption>
+</figure>
+<hr>
+
+</body>
+</html>
+
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![alt text](image.png)
+
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -392,12 +721,45 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
-```html
+```<table border="1">
+    <thead>
+        <tr>
+            <th>ข้อมูล</th>
+            <th>รายละเอียด</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ชื่อ</td>
+            <td>ณัฐพงศ์ เนียมประดิษฐ</td>
+        </tr>
+        <tr>
+            <td>อายุ</td>
+            <td>19 ปี</td>
+        </tr>
+        <tr>
+            <td>อาชีพ</td>
+            <td>นักศึกษาชั้นปีที่ 1 สจล.</td>
+        </tr>
+        <tr>
+            <td>ที่อยู่</td>
+            <td>บ้านเลขที่ 20/2 หมู่ 9 ตำบลหัวสะพาน อำเภอเมือง จังหวัดเพชรบุรี 76000</td>
+        </tr>
+    </tbody>
+</table>
+<h1>อาหารที่ชอบรับประทาน</h1>
+<ul>
+    <li>หมี่คลุกไก่ฉีก</li>
+    <li>หมูทอดกระเทียม</li>
+    <li>ต้มยำน้ำข้น</li>
+    <li>ข้าวผัดปู</li>
+    <li>สเต็กหมู</li>
+</ul>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](image-4.png)
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
@@ -622,10 +984,166 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+    <script>
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var passwordPattern = /^(?=.*[!@#\$%\^&\*])/;
+
+            if (password !== confirmPassword) {
+                alert("รหัสผ่านและยืนยันรหัสผ่านไม่ตรงกัน!");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร!");
+                return false;
+            }
+
+            if (!passwordPattern.test(password)) {
+                alert("รหัสผ่านต้องมีตัวอักษรพิเศษอย่างน้อยหนึ่งตัว!");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="/register" method="post" onsubmit="return validatePassword()">
+        <!-- ส่วนข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+    
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" required></textarea> 
+                <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนรหัสผ่าน -->
+        <fieldset>
+            <legend>สร้างรหัสผ่าน</legend>
+    
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนความสนใจในหมวดหมู่สินค้า -->
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+    
+            <div class="form-group">
+                <label>หมวดหมู่สินค้า:</label>
+                <input type="checkbox" id="electronics" name="interests" value="electronics">
+                <label for="electronics">อิเล็กทรอนิกส์</label>
+                <input type="checkbox" id="fashion" name="interests" value="fashion">
+                <label for="fashion">แฟชั่น</label>
+                <input type="checkbox" id="home" name="interests" value="home">
+                <label for="home">ของใช้ในบ้าน</label>
+                <input type="checkbox" id="beauty" name="interests" value="beauty">
+                <label for="beauty">ความงาม</label>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนอัพโหลดรูปโปรไฟล์ -->
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="profilePicture">อัพโหลดรูปโปรไฟล์:</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+                <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนยืนยันข้อมูล -->
+        <fieldset>
+            <legend>การยืนยัน</legend>
+    
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน</label>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit">ลงทะเบียน</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](image-5.png)
 
 ## การทดลองที่ 7: HTML Layout
 ### วัตถุประสงค์
@@ -713,4 +1231,4 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![alt text](image-7.png)
