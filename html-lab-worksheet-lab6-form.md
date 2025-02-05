@@ -222,12 +222,187 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
-```html
+    <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+
+    <body>
+        <form action="/register" method="post">
+            <!-- ส่วนข้อมูลส่วนตัว -->
+            <fieldset>
+                <legend>สมัครงานคนขับรถ</legend>
+                <div class="form-group">
+                    <label for="prefix">คำนำหน้า:</label>
+                     <select id="prefix" name="prefix" required>
+                        <option value="">เลือกคำนำหน้า</option>
+                        <option value="mr">นาย</option>
+                        <option value="ms">นางสาว</option>
+                        <option value="mrs">นาง</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="firstName">ชื่อ:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lastName">นามสกุล:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ages">อายุ:</label>
+                    <input type="number" id="ages" name="ages" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+        
+                <div class="form-group">
+                    <label>เพศ:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลการติดต่อ -->
+            <fieldset>
+                <legend>ข้อมูลการติดต่อ</legend>
+        
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           pattern="[0-9]{10}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">ที่อยู่:</label>
+                    <textarea id="address" name="address" 
+                              rows="3" required></textarea> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลการศึกษา -->
+            <fieldset>
+                <legend>ข้อมูลการศึกษา</legend>
+        
+                <div class="form-group">
+                    <label for="University">จบการศึกษาที่:</label>
+                    <select id="University" name="University" required>
+                        <option value="University">เลือกมหาวิทยาลัย</option>
+                        <option value="KMITL">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</option>
+                        <option value="KMUTT">มหาวิทยาลัยพระจอมเกล้าธนบุรี</option>
+                        <option value="KMUTNB">มหาวิทยาลัยพระจอมเกล้าพระนครเหนือ</option>
+                    </select> <span class="required-mark">*</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="faculty">คณะ:</label>
+                    <select id="faculty" name="faculty" required>
+                        <option value="">เลือกคณะ</option>
+                        <option value="siet">ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</option>
+                        <option value="engineering">วิศวกรรมศาสตร์</option>
+                        <option value="science">วิทยาศาสตร์</option>
+                    </select> <span class="required-mark">*</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="major">สาขาวิชา:</label>
+                    <select id="major" name="major" required>
+                        <option value="">เลือกสาขาวิชา</option>
+                        <option value="computer">เทคโนโลยีคอมพิวเตอร์</option>
+                        <option value="electronics">อิเล็กทรอนิกส์</option>
+                        <option value="architect">สถาปัตย์</option>
+                        <!-- ตัวเลือกจะเปลี่ยนตามคณะที่เลือก ส่วนนี้ Code ยังไม่สมบูรณ์-->
+                    </select> <span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="gpa">เกรดเฉลี่ยสะสม:</label>
+                    <input type="number" id="gpa" name="gpa" 
+                           min="0" max="4" step="0.01" required> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนความสนใจและกิจกรรม -->
+            <fieldset>
+                <legend>ความสนใจในงานและประเภท</legend>
+        
+                <div class="form-group">
+                    <label>ความสนใจ:</label>
+                    <input type="checkbox" id="vehicle" name="Truck" value="Basic Luxury">
+                    <label for="vehicle">Van</label>
+                    <input type="checkbox" id="vehicle" name="sedan" value="mudium Luxury">
+                    <label for="vehicle">sedan</label>
+                    <input type="checkbox" id="vehicle" name="SUV" value="Luxury">
+                    <label for="vehicle">SUV</label>
+                    <input type="checkbox" id="vehicle" name="Limousine" value="Luxury">
+                    <label for="vehicle">Limousine</label>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนอัพโหลดเอกสาร -->
+            <fieldset>
+                <legend>เอกสารประกอบ</legend>
+                <div class="form-group">
+                    <label for="photo">รูปถ่าย:</label>
+                    <input type="file" id="photo" name="photo" 
+                           accept="image/*" required><span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="transcript">ใบแสดงผลงาน/ผลการเรียน:</label>
+                    <input type="file" id="transcript" name="transcript" 
+                           accept=".pdf,.doc,.docx" required>
+                           <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนยืนยันข้อมูล -->
+            <fieldset>
+                <legend>การยืนยัน</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        ข้าพเจ้ายืนยันว่าข้อมูลทั้งหมดเป็นความจริง
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">ลงทะเบียน</button>
+                    <button type="reset">ล้างข้อมูล</button>
+                </div>
+            </fieldset>
+        </form>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![{6DA97F33-B501-4698-8250-9A46B5AD5F37}](https://github.com/user-attachments/assets/9f67d2ab-1c0b-464e-8069-1e566269bf30)
+
 
 
 
