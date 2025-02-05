@@ -74,7 +74,8 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![image](https://github.com/user-attachments/assets/830783f4-fd32-4d03-b41e-7f0861517f1e)
+]
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +114,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ...... ("Wisawa") web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![image](https://github.com/user-attachments/assets/9b268969-7417-4f7d-acc3-91729c74187c)
+]
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +164,19 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<h1>Wisawa Kamjorn</h1>
+<br>
+<h2>ประวัติการศึกษา</h2>
+<pre>
+    เคยศึกษาอยู่ โรงเรียนพรตพิทยพยัต
+</pre>
+<strong>งานอดิเรก:ชอบเล่นGame</strong>
+<p>เป้าหมายในอนาคต<strong>สร้างบ้านใหม่</strong>และ<em>มีอาชีพที่มั่นคง</em></p>
+<hr>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![image](https://github.com/user-attachments/assets/6ee9b702-e912-42c1-8311-f09e6c9da895)
+]
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +343,83 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <!-- ส่วนของเนื้อหา -->
+</body>
+</html>
+<!-- รูปภาพในโฟลเดอร์ images -->
+<img src="images/bbb.png" 
+     width="50">ร้านค้าเถื่อน
+
+<!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>ขนมกรุปกรอบ</h1>
+</section>
+
+
+<a href="#products">ไปยังสินค้า</a>
+
+
+
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+<p>รายการที่1</p>
+<p><img src="images/ดาวน์โหลด.jpg" 
+     width="200"
+     height="200">
+     <p>เลย์รสสาหร่าย</p>
+    </figcaption>
+</figure>
+<a href="images/ดาวน์โหลด.jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+<p>รายการที่2</p>
+<p><img src="images/ดาวน์โหลด (1).jpg" 
+     width="200"
+     height="200">
+<p>เลย์รสหมึกย่างฮอตชิลลี่</p>
+</figcaption>
+</figure>
+<a href="images/ดาวน์โหลด (1).jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+<p>รายการที่3</p>
+<p><img src="images/ดาวน์โหลด (2).jpg" 
+     width="200"
+     height="200">
+<p>เลย์รสเอ็กซ์ตร้าบาร์บีคิว</p>
+</figcaption>
+</figure>
+<a href="images/ดาวน์โหลด (2).jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+<p>รายการที่4</p>
+<p><img src="images/ดาวน์โหลด (3).jpg" 
+     width="200"
+     height="200">
+<p>เลย์รสซาวครีมและหัวหอม</p>
+ </figcaption>
+    </figure>
+    <a href="images/ดาวน์โหลด (3).jpg">
+        <img src="images/products/product1.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+    </a>
+    <!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<p><a href="#top">กลับด้านบน</a></p>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![image](https://github.com/user-attachments/assets/98804ff1-b75c-4289-84a0-9efbe40e6337)
+![image](https://github.com/user-attachments/assets/b1f707bc-1a4d-4a77-ade3-237d68881a8f)
+]
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -390,13 +487,265 @@
 ### แบบฝึกหัด
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
-
-[วางโค้ด HTML ที่นี่]
+[- ภาพผลลัพธ์:]
+[![image](https://github.com/user-attachments/assets/38f61acc-4e6c-4d76-92c0-c73f1256f25e)
+]
+[-วางโค้ด HTML ที่นี่]
+[
+<p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ชื่อ-นามสกุล</th>
+            <th>วิศวะ กำจร</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>อายุ</td>
+            <td>19ปี</td>
+        </tr>
+        <tr>
+            <td>ส่วนสูง</td>
+            <td>167เซนติเมตร</td>
+        </tr>
+        <tr>
+            <td>น้ำหนัก</td>
+            <td>63กิโลกรัม</td>
+            <tr>
+                <td>ศาสนา</td>
+                <td>พุทธ</td>
+                <tr>
+                    <td>สัญชาติ</td>
+                    <td>ไทย</td>
+                </tr>
+            </tr>
+        </tr>
+    </tbody>
+</table>
+<pre></p>
+    
+    <table border="2">
+    <thead>
+        <tr>
+            <th>
+             <pre>       รายการอาหาร       </pre></th>
+             <tr>
+                <td>ผัดกระเพรา</td>
+                <td>40บาท</td>
+            </tr>
+            <tr>
+                <td>ผัดกระเพราไข่ดาว</td>
+                <td>50บาท</td>
+            </tr>
+            <tr>
+                <td>ข้าวผัด</td>
+                <td>45บาท</td>
+            </tr>
+            <tr>
+                <td>ข้าวมันไก่</td>
+                <td>40บาท</td>
+            </tr>
+            <tr>
+                <td>ข้าวมันไก่ทอด</td>
+                <td>40บาท</td>
+            </tr>
+        </tr> 
+    </tbody>
+</table>
+</pre>]
 ```html
 
 ```
-- ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+
+
+
+## การทดลองที่ 6: การสร้างฟอร์ม
+### วัตถุประสงค์
+- สร้างฟอร์มรับข้อมูลได้ตามกำหนด
+- เลือกใช้ประเภทของ input แบบต่างๆ ได้เหมาะสม
+- สามารถใช้งาน form validation ได้
+
+### ขั้นตอนการทดลอง
+1. สร้างฟอร์มลงทะเบียนนักศึกษา:
+```html
+    <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+  <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+
+    <body>
+        <form action="/register" method="post">
+            <!-- ส่วนข้อมูลส่วนตัว -->
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                
+                <div class="form-group">
+                    <label for="studentId">รหัสนักศึกษา:</label>
+                    <input type="text" id="studentId" name="studentId" 
+                           pattern="[0-9]{8}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="prefix">คำนำหน้า:</label>
+                     <select id="prefix" name="prefix" required>
+                        <option value="">เลือกคำนำหน้า</option>
+                        <option value="mr">นาย</option>
+                        <option value="ms">นางสาว</option>
+                        <option value="mrs">นาง</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="firstName">ชื่อ:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lastName">นามสกุล:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+        
+                <div class="form-group">
+                    <label>เพศ:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลการติดต่อ -->
+            <fieldset>
+                <legend>ข้อมูลการติดต่อ</legend>
+        
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           pattern="[0-9]{10}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">ที่อยู่:</label>
+                    <textarea id="address" name="address" 
+                              rows="3" required></textarea> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลการศึกษา -->
+            <fieldset>
+                <legend>ข้อมูลการศึกษา</legend>
+        
+                <div class="form-group">
+                    <label for="faculty">คณะ:</label>
+                    <select id="faculty" name="faculty" required>
+                        <option value="">เลือกคณะ</option>
+                        <option value="siet">ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</option>
+                        <option value="engineering">วิศวกรรมศาสตร์</option>
+                        <option value="science">วิทยาศาสตร์</option>
+                    </select> <span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="major">สาขาวิชา:</label>
+                    <select id="major" name="major" required>
+                        <option value="">เลือกสาขาวิชา</option>
+                        <!-- ตัวเลือกจะเปลี่ยนตามคณะที่เลือก ส่วนนี้ Code ยังไม่สมบูรณ์-->
+                    </select> <span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="gpa">เกรดเฉลี่ยสะสม:</label>
+                    <input type="number" id="gpa" name="gpa" 
+                           min="0" max="4" step="0.01" required> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนความสนใจและกิจกรรม -->
+            <fieldset>
+                <legend>ความสนใจและกิจกรรม</legend>
+        
+                <div class="form-group">
+                    <label>ความสนใจ:</label>
+                    <input type="checkbox" id="sport" name="interests" value="sport">
+                    <label for="sport">กีฬา</label>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">ดนตรี</label>
+                    <input type="checkbox" id="art" name="interests" value="art">
+                    <label for="art">ศิลปะ</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">เทคโนโลยี</label>
+                </div>
+        
+                <div class="form-group">
+                    <label for="club">ชมรมที่สนใจ:</label>
+                    <select id="club" name="club" multiple>
+                        <option value="computer">ชมรมคอมพิวเตอร์</option>
+                        <option value="robot">ชมรมหุ่นยนต์</option>
+                        <option value="sport">ชมรมกีฬา</option>
+                        <option value="music">ชมรมดนตรี</option>
+                    </select>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนอัพโหลดเอกสาร -->
+            <fieldset>
+                <legend>เอกสารประกอบ</legend>
+                <div class="form-group">
+                    <label for="photo">รูปถ่าย:</label>
+                    <input type="file" id="photo" name="photo" 
+                           accept="image/*" required><span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="transcript">ใบแสดงผลการเรียน:</label>
+                    <input type="file" id="transcript" name="transcript" 
+                           accept=".pdf,.doc,.docx" required>
+                           <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนยืนยันข้อมูล -->
+            <fieldset>
+                <legend>การยืนยัน</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        ข้าพเจ้ายืนยันว่าข้อมูลทั้งหมดเป็นความจริง
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">ลงทะเบียน</button>
+                    <button type="reset">ล้างข้อมูล</button>
+                </div>
+            </fieldset>
+        </form>]
+
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,10 +970,157 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[้<h1>Shopping</h1>
+<!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .required-mark {
+        color: red;
+        margin-left: 5px;
+    }
+</style>
+
+<body>
+    <form action="/register" method="post">
+        <!-- ส่วนข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+    
+            <div class="form-group">
+                <label for="prefix">คำนำหน้า:</label>
+                 <select id="prefix" name="prefix" required>
+                    <option value="">เลือกคำนำหน้า</option>
+                    <option value="mr">นาย</option>
+                    <option value="ms">นางสาว</option>
+                    <option value="mrs">นาง</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+    
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" 
+                       pattern="[0-9]{10}" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">ที่อยู่:</label>
+                <textarea id="address" name="address" 
+                          rows="3" required></textarea> <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนข้อมูลการศึกษา -->
+        <fieldset>
+            <legend>สร้างบัญชี</legend>
+            <div class="container">
+                <h2>สมัครสมาชิก</h2>
+                <form id="registerForm">
+                    <label for="email">อีเมล</label>
+                    <input type="email" id="email" required>
+                    <div class="error" id="emailError"></div>
+        
+                    <label for="password">รหัสผ่าน</label>
+                    <input type="password" id="password" required>
+                    <div class="error" id="passwordError"></div>
+        
+                    <label for="confirmPassword">ยืนยันรหัสผ่าน</label>
+                    <input type="password" id="confirmPassword" required>
+                    <div class="error" id="confirmPasswordError"></div>
+        
+                    <button type="submit">สมัครสมาชิก</button>
+                </form>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนความสนใจและกิจกรรม -->
+        <fieldset>
+            <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+    
+            <div class="form-group">
+                <label>ความสนใจ:</label>
+                <input type="checkbox" id="sport" name="interests" value="sport">
+                <label for="sport">กระเป๋า</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">เสื้อ</label>
+                <input type="checkbox" id="art" name="interests" value="art">
+                <label for="art">กางเกง</label>
+                <input type="checkbox" id="tech" name="interests" value="tech">
+                <label for="tech">หมวก</label>
+            </div>
+    
+        <!-- ส่วนอัพโหลดเอกสาร -->
+        <fieldset>
+            <legend>โปรไฟล์ของท่าน</legend>
+            <div class="form-group">
+                <label for="photo">รูปภาพ:</label>
+                <input type="file" id="photo" name="photo" 
+                       accept="image/*" required><span class="required-mark">*</span>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนยืนยันข้อมูล -->
+        <fieldset>
+            <legend>การยืนยัน</legend>
+    
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">
+                    ข้าพเจ้ายอมรับเงื่อนไขทั้งหมด
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit">ลงทะเบียน</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+    </form>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![image](https://github.com/user-attachments/assets/c1ea4ea5-8c6f-463d-9865-9adf2893d106)
+![image](https://github.com/user-attachments/assets/10355e09-bdb9-4342-a108-41cfe7913f91)
+]
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -713,4 +1209,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/cab66a4c-bd7c-4262-803a-60a617ae706a)
 
