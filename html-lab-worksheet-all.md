@@ -165,10 +165,34 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>About Me</title>
+   </head> 
+   <body>
+    <h1>ข้อมูลส่วนตัว</h1>
+    <p>ชื่อ - นามสกุล : ธณัทอร ศรีภูธร <br> อายุ : 19 ปี 
+    </p>
+    <hr>
+
+    <h2>ประวัติการศึกษา</h2>
+    <p>จบการศึกษาจากโรงเรียนนวมินทราชินูทิศ บดินทรเดชา <br>
+        กำลังศึกษาที่คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขาเทคโนโลยีคอมพิวเตอร์
+    </p>
+    <hr>
+
+    <h2>งานอดิเรก</h2>
+    <p>ฟังเพลง <br> อ่านนิยาย <br> ศึกษาเกี่ยวกับการแข่งหุ่นยนต์
+    </p>
+    <hr>
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>ในอนาคตอยากทำงานเป็นติวเตอร์ในสายเทคโนโลยี เกี่ยวกับหุ่นยนต์และปัญญาประดิษฐ์</p>
+   </body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="1920" alt="Screenshot 2568-02-05 at 21 40 27" src="https://github.com/user-attachments/assets/c25acd86-4604-4c82-8a17-4fc7b4d8c21f" />
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -335,10 +359,55 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีสินค้า</title>
+</head>
+<body>
+
+    <h1>แกลเลอรีสินค้า</h1>
+
+    <div>
+        <a href="images/gallery/robot1.png">
+            <img src="images/gallery/robot1.png" 
+                 alt="คลิกเพื่อดูรูปขนาดใหญ่"
+                 width="200">
+        </a>
+        <figcaption>คำอธิบายสินค้า 1 <br> ชุดเรียนรู้วิทยาการคำนวณเชิงปฏิบัติการด้วยหุ่นยนต์ (ภายใต้ความร่วมมือกับสถาบันส่งเสริมการสอนวิทยาศาสตร์และเทคโนโลยี – สสวท.)</figcaption>
+        <hr>
+        <a href="images/gallery/robot2.png">
+            <img src="images/gallery/robot2.png" 
+                 alt="คลิกเพื่อดูรูปขนาดใหญ่"
+                 width="200">
+        </a>
+        <figcaption>คำอธิบายสินค้า 2 <br> ชุดอุปกรณ์เรียนรู้และพัฒนาโปรแกรมควบคุมหุ่นยนต์เพื่อการแข่งขันพื้นฐาน</figcaption>
+        <hr>
+        <a href="images/gallery/robot3.png">
+            <img src="images/gallery/robot3.png" 
+                 alt="คลิกเพื่อดูรูปขนาดใหญ่"
+                 width="200">
+        </a>
+        <figcaption>คำอธิบายสินค้า 3 <br> ชุดอุปกรณ์เรียนรู้และพัฒนาโปรแกรมภาษา C/C++ ควบคุมหุ่นยนต์สำหรับการแข่งขันหุ่นยนต์เตะบอลด้วยบอร์ด POP32i <br>
+                ชุดแนะนำสำหรับการแข่งขัน WRG2024 ประเภท หุ่นยนต์ฟุตบอลอัตโนมัติ 1×1 (Soccer Robot 1×1)</figcaption>
+        <hr>
+       <a href="images/gallery/robot4.png">
+            <img src="images/gallery/robot4.png" 
+                 alt="คลิกเพื่อดูรูปขนาดใหญ่"
+                 width="200">
+        </a>
+        <figcaption>คำอธิบายสินค้า 4 <br> ชุดอุปกรณ์เรียนรู้และพัฒนาโปรแกรมภาษา C/C++ ควบคุมหุ่นยนต์รุ่นพื้นฐานพิเศษด้วยบอร์ด POP32i</figcaption>
+    </div>
+
+    <a href="#">กลับไปข้างบน</a>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/94cb28eb-84a1-4aef-9564-517b59051e7f)
+
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -409,10 +478,55 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนตัว & เมนูอาหาร</title>
+    
+</head>
+<body>
 
+    <h2>ข้อมูลส่วนตัว</h2>
+    <table border="1">
+        <tr>
+            <th>หัวข้อ</th>
+            <th>รายละเอียด</th>
+        </tr>
+        <tr>
+            <td>ชื่อ</td>
+            <td>ธณัทอร ศรีภูธร</td>
+        </tr>
+        <tr>
+            <td>อายุ</td>
+            <td>19 ปี</td>
+        </tr>
+        <tr>
+            <td>ชื่อเล่น</td>
+            <td>เนย</td>
+        </tr>
+        <tr>
+            <td>อีเมล</td>
+            <td>Thanuton.noei2@gmail.com</td>
+        </tr>
+    </table>
+
+    <h2>เมนูอาหาร</h2>
+    <ul>
+        <li>ก๋วยเตี๋ยวเรือ </li>
+        <li>ข้าวผัดกุ้ง </li>
+        <li>ข้าวกะเพราหมูกรอบ </li>
+        <li>ไก่ทอด </li>
+        <li>น้ำผลไม้ </li>
+    </ul>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/23c72c8e-9c4d-4d96-a1a4-e68da0b526f2)
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -638,9 +752,127 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">สมัครสมาชิก</h2>
+
+    <form id="registerForm">
+        <!-- ข้อมูลส่วนตัว -->
+        <label for="fullname">ชื่อ-นามสกุล:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="dob">วันเกิด:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">เพศ:</label>
+        <select id="gender" name="gender" required>
+            <option value="">เลือกเพศ</option>
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่นๆ</option>
+        </select>
+
+        <!-- ข้อมูลการติดต่อ -->
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">เบอร์โทร:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="กรอกหมายเลข 10 หลัก" required>
+
+        <label for="address">ที่อยู่จัดส่ง:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <!-- อัปโหลดรูปโปรไฟล์ -->
+        <label for="profilePic">รูปโปรไฟล์:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+
+        <!-- การตั้งค่ารหัสผ่าน -->
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <!-- หมวดหมู่สินค้าที่สนใจ -->
+        <label for="category">ความสนใจในหมวดหมู่สินค้า:</label>
+        <select id="category" name="category" required>
+            <option value="">เลือกหมวดหมู่</option>
+            <option value="electronics">อิเล็กทรอนิกส์</option>
+            <option value="fashion">แฟชั่น</option>
+            <option value="home">เครื่องใช้ในบ้าน</option>
+        </select>
+
+        <!-- การยอมรับเงื่อนไข -->
+        <label>
+            <input type="checkbox" id="terms" name="terms" required> ยอมรับเงื่อนไขการใช้งาน
+        </label>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let profilePic = document.getElementById("profilePic").files[0];
+
+            if (password !== confirmPassword) {
+                alert("รหัสผ่านไม่ตรงกัน!");
+                event.preventDefault();
+            }
+
+            if (profilePic && profilePic.size > 2 * 1024 * 1024) { // ตรวจสอบขนาดไฟล์ (2MB)
+                alert("ขนาดไฟล์รูปภาพต้องไม่เกิน 2MB!");
+                event.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/6abe1651-64cb-42cb-b698-0f25bf758e30)
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -729,4 +961,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/bc5b790b-38d3-4eb9-b559-b850c346715c)
 
