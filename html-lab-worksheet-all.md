@@ -74,7 +74,8 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-03 เวลา 23 00 34" src="https://github.com/user-attachments/assets/e26d4969-ecf9-431a-a0cb-02b6ca9e55f5" />
+
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +114,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ...... Ittikorn web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-03 เวลา 23 48 01" src="https://github.com/user-attachments/assets/771a8102-1d9b-45fe-807a-b6ec5baa2644" />
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +164,21 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<h1>แนะนำตัวเอง</h1>
+<h2>นายอิทธิกร ทองสิมา</h2>
+<p>ชื่อเล่น <strong>ไอซ์</strong> และ <em>Ice</em></p>
+<hr>
+<pre>
+    ประวัติการศึกษา : มัธยมศึกษาปีที่ 6 วิทย์-คณิต โรงเรียนนาคประสิทธิ์
+    งานอดิเรก : เล่นเกม
+    พัฒนาทักษะส่วนบุคคล: เรียนรู้และฝึกฝนทักษะใหม่ ๆ
+    พัฒนาอาชีพ: ตั้งเป้าหมายในอาชีพและสร้างเครือข่าย
+    พัฒนาสุขภาพ: ออกกำลังกายและดูแลสุขภาพจิต
+</pre>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-03 เวลา 23 59 15" src="https://github.com/user-attachments/assets/06f05655-577e-486a-917b-a47c4b95a9ed" />
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,11 +345,59 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <section id="top">
+        <h1>ร้านขนม</h1>
+    </section>
+
+    
+
+    <a href="images/gallery/product1.jpg">
+        <img src="images/gallery/product1.jpg" 
+             alt="สินค้าชิ้นที่ 1"
+             width="300"
+             height="200">
+    </a>
+    <p>เค้กกล้วยบลูเบอรี่ทำจากกล้วยสุกและบลูเบอรี่สด ผสมแป้ง น้ำตาล และไข่ มีรสชาติหวานหอมจากกล้วยและความเปรี้ยวจากบลูเบอรี่ ทำให้เค้กนี้อร่อยและมีประโยชน์ต่อสุขภาพ</p>
+
+
+    <a href="images/gallery/product2.jpg">
+        <img src="images/gallery/product2.jpg" 
+             alt="สินค้าชิ้นที่ 2"
+             width="300"
+             height="200">
+    </a>
+    <p>ทองหยิบเป็นขนมไทยโบราณที่ทำจากไข่แดงและน้ำเชื่อม มีรสชาติหวานหอมและเนื้อเนียนนุ่ม สื่อถึงความมั่งคั่งและความรุ่งเรือง ทองหยิบมีลักษณะคล้ายดอกไม้สีทอง</p>
+
+
+    <a href="images/gallery/product3.jpg">
+        <img src="images/gallery/product3.jpg" 
+             alt="สินค้าชิ้นที่ 3"
+             width="300"
+             height="200">
+    </a>
+    <p>ขนมปาตี้คาราเมลซองสีแดงเป็นขนมที่หลายคนชื่นชอบตั้งแต่เด็กจนโต มีรสชาติหวานหอมของคาราเมลที่เคลือบขนมปังกรอบ ทำให้มีความกรอบและหวานกำลังดี ขนมนี้เหมาะสำหรับทานเล่นหรือทานคู่กับนมเพื่อเพิ่มความอร่อย นอกจากนี้ยังมีขนาดพอดีคำ </p>
+
+    <a href="images/gallery/product4.jpg">
+        <img src="images/gallery/product4.jpg" 
+             alt="สินค้าชิ้นที่ 4"
+             width="300"
+             height="200">
+    </a>
+    <p>ขนมถ้วยฟูเป็นขนมไทยที่มีความนุ่มฟูและหอมหวาน ทำจากแป้งข้าวเจ้า น้ำตาล และกะทิ มีลักษณะเป็นถ้วยเล็ก ๆ ที่ฟูขึ้นมาเมื่อสุก ขนมนี้มักใช้ในงานมงคลต่าง ๆ</p>
+
+    <a href="#top">กลับด้านบน</a>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-
+![ภาพถ่ายหน้าจอ2568-02-04เวลา 17 34 46](https://github.com/user-attachments/assets/bd88b961-4546-46eb-a71f-42fed2dce7f2)
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
 ### วัตถุประสงค์
@@ -391,12 +465,64 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
+
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนตัว</title>
+</head>
+<body>
+    <h1>ข้อมูลส่วนตัว</h1>
+    <ul>
+        <li>ชื่อ: ไอซ์</li>
+        <li>อายุ: 18 ปี</li>
+        <li>ที่อยู่: นครปฐม</li>
+        <li>งานอดิเรก: นอน</li>
+    </ul>
+
+    <h2>รายการอาหาร</h2>
+    <ol>
+        <li>ต้มยำกุ้ง</li>
+        <li>ผัดไทย</li>
+        <li>แกงเขียวหวาน</li>
+        <li>ข้าวผัด</li>
+        <li>ส้มตำ</li>
+    </ol>
+
+    <h2>รายการอาหาร</h2>
+    <dl>
+        <dt>ของทอด</dt>
+        <dd>ไก่ทอด</dd>
+        <dd>ปลาทอด</dd>
+        <dd>หมูทอด</dd>
+
+        <dt>ข้าว</dt>
+        <dd>ข้าวมันไก่</dd>
+        <dd>ข้าวหมูแดง</dd>
+        <dd>ข้าวผัดกุ้ง</dd>
+
+        <dt>ของหวาน</dt>
+        <dd>ข้าวเหนียวมะม่วง</dd>
+        <dd>บัวลอย</dd>
+        <dd>ทับทิมกรอบ</dd>
+
+        <dt>อาหารจานเดียว</dt>
+        <dd>ผัดกะเพรา</dd>
+        <dd>ราดหน้า</dd>
+        <dd>ผัดซีอิ๊ว</dd>
+    </dl>
+</body>
+</html>
+
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-04 เวลา 18 32 02" src="https://github.com/user-attachments/assets/c838bf4d-b97b-4927-ba92-7df0c7895e74" />
+
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,10 +747,174 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+```
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const photo = document.getElementById('photo').files[0];
+
+            if (!email.endsWith('@gmail.com')) {
+                alert('eror gmail');
+                return false;
+            }
+
+            if (password.length <= 8) {
+                alert('password > 8 ');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert('รหัสผ่านไม่ตรงกัน');
+                return false;
+            }
+
+            if (photo && photo.size > 10 * 1024 * 1024) {
+                alert('ต้องไม่เกิน 10 mb');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form action="/register" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+       
+        <!-- ข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+    
+        <!-- ข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+    
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">เบอร์โทร:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+        </fieldset>
+    
+        <!-- รูปโปรไฟล์ -->
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="photo">รูปถ่าย:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+        </fieldset>
+    
+        <!-- การยืนยันรหัสผ่าน -->
+        <fieldset>
+            <legend>การยืนยันรหัสผ่าน</legend>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="9" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="9" required>
+            </div>
+        </fieldset>
+    
+        <!-- ความสนใจในหมวดหมู่สินค้า -->
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+            <div class="form-group">
+                <label>ความสนใจ:</label>
+                <input type="checkbox" id="electronics" name="interests" value="electronics">
+                <label for="electronics">หมอน</label>
+                <input type="checkbox" id="fashion" name="interests" value="fashion">
+                <label for="fashion">ที่นอน</label>
+                <input type="checkbox" id="home" name="interests" value="home">
+                <label for="home">ผ้าห่ม</label>
+                <input type="checkbox" id="beauty" name="interests" value="beauty">
+                <label for="beauty">หมอนข้าง</label>
+            </div>
+        </fieldset>
+    
+        <!-- การยอมรับเงื่อนไขการใช้งาน -->
+        <fieldset>
+            <legend>การยอมรับเงื่อนไขการใช้งาน</legend>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">ยอมรับ</label>
+            </div>
+        </fieldset>
+    
+        <!-- การยืนยัน -->
+        <fieldset>
+            <legend>การยืนยัน</legend>
+            <div class="form-group">
+                <button type="submit">ลงทะเบียน</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="982" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 21 16 27" src="https://github.com/user-attachments/assets/ec50295c-da2b-4b71-a21d-fa02cba1bb8e" />
+
+
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -712,5 +1002,6 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-04 เวลา 19 17 58" src="https://github.com/user-attachments/assets/f2c66ede-e586-43ad-bf64-9ffc6a546e14" />
+
 
