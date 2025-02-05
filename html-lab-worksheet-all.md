@@ -113,7 +113,20 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Paphatsorn Aeamsaard web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
@@ -150,7 +163,16 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<h1>ประวัติส่วนตัว</h1>
+<h2>นางสารปภัสสร เอี่ยมสอาด</h2>
+<h3>ปัจจุบันศึกษาอยู่ที่ สถาบันพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</h3>
+<p>งานอดิเรก</p>
+<p>ชอบออกกำลังกาย <strong>แข่งเกม</strong> และ <em>อ่านหนังสือ</em></p>
+<p>เป้าหมายในอนาคต<br>!!!!!</p>
+<hr>
+<pre>
+   เป็นครูสอนนักเรียนเข้าใจ ให้กำลังใจนักเรียนเป็นแบบอย่างที่ดี และพัฒนาตัวเองอยู่เสมอ
+</pre>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
@@ -321,7 +343,69 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>ร้านอาหาร เจ้กุ้งผัดแซ่บ</h1>
+</section>
+
+<section id="products">
+    <h2>ข้าวผัด</h2>
+</section>
+<figure>
+    <a href="images/1.jpg">
+    <img src="images/1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200"></a>
+    <figcaption>
+         ข้าวผัดสัปปะรด
+    </figcaption>
+</figure>
+
+<section id="products">
+    <h2>กะเพราหมูสับ</h2>
+</section>
+<figure>
+    <a href="images/2.jpg">
+    <img src="images/2.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200"></a>
+    <figcaption>
+        กะเพราหมูสับ ขยี้ใจ
+    </figcaption>
+</figure>
+
+<section id="products">
+    <h2>ข้าวหมูกระเทียม</h2>
+</section>
+<figure>
+    <a href="images/3.jpg">
+    <img src="images/3.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200"></a>
+    <figcaption>
+        ข้าวหมูเทียมหอมกรุน
+    </figcaption>
+</figure>
+
+<section id="products">
+    <h2>คะน้าหมูกรอบ</h2>
+</section>
+<figure>
+    <a href="images/4.jpg">
+    <img src="images/4.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200"></a>
+    <figcaption>
+        คะน้าหมูกรอบ หอมยั่วใจ
+    </figcaption>
+</figure>
+
+<a href="#top">กลับด้านบน</a>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
