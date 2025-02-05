@@ -113,8 +113,7 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
-```<!DOCTYPE html>
+[<!DOCTYPE html>
 <html>
 <head>
     <title>My First Web Page</title>
@@ -127,9 +126,11 @@
     <em>This text is emphasized</em>
     <strong>This text is strong</strong>    
 </body>
-</html>
+</html>]
+```
 - ภาพผลลัพธ์:
-[![alt text](image-14.png)]
+![alt text](image-2.png)
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -379,8 +380,7 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
-```<!DOCTYPE html>
+[<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -424,7 +424,8 @@
     <p>อยากเป็นคุณครูที่นักเรียนรักและชื่นชอบ จะพยายามทำหน้าที่ให้ดีที่สุด</p>
     <hr>
 </body>
-</html>
+</html>]
+```
 
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
@@ -598,8 +599,7 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
-```<!DOCTYPE html>
+[<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>PRODUCTS OF AIRPODS</title>
@@ -732,7 +732,8 @@
 
 </body>
 </html>
-
+]
+```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 ![alt text](image-10.png)
@@ -845,6 +846,8 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 ![alt text](image-11.png)
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
@@ -1226,9 +1229,10 @@
     </form>
 </body>
 </html>
+```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![alt text](image-12.png)
+![alt text](image-5.png)
 
 ## การทดลองที่ 7: HTML Layout
 ### วัตถุประสงค์
