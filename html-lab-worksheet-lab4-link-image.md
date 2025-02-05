@@ -165,10 +165,76 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <section id="tops">
+        <h1>Figger </H1>
+        <figure>
+            <img src="images/products/OIP.jfif" alt="logo website" width="300" height="300">
+            
+        </figure>
+    </section>
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+    <h3>Figger สะสม</h3>
+    <div>
+        <figure>
+            <a href="images/products/products 1.jfif" >
+                <img src="images/products/products 1.jfif" alt="products 1" width="200">
+            </a>
+            <figcaption>สะสม</figcaption>
+            <a href="files/สินค้าชิ้นนี้มีจำนวนจำกัด หมดแล้ว ห.txt" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+    
+    <div>
+        <figure>
+            <a href="images/products/products 2.avif">
+                <img src="images/products/products 2.avif" alt="products 2" width="200">
+            </a>
+            <figcaption>สะสม</figcaption>
+            <a href="files/สินค้าชิ้นนี้มีจำนวนจำกัด หมดแล้ว ห.txt" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+
+    <div>
+        <figure>
+            <a href="images/products/products 3.jfif">
+                <img src="images/products/products 3.jfif" alt="products 3" width="200">
+            </a>
+            <figcaption>สะสม</figcaption>
+            <a href="files/สินค้าชิ้นนี้มีจำนวนจำกัด หมดแล้ว ห.txt" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+
+    <div>
+        <figure>
+            <a href="images/products/products 4.jfif">
+                <img src="images/products/products 4.jfif" alt="products 4" width="200">
+            </a>
+            <figcaption>สะสม</figcaption>
+            <a href="files/สินค้าชิ้นนี้มีจำนวนจำกัด หมดแล้ว ห.txt" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+    
+    <a href="#top">
+        <button>กลับ</button>
+    </section>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/f80fad97-9430-4537-b3ad-6fa06a4c0330)
+
 
 
 
