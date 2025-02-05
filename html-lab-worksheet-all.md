@@ -74,7 +74,8 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![image](https://github.com/user-attachments/assets/ba6c0831-88f1-4a2c-9099-2787ee95f994)
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +114,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ...... (student name) web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/14b05501-ee9e-48c5-a122-3b2fa367e54f)
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -148,11 +163,19 @@
    - เส้นคั่นระหว่างเนื้อหา
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
-```html
-[วางโค้ด HTML ที่นี่]
-```
+<h1>ประวัติส่วนตัว</h1>
+<h2>นางสาวนิรภาดา ขัตติยะ</h2>
+<p>ประถมศึกษาจากโรงเรียนบ้านชาติเจริญ</p>
+<p>มัธยมปลายจบจากโรงเรียนพนมไพรวิทยาคาร</p>
+<p>ปัจจุบันกำลังศึกษาอยู่ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+<hr>
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>อยากเป็นครูสอนเด็กๆได้ตามความรู้ที่เรียนมาซัพพอร์ตเด็กๆได้อย่างเต็มความสามารถ อยากประสบความสำเร็จในหน้าที่การงานเลี้ยงดูพ่อแม่ได้ มีเงินเยอะๆเป็นมหาเศรษฐีร้อยล้าน </p>
+    <h2>งานอดิเรก</h2>
+    <p>นอน เล่นเกม เล่นกีฬา ทำอาหาร เที่ยว shoping</p>
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/68119233-f382-4877-a3a5-e4b3cbf3c404)
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +342,60 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <figure>
+        <a href="images/gallerys/gallery1.jpg">
+        <img src="images/gallerys/gallery1.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="150">
+    </a>
+        <p> นมเย็น</p>
+        <p>นมเย็นเป็นเครื่องดื่มที่หลายคนคุ้นเคยกันดี ด้วยรสชาติหวานมันจากนมสดที่ผสมกับน้ำแข็งจนเย็นชื่นใจ <br>ซึ่งเหมาะสำหรับวันร้อนๆ หรือเวลาที่อยากได้ความสดชื่นในช่วงพักระหว่างทำงานหรือเรียน</p>
+
+    </figure>
+
+    <figure>
+        <a href="images/gallerys/gallery2.jpg">
+        <img src="images/gallerys/gallery2.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="150">
+    </a>
+        <p>โกโก้</p>
+        <p>โกโก้เป็นเครื่องดื่มที่หลายคนโปรดปราน ด้วยรสชาติหวานเข้มจากช็อกโกแลตที่ทำให้รู้สึกอิ่มเอมและอบอุ่น <br>โกโก้มีทั้งแบบร้อนและเย็น โดยมีรสชาติที่สามารถปรับได้ตามความชอบของแต่ละคนเป็นเครื่องดื่มที่เหมาะสำหรับ<br>การดื่มในทุกช่วงเวลาโดยเฉพาะในวันที่อากาศเย็นหรือช่วงที่ต้องการความหวาน<br>จากช็อกโกแลตซึ่งเหมาะสำหรับวันร้อนๆ หรือเวลาที่อยากได้ความสดชื่นในช่วงพักระหว่างทำงานหรือเรียน</p>
+
+    </figure>
+
+    <figure>
+        <a href="images/gallerys/gallery3.jpg">
+        <img src="images/gallerys/gallery3.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="150">
+    </a>
+        <p>ชาเขียว</p>
+        <p>ชาเขียวเป็นเครื่องดื่มที่ได้รับความนิยมในหลายประเทศ โดยเฉพาะในประเทศที่มีวัฒนธรรมดื่มชาอย่างจีนและญี่ปุ่น <br>เนื่องจากรสชาติที่เบาและคุณประโยชน์ทางสุขภาพที่หลากหลาย <br>ชาเขียวมีความเป็นเอกลักษณ์จากรสขมเล็กน้อยและความสดชื่นที่ดื่มได้ในทุกช่วงเวลา <br> ด้วยรสชาติที่หวานหอมจากชาและเครื่องเทศที่ผสมผสานได้อย่างลงตัว
+    </figure>
+
+    <figure>
+        <a href="images/gallerys/gallery4.jpg">
+        <img src="images/gallerys/gallery4.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="150">
+    </a>
+        <p>ชาไทย</p>
+        <p>เป็นเครื่องดื่มที่ได้รับความนิยมสูงมาก ไม่ว่าจะในประเทศไทยหรือในต่างประเทศ <br> ด้วยรสชาติที่หวานหอมจากชาและเครื่องเทศที่ผสมผสานได้อย่างลงตัว
+    </figure>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/64c3a13d-b1ee-4f88-af63-09dd8a48a294)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -393,10 +466,103 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ชื่อ </th>
+                <th>นามสกุล</th>
+                <th>รหัสนักศึกษา</th>
+                <th>เบอร์โทร</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>นิรภาดา</td>
+                <td>ขัตติยะ</td>
+                <td>67030118</td>
+                <td>092362xxxx</td>
+
+                
+            </tr>
+            <tr>
+                <td>นางสาวใจดี</td>
+                <td>มีทรัพย์เยอะ</td>
+                <td>123456</td>
+                <td>085987xxxx</td>
+            </tr>
+
+            
+        </tbody>
+    </table>
+
+    <head>
+        <h2>ร้านหมูปิ้งศรัทธา ฮาลาล900%</h2>
+    </head>
+
+<dl>
+    <dt>รายการสั่งซื้อของคุณนัจญมา</dt>
+</dl>
+<ul>
+
+    <li>คะน้าไก่กรอบ</li>
+    <li>ชาเขียว</li>
+    <li>ก๋วยเตี๋ยวฮาลาล</li>
+    <li>ยำไก่ยอ</li>
+    
+</ul>
+
+<dl> 
+    <dt>รายการสั่งซื้อของคุณนูรีน</dt> 
+</dl>
+
+
+<ol>
+    <li>ข้าวผัดฮาลาล</li>
+    <li>น้ำมะพร้าว</li>
+    <li>น้ำเปล่า</li>
+</ol>
+
+<dl>
+    <strong> <dt>เมนูอาหาร+ข้าว</dt> </strong>
+    <dd>ข้าวผัดฮาลาล</dd>
+    <dd>กะเพราฮาลาล</dd>   
+    <dd>ผัดมาม่าขี้เมา</dd>
+    <dd>ข้าวยำไก่แซ่บ</dd>
+    <dd>ยำไก่ยอ</dd>
+    <dd>คะน้าไก่กรอบ</dd>
+    <dd>ผัดเปรี้ยวหวานฮาลาล</dd>
+    <strong> <dt>เมนูอาหารมีน้ำ</dt> </strong>
+    <dd>ก๋วยเตี๋ยวฮาลาล</dd>
+    <dd>ก๋วยจั๊บฮาลาล</dd>
+    <dd>ต้มมาม่าฮาลาล</dd>
+    <dd>ราดหน้าฮาลาล</dd>
+    <dd>สุกี้ฮาลาล</dd>
+    <dd>ต้มยำฮาลาล</dd>
+    <strong> <dt>เมนูเครื่องดื่ม</dt> </strong>
+    <dd>โออิชิ</dd>
+    <dd>ลิปตัน</dd>
+    <dd>โค้ก</dd>
+    <dd>น้ำเปล่า</dd>
+    <dd>น้ำแตงโม</dd>
+    <dd>น้ำมะพร้าว</dd>
+    <dd>ชาเขียว</dd>
+    <dd>ชาไทย</dd>
+</dl>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/ca980d10-fff2-4de1-9edf-9363e3a5706c)
+
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,10 +787,232 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มลงทะเบียน</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: rgb(255, 0, 13);
+            margin-left: 5px;
+        }
+    </style>
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
+            if (!emailPattern.test(email)) {
+                alert("รูปแบบอีเมลไม่ถูกต้อง");
+                return false;
+            }
+            return true;
+        }
+
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            // ตรวจสอบความยาวรหัสผ่าน
+            if (password.length < 8) {
+                alert("รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร");
+                return false; // ไม่ให้ส่งฟอร์ม
+            }
+
+            // ตรวจสอบว่า รหัสผ่านและยืนยันรหัสผ่านตรงกันหรือไม่
+            if (password !== confirmPassword) {
+                alert("รหัสผ่านและยืนยันรหัสผ่านไม่ตรงกัน");
+                return false; // ไม่ให้ส่งฟอร์ม
+            }
+
+            return true; // ให้ส่งฟอร์ม
+        }
+    </script>
+    <script>
+        function validatePhoneNumber() {
+            var phoneNumber = document.getElementById("phone").value;
+            var resultElement = document.getElementById("result");
+
+            if (phoneNumber.length !== 10 || !/^\d{10}$/.test(phoneNumber) || new Set(phoneNumber).size === 1) {
+                resultElement.innerHTML = "กรุณากรอกเบอร์โทรที่ถูกต้อง";
+                resultElement.style.color = "red";
+            } else {
+                resultElement.innerHTML = "เบอร์โทรถูกต้อง";
+                resultElement.style.color = "green";
+            }
+        }
+    </script>
+    <script>
+        function validateImageSize() {
+            var fileInput = document.getElementById("photo");
+            var file = fileInput.files[0];
+            var maxSize = 5 * 1024 * 1024; // ขนาดสูงสุด 5MB
+
+            if (file) {
+                // ตรวจสอบขนาดไฟล์
+                if (file.size > maxSize) {
+                    alert("ขนาดไฟล์รูปภาพไม่ควรเกิน 5MB");
+                    fileInput.value = ""; // ล้างไฟล์ที่เลือก
+                    return false;
+                }
+                alert("ขนาดไฟล์ถูกต้อง");
+                return true;
+            } else {
+                alert("กรุณาเลือกไฟล์รูปภาพ");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="/register" method="post">
+        <!-- ส่วนข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="prefix">คำนำหน้า:</label>
+                <select id="prefix" name="prefix" required>
+                    <option value="">เลือกคำนำหน้า</option>
+                    <option value="mr">นาย</option>
+                    <option value="ms">นางสาว</option>
+                    <option value="mrs">นาง</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+
+        <!-- ส่วนข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <form onsubmit="event.preventDefault(); validatePhoneNumber();">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <input type="submit" value="ส่งข้อมูล" onclick="return validatePhoneNumber()">
+
+            </form>
+            <p id="result"></p>
+
+            <div class="form-group">
+                <label for="address">ที่อยู่:</label>
+                <textarea id="address" name="address" rows="5" required></textarea><span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="ส่งข้อมูล" onclick="return validateEmail()">
+            </div>
+        </fieldset>
+
+        <!-- ส่วนอัพโหลดเอกสาร -->
+
+
+        <fieldset>
+            <h2>รูปโปรไฟล์</h2>
+            <form onsubmit="return validateImageSize()">
+                <div class="form-group">
+                    <label for="photo">รูปถ่าย:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <br>
+                <button type="submit">ส่งข้อมูล</button>
+            </form>
+        </fieldset>
+
+        <!-- ส่วนสร้างรหัสผ่าน -->
+        <fieldset>
+            <legend>สร้างรหัสผ่าน</legend>
+            <form onsubmit="return validatePassword()">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+                <input type="submit" value="ส่งข้อมูล">
+            </form>
+        </fieldset>
+        
+        <!-- ส่วนความสนใจในหมวดหมู่สินค้า -->
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+            <div class="form-group">
+                <label>ความสนใจ:</label>
+                <input type="checkbox" id="clothes" name="interests" value="clothes">
+                <label for="clothes">เสื้อผ้า</label>
+                <input type="checkbox" id="productIT" name="interests" value="productIT">
+                <label for="productIT">สินค้าIT</label>
+                <input type="checkbox" id="productelderly" name="interests" value="productelderly">
+                <label for="productelderly">สินค้าผู้สูงอายุ</label>
+                <input type="checkbox" id="sport" name="interests" value="sport">
+                <label for="sport">สินค้าหมวดหมู่กีฬา</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="home" name="interests" value="home">
+                <label for="home">สินค้าที่ใช้ในบ้านในครัว</label>
+                <input type="checkbox" id="beauty" name="interests" value="beauty">
+                <label for="beauty">สินค้าความสวยความงาม</label>
+            </div>
+        </fieldset>
+
+        <!-- ส่วนยืนยันข้อมูล -->
+        <fieldset>
+            <legend>การยืนยัน</legend>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">
+                    ข้าพเจ้ายอมรับเงื่อนไขการใช้งานทั้งหมด
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">ลงทะเบียน</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/617d5a3b-53e7-4192-970a-d63e23ecadf3)
+
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -712,5 +1100,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/708134ae-0171-4a9d-9ad7-0a46450c1266)
 
