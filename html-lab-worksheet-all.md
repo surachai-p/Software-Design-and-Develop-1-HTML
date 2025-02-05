@@ -777,22 +777,22 @@
             const photo = document.getElementById('photo').files[0];
 
             if (!email.endsWith('@gmail.com')) {
-                alert('อีเมลต้องลงท้ายด้วย @gmail.com');
+                alert('eror gmail');
                 return false;
             }
 
             if (password.length <= 8) {
-                alert('รหัสผ่านต้องมีความยาวมากกว่า 8 ตัว');
+                alert('password > 8 ');
                 return false;
             }
 
             if (password !== confirmPassword) {
-                alert('รหัสผ่านและการยืนยันรหัสผ่านไม่ตรงกัน');
+                alert('รหัสผ่านไม่ตรงกัน');
                 return false;
             }
 
             if (photo && photo.size > 10 * 1024 * 1024) {
-                alert('ขนาดไฟล์รูปภาพต้องไม่เกิน 10 MB');
+                alert('ต้องไม่เกิน 10 mb');
                 return false;
             }
 
@@ -802,6 +802,7 @@
 </head>
 <body>
     <form action="/register" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+       
         <!-- ข้อมูลส่วนตัว -->
         <fieldset>
             <legend>ข้อมูลส่วนตัว</legend>
@@ -878,13 +879,13 @@
             <div class="form-group">
                 <label>ความสนใจ:</label>
                 <input type="checkbox" id="electronics" name="interests" value="electronics">
-                <label for="electronics">อิเล็กทรอนิกส์</label>
+                <label for="electronics">หมอน</label>
                 <input type="checkbox" id="fashion" name="interests" value="fashion">
-                <label for="fashion">แฟชั่น</label>
+                <label for="fashion">ที่นอน</label>
                 <input type="checkbox" id="home" name="interests" value="home">
-                <label for="home">ของใช้ในบ้าน</label>
+                <label for="home">ผ้าห่ม</label>
                 <input type="checkbox" id="beauty" name="interests" value="beauty">
-                <label for="beauty">ความงาม</label>
+                <label for="beauty">หมอนข้าง</label>
             </div>
         </fieldset>
     
@@ -893,7 +894,7 @@
             <legend>การยอมรับเงื่อนไขการใช้งาน</legend>
             <div class="form-group">
                 <input type="checkbox" id="agree" name="agree" required>
-                <label for="agree">ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน</label>
+                <label for="agree">ยอมรับ</label>
             </div>
         </fieldset>
     
@@ -911,7 +912,8 @@
 
 ```
 - ภาพผลลัพธ์:
-<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-03 เวลา 23 00 34" src="https://github.com/user-attachments/assets/e26d4969-ecf9-431a-a0cb-02b6ca9e55f5" />
+<img width="982" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 21 16 27" src="https://github.com/user-attachments/assets/ec50295c-da2b-4b71-a21d-fa02cba1bb8e" />
+
 
 
 
