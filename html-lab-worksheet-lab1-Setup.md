@@ -75,5 +75,16 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![สกรีนช็อต 2025-02-05 162448](https://github.com/user-attachments/assets/4cc5b55c-f073-4049-a777-fa0c4c859e2e)
 
-
+ ```html
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title>ทดสอบ Live Server</title>
+   </head>
+   <body>
+       <h1>สวัสดี Live Server</h1>
+   </body>
+   </html>
+   ```
