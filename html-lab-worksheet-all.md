@@ -74,7 +74,8 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![Screenshot 2025-02-04 230440](https://github.com/user-attachments/assets/f86c6eb5-6eb3-4339-b024-2882a28ec2ce)
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +114,28 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to tabtad web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-04 232540](https://github.com/user-attachments/assets/3c506996-75c6-4548-9154-20a8bcae6b73)
+
+
+
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +168,31 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercise</title>
+</head>
+<body>
+    <h1>สร้างหน้าเว็บแนะนำตัวที่ประกอบด้วย</h1>
+   <p><h2>ชื่อ - นามสกุล</h2> </p>
+   <p>นายเทพทัต บัวเทศ</p>
+   <p><strong> -------------------------- </strong></p>
+   <h2>ประวัติการศึกษา</h2>
+   <p> จบจากมัธยมศึกษาที่ โรงเรียนรัตนาธิเบศร์</p>
+   <p><strong> -------------------------- </strong></p>
+   <h2> งานอดิเรก </h2>
+    <p>เล่นเกม อ่านการตูน อ่านนิยาย</p>
+   <p><strong> -------------------------- </strong></p>
+   <h2>เป้าหมายในอนาคต</h2>
+   <p>อยากลาออก<br>หยอกครับ อยากเป็นครูที่ดีครับ</p>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![Screenshot 2025-02-04 235536](https://github.com/user-attachments/assets/f1c9a807-1a87-418d-b577-ef04a9759687)
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +359,70 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a> 
+    </nav>
+<figure>      
+    <a href="images/gallery/2.jpg">
+        <img src="images/gallery/2.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+    </a>
+             <figcaption>
+                ภาพวิว
+            </figcaption>
+    
+</figure>
+
+<figure>      
+    <a href="images/gallery/1.jpg">
+        <img src="images/gallery/1.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+             <figcaption>
+                ภาพวิว
+            </figcaption>
+    </a>
+</figure>
+
+<figure>      
+    <a href="images/gallery/3.jpg">
+        <img src="images/gallery/3.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+             <figcaption>
+                ภาพวิว
+            </figcaption>
+    </a>
+</figure>
+
+<figure>      
+    <a href="images/gallery/4.jpg">
+        <img src="images/gallery/4.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+             <figcaption>
+                ภาพวิว
+            </figcaption>
+    </a>
+</figure>
+
+</body>
+</html>
 ```
+
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-05 010632](https://github.com/user-attachments/assets/c9765e2a-6820-421f-bfdb-5b5a52b01795)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -393,10 +493,41 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <table border="20">
+        <thead>
+            <tr>
+                <th>ข้อมูลส่วนตัว</th>
+                <th>รายการเมนูอาหาร</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ นายเทพทัต</td>
+                <td>ข้าวมันไก่</td>
+            </tr>
+            <tr>
+                <td>อายุ 19</td>
+                <td>ข้าวแกง</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    
+    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-05 012251](https://github.com/user-attachments/assets/1ea652df-4194-4859-984c-80aa6fcb1824)
+
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,10 +752,60 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+```
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิก</title>
+</head>
+<body>
+
+    <h1>สมัครสมาชิก</h1>
+
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        <h2>ข้อมูลส่วนตัว</h2>
+        <label>ชื่อ-นามสกุล: <input type="text" name="fullname" required></label><br>
+        <label>วันเกิด: <input type="date" name="dob" required></label><br>
+        <label>เพศ: 
+            <input type="radio" name="gender" value="ชาย"> ชาย
+            <input type="radio" name="gender" value="หญิง"> หญิง
+        </label><br>
+
+        <h2>ข้อมูลการติดต่อ</h2>
+        <label>อีเมล: <input type="email" name="email" required></label><br>
+        <label>เบอร์โทรศัพท์: <input type="tel" name="phone" required></label><br>
+        <label>ที่อยู่จัดส่ง: <textarea name="address" rows="3"></textarea></label><br>
+
+        <h2>รูปโปรไฟล์</h2>
+        <label>อัปโหลดรูปภาพ: <input type="file" name="profile_pic" accept="image/*"></label><br>
+
+        <h2>ความปลอดภัย</h2>
+        <label>รหัสผ่าน: <input type="password" name="password" required></label><br>
+        <label>ยืนยันรหัสผ่าน: <input type="password" name="confirm_password" required></label><br>
+
+        <h2>ความสนใจ</h2>
+        <label>เลือกหมวดหมู่ที่สนใจ:
+            <select name="interest">
+                <option value="flowers">ดอกไม้</option>
+                <option value="plants">ต้นไม้</option>
+                <option value="decorations">ของตกแต่ง</option>
+            </select>
+        </label><br>
+
+        <h2>ข้อตกลงและเงื่อนไข</h2>
+        <label><input type="checkbox" name="terms" required> ยอมรับเงื่อนไขการใช้งาน</label><br>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-05 013113](https://github.com/user-attachments/assets/34f9c899-fd57-47de-853b-0327f3fe45c7)
+
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -709,8 +890,9 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
     </footer>
 </body>
 ```
+![Screenshot 2025-02-05 014740](https://github.com/user-attachments/assets/a2c67f05-c148-4ed0-9fa3-f2be6be5d26c)
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
 
