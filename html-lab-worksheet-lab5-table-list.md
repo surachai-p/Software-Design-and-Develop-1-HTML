@@ -68,8 +68,61 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<table border="1" style="width: 50%; text-align: left; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th>เมนูอาหาร</th>
+            <th>ออเดอร์</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ผัดกะเพรา</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>ต้มยำกุ้ง</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>แกงเขียวหวาน</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>ข้าวมันไก่</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>ส้มตำ</td>
+            <td>2</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>เมนูอาหารไทยเพิ่มเติม</h3>
+<ul>
+    <li>ข้าวซอย</li>
+    <li>หมูทอดกระเทียม</li>
+    <li>ขนมจีนน้ำยา</li>
+    <li>ไก่ย่าง</li>
+    <li>ก๋วยเตี๋ยวเรือ</li>
+</ul>
+
+<ol>
+    <li>ต้มข่าไก่</li>
+    <li>มัสมั่นไก่</li>
+</ol>
+
+<dl>
+    <dt>ต้มข่าไก่</dt>
+    <dd>ซุปไก่รสชาติกลมกล่อม ผสมกะทิและข่า</dd>
+    <dt>มัสมั่นไก่</dt>
+    <dd>แกงเข้มข้นรสชาติหวานเค็ม เผ็ดอ่อน ๆ</dd>
+</dl>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![alt text](image-6.png)
 

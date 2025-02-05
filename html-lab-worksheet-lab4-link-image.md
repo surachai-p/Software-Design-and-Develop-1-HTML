@@ -163,12 +163,63 @@
    - มีปุ่มกลับด้านบน
 
 ### บันทึกผลการทดลอง
-- รหัสเอกสาร HTML ที่เขียน:
+- รหัสเอกสาร HTML ที่เขียน: <!DOCTYPE html>
 ```html
 [วางโค้ด HTML ที่นี่]
 ```
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>โอมมี่ shoppee</title>
+</head>
+<body>
+    <header>
+        <h1>โอมมี่ - ร้านค้าออนไลน์</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    </nav>
+    
+    <div>
+        <div>
+            <img src="images/gallery/logo.png" alt="โลโก้บริษัท" width="200">
+        </div>
+        
+        <section id="products">
+            <h2>สินค้าของเรา</h2>
+            <div>
+                <div>
+                    <img src="images/products/product1.png" alt="สินค้าชิ้นที่ 1">
+                    <p>น้ำยาล้างจาน</p>
+                </div>
+                <div>
+                    <img src="images/products/product2.png" alt="สินค้าชิ้นที่ 2">
+                    <p>เครื่องดื่มโออิชิกรีนที รสชาติน้ำผึ้งมะนาว</p>
+                </div>
+                <div>
+                    <img src="images/products/product3.png" alt="สินค้าชิ้นที่ 3">
+                    <p>น้ำแดงหวานมาก</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <a href="#top">▲ กลับด้านบน</a>
+    
+    <footer>
+        <p>&copy; 2025 ไทยสาราวี จำกัด - สงวนลิขสิทธิ์</p>
+    </footer>
+</body>
+</html>
+
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![alt text](image-4.png)
+![alt text](image-5.png)
 
 
