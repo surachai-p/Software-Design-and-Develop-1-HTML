@@ -30,8 +30,8 @@
    - เส้นคั่นระหว่างเนื้อหา
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
-```html
 [วางโค้ด HTML ที่นี่]
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,10 +73,10 @@
 
 </body>
 </html>
-
+```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 23 13 14" src="https://github.com/user-attachments/assets/74e12c4e-6c90-4a4d-b957-5e9d0efae6fc" />
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 23 13 14" src="https://github.com/user-attachments/assets/f7f774e3-e500-47c4-bd3c-d7e881d917b0" />
 
 
 
