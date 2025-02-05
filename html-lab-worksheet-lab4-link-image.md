@@ -165,10 +165,64 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+    </nav>
+
+    <section id="top">
+        <h1>พวงกุญแจอนิเมะ  Tensei shitara Slime Datta Ken</h1>
+    </section>
+
+    <section id="products">
+        <h2>สินค้า พวงกุญแจอนิเมะ  Tensei shitara Slime Datta Ken</h2>
+        
+        </a>
+        <div class="gallery">
+            <figure>
+                <a href="images\products\rimuru.jpg">
+                    <img src="images\products\rimuru.jpg" alt="สินค้า 1">
+                </a>
+                <figcaption>Rimuru ราคา 60 บาท</figcaption>
+            </figure>
+            <figure>
+                <a href="images\products\shuna.jpg">
+                    <img src="images\products\shuna.jpg" alt="สินค้า 2">
+                </a>
+                <figcaption>Shuna ราคา 60 บาท</figcaption>
+            </figure>
+            <figure>
+                <a href="images\products\millim.jpg">
+                    <img src="images\products\millim.jpg" alt="สินค้า 3">
+                </a>
+                <figcaption>Millim ราคา 60 บาท</figcaption>
+            </figure>
+            <figure>
+                <a href="images\products\shion.jpg">
+                    <img src="images\products\shion.jpg" alt="สินค้า 4">
+                </a>
+                <figcaption>Shion ราคา 60 บาท</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <a class="back-to-top" href="#top">กลับด้านบน</a>
+
+</body>
+</html>
+]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/871cccd9-655d-4b5c-a311-8e0974b0c274)
+
 
 
 
