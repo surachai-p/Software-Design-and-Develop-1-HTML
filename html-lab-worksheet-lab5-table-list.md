@@ -116,8 +116,7 @@
     <dd>สั่งกระเพราหมูกรอบไข่ดาว</dd>
 </dl>
 
-```
-![{38FF754B-9941-467D-9C9C-800818EF6F8E}]
+![{62676681-DF9D-4D30-A9F3-C1B63CECC801}](https://github.com/user-attachments/assets/d6121bcc-9213-4747-a8ac-a9d21c06a195)
 
 
 
