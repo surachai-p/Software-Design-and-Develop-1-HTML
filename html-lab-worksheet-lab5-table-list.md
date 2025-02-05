@@ -68,8 +68,58 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ข้อมูลส่วนตัว</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>หัวข้อราย</td>
+                <td>รายละเอียด</td>
+            </tr>
+            <tr>
+                <td>ชื่อ</td>
+                <td>นางสาวปภัสสร เอี่ยมสอาด</td>
+            <tr>
+                <td>รหัสประจำตัวนักศึกษา</td>
+                <td>67030311</td>
+            </tr>
+            <tr>
+                <td>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+                <td>สาขาเทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+                <td>อายุ 20 ปี</td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปีเกิด</td>
+                <td>25 พฤศจิกายน ปี พ.ศ 2547</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+            <h1>เมนูอาหารที่ชอบ</h1>
+            <ul>
+                <li>กะเพรา</li>
+                <li>ข้าวผัด</li>
+            </ul>
+            
+            <ol>
+                <li>ยำวุ้นเส้น</li>
+                <li>ข้าวไข่เจียว</li>
+            </ol>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![lab05](https://github.com/user-attachments/assets/24b2459d-ca91-4dfa-9447-4567eae41c32)
