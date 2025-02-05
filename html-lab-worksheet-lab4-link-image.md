@@ -164,11 +164,106 @@
 
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
-```html
+```index.html
 [วางโค้ด HTML ที่นี่]
 ```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+
+<body>
+    <nav>
+        <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+        
+        <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+        <a href="https://www.google.com" target="_blank">
+            ไปยัง Google
+        </a>
+    </nav>
+    <!-- สร้างจุดเชื่อมโยง -->
+    <section id="top">
+        <h1>ร้านคาเฟ่</h1>
+    </section>
+    
+    <section id="products">
+        <h2>สินค้าของเรา</h2>
+    </section>
+    
+    <!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+    <a href="#top">กลับด้านบน</a>
+    <a href="#products">ไปยังสินค้า</a>
+    <br>
+    <!-- ลิงก์อีเมล -->
+    <a href="mailto:0967710578naeem@gmail.com">ส่งอีเมลหาฉัน</a>
+    <br>
+    <!-- ลิงก์โทรศัพท์ -->
+    <a href="tel:+66967710578">โทร 096-7710578</a>
+    <br>
+    <!-- ลิงก์ดาวน์โหลด -->
+    <a href="files/document.pdf" download>
+        ดาวน์โหลดเอกสาร
+    </a>
+
+
+        <hr>
+
+        <hr>
+    
+        <!-- รูปภาพ -->
+        <h2>รูปภาพบริษัท</h2>
+        <img src="image/logo.jpg" alt="โลโก้บริษัท" width="200">
+    
+        <h2>สินค้า</h2>
+        <img src="image/product/th.jpg" alt="สินค้าชิ้นที่ 1" width="300">
+        <img src="image/product/cake.jpg" alt="สินค้าชิ้นที่ 2" width="300">
+    
+        <hr>
+    
+        <h2>รูปภาพที่มีคำอธิบาย</h2>
+        <figure>
+            <img src="image/product/cake.jpg" alt="สินค้าชิ้นที่ 2">
+            <figcaption>cake</figcaption>
+        </figure>
+    
+        <hr>
+    
+        <h2>แกลเลอรีสินค้า</h2>
+        <div>
+            <a href="image/gallery/gallery1.jpg">
+                <img src="image/gallery/gallery1.jpg" alt="Gallery 1" width="150">
+            </a>
+            
+            <a href="image/gallery/gallery2.jpg">
+                <img src="image/gallery/gallery2.jpg" alt="Gallery 2" width="150">
+            </a>
+            <br>
+            <a href="image/gallery/gellery3.jpg">
+                <img src="image/gallery/gellery3.jpg" alt="Gallery 3" width="150">
+            </a>
+            <a href="image/gallery/gallery4.jpg">
+                <img src="image/gallery/gallery4.jpg" alt="Gallery 4" width="150">
+            </a>
+        </div>
+    
+        <br>
+        <a href="#top">กลับด้านบน</a>
+    
+   
+</body>
+
+
+</html>
+
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![link3](https://github.com/user-attachments/assets/c4fffdbd-48d0-4524-b304-cf1b632cd822)
+![link2](https://github.com/user-attachments/assets/b029ce87-e619-42b2-b933-2228293db56f)
+![link1](https://github.com/user-attachments/assets/34e2b53a-80da-406b-bc2d-eb93052d9593)
 
 
 

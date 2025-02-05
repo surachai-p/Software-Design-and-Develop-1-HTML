@@ -68,8 +68,65 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Table and list</title>
+</head>
+<body>
+
+<body>
+
+    <h1>ตารางข้อมูลส่วนตัว</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ข้อมูลส่วนตัวของฉัน</th>
+                <th>นาย รัฐภูมิ สอนเขียว</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ</td>
+                <td>รัฐภูมิ สอนเขียว</td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td>15 ซอย สามัคคีพัฒนา 13 หัวหมาก บางกะปิ กรุงเทพ 10240</td>
+            </tr>
+            <tr>
+                <td>อีเมล</td>
+                <td>67030338@kmitl.ac.th</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>รายการเมนูอาหาร</h1>
+
+    <h2>รายการอาหารที่แนะนำ</h2>
+    <ul>
+        <li>ข้าวผัดกุ้ง</li>
+        <li>ต้มยำกุ้ง</li>
+        <li>ผัดไทย</li>
+        <li>แกงเขียวหวาน</li>
+        <li>ส้มตำ</li>
+        <li>ไก่ทอด</li>
+    </ul>
+
+   
+
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![tl](https://github.com/user-attachments/assets/73aa1529-9ab6-45fa-b8c4-37602bb5a594)

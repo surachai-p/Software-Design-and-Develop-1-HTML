@@ -224,10 +224,146 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>สมัครสมาชิก</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        form { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        .error { color: red; font-size: 12px; }
+    </style>
 
+</head>
+<body>
+    <form id="signupForm">
+        <h2>สมัครสมาชิก</h2>
+        
+        <!-- ข้อมูลส่วนตัว -->
+        <label>ชื่อ-นามสกุล:</label>
+        <input type="text" id="fullname" required>
+
+        <label>วันเกิด:</label>
+        <input type="date" id="dob" required>
+
+        <label>เพศ:</label>
+        <select id="gender" required>
+            <option value="">-- เลือก --</option>
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่นๆ</option>
+        </select>
+        
+        <!-- ข้อมูลการติดต่อ -->
+        <label>อีเมล:</label>
+        <input type="email" id="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label>เบอร์โทร:</label>
+        <input type="text" id="phone" required>
+        <span class="error" id="phoneError"></span>
+
+        <label>ที่อยู่จัดส่ง:</label>
+        <input type="text" id="address" required>
+        
+        <!-- รูปโปรไฟล์ -->
+        <label>รูปโปรไฟล์:</label>
+        <input type="file" id="profilePic" accept="image/*" required>
+        <span class="error" id="picError"></span>
+        
+        <!-- รหัสผ่าน -->
+        <label>รหัสผ่าน:</label>
+        <input type="password" id="password" required>
+        <span class="error" id="passwordError"></span>
+
+        <label>ยืนยันรหัสผ่าน:</label>
+        <input type="password" id="confirmPassword" required>
+        <span class="error" id="confirmPasswordError"></span>
+
+        <!-- ความสนใจ -->
+        <label>ความสนใจในหมวดหมู่สินค้า:</label>
+        <select id="interest" required>
+            <option value="">-- เลือก --</option>
+            <option value="electronics">อิเล็กทรอนิกส์</option>
+            <option value="fashion">แฟชั่น</option>
+            <option value="beauty">ความงาม</option>
+            <option value="sports">กีฬา</option>
+        </select>
+
+        <!-- เงื่อนไข -->
+        <label>
+            <input type="checkbox" id="terms" required>
+            ยอมรับเงื่อนไขการใช้งาน
+        </label>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            let isValid = true;
+            
+            // ตรวจสอบรูปแบบอีเมล
+            const email = document.getElementById('email').value;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById('emailError').innerText = 'รูปแบบอีเมลไม่ถูกต้อง';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').innerText = '';
+            }
+            
+            // ตรวจสอบเบอร์โทร (ต้องเป็นตัวเลข 10 หลัก)
+            const phone = document.getElementById('phone').value;
+            const phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                document.getElementById('phoneError').innerText = 'เบอร์โทรต้องเป็นตัวเลข 10 หลัก';
+                isValid = false;
+            } else {
+                document.getElementById('phoneError').innerText = '';
+            }
+            
+            // ตรวจสอบความยาวรหัสผ่าน
+            const password = document.getElementById('password').value;
+            if (password.length < 6) {
+                document.getElementById('passwordError').innerText = 'รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร';
+                isValid = false;
+            } else {
+                document.getElementById('passwordError').innerText = '';
+            }
+            
+            // ตรวจสอบการยืนยันรหัสผ่าน
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').innerText = 'รหัสผ่านไม่ตรงกัน';
+                isValid = false;
+            } else {
+                document.getElementById('confirmPasswordError').innerText = '';
+            }
+            
+            // ตรวจสอบขนาดไฟล์รูปภาพ (ไม่เกิน 2MB)
+            const profilePic = document.getElementById('profilePic').files[0];
+            if (profilePic && profilePic.size > 2 * 1024 * 1024) {
+                document.getElementById('picError').innerText = 'ขนาดไฟล์ต้องไม่เกิน 2MB';
+                isValid = false;
+            } else {
+                document.getElementById('picError').innerText = '';
+            }
+            
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![from2](https://github.com/user-attachments/assets/35b1de76-463f-4d84-9070-35c538f80310)
+![from1](https://github.com/user-attachments/assets/34752833-efea-4575-9bdd-24f8c23767fc)
 
 
 
