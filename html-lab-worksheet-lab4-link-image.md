@@ -165,9 +165,130 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>หนาหลัก</title>
+</head>
+<body>
+    
+<div>
+    <img src="images/logo.jpg" 
+     alt="โลโก้บริษัท"
+     width="200">
+</div>
+
+<nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+        
+    <a href="https://www.naiin.com/" target="_blank">
+     สินค่าเพื่มเติม
+    </a>
+</nav>
+
+<section id="top">
+    <h1>ร้านหนังสือ หนังเสือ</h1>
+</section>
+
+<section id="products">
+    <h2>หนังสือแนะนำร้านเรา</h2>
+</section>
+
+<figure>
+    <a href="images/products/product1.jpg">
+        <img src="images/products/product1.jpg" 
+        alt="คลิกเพื่อดูรูปขนาดใหญ่"
+        width="200">
+    </a>
+    <figcaption>
+        ข้อสอบ A-Level ภาษาไทย ฉบับอัปเดต<br>
+        ผู้เขียน: อ.ปิง เจริญศิริวัฒน์<br>
+        สำนักพิมพ์: ร.ร.กวดวิชา อ.ปิง<br>
+        หมวดหมู่: หนังสือเตรียมสอบ แนวข้อสอบ , เตรียมสอบเข้ามหาวิทยาลัย<br>
+    </figcaption>
+</figure>
+
+<figure>
+    <a href="images/products/product2.jpg">
+        <img src="images/products/product2.jpg" 
+        alt="คลิกเพื่อดูรูปขนาดใหญ่"
+        width="200">
+    </a>
+    <figcaption>
+        ใช้คลื่นพลังบวกดึงดูดพลังสุข<br>
+        ผู้เขียน: Vex King (เว็กซ์ คิงส์)<br>
+        สำนักพิมพ์: อมรินทร์ How to<br>
+        หมวดหมู่: จิตวิทยา การพัฒนาตัวเอง , การพัฒนาตัวเอง how to<br>
+
+    </figcaption>
+</figure>
+
+<figure>
+    <a href="images/products/product3.jpg">
+        <img src="images/products/product3.jpg" 
+        alt="คลิกเพื่อดูรูปขนาดใหญ่"
+        width="200">
+    </a>
+    <figcaption>
+        ข้อสอบ A-Level สังคม ฉบับอัปเดต<br>
+        ผู้เขียน: อ.ปิง เจริญศิริวัฒน์<br>
+        สำนักพิมพ์: ร.ร.กวดวิชา อ.ปิง<br>
+        หมวดหมู่: หนังสือเตรียมสอบ แนวข้อสอบ , เตรียมสอบเข้ามหาวิทยาลัย<br>
+
+    </figcaption>
+</figure>
+
+<figure>
+    <a href="images/products/product4.jpg">
+        <img src="images/products/product4.jpg" 
+        alt="คลิกเพื่อดูรูปขนาดใหญ่"
+        width="200">
+    </a>
+    <figcaption>
+        จิตวิทยาสายดาร์ก<br>
+        ผู้เขียน: Dr.Hiro<br>
+        สำนักพิมพ์: วีเลิร์น (WeLearn)<br>
+        หมวดหมู่: จิตวิทยา การพัฒนาตัวเอง , การพัฒนาตัวเอง how to<br>
+
+    </figcaption>
+</figure>
+
+<figure>
+    <a href="images/products/product5.jpg">
+        <img src="images/products/product5.jpg" 
+        alt="คลิกเพื่อดูรูปขนาดใหญ่"
+        width="200">
+    </a>
+    <figcaption>
+        แนวข้อสอบ A-LEVEL ภาษาอังกฤษ<br>
+        ผู้เขียน: รศ.ดร.ศุภวัฒน์ พุกเจริญ<br>
+        สำนักพิมพ์: ศุภวัฒน์ พุกเจริญ/Suphawat Pukcharoen<br>
+        หมวดหมู่: หนังสือเตรียมสอบ แนวข้อสอบ , เตรียมสอบเข้ามหาวิทยาลัย<br>
+
+    </figcaption>
+</figure>
+
+<a href="#top">กลับด้านบน</a>
+<a href="#products">ไปยังสินค้า<br></a>
+<hr>
+<a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+
+<a href="tel:+66812345678">โทร 081-234-3245</a>
+
+<a href="files/document.pdf" download>
+    ดาวน์โหลดเอกสาร
+</a>
+
+</body>
+</html>
 [วางโค้ด HTML ที่นี่]
 ```
 - ภาพผลลัพธ์:
+![image](https://github.com/user-attachments/assets/a63fcdb3-6d04-4c02-8c1d-57ce0acf9302)
+![image](https://github.com/user-attachments/assets/7facee73-36f6-4d88-8097-31dc6e1dbd06)
+![image](https://github.com/user-attachments/assets/fce91063-f513-425a-b9d2-f35bde8d6cab)
 [วางภาพ screenshot ที่นี่]
 
 
