@@ -35,8 +35,7 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
-```<!DOCTYPE html>
+[<!DOCTYPE html>
 <html>
 <head>
     <title>My First Web Page</title>
@@ -49,7 +48,8 @@
     <em>This text is emphasized</em>
     <strong>This text is strong</strong>    
 </body>
-</html>
+</html>]
+```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 ![alt text](image-2.png)
