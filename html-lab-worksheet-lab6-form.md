@@ -224,9 +224,149 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .required-mark {
+        color: red;
+        margin-left: 5px;
+    }
+</style>
+<body>
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+        <div class="form-group">
+            <label for="prefix">คำนำหน้า:</label>
+             <select id="prefix" name="prefix" required>
+                <option value="">เลือกคำนำหน้า</option>
+                <option value="mr">นาย</option>
+                <option value="ms">นางสาว</option>
+                <option value="mrs">นาง</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="firstName">ชื่อ:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">นามสกุล:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="birthdate">วันเกิด:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label>เพศ:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">ชาย</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">หญิง</label>
+
+        </div>
+        
+
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+        
+        <div class="form-group">
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" name="phone" 
+                   pattern="[0-9]{10}" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="address">ที่อยู่:</label>
+            <textarea id="address" name="address" 
+                      rows="3" required></textarea> <span class="required-mark">*</span>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>เอกสารในการสมัคร</legend>
+        
+        <div class="form-group">
+            <div>
+                <label for="photo">รูปถ่าย:</label>
+                <input type="file" id="photo" name="photo" 
+                       accept="image/*" required><span class="required-mark">*</span>
+            </div>
+
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>สมัครในตำแหน่ง</legend>
+
+        <div class="form-group">
+            <label>ความสนใจในหมวดหมู่สินค้า:</label>
+            <input type="checkbox" id="sport" name="interests" value=#>
+            <label for="drink">เครื่องดื่ม</label>
+            <input type="checkbox" id="music" name="interests" value=#>
+            <label for="candy">ขนม</label>
+            <input type="checkbox" id="art" name="interests" value=#>
+            <label for="cosmetics">เครื่องสำอาง</label>
+            <input type="checkbox" id="tech" name="interests" value=#>
+            <label for="equipment">อุปกรณ์เครื่องใช้</label>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>การยืนยันรหัสผ่าน</legend>
+
+        <div>
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="password">ยืนยันรหัสผ่าน:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>การยืนยันข้อมูล</legend>
+
+        <div class="form-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">
+                ข้าพเจ้ายืนยันว่าข้อมูลทั้งหมดเป็นความจริง
+            </label>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">ลงทะเบียน</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </fieldset>
+
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
+![image](https://github.com/user-attachments/assets/899b5ad9-6ff5-40c2-9f02-0f2495e996be)
+
 [วางภาพ screenshot ที่นี่]
 
 
