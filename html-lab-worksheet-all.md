@@ -1,4 +1,4 @@
-# ใบงานการทดลอง HTML
+![Screenshot (5)](https://github.com/user-attachments/assets/5bfe4bfe-dd2b-494e-9457-70e1b843c0b8)# ใบงานการทดลอง HTML
 
 ## จุดประสงค์การเรียนรู้
 1. อธิบายโครงสร้างของ HTML ได้
@@ -117,7 +117,8 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-  
+![Screenshot (5)](https://github.com/user-attachments/assets/22abe822-baab-4730-9c80-78302482b9e7)
+
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
 1. ทดลองใช้ tag ต่างๆ:
