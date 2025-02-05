@@ -75,5 +75,6 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-({913D8E69-E7F5-40A2-9A1D-E61405157453}.png)
+![{4025F7DB-8BE6-4170-9E88-BA23F197C93D}](https://github.com/user-attachments/assets/a4d41dde-cbf7-4fea-a68c-0fbd01c1773f)
+
 
