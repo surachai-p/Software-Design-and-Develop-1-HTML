@@ -222,8 +222,7 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[LAb 6
-
+[
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -361,12 +360,22 @@
         </fieldset>
     </form>
 </body>
-</html>]
+</html>
+
+
+
+
+
+
+
+
+]
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[![alt text](image-8.png)]
+
+[![alt text](image-13.png)]
 
 
 
