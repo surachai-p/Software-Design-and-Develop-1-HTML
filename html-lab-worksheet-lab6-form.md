@@ -222,7 +222,7 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-    <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+        <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
     <style>
         .form-group {
             margin-bottom: 15px;
@@ -243,7 +243,7 @@
         <form action="/register" method="post">
             <!-- ส่วนข้อมูลส่วนตัว -->
             <fieldset>
-                <legend>สมัครงานคนขับรถ</legend>
+                <legend>สมัครสมาชิกร้านค้าออนไลน์</legend>
                 <div class="form-group">
                     <label for="prefix">คำนำหน้า:</label>
                      <select id="prefix" name="prefix" required>
@@ -291,6 +291,19 @@
                     <label for="email">อีเมล:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
+
+                <fieldset>
+                    <legend>การยืนยันรหัสผ่าน</legend>
+            
+                    <div>
+                        <label for="password">รหัสผ่าน:</label>
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">ยืนยันรหัสผ่าน:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+            
+                </fieldset>
+        
         
                 <div class="form-group">
                     <label for="phone">เบอร์โทรศัพท์:</label>
@@ -305,66 +318,6 @@
                 </div>
             </fieldset>
         
-            <!-- ส่วนข้อมูลการศึกษา -->
-            <fieldset>
-                <legend>ข้อมูลการศึกษา</legend>
-        
-                <div class="form-group">
-                    <label for="University">จบการศึกษาที่:</label>
-                    <select id="University" name="University" required>
-                        <option value="University">เลือกมหาวิทยาลัย</option>
-                        <option value="KMITL">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</option>
-                        <option value="KMUTT">มหาวิทยาลัยพระจอมเกล้าธนบุรี</option>
-                        <option value="KMUTNB">มหาวิทยาลัยพระจอมเกล้าพระนครเหนือ</option>
-                    </select> <span class="required-mark">*</span>
-                </div>
-
-                <div class="form-group">
-                    <label for="faculty">คณะ:</label>
-                    <select id="faculty" name="faculty" required>
-                        <option value="">เลือกคณะ</option>
-                        <option value="siet">ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</option>
-                        <option value="engineering">วิศวกรรมศาสตร์</option>
-                        <option value="science">วิทยาศาสตร์</option>
-                    </select> <span class="required-mark">*</span>
-                </div>
-
-                <div class="form-group">
-                    <label for="major">สาขาวิชา:</label>
-                    <select id="major" name="major" required>
-                        <option value="">เลือกสาขาวิชา</option>
-                        <option value="computer">เทคโนโลยีคอมพิวเตอร์</option>
-                        <option value="electronics">อิเล็กทรอนิกส์</option>
-                        <option value="architect">สถาปัตย์</option>
-                        <!-- ตัวเลือกจะเปลี่ยนตามคณะที่เลือก ส่วนนี้ Code ยังไม่สมบูรณ์-->
-                    </select> <span class="required-mark">*</span>
-                </div>
-        
-                <div class="form-group">
-                    <label for="gpa">เกรดเฉลี่ยสะสม:</label>
-                    <input type="number" id="gpa" name="gpa" 
-                           min="0" max="4" step="0.01" required> <span class="required-mark">*</span>
-                </div>
-            </fieldset>
-        
-            <!-- ส่วนความสนใจและกิจกรรม -->
-            <fieldset>
-                <legend>ความสนใจในงานและประเภท</legend>
-        
-                <div class="form-group">
-                    <label>ความสนใจ:</label>
-                    <input type="checkbox" id="vehicle" name="Truck" value="Basic Luxury">
-                    <label for="vehicle">Van</label>
-                    <input type="checkbox" id="vehicle" name="sedan" value="mudium Luxury">
-                    <label for="vehicle">sedan</label>
-                    <input type="checkbox" id="vehicle" name="SUV" value="Luxury">
-                    <label for="vehicle">SUV</label>
-                    <input type="checkbox" id="vehicle" name="Limousine" value="Luxury">
-                    <label for="vehicle">Limousine</label>
-                </div>
-            </fieldset>
-        
-            <!-- ส่วนอัพโหลดเอกสาร -->
             <fieldset>
                 <legend>เอกสารประกอบ</legend>
                 <div class="form-group">
@@ -372,14 +325,25 @@
                     <input type="file" id="photo" name="photo" 
                            accept="image/*" required><span class="required-mark">*</span>
                 </div>
+
+            
+            <!-- ส่วนความสนใจและกิจกรรม -->
+     <fieldset>
+                <legend>ความสนใจในประเภทสินค้า</legend>
         
                 <div class="form-group">
-                    <label for="transcript">ใบแสดงผลงาน/ผลการเรียน:</label>
-                    <input type="file" id="transcript" name="transcript" 
-                           accept=".pdf,.doc,.docx" required>
-                           <span class="required-mark">*</span>
+                    <label>ความสนใจ:</label>
+                    <input type="checkbox" id="Food" name="milk" value="Drink">
+                    <label for="Food">เครื่องดื่ม</label>
+                    <input type="checkbox" id="Food" name="Rice" value="Food">
+                    <label for="Rice">ข้าว</label>
+                    <input type="checkbox" id="Appliances" name="Appliances" value="Appliances">
+                    <label for="Appliances">ของใช้</label>
+                    <input type="checkbox" id="vehicle" name="Limousine" value="Luxury">
+                    <label for="vehicle">เครื่องใช้ไฟฟ้า</label>
                 </div>
             </fieldset>
+
         
             <!-- ส่วนยืนยันข้อมูล -->
             <fieldset>
@@ -388,7 +352,7 @@
                 <div class="form-group">
                     <input type="checkbox" id="agree" name="agree" required>
                     <label for="agree">
-                        ข้าพเจ้ายืนยันว่าข้อมูลทั้งหมดเป็นความจริง
+                        การยอมรับเงื่อนไขการใช้งาน
                     </label>
                 </div>
         
@@ -399,6 +363,7 @@
             </fieldset>
         </form>
 
-![{0088CDCB-806A-4226-8837-B4EF1116EBE8}](https://github.com/user-attachments/assets/e1890912-dc92-4318-9254-52b7428127e7)
+![{F04B961B-6A76-41FD-9DC4-7864194AFBFF}](https://github.com/user-attachments/assets/4efd6ded-a738-4ba3-8802-2358f9c84bc1)
+
 
 
