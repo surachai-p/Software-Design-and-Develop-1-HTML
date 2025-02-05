@@ -74,7 +74,8 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/0184c12f-5639-4852-8624-e5b70666569d)
+
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +114,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to sarasinee web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/b026de78-efac-46c5-b0b0-c97936f82feb)
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +164,43 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        h1, h2 { color: #333; }
+        p { line-height: 1.6; color: #555; }
+        hr { margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>ชื่อสราสินี สิทธิสาร</h1>
+
+    <h2>ประวัติการศึกษา</h2>
+    <p>กำลังศึกษาอยู่ที่สถาบันเทคโนยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขาเทคโนโลยีคอมพิวเตอร์</p>
+
+    <hr>
+
+    <h2>งานอดิเรก</h2>
+    <p>ชอบอ่านหนังสือ, เล่นเกมส์, และออกกำลังกาย</p>
+
+    <hr>
+
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>ต้องการจะนำเอาความรู้ด้านการเขียนโปรแกรมไปพัฒนาใช้ในอนาคตให้เกิดประโยชน์สูงสุด</p>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/8e5c6d62-7b6f-41f1-8f00-5636f6c25ca0)
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +367,115 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <!-- ส่วนของเนื้อหา -->
+</body>
+</html>
+
+<nav>
+    <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+    <a href="https://www.google.com" target="_blank">
+        ไปยัง Google
+    </a>
+</nav>
+
+<!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>ร้านอาหารสองสไตล์</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+
+<!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<a href="#top">กลับด้านบน</a>
+<a href="#products">ไปยังสินค้า</a>
+
+<!-- ลิงก์อีเมล -->
+<a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+
+<!-- ลิงก์โทรศัพท์ -->
+<a href="tel:+66812345678">โทร 081-234-5678</a>
+
+<!-- ลิงก์ดาวน์โหลด -->
+<a href="files/document.pdf" download>
+    ดาวน์โหลดเอกสาร
+</a>
+
+
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+<img src="images/products/products1.jpg" 
+     alt="สินค้าชิ้นที่ 1"
+     width="300"
+     height="200">
+     <figcaption>
+        สปาเกตตี้
+     </figcaption>
+
+     <figure>
+        <img src="images/products/products2.jpg" 
+             alt="สินค้าชิ้นที่ 2">
+        <figcaption>
+          ราเมง
+        </figcaption>
+    </figure>
+
+    <img src="images/products/producst3.jpg" 
+     alt="สินค้าชิ้นที่ 1"
+     width="300"
+     height="200">
+     <figcaption>
+        ต้มยำกุ้ง
+     </figcaption>
+     </figure>
+
+     <img src="images/products/products4.jpg" 
+     alt="สินค้าชิ้นที่ 1"
+     width="300"
+     height="200">
+     <figcaption>
+        ผัดกระเพรา
+     </figcaption>
+
+    <a href="images/products/products1.jpg">
+        <img src="images/products/product1.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+    </a>
+
+    <a href="images/products/products2.jpg">
+        <img src="images/products/product2.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="300">
+    </a>
+
+    <a href="images/products/producst3.jpg">
+        <img src="images/products/product3.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+    </a>
+
+    <a href="images/products/products4.jpg">
+        <img src="images/products/product4.jpg" 
+             alt="คลิกเพื่อดูรูปขนาดใหญ่"
+             width="200">
+    </a>
 ```
-- ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+- ภาพผลลัพธ์:![image](https://github.com/user-attachments/assets/ecab505b-52f6-447d-81b0-1490d93fb248)
+![image](https://github.com/user-attachments/assets/149b73e6-9dfa-4393-92c0-514be936ea99)
+
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -392,11 +545,39 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
-```html
+แสดงข้อมูลส่วนตัว
+<table border="1">
+    <thead>
+        <tr>
+            <th>ชื่อ</th>
+            <th>อายุ</th>
+            <th>วันเกิด</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>สราสินี, สิทธิสาร</td>
+            <td>19</td>
+            <td>9 มิถุนา 2548</td>
+        </tr>
+แสดงรายการอาหาร
+<ul>
+    <li>รายการอาหาร</li>
+   
+</ul>
+
+<ol>
+    <li>ต้มยำกุ้ง</li>
+    <li>ผัดไท</li>
+    <li>ส้มตำ</li>
+    <li>แกงส้ม</li>
+</ol>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/d7bad36a-6eb8-4247-8894-1b24d556cee9)
+![image](https://github.com/user-attachments/assets/58cb9795-c01b-41e8-a76a-25567b24d05d)
+
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,10 +802,136 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+<h1>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h1>
+
+<form id="registrationForm" action="#" method="POST" enctype="multipart/form-data">
+    <!-- ข้อมูลส่วนตัว -->
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+        
+        <label for="name">ชื่อ-นามสกุล</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">วันเกิด</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">เพศ</label>
+        <select id="gender" name="gender" required>
+            <option value="">เลือกเพศ</option>
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่นๆ</option>
+        </select>
+    </fieldset>
+    
+    <!-- ข้อมูลการติดต่อ -->
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+        
+        <label for="email">อีเมล</label>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error"></div>
+
+        <label for="phone">เบอร์โทร</label>
+        <input type="tel" id="phone" name="phone" required pattern="^[0-9]{10}$">
+        <div id="phoneError" class="error"></div>
+
+        <label for="address">ที่อยู่จัดส่ง</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+    </fieldset>
+
+    <!-- รูปโปรไฟล์ -->
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+        
+        <label for="profilePic">อัปโหลดรูปโปรไฟล์ (ไฟล์ jpg, png เท่านั้น)</label>
+        <input type="file" id="profilePic" name="profilePic" accept=".jpg, .jpeg, .png" required>
+        <div id="profilePicError" class="error"></div>
+    </fieldset>
+
+    <!-- การยืนยันรหัสผ่าน -->
+    <fieldset>
+        <legend>การยืนยันรหัสผ่าน</legend>
+        
+        <label for="password">รหัสผ่าน</label>
+        <input type="password" id="password" name="password" required minlength="6">
+        <div id="passwordError" class="error"></div>
+
+        <label for="confirmPassword">ยืนยันรหัสผ่าน</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <div id="confirmPasswordError" class="error"></div>
+    </fieldset>
+
+    <!-- ความสนใจในหมวดหมู่สินค้า -->
+    <fieldset>
+        <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+        
+        <label for="interests">เลือกหมวดหมู่ที่คุณสนใจ</label>
+        <select id="interests" name="interests" required multiple>
+            <option value="electronics">อิเล็กทรอนิกส์</option>
+            <option value="fashion">แฟชั่น</option>
+            <option value="homeGoods">ของใช้ในบ้าน</option>
+            <option value="books">หนังสือ</option>
+            <option value="game">เล่นเกมส์</option>
+        </select>
+    </fieldset>
+
+    <!-- การยอมรับเงื่อนไข -->
+    <fieldset>
+        <label for="terms">
+            <input type="checkbox" id="terms" name="terms" required> ยอมรับเงื่อนไขการใช้งาน
+        </label>
+    </fieldset>
+
+    <!-- ปุ่มสมัครสมาชิก -->
+    <button type="submit" class="submit-btn">สมัครสมาชิก</button>
+</form>
+
+<script>
+    // ตรวจสอบฟอร์ม
+    document.getElementById("registrationForm").onsubmit = function(event) {
+        event.preventDefault();
+        
+        // ตรวจสอบอีเมล
+        const email = document.getElementById("email").value;
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        const emailError = document.getElementById("emailError");
+        emailError.textContent = emailPattern.test(email) ? "" : "รูปแบบอีเมลไม่ถูกต้อง";
+
+        // ตรวจสอบเบอร์โทร
+        const phone = document.getElementById("phone").value;
+        const phonePattern = /^[0-9]{10}$/;
+        const phoneError = document.getElementById("phoneError");
+        phoneError.textContent = phonePattern.test(phone) ? "" : "เบอร์โทรต้องมี 10 หลัก";
+
+        // ตรวจสอบรหัสผ่าน
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+        const passwordError = document.getElementById("passwordError");
+        const confirmPasswordError = document.getElementById("confirmPasswordError");
+        passwordError.textContent = password.length >= 6 ? "" : "รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร";
+        confirmPasswordError.textContent = password === confirmPassword ? "" : "รหัสผ่านและยืนยันรหัสผ่านไม่ตรงกัน";
+
+        // ตรวจสอบขนาดไฟล์รูปภาพ
+        const profilePic = document.getElementById("profilePic").files[0];
+        const profilePicError = document.getElementById("profilePicError");
+        if (profilePic && (profilePic.size > 2 * 1024 * 1024)) {
+            profilePicError.textContent = "ขนาดไฟล์รูปภาพไม่เกิน 2MB";
+        } else {
+            profilePicError.textContent = "";
+        }
+
+        // ถ้าทุกอย่างถูกต้อง, ส่งฟอร์ม
+        if (!emailError.textContent && !phoneError.textContent && !passwordError.textContent && !confirmPasswordError.textContent && !profilePicError.textContent) {
+            alert("สมัครสมาชิกสำเร็จ!");
+    
+        }
+    }
+</script>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/dc43b2d4-0771-4a01-9296-13692ff7f8ab)
+
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -712,5 +1019,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/1a936319-e60a-4d73-b264-37e012764009)
 
