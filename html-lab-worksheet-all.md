@@ -787,10 +787,232 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มลงทะเบียน</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: rgb(255, 0, 13);
+            margin-left: 5px;
+        }
+    </style>
+    <script>
+        function validateEmail() {
+            var email = document.getElementById("email").value;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
+            if (!emailPattern.test(email)) {
+                alert("รูปแบบอีเมลไม่ถูกต้อง");
+                return false;
+            }
+            return true;
+        }
+
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            // ตรวจสอบความยาวรหัสผ่าน
+            if (password.length < 8) {
+                alert("รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร");
+                return false; // ไม่ให้ส่งฟอร์ม
+            }
+
+            // ตรวจสอบว่า รหัสผ่านและยืนยันรหัสผ่านตรงกันหรือไม่
+            if (password !== confirmPassword) {
+                alert("รหัสผ่านและยืนยันรหัสผ่านไม่ตรงกัน");
+                return false; // ไม่ให้ส่งฟอร์ม
+            }
+
+            return true; // ให้ส่งฟอร์ม
+        }
+    </script>
+    <script>
+        function validatePhoneNumber() {
+            var phoneNumber = document.getElementById("phone").value;
+            var resultElement = document.getElementById("result");
+
+            if (phoneNumber.length !== 10 || !/^\d{10}$/.test(phoneNumber) || new Set(phoneNumber).size === 1) {
+                resultElement.innerHTML = "กรุณากรอกเบอร์โทรที่ถูกต้อง";
+                resultElement.style.color = "red";
+            } else {
+                resultElement.innerHTML = "เบอร์โทรถูกต้อง";
+                resultElement.style.color = "green";
+            }
+        }
+    </script>
+    <script>
+        function validateImageSize() {
+            var fileInput = document.getElementById("photo");
+            var file = fileInput.files[0];
+            var maxSize = 5 * 1024 * 1024; // ขนาดสูงสุด 5MB
+
+            if (file) {
+                // ตรวจสอบขนาดไฟล์
+                if (file.size > maxSize) {
+                    alert("ขนาดไฟล์รูปภาพไม่ควรเกิน 5MB");
+                    fileInput.value = ""; // ล้างไฟล์ที่เลือก
+                    return false;
+                }
+                alert("ขนาดไฟล์ถูกต้อง");
+                return true;
+            } else {
+                alert("กรุณาเลือกไฟล์รูปภาพ");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="/register" method="post">
+        <!-- ส่วนข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="prefix">คำนำหน้า:</label>
+                <select id="prefix" name="prefix" required>
+                    <option value="">เลือกคำนำหน้า</option>
+                    <option value="mr">นาย</option>
+                    <option value="ms">นางสาว</option>
+                    <option value="mrs">นาง</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+
+        <!-- ส่วนข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <form onsubmit="event.preventDefault(); validatePhoneNumber();">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <input type="submit" value="ส่งข้อมูล" onclick="return validatePhoneNumber()">
+
+            </form>
+            <p id="result"></p>
+
+            <div class="form-group">
+                <label for="address">ที่อยู่:</label>
+                <textarea id="address" name="address" rows="5" required></textarea><span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="ส่งข้อมูล" onclick="return validateEmail()">
+            </div>
+        </fieldset>
+
+        <!-- ส่วนอัพโหลดเอกสาร -->
+
+
+        <fieldset>
+            <h2>รูปโปรไฟล์</h2>
+            <form onsubmit="return validateImageSize()">
+                <div class="form-group">
+                    <label for="photo">รูปถ่าย:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <br>
+                <button type="submit">ส่งข้อมูล</button>
+            </form>
+        </fieldset>
+
+        <!-- ส่วนสร้างรหัสผ่าน -->
+        <fieldset>
+            <legend>สร้างรหัสผ่าน</legend>
+            <form onsubmit="return validatePassword()">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+                <input type="submit" value="ส่งข้อมูล">
+            </form>
+        </fieldset>
+        
+        <!-- ส่วนความสนใจในหมวดหมู่สินค้า -->
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+            <div class="form-group">
+                <label>ความสนใจ:</label>
+                <input type="checkbox" id="clothes" name="interests" value="clothes">
+                <label for="clothes">เสื้อผ้า</label>
+                <input type="checkbox" id="productIT" name="interests" value="productIT">
+                <label for="productIT">สินค้าIT</label>
+                <input type="checkbox" id="productelderly" name="interests" value="productelderly">
+                <label for="productelderly">สินค้าผู้สูงอายุ</label>
+                <input type="checkbox" id="sport" name="interests" value="sport">
+                <label for="sport">สินค้าหมวดหมู่กีฬา</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="home" name="interests" value="home">
+                <label for="home">สินค้าที่ใช้ในบ้านในครัว</label>
+                <input type="checkbox" id="beauty" name="interests" value="beauty">
+                <label for="beauty">สินค้าความสวยความงาม</label>
+            </div>
+        </fieldset>
+
+        <!-- ส่วนยืนยันข้อมูล -->
+        <fieldset>
+            <legend>การยืนยัน</legend>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">
+                    ข้าพเจ้ายอมรับเงื่อนไขการใช้งานทั้งหมด
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">ลงทะเบียน</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/617d5a3b-53e7-4192-970a-d63e23ecadf3)
+
 
 
 ## การทดลองที่ 7: HTML Layout
