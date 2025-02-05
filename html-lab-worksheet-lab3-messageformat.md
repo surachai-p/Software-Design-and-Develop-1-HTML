@@ -76,8 +76,8 @@
 
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 23 13 14" src="https://github.com/user-attachments/assets/74e12c4e-6c90-4a4d-b957-5e9d0efae6fc" />
 
-<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 23 13 14" src="https://github.com/user-attachments/assets/64176738-9627-4286-8bd7-e6e821c1d77f" />
 
 
 
