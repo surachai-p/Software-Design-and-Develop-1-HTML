@@ -117,7 +117,7 @@
 </dl>
 
 ```
-- ภาพผลลัพธ์:
-![{E389F22B-2713-48BC-9F5D-337969879D1B}](https://github.com/user-attachments/assets/885a1e0c-3606-4b4a-a3ef-6488a99df2b5)
+![{38FF754B-9941-467D-9C9C-800818EF6F8E}](https://github.com/user-attachments/assets/14f1e32f-81e5-4c2b-aa82-0b9069e92d30)
+
 
 
