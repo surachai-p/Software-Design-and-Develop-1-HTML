@@ -66,7 +66,9 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[<table border="1">
+[วางโค้ด HTML ที่นี่]
+```html
+<table border="1">
     <thead>
         <tr>
             <th>รายการ</th>
@@ -169,11 +171,10 @@
     <li>ทับทิมกรอบ</li>
     <li>ลอดช่องน้ำกะทิ</li>
     <li>บัวลอยเผือกมะพร้าวอ่อน</li>
-</ul>]
-```html
-
+</ul>
 ```
 - ภาพผลลัพธ์:
-![image](https://github.com/user-attachments/assets/7f484d53-5658-4a77-aae4-e69aec3e742d)
+![image](https://github.com/user-attachments/assets/c1f9f08b-0b22-4c45-b2b1-bb6cd8551996)
+
 
 
