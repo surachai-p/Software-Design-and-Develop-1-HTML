@@ -131,6 +131,7 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![Screenshot 2025-02-05 101649](https://github.com/user-attachments/assets/8aece3fb-a62b-45c3-a820-54363c1dbd1b)
 
 
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
