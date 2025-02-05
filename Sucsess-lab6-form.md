@@ -1,4 +1,4 @@
-# ใบงานการทดลอง HTML
+![image](https://github.com/user-attachments/assets/256144a9-c331-4e1b-81fc-9e966dc63863)# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
@@ -224,10 +224,77 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - ร้านค้าออนไลน์</title>
+</head>
+<body>
+
+    <h1>สมัครสมาชิก - ร้านค้าออนไลน์</h1>
+
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <label for="firstName">ชื่อ:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">นามสกุล:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="birthdate">วันเกิด:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <label for="gender">เพศ:</label>
+            <input type="radio" id="male" name="gender" value="male" required> ชาย
+            <input type="radio" id="female" name="gender" value="female"> หญิง<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+            <label for="address">ที่อยู่จัดส่ง:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <label for="profilePic">เลือกไฟล์รูปโปรไฟล์:</label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>การยืนยันรหัสผ่าน</legend>
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+            <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>เงื่อนไขการใช้งาน</legend>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน</label><br><br>
+        </fieldset>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![image](https://github.com/user-attachments/assets/a14a0aa9-6b8e-4bc8-8bae-794189233b1e)
 
 
