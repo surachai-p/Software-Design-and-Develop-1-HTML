@@ -249,6 +249,7 @@ width="150">
 </a>]
 ```
 - ภาพผลลัพธ์:
-{7EFD7CC9-4A8F-48B2-BB71-41559EF3B925}.png
-{3AA3580F-AB97-4AFC-9852-775445360DBD}.png
+![{A55D2934-794B-47B5-BF2A-9575796CC2BD}](https://github.com/user-attachments/assets/42a3e3e9-7aca-4a2c-9295-dae45a314393)
+![{7A1A19BC-3D72-4318-AB47-FB90085C4C5C}](https://github.com/user-attachments/assets/dc0cad8c-9834-48a4-b8db-cb9364d16291)
+
 
