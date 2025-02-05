@@ -165,10 +165,72 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>ร้านอาหาร เจ้กุ้งผัดแซ่บ</h1>
+</section>
+
+<section id="products">
+    <h2>ข้าวผัด</h2>
+</section>
+<figure>
+    <a href="images/1.jpg">
+    <img src="images/1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200"></a>
+    <figcaption>
+         ข้าวผัดสัปปะรด
+    </figcaption>
+</figure>
+
+<section id="products">
+    <h2>กะเพราหมูสับ</h2>
+</section>
+<figure>
+    <a href="images/2.jpg">
+    <img src="images/2.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200"></a>
+    <figcaption>
+        กะเพราหมูสับ ขยี้ใจ
+    </figcaption>
+</figure>
+
+<section id="products">
+    <h2>ข้าวหมูกระเทียม</h2>
+</section>
+<figure>
+    <a href="images/3.jpg">
+    <img src="images/3.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200"></a>
+    <figcaption>
+        ข้าวหมูเทียมหอมกรุน
+    </figcaption>
+</figure>
+
+<section id="products">
+    <h2>คะน้าหมูกรอบ</h2>
+</section>
+<figure>
+    <a href="images/4.jpg">
+    <img src="images/4.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่" width="200"></a>
+    <figcaption>
+        คะน้าหมูกรอบ หอมยั่วใจ
+    </figcaption>
+</figure>
+
+<a href="#top">กลับด้านบน</a>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![food](https://github.com/user-attachments/assets/6c4d461b-238a-486e-814a-227ca191d856)
 
 
