@@ -787,6 +787,7 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
+```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -1008,7 +1009,6 @@
 </body>
 
 </html>
-
 ```
 - ภาพผลลัพธ์:
 ![image](https://github.com/user-attachments/assets/617d5a3b-53e7-4192-970a-d63e23ecadf3)
