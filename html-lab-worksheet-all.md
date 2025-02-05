@@ -1,4 +1,4 @@
-![Screenshot (5)](https://github.com/user-attachments/assets/5bfe4bfe-dd2b-494e-9457-70e1b843c0b8)# ใบงานการทดลอง HTML
+# ใบงานการทดลอง HTML
 
 ## จุดประสงค์การเรียนรู้
 1. อธิบายโครงสร้างของ HTML ได้
