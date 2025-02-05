@@ -41,7 +41,7 @@
     <title>My First Web Page</title>
 </head>
 <body>
-    <h1>Welcome to ...... (student name) web page</h1>
+    <h1>Welcome to Arthtitaya Phiokham web page</h1>
     <p>This is my first web page.</p>
     <div>This is a block element</div>
     <span>This is an inline element</span>
@@ -53,7 +53,8 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![image](https://github.com/user-attachments/assets/dca2255b-00d3-4e90-8e3a-4e2b29819d06)
+![image](https://github.com/user-attachments/assets/29515c01-7f9b-465f-8a71-486362588dcd)
+
 
 
 
