@@ -1,4 +1,4 @@
-# ใบงานการทดลอง HTML
+    # ใบงานการทดลอง HTML
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
 ### วัตถุประสงค์
@@ -177,10 +177,6 @@
         <p>ราคา: 50 บาท</p>
     </div>
     <div class="menu-item">
-        <h3>สตรอว์เบอร์รีสมูทตี้</h3>
-        <p>ราคา: 70 บาท</p>
-    </div>
-    <div class="menu-item">
         <h3>ชาเขียวมัทฉะลาเต้เย็น</h3>
         <p>ราคา: 65 บาท</p>
     </div>
@@ -194,8 +190,8 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 23 30 01" src="https://github.com/user-attachments/assets/d67f6e01-e3a4-4559-b7ff-9791b8604bb4" />
-<img width="1439" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 23 30 15" src="https://github.com/user-attachments/assets/a0b9b48b-7e9a-4c8e-b881-cbddfd2ee3cf" />
+<img width="1426" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 23 56 59" src="https://github.com/user-attachments/assets/a40f25ef-e261-4fec-93ba-53235b640c87" />
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-05 เวลา 23 57 07" src="https://github.com/user-attachments/assets/1880aa0c-974a-420a-9fef-e2fe87481c6b" />
 
 
 
