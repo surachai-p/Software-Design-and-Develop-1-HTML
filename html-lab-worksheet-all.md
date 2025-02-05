@@ -465,11 +465,102 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
-```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
-```
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ชื่อ </th>
+                <th>นามสกุล</th>
+                <th>รหัสนักศึกษา</th>
+                <th>เบอร์โทร</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>นิรภาดา</td>
+                <td>ขัตติยะ</td>
+                <td>67030118</td>
+                <td>092362xxxx</td>
+
+                
+            </tr>
+            <tr>
+                <td>นางสาวใจดี</td>
+                <td>มีทรัพย์เยอะ</td>
+                <td>123456</td>
+                <td>085987xxxx</td>
+            </tr>
+
+            
+        </tbody>
+    </table>
+
+    <head>
+        <h2>ร้านหมูปิ้งศรัทธา ฮาลาล900%</h2>
+    </head>
+
+<dl>
+    <dt>รายการสั่งซื้อของคุณนัจญมา</dt>
+</dl>
+<ul>
+
+    <li>คะน้าไก่กรอบ</li>
+    <li>ชาเขียว</li>
+    <li>ก๋วยเตี๋ยวฮาลาล</li>
+    <li>ยำไก่ยอ</li>
+    
+</ul>
+
+<dl> 
+    <dt>รายการสั่งซื้อของคุณนูรีน</dt> 
+</dl>
+
+
+<ol>
+    <li>ข้าวผัดฮาลาล</li>
+    <li>น้ำมะพร้าว</li>
+    <li>น้ำเปล่า</li>
+</ol>
+
+<dl>
+    <strong> <dt>เมนูอาหาร+ข้าว</dt> </strong>
+    <dd>ข้าวผัดฮาลาล</dd>
+    <dd>กะเพราฮาลาล</dd>   
+    <dd>ผัดมาม่าขี้เมา</dd>
+    <dd>ข้าวยำไก่แซ่บ</dd>
+    <dd>ยำไก่ยอ</dd>
+    <dd>คะน้าไก่กรอบ</dd>
+    <dd>ผัดเปรี้ยวหวานฮาลาล</dd>
+    <strong> <dt>เมนูอาหารมีน้ำ</dt> </strong>
+    <dd>ก๋วยเตี๋ยวฮาลาล</dd>
+    <dd>ก๋วยจั๊บฮาลาล</dd>
+    <dd>ต้มมาม่าฮาลาล</dd>
+    <dd>ราดหน้าฮาลาล</dd>
+    <dd>สุกี้ฮาลาล</dd>
+    <dd>ต้มยำฮาลาล</dd>
+    <strong> <dt>เมนูเครื่องดื่ม</dt> </strong>
+    <dd>โออิชิ</dd>
+    <dd>ลิปตัน</dd>
+    <dd>โค้ก</dd>
+    <dd>น้ำเปล่า</dd>
+    <dd>น้ำแตงโม</dd>
+    <dd>น้ำมะพร้าว</dd>
+    <dd>ชาเขียว</dd>
+    <dd>ชาไทย</dd>
+</dl>
+</body>
+</html>
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/ca980d10-fff2-4de1-9edf-9363e3a5706c)
+
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
