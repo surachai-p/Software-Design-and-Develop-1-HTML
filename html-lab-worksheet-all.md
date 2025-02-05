@@ -70,12 +70,10 @@
    - แก้ไขข้อความใน <h1>
    - บันทึกไฟล์
    - สังเกตว่าเบราว์เซอร์รีเฟรชอัตโนมัติ
-   - 
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![ทดสอบ LiveServer](Screenshot/Screenshot1.png)
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
 ### ขั้นตอนการทดลอง
@@ -113,10 +111,23 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Siwapat web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![index.html](Screenshot/Screenshot2.png)
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +160,44 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce</title>
+</head>
+<body>
+    <h1>ผมชื่อนายนายศิวาภัทร อุยสุย</h1>
+    <hr>
+    <h2>ประวัติการศึกษา</h2>
+    <p>
+        จบการศึกษาชั้นมัธยมปลายจากโรงเรียนวิเชียรมาตุ จังหวัด ตรัง
+        <br>ตอนนี้กำศึกษาระดับปริญญาตรี ที่คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขา เทคโนโลนีคอมพิวเตอร์
+    </p>
+    <hr>
+    <h2>งานอดิเรก</h2>
+        <p>
+            - เล่นเกมส์
+            <br>
+            - ดูหนัง
+            <br>
+            - ฟังเพลง
+            <br>
+            - นอน
+        </p>
+    <hr>
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>
+        อยากเป็นคุณครูที่ได้สอน นำความรู้ ไปให้นักเรียนที่อยากเรียนรู้เเล้วได้เห็นนักเรียนนำความรู้ที่ใช้ไปประยุกต์ใช้ได้ในการทำงาน หรือ นำไปต่อยอดสำหรับการประกอบอาชีพในอนาคต
+    </p>
+    <hr>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![ทดลองใช้ tag ต่างๆ](Screenshot/Screenshot3.png)
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +364,95 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <section id="tops">
+        <h1>IC Center </H1>
+        <figure>
+            <img src="images/logo.png" alt="logo website" width="300" height="300">
+            
+        </figure>
+    </section>
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+    <h3>IC ที่ใช้ในรายวิชา FUNDAMENTAL OF DIGITAL DEVICES AND CIRCUITS</h3>
+    <div>
+        <figure>
+            <a href="images/gallery/7400.png" >
+                <img src="images/gallery/7400.png" alt="IC 7400" width="200">
+            </a>
+            <figcaption>IC 7400 NAND Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7400.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+    
+    <div>
+        <figure>
+            <a href="images/gallery/7402.png">
+                <img src="images/gallery/7402.png" alt="IC 7402" width="200">
+            </a>
+            <figcaption>IC 7402 NOR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7402.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+
+    <div>
+        <figure>
+            <a href="images/gallery/7404.png">
+                <img src="images/gallery/7404.png" alt="IC 7404" width="200">
+            </a>
+            <figcaption>IC 7404 NOT Gate หรือ Inverter มี 6 วงจร</figcaption>
+            <a href="files/7404.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+
+    <div>
+        <figure>
+            <a href="images/gallery/7408.png">
+                <img src="images/gallery/7408.png" alt="IC 7408" width="200">
+            </a>
+            <figcaption>IC 7408 AND Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7408.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+
+    <div>
+        <figure>
+            <a href="images/gallery/7432.png">
+                <img src="images/gallery/7432.png" alt="IC 7432" width="200">
+            </a>
+            <figcaption>IC 7432 OR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7432.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>
+    </div>
+
+    <div>
+        <figure>
+            <a href="images/gallery/7486.png">
+                <img src="images/gallery/7486.png" alt="IC 7486" width="200">
+            </a>
+            <figcaption>IC 7486 NOR Gate มี 4 วงจร แต่ละวงจรมีอินพุต 2 ขา</figcaption>
+            <a href="files/7486.pdf" download>ดาวน์โหลด Datasheet</a>
+        </figure>  
+    </div>
+
+    <a href="#top">
+        <button>กลับ</button>
+    </section>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![สร้างแกลเลอรีสินค้า](Screenshot/Screenshot4.png)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -389,14 +519,130 @@
 
 ### แบบฝึกหัด
 1. สร้างตารางแสดงข้อมูลส่วนตัว
-2. สร้างรายการเมนูอาหาร
-
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ข้อมูลส่วนตัว</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>รายละเอียด</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ</td>
+                <td>นายศิวาถัทร อุยสุย</td>
+            </tr>
+            <tr>
+                <td>รหัสประจำตัวนักศึกษา</td>
+                <td>67030351</td>
+            </tr>
+            <tr>
+                <td>คณะ</td>
+                <td>ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+            </tr>
+            <tr>
+                <td>สาขา</td>
+                <td>เทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td>19 ปี</td>
+            </tr>
+            <tr>
+                <td>อีเมล</td>
+                <td>67030351@kmitl.ac.th</td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปี เกิด</td>
+                <td>16 กันยายน ปี พ.ศ.2548</td>
+            </tr>
+            <tr>
+                <td>เบอร์โทร</td>
+                <td>095-427-6527</td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td>บ้านเลขที่:215 ถนน:วิเศษกุล ตำบล:ทับเทียง อำเภอ:เมือง จังหวัด:ตรัง</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>l
+```
+- ภาพผลลัพธ์:
+![ตารางข้อมูลส่วนตัว](Screenshot/Screenshot5.png)
+2. สร้างรายการเมนูอาหาร
+[วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูอาหาร</title>
+</head>
+<body>
+
+    <h1>เมนูอาหาร</h1>
+    <h2>เมนูแนะนำ</h2>
+    <ol>
+        <li>
+            <dt>ข้าวผัด</dt>
+            <dd>หมู / ไก่ / กุ้ง / ปลาหมึก / ทะเล</dd>
+        </li>
+
+        <li>            <dt>กะเพรา</dt>
+            <dd>หมูสับ-ชิ้น/ไก่สับ-ชิ้น/ทะเล/หมูกรอบ</dd>
+        </li>
+        <li>ผัดผักรวม</li>
+    </ol>
+    <h2>เมนูข้าว</h2>
+    <ul>
+        <li>
+            <dt>ข้าวผัด</dt>
+            <dd>หมู/ไก่/กุ้ง/ปลาหมึก/ทะเล</dd>
+        </li>
+        <li>
+            <dt>กะเพรา</dt>
+            <dd>หมูสับ-ชิ้น/ไก่สับ-ชิ้น/ทะเล/หมูกรอบ</dd>
+        </li>
+        <li>
+            <dt>ผัดพริกแกง</dt>
+            <dd>หมูสับ-ชิ้น/ไก่สับ-ชิ้น/ทะเล/หมูกรอบ</dd>
+        </li>
+        <li>
+            <dt>ทอดกระทียม</dt>
+            <dd>หมู/ไก่/ปลาหมึก/กุ้ง</dd>
+        </li>
+        <li>
+            <dt>ผัดพริกหยวก</dt>
+            <dd>หมู/ไก่/ปลาหมึก/กุ้ง/ทะเล</dd>
+        </li>
+        <li>
+            <dt>ไข่เจียว</dt>
+            <dd>หมูสับ/ไก่สับ</dd>
+        </li>
+        <li>ผัดคะน้าหมูกรอบ </li>
+        <li>ผัดผักบุ้ง</li>
+        <li>ผัดผักรวม</li>
+        <li>ผัดผงกะหรี่</li>
+    </ul>
+        
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![เนนูอาหาร](Screenshot/Screenshot6.png)
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -622,10 +868,121 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+</head>
+<body>
+    <h1>สมัครสมาชิก</h1>
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" required pattern="0[0-9]{9}">
+            </div>
+
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="profilePicture">อัพโหลดรูปโปรไฟล์:</label>
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+                <small>รองรับไฟล์ภาพเท่านั้น</small>
+            </div>
+        </fieldset>
+      
+        <fieldset>
+            <legend>การยืนยันรหัสผ่าน</legend>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required minlength="8">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8">
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+            <div class="form-group">
+                <label>เลือกหมวดหมู่ที่สนใจ:</label>
+                <input type="checkbox" id="electronics" name="interests" value="electronics">
+                <label for="electronics">อิเล็กทรอนิกส์</label>
+                <input type="checkbox" id="fashion" name="interests" value="fashion">
+                <label for="fashion">แฟชั่น</label>
+                <input type="checkbox" id="home" name="interests" value="home">
+                <label for="home">บ้านและสวน</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>เงื่อนไขการใช้งาน</legend>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน</label>
+            </div>
+        </fieldset>
+        
+        <div class="form-group">
+            
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+
+         </div>
+
+    </form>
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![ฟอร์มสมัครสมาชิก](Screenshot/Screenshot7.png)
 
 ## การทดลองที่ 7: HTML Layout
 ### วัตถุประสงค์
@@ -713,4 +1070,4 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![HTML layout](Screenshot/Screenshot8.png)
