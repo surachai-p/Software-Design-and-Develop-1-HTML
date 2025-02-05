@@ -165,10 +165,85 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า - อุปกรณ์กีฬา</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        figure {
+            text-align: center;
+            overflow: hidden; 
+        }
+        img {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease; 
+        }
+        img:hover {
+            transform: scale(1.1); 
+        }
+        .back-to-top {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>แกลเลอรีสินค้า - อุปกรณ์กีฬา</h1>
+
+    <section class="gallery">
+        <figure>
+            <a href="images/football.jpg" target="_blank">
+                <img src="images/football.jpg" alt="ลูกฟุตบอล" width="300">
+            </a>
+            <figcaption>ลูกฟุตบอล</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/badminton.jpg" target="_blank">
+                <img src="images/badminton.jpg" alt="ไม้แบดมินตัน" width="300">
+            </a>
+            <figcaption>ไม้แบดมินตัน</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/basketball.jpg" target="_blank">
+                <img src="images/basketball.jpg" alt="ลูกบาสเก็ตบอล" width="300">
+            </a>
+            <figcaption>ลูกบาสเก็ตบอล</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/racket.jpg" target="_blank">
+                <img src="images/racket.jpg" alt="ไม้เทนนิส" width="300">
+            </a>
+            <figcaption>ไม้เทนนิส</figcaption>
+        </figure>
+    </section>
+
+    <a href="#top" class="back-to-top">กลับด้านบน</a>
+
+</body>
+</html>
+
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![image](https://github.com/user-attachments/assets/c2f19ca9-e0b4-491a-b39e-9d984ebfaae6)
 
 

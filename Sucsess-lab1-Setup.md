@@ -76,4 +76,17 @@
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ทดสอบ Live Server</title>
+</head>
+<body>
+    <h1>Hello Live Server</h1>
+    <h1>It's me Chanin Khomvongsa</h1>
+</body>
+</html>
+ ```
 
+![image](https://github.com/user-attachments/assets/6779cfc0-8cbe-4632-abe6-4a93f88f4aa9)
