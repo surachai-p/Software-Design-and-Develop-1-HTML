@@ -126,10 +126,25 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Chanin Khomvongsa web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/6ac9d493-61b6-4e01-aa43-b02a2ae3cf23)
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -162,10 +177,55 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>แนะนำตัวเอง</title>
+</head>
+<body>
+
+    <!-- หัวข้อหลัก -->
+    <h1>สวัสดีครับ ผมชื่อ ชนินทร์ คำวงศ์ษา </h1>
+    <h1>อันนี้เป็นงาน HTML-WORKSHOP </h1>
+    <!-- หัวข้อย่อย -->
+    <h2>ข้อมูลส่วนตัว</h2>
+    <p>ชื่อ: ชนินทร์ คำวงศ์ษา</p>
+    <p>อีเมล: 67030281@kmitl.ac.th</p>
+
+    <hr>
+
+    <!-- หัวข้อย่อย -->
+    <h2>ประวัติการศึกษา</h2>
+    <p>ปริญญาตรี: คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี <br> สาขาเทคโนโลยีคอมพิวเตอร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+
+    <hr>
+
+    <!-- หัวข้อย่อย -->
+    <h2>งานอดิเรก</h2>
+    <p>งานอดิเรกของผมคือ <strong>เล่นเกม ดูหนัง</strong> และ <em>ฟังเพลง</em> </p>
+
+    <hr>
+
+    <!-- หัวข้อย่อย -->
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>เป้าหมายในอนาคตของผมคือการพัฒนาทักษะการเขียนโปรแกรม <br> เพื่อเป็น IT Support </p>
+
+    <hr>
+
+    <!-- การแสดงผลข้อความที่มีการเว้นวรรค -->
+    <pre>
+    "ตื่น กิน นอน"
+    </pre>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/1fb692d8-369b-4145-a5bd-a68d0157bf34)
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -332,10 +392,85 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า - อุปกรณ์กีฬา</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        figure {
+            text-align: center;
+            overflow: hidden; 
+        }
+        img {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease; 
+        }
+        img:hover {
+            transform: scale(1.1); 
+        }
+        .back-to-top {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>แกลเลอรีสินค้า - อุปกรณ์กีฬา</h1>
+
+    <section class="gallery">
+        <figure>
+            <a href="images/football.jpg" target="_blank">
+                <img src="images/football.jpg" alt="ลูกฟุตบอล" width="300">
+            </a>
+            <figcaption>ลูกฟุตบอล</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/badminton.jpg" target="_blank">
+                <img src="images/badminton.jpg" alt="ไม้แบดมินตัน" width="300">
+            </a>
+            <figcaption>ไม้แบดมินตัน</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/basketball.jpg" target="_blank">
+                <img src="images/basketball.jpg" alt="ลูกบาสเก็ตบอล" width="300">
+            </a>
+            <figcaption>ลูกบาสเก็ตบอล</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/racket.jpg" target="_blank">
+                <img src="images/racket.jpg" alt="ไม้เทนนิส" width="300">
+            </a>
+            <figcaption>ไม้เทนนิส</figcaption>
+        </figure>
+    </section>
+
+    <a href="#top" class="back-to-top">กลับด้านบน</a>
+
+</body>
+</html>
+
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/fec20dbf-0ec0-4f25-a673-9f3a979b2fba)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -406,10 +541,75 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<h2>ข้อมูลส่วนตัว</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ข้อมูล</th>
+            <th>รายละเอียด</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ชื่อ</td>
+            <td>ชนินทร์ คำวงศ์ษา</td>
+        </tr>
+        <tr>
+            <td>อายุ</td>
+            <td>20 ปี</td>
+        </tr>
+        <tr>
+            <td>มหาวิทยาลัย</td>
+            <td>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง King Mongkut's Institute of Technology Ladkrabang (KMITL)</td> 
+        </tr>
+        <tr>
+            <td>คณะ</td>
+            <td>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+        </tr>
+        <tr>
+            <td>สาขาวิชา</td>
+            <td>เทคโนโลยีคอมพิวเตอร์</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>เมนูอาหาร</h2>
+
+<!-- เมนูอาหารแบบ unordered list -->
+<ul>
+    <li>ข้าวผัด</li>
+    <li>ผัดไทย</li>
+    <li>ส้มตำ</li>
+    <li>ข้าวมันไก่</li>
+</ul>
+
+<!-- เมนูอาหารแบบ ordered list -->
+<h3>เมนูอาหารที่ชอบ (เรียงลำดับ)</h3>
+<ol>
+    <li>ข้าวผัด</li>
+    <li>ผัดไทย</li>
+    <li>ส้มตำ</li>
+    <li>ข้าวมันไก่</li>
+</ol>
+
+<!-- รายการคำอธิบายเมนู -->
+<h3>เมนูคำอธิบาย</h3>
+<dl>
+    <dt>ข้าวผัด</dt>
+    <dd>ข้าวที่ผัดกับไข่และเครื่องเทศต่างๆ เช่น กระเทียม, หอมแดง, มะเขือเทศ</dd>
+    <dt>ผัดไทย</dt>
+    <dd>ก๋วยเตี๋ยวผัดกับไข่, ถั่วงอก, และน้ำซอสที่ปรุงจากน้ำตาล, น้ำมะขาม, น้ำปลา</dd>
+    <dt>ส้มตำ</dt>
+    <dd>สลัดมะละกอที่ผสมกับพริก, กระเทียม, ถั่วฝักยาว, มะเขือเทศ, และน้ำปลาร้า</dd>
+    <dt>ข้าวมันไก่</dt>
+    <dd>ข้าวหอมมะลิที่ปรุงด้วยน้ำมันจากการต้มไก่เสิร์ฟพร้อมไก่ต้มและน้ำจิ้ม</dd>
+</dl>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/109b1c19-d319-4372-a436-77d076f83658)
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -634,10 +834,78 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - ร้านค้าออนไลน์</title>
+</head>
+<body>
+
+    <h1>สมัครสมาชิก - ร้านค้าออนไลน์</h1>
+
+    <form action="/register" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <label for="firstName">ชื่อ:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">นามสกุล:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="birthdate">วันเกิด:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <label for="gender">เพศ:</label>
+            <input type="radio" id="male" name="gender" value="male" required> ชาย
+            <input type="radio" id="female" name="gender" value="female"> หญิง<br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+            <label for="address">ที่อยู่จัดส่ง:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <label for="profilePic">เลือกไฟล์รูปโปรไฟล์:</label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>การยืนยันรหัสผ่าน</legend>
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+            <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>เงื่อนไขการใช้งาน</legend>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน</label><br><br>
+        </fieldset>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/f6aa4be4-95e3-4276-bb7d-8a2adecc6e6a)
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -726,4 +994,134 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์ตัวอย่าง</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        aside {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            main {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            article {
+                flex: 3;
+            }
+
+            aside {
+                flex: 1;
+            }
+        }
+
+        
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .company-info {
+            background-color: #ffcccc;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ชื่อเว็บไซต์</h1>
+        <nav>
+            <ul>
+                <li><a href="/">หน้าแรก</a></li>
+                <li><a href="/about">เกี่ยวกับเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>บทความที่ 1</h2>
+            <p>เนื้อหาบทความเกี่ยวกับการพัฒนาเว็บไซต์...</p>
+        </article>
+
+        <aside>
+            <h3>บทความที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="#">บทความอื่น 1</a></li>
+                <li><a href="#">บทความอื่น 2</a></li>
+            </ul>
+        </aside>
+
+        
+        <section class="contact-info">
+            <h3>ติดต่อเรา</h3>
+            <div>
+                <a href="mailto:67030281@kmitl.ac.th">ส่งอีเมลหาเรา : 67030281@kmitl.ac.th</a>
+            </div>
+            <div>
+                <a href="tel:+66852284782">โทร : 0852284782</a>
+            </div>
+            <div><a href="../index.html">หน้าหลัก</a></div>
+        </section>
+
+        
+        <section class="company-info">
+            <h3>เราคือบริษัทไร้ตัวตน</h3>
+            <p>บริษัทนี้ไม่มีตัวตนจริง ๆ และไม่มีที่ตั้งอยู่จริง</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>ลิขสิทธิ์ © 2024</p>
+    </footer>
+
+</body>
+</html>
+
+```
+![image](https://github.com/user-attachments/assets/0d454461-3afc-4ac4-88ae-ab5def132596)
