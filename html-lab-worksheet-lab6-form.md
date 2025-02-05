@@ -399,12 +399,6 @@
             </fieldset>
         </form>
 
-```
-- ภาพผลลัพธ์:
-![{90444A25-8347-4308-9776-9C50929B4E25}](https://github.com/user-attachments/assets/c814890c-6198-40cb-a888-6f1cd852db31)
-
-
-
-
+![{0088CDCB-806A-4226-8837-B4EF1116EBE8}](https://github.com/user-attachments/assets/e1890912-dc92-4318-9254-52b7428127e7)
 
 
