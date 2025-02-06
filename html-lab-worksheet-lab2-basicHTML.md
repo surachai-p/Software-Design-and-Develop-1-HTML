@@ -42,22 +42,12 @@
     <title>My First Web Page</title>
 </head>
 <body>
-    <h1>ข้อมูลของตนเอง</h1>
-    <hr>
-    <pre></pre>
-    <h2>ชื่อ-นามสกุล</h2>
-    <p>Atthawut Buarean</p>
-    <h2>ประวัติการศึกษา</h2>
-    <p>มัธยมศึกษาตอนต้น-โรงเรียนระเบียบศึกษา
-       มัธยมศึกษาตอนปลาย-โรงเรียนฤทธิยะวรรณาลัย 2
-    </p>
-    <h2>งานอดิเรก</h2>
-    <p>เล่นเกม</p>
-    <p>ดูหนัง</p>
-    <p>อ่านหนังสือ</p>
-    <h2>เป้าหมายในอนาคต ข้อกำหดต้องมี</h2>
-    <p>มีงานทำที่มั่นคง และต้องเป็น<strong>คนดี</strong>
-    </hr>
+    <h1>Welcome to atthawut web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
 </body>
 </html>
 - ภาพผลลัพธ์:
