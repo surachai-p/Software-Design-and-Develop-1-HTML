@@ -63,7 +63,8 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
-![folk1](https://github.com/user-attachments/assets/737e930d-5306-4aac-b2d7-a5bf64c7808b)
+![Screenshot (1)](https://github.com/user-attachments/assets/b8ce46c1-1e13-48a7-9d1e-c36fbeb3f390)
+
 
 
 
