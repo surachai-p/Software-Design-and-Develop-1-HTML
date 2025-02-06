@@ -76,4 +76,6 @@
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
+![สวัสดีliveserver](https://github.com/user-attachments/assets/99a56ccb-01f4-4f2a-a944-904cdb13f8bc)
+
 
