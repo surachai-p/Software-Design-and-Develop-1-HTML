@@ -166,9 +166,102 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera</title>
+</head>
+<body>
+    <nav id="nav">
+        <img src="./images/logo.JPG" alt="logo" width="50" height="50">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    </nav>
+    <hr>
+    <section>
+        <h1>Gallery</h1>
+        <figure>
+            <a href="images/gallery/p1.JPG">
+                <img src="images/products/p1.JPG" alt="product1" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>เมนูก๋วยเตี๋ยว:</strong>
+                    ก๋วยเตี๋ยวน้ำใส
+                </p>
+                <p>
+                    <strong>ราคา:</strong>
+                    ธรรมดา 50 บาท พิเศษ 60 บาท
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/p2.JPG">
+                <img src="images/products/p2.JPG" alt="product2" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>เมนูก๋วยเตี๋ยว:</strong>
+                    ก๋วยเตี๋ยวน้ำตก
+                </p>
+                <p>
+                    <strong>ราคา:</strong>
+                    ธรรมดา 50 บาท พิเศษ 60 บาท
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/p3.JPG">
+                <img src="images/products/p3.JPG" alt="product3" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>เมนูก๋วยเตี๋ยว:</strong>
+                    ก๋วยเตี๋ยวต้มยำ
+                </p>
+                <p>
+                    <strong>ราคา:</strong>
+                    ธรรมดา 50 บาท พิเศษ 60 บาท
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            <a href="images/gallery/p4.JPG">
+                <img src="images/products/p4.JPG" alt="product4" width="200"> 
+            </a>
+            <figcaption>
+                <p>
+                    <strong>เมนูก๋วยเตี๋ยว:</strong>
+                    ก๋วยเตี๋ยวเย็นตาโฟ
+                </p>
+                <p>
+                    <strong>ราคา:</strong>
+                    ธรรมดา 50 บาท พิเศษ 60 บาท
+                </p>
+            </figcaption>
+        </figure>
+        <hr>
+        <figure>
+            
+        <hr>
+    </section>
+    
+    <a href="#nav">กลับด้านบน</a>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-06 เวลา 23 05 23" src="https://github.com/user-attachments/assets/a7560927-a85d-4524-ae48-d237445300b5" />
+<img width="1439" alt="ภาพถ่ายหน้าจอ 2568-02-06 เวลา 23 05 34" src="https://github.com/user-attachments/assets/382a6c04-a820-4397-9e63-72b65183306d" />
+
+
 
 
 
