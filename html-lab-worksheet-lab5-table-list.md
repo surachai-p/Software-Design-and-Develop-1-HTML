@@ -66,7 +66,9 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[<!DOCTYPE html>
+[]
+```html
+ <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
@@ -214,9 +216,7 @@
     <hr>
     <a href="#top">กลับด้านบน</a>
 </body>
-</html>]
-```html
-
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
