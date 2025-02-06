@@ -220,6 +220,7 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![image](https://github.com/user-attachments/assets/3c827b15-09e9-4ecc-af99-4e88989f849c)
+![image](https://github.com/user-attachments/assets/4cd2b132-3eef-44fa-bf2d-6ae425c568ed)
+
 
 
