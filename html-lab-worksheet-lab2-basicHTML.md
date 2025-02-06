@@ -35,10 +35,9 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-
+![labhtml2](https://github.com/user-attachments/assets/2b5aa8ef-142d-4e09-b95f-521213dba63c)
 
 
