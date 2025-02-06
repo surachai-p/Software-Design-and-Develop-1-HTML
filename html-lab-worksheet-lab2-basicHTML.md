@@ -51,6 +51,7 @@
     <strong>This text is strong</strong>    
 </body>
 </html>
+
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
