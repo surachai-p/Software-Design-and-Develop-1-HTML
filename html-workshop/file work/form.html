@@ -1,0 +1,159 @@
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .required-mark {
+        color: red;
+        margin-left: 5px;
+    }
+</style>
+
+<body>
+    <h2>สมัครสมาชิก</h2>
+
+<form action="/register" method="post" enctype="multipart/form-data">
+
+    <form action="/register" method="post">
+        <!-- ส่วนข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+    
+            <div class="form-group">
+                <label for="prefix">คำนำหน้า:</label>
+                 <select id="prefix" name="prefix" required>
+                    <option value="">เลือกคำนำหน้า</option>
+                    <option value="mr">นาย</option>
+                    <option value="ms">นางสาว</option>
+                    <option value="mrs">นาง</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+    
+        <!-- ข้อมูลการติดต่อ -->
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        <div class="form-group">
+            <label for="email">อีเมล: <span class="required-mark">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">เบอร์โทรศัพท์: <span class="required-mark">*</span></label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">ที่อยู่จัดส่ง: <span class="required-mark">*</span></label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+    </fieldset>
+    
+       <!-- อัพโหลดรูปโปรไฟล์ -->
+    <fieldset>
+        <legend>อัพโหลดรูปโปรไฟล์</legend>
+        <div class="form-group">
+            <label for="profilePic">เลือกรูปภาพ (ขนาดไม่เกิน 2MB): <span class="required-mark">*</span></label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+        </div>
+    </fieldset>
+    <!-- การยืนยันรหัสผ่าน -->
+    <fieldset>
+        <legend>การตั้งค่ารหัสผ่าน</legend>
+
+        <div class="form-group">
+            <label for="password">รหัสผ่าน: <span class="required-mark">*</span></label>
+            <input type="password" id="password" name="password" minlength="6" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">ยืนยันรหัสผ่าน: <span class="required-mark">*</span></label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+    </fieldset>
+        <!-- ความสนใจ -->
+    <fieldset>
+        <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+
+        <div class="form-group">
+            <label>เลือกหมวดหมู่ที่สนใจ:</label>
+            <input type="checkbox" id="electronics" name="interest" value="electronics">
+            <label for="electronics">อิเล็กทรอนิกส์</label>
+            <input type="checkbox" id="fashion" name="interest" value="fashion">
+            <label for="fashion">แฟชั่น</label>
+            <input type="checkbox" id="beauty" name="interest" value="beauty">
+            <label for="beauty">ความงาม</label>
+            <input type="checkbox" id="home" name="interest" value="home">
+            <label for="home">ของใช้ในบ้าน</label>
+        </div>
+    </fieldset>
+
+    <!-- ยอมรับเงื่อนไข -->
+    <fieldset>
+        <legend>ข้อตกลง</legend>
+
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">ฉันยอมรับเงื่อนไขและข้อตกลงของเว็บไซต์</label>
+        </div>
+    </fieldset>
+
+    <!-- ปุ่มส่งข้อมูล -->
+    <div class="form-group">
+        <button type="submit">สมัครสมาชิก</button>
+        <button type="reset">ล้างข้อมูล</button>
+    </div>
+    <script>
+        // ตรวจสอบการยืนยันรหัสผ่าน
+        document.querySelector("form").addEventListener("submit", function(event) {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            let profilePic = document.getElementById("profilePic").files[0];
+
+            // เช็ครหัสผ่านต้องตรงกัน
+            if (password !== confirmPassword) {
+                alert("รหัสผ่านไม่ตรงกัน กรุณากรอกใหม่");
+                event.preventDefault();
+                return;
+            }
+
+            // เช็คขนาดไฟล์รูปภาพ
+            if (profilePic && profilePic.size > 2 * 1024 * 1024) {
+                alert("ไฟล์รูปภาพต้องมีขนาดไม่เกิน 2MB");
+                event.preventDefault();
+                return;
+            }
+        });
+    </script>
+
+</body>
+</html>
