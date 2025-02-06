@@ -52,8 +52,9 @@
 </html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![folk2](https://github.com/user-attachments/assets/2c9a483e-5f58-4ca3-8086-059502b313e5)
 
-![folk2](https://github.com/user-attachments/assets/52cca917-8e9f-4e94-9664-5ee6b301dbd2)
+
 
 
 
