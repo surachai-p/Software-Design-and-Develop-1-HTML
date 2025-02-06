@@ -41,7 +41,7 @@
     <title>My First Web Page</title>
 </head>
 <body>
-    <h1>Welcome to Krittinat Samrankit web page</h1>
+    <h1>Welcome to Krittinat web page</h1>
     <p>This is my first web page.</p>
     <div>This is a block element</div>
     <span>This is an inline element</span>
