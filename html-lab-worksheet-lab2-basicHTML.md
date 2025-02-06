@@ -35,22 +35,17 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
-```
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Web Page</title>
+    <title>ทดสอบ Live Server</title>
 </head>
 <body>
-    <h1>Welcome to Thanaporn pitsamai web page</h1>
-    <p>This is my first web page.</p>
-    <div>This is a block element</div>
-    <span>This is an inline element</span>
-    <em>This text is emphasized</em>
-    <strong>This text is strong</strong>    
+    <h1>สวัสดี Live Server</h1>
+    <h1>ธนพร</h1>
 </body>
 </html>
+```
 
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
