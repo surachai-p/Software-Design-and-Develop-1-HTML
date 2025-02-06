@@ -224,10 +224,162 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+    <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
 
+    <body>
+        <form action="/register" method="post">
+            <!-- ส่วนข้อมูลส่วนตัว -->
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+     
+                <div class="form-group">
+                    <label for="prefix">คำนำหน้า:</label>
+                     <select id="prefix" name="prefix" required>
+                        <option value="">เลือกคำนำหน้า</option>
+                        <option value="mr">นาย</option>
+                        <option value="ms">นางสาว</option>
+                        <option value="mrs">นาง</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="firstName">ชื่อ:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lastName">นามสกุล:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+        
+                <div class="form-group">
+                    <label>เพศ:</label>
+                    <select id="gender" required>
+                        <option value="">เลือกเพศ</option>
+                        <option value="male">ชาย</option>
+                        <option value="female">หญิง</option>
+                        <option value="other">อื่นๆ</option>
+                    </select>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลการติดต่อ -->
+            <fieldset>
+                <legend>ข้อมูลการติดต่อ</legend>
+        
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           pattern="[0-9]{10}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">ที่อยู่:</label>
+                    <textarea id="address" name="address" 
+                              rows="3" required></textarea> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลรหัสผ่าน -->
+            <fieldset>
+                <legend>ข้อมูลรหัสผ่าน</legend>
+
+                <div class="form-group">
+                    <label>รหัสผ่าน</label>
+                    <input type="password" id="password" minlength="6" required>
+                </div>
+
+                <div class="form-group">
+                    <label>ยืนยันรหัสผ่าน</label>
+                    <input type="password" id="confirmPassword" required>
+                    <span class="error" id="passwordError"></span>
+                </div>
+            </fieldset>
+        
+            <!-- ความสนใจในหมวดหมู่สินค้า -->
+            <fieldset>
+                <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+        
+                <div class="form-group">
+                    <label>ความสนใจ:</label>
+                    <input type="checkbox" id="sport" name="interests" value="sport">
+                    <label for="sport">อิเล็กทรอนิกส์</label>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">เครื่องใช้ในบ้าน</label>
+                    <input type="checkbox" id="art" name="interests" value="art">
+                    <label for="art">แฟชั่น</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">ความงาม</label>
+                    <br>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">กีฬา</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">ของเล่นและเกม</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">รถยนต์และจักรยาน</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">เครื่องมือและวัสดุก่อสร้าง</label>
+                </div>
+        
+               
+            </fieldset>
+        
+            <!-- ส่วนอัพโหลดรูปโปรไฟล์ -->
+            <fieldset>
+                <legend>รูปโปรไฟล์</legend>
+                <div class="form-group">
+                    <label for="photo">รูปภาพ:</label>
+                    <input type="file" id="photo" name="photo" 
+                           accept="image/*" required><span class="required-mark">*</span>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนยืนยันข้อมูล -->
+            <fieldset>
+                <legend>การยืนยัน</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        ยอมรับเงื่อนไขการใช้งาน
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">ลงทะเบียน</button>
+                    <button type="reset">ล้างข้อมูล</button>
+                </div>
+            </fieldset>
+        </form>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/3b99591e-e348-4c34-a7e5-61219694326b)
+
 
 
 
