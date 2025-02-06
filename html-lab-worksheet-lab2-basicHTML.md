@@ -63,4 +63,5 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
-![folk1](https://github.com/user-attachments/assets/6838993b-7955-4728-994d-5ba56af1f211)
+![folk1](https://github.com/user-attachments/assets/4ca30796-bf1e-4c49-9f07-0015d63c9339)
+
