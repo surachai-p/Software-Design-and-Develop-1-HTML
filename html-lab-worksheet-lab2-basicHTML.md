@@ -52,5 +52,6 @@
 </html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![folk2](https://github.com/user-attachments/assets/36612ddd-afc7-4da0-8ae1-e8f2942275c2)
 
-![folk2](https://github.com/user-attachments/assets/8bf356c0-84d0-4226-ab99-9df19a4824d1)
+
