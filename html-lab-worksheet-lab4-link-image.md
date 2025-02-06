@@ -163,12 +163,88 @@
    - มีปุ่มกลับด้านบน
 
 ### บันทึกผลการทดลอง
-- รหัสเอกสาร HTML ที่เขียน:
+- รหัสเอกสาร HTML ที่เขียน: <title>แกลเลอรีสินค้า</title>
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html>
+<head>
+    <title>แกลเลอรีสินค้า</title>
+</head>
+<body>
+    <h1>
+        <img src="images/gallery/9.png" width="100" height="60" >
+        รายการสินค้าปืนในเกม Valorant
+    <h1>
+    <hr>
+    <figure>
+        <a href="images/gallery/1.jpg"> 
+            <img src="images/gallery/1.jpg" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            Vandal 2900 Point
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/5.jpg"> 
+            <img src="images/gallery/5.jpg" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            Phantom 2900 Point
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/3.png"> 
+            <img src="images/gallery/3.png" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            Operater 4700 Point
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/4.png"> 
+            <img src="images/gallery/4.png" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            Odin 3200 Point
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/6.png"> 
+            <img src="images/gallery/6.png" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            Sheriff 800 Point
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/7.png"> 
+            <img src="images/gallery/7.png" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            Judge 1600 Point
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/8.jpg"> 
+            <img src="images/gallery/8.jpg" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            Classic 0 Point
+        </figcaption>
+    </figure>
+    <a href="#top">กลับด้านบน</a>
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/2cf139ce-3c80-4e95-af4a-9ae204db568e)
 
 
 
