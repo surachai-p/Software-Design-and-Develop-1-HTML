@@ -226,6 +226,9 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 ![lab04](https://github.com/user-attachments/assets/2c714044-a525-4a06-b912-c34db17e21f9)
+### ขยายรูปภาพ
+
+![lab4ขยาย](https://github.com/user-attachments/assets/fc3ec689-6900-4330-9977-a38455ece75b)
 
 
 
