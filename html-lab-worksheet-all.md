@@ -114,10 +114,26 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+```<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Phuwish web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-  
+![Screenshot 2025-02-05 101649](https://github.com/user-attachments/assets/8aece3fb-a62b-45c3-a820-54363c1dbd1b)
+
+
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
 1. ทดลองใช้ tag ต่างๆ:
@@ -150,9 +166,22 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<h1>เเนะนำตัวเอง</h1>
+<hr>
+<pre></pre>
+<h2>ชื่อ-นามสกุล</h2>
+<p>นาย ภูวิชญ์ ประกอบจิตร</p>
+<h2>งานอดิเรก</h2>
+<p>ชอบตัดต่อคลิปวีดีโอ ชอบเล่นเกม เล่นฟุตบอล</p>
+<h2>เป้าหมายในชีวิต</h2>
+<p>อยากทำให้ครอบครัวอยู่สบายทำธุริกิจ หรือ freelance ควบคู่ กับการ<strong>เป็นครู</strong> 
+<hr>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-06 131750](https://github.com/user-attachments/assets/7021998f-e687-4108-b02e-5fb350cff1f4)
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +348,72 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery App</title>
+</head>
+<body>
+
+  <!-- นำทาง -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="files/document.pdf" download>Download Document</a>
+  </nav>
+
+  <button onclick="history.back()">⬅ Back</button>
+
+  <div>
+    <div onclick="showDialog('images/products/product1.jpg', 'Product 1')">
+      <img src="images/products/product1.jpg" alt="Product 1" style="width:100%; max-width:250px; height:auto;">
+      <p>Product 1 </p>
+    </div>
+    <div onclick="showDialog('images/products/product2.jpg', 'Product 2 ')">
+      <img src="images/products/product2.jpg" alt="Product 2" style="width:100%; max-width:250px; height:auto;">
+      <p>Product 2 </p>
+    </div>
+    <div onclick="showDialog('images/products/product3.jpg', 'Product 3 ')">
+      <img src="images/products/product3.jpg" alt="Product 3" style="width:100%; max-width:250px; height:auto;">
+      <p>Product 3 </p>
+    </div>
+    <div onclick="showDialog('images/products/product4.jpg', 'Product 4')">
+      <img src="images/products/product4.jpg" alt="Product 4" style="width:100%; max-width:250px; height:auto;">
+      <p>Product 4 </p>
+    </div>
+  </div>
+
+  <div id="dialog" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center;">
+    <div style="background: white; padding: 16px; border-radius: 12px; max-width: 600px; text-align: center;">
+      <img id="dialog-image" src="" alt="" style="width: 100%; border-radius: 12px;">
+      <p id="dialog-description"></p>
+      <button onclick="closeDialog()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function showDialog(imageSrc, description) {
+      document.getElementById('dialog-image').src = imageSrc;
+      document.getElementById('dialog-description').textContent = description;
+      document.getElementById('dialog').style.display = 'flex';
+    }
+
+    function closeDialog() {
+      document.getElementById('dialog').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-06 135003](https://github.com/user-attachments/assets/c94c0c15-86b2-42f8-83a6-8e3127cea57d)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -393,11 +484,103 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery App</title>
+</head>
+<body>
 
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="files/document.pdf" download>Download Document</a>
+  </nav>
+
+  <button onclick="history.back()">⬅ Back</button>
+
+  <h2>Personal Information</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>Phuwish Prakobchit</td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>67030183@kmitl.ac.th</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Food Menu</h2>
+  <ul>
+    <li>ส้มตำ</li>
+    <li>ไก่ย่าง</li>
+    <li>ข้าวเหนียว</li>
+    <li>ลาบ</li>
+  </ul>
+
+  <div>
+    <div onclick="showDialog('images/products/1.jpg', 'ส้มตำ')">
+      <img src="images/products/food1.jpg" alt="food1" style="width:100%; max-width:250px; height:auto;">
+      <p>ส้มตำ</p>
+    </div>
+    <div onclick="showDialog('images/products/food2.jpg', 'ไก่ย่าง')">
+      <img src="images/products/food2.jpg" alt="ไก่ย่าง" style="width:100%; max-width:250px; height:auto;">
+      <p>ไก่ย่าง</p>
+    </div>
+    <div onclick="showDialog('images/products/food3.jpg', 'ไก่ย่าง')">
+      <img src="images/products/food3.jpg" alt="Product 3" style="width:100%; max-width:250px; height:auto;">
+      <p>ไก่ย่าง</p>
+    </div>
+    <div onclick="showDialog('images/products/food4.jpg', 'ลาบ')">
+      <img src="D:\Year1\Software design\Learn HTML\htmlworkshop\images\products\food4.jpg" alt="ลาบ" style="width:100%; max-width:250px; height:auto;">
+      <p>ลาบ</p>
+    </div>
+  </div>
+
+  <div id="dialog" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center;">
+    <div style="background: white; padding: 16px; border-radius: 12px; max-width: 600px; text-align: center;">
+      <img id="dialog-image" src="" alt="" style="width: 100%; border-radius: 12px;">
+      <p id="dialog-description"></p>
+      <button onclick="closeDialog()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function showDialog(imageSrc, description) {
+      document.getElementById('dialog-image').src = imageSrc;
+      document.getElementById('dialog-description').textContent = description;
+      document.getElementById('dialog').style.display = 'flex';
+    }
+
+    function closeDialog() {
+      document.getElementById('dialog').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![Screenshot 2025-02-06 141048](https://github.com/user-attachments/assets/4a81f934-d102-4a30-9e7e-939155152ef7)
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
@@ -622,9 +805,76 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิกร้านค้าของวิช</title>
+</head>
+<body>
+    <h1>สมัครสมาชิกร้านค้าข</h1>
+    <form action="/submit-form" method="POST" enctype="multipart/form-data">
+        <!-- ข้อมูลส่วนตัว -->
+        <label for="fullname">ชื่อ-นามสกุล:</label>
+        <input type="text" id="fullname" name="fullname" required><br>
+
+        <label for="birthdate">วันเกิด:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+
+        <label for="gender">เพศ:</label>
+        <select id="gender" name="gender">
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่น ๆ</option>
+        </select><br>
+
+        <!-- ข้อมูลการติดต่อ -->
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">เบอร์โทร:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+        <label for="address">ที่อยู่จัดส่ง:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <!-- รูปโปรไฟล์ -->
+        <label for="profilePicture">รูปโปรไฟล์:</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required><br>
+
+        <!-- การยืนยันรหัสผ่าน -->
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" minlength="8" required><br>
+
+        <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required><br>
+
+        <!-- ความสนใจในหมวดหมู่สินค้า -->
+        <label>ความสนใจในหมวดหมู่สินค้า:</label><br>
+        <input type="checkbox" id="electronics" name="interests" value="electronics">
+        <label for="electronics">เครื่องใช้ไฟฟ้า</label><br>
+
+        <input type="checkbox" id="clothing" name="interests" value="clothing">
+        <label for="clothing">เสื้อผ้า</label><br>
+
+        <input type="checkbox" id="beauty" name="interests" value="beauty">
+        <label for="beauty">ความงาม</label><br>
+
+        <!-- การยอมรับเงื่อนไขการใช้งาน -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">ฉันยอมรับเงื่อนไขการใช้งาน</label><br>
+
+        <input type="submit" value="สมัครสมาชิก">
+    </form>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![Screenshot 2025-02-06 141944](https://github.com/user-attachments/assets/784cd519-2b8d-403e-b26b-fcd494a67304)
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -713,4 +963,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![Screenshot 2025-02-06 142457](https://github.com/user-attachments/assets/e6438843-57ea-49d0-ba21-3e7d41b51756)
 
