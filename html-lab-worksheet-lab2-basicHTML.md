@@ -35,10 +35,21 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ทดสอบ Live Server</title>
+</head>
+<body>
+    <h1>สวัสดี Live Server</h1>
+    <h1>ธนพร</h1>
+</body>
+</html>
 ```
+
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![Screenshot 2025-02-06 222811](https://github.com/user-attachments/assets/88142b9a-3dc7-4798-9eaf-7ece74b5c4f2)
 
 
