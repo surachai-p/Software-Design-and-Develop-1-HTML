@@ -68,8 +68,50 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<table border="1">
+    <thead>
+        <tr>
+            <th>ชื่อเล่น</th>
+            <th>ชื่อจริง</th>
+            <th>อายุ</th>
+            <th>ศึกษาอยู่ที่</th>
+            <th>รหัสนักศึกษา</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ซิม</td>
+            <td>นายภูมิชนะ เทียมแก้ว</td>
+            <td>19 ปี</td>
+            <td>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</td>
+            <td>67030180</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<hr>
+<br>
+<h1>รายการอาหาร</h1>
+<ul>
+<dl>
+    <dt><strong>เมนูแนะนำ</strong></dt>
+    <ul><dd><li>ผัดกระเพราหมูกรอบ</dd></ul></li>
+    <ul><dd><li>ผัดกระเพราปลาหมึก</dd></ul></li>
+    <ul><dd><li>ข้ามผัดทะเล</dd></ul></li>
+    <ul><dd><li>ก๋วยเตี๋ยวต้มยำเนื้อวากิว</dd></ul></li>
+    <dt><strong>อาหารจานเดียว</strong></dt>
+    <ul><dd><li>ไข่เจียว</dd></ul></li>
+    <ul><dd><li>ไข่ข้น</dd></ul></li>
+    <ul><dd><li>ผัดมาม่า</dd></ul></li>
+    <ul><dd><li>สุกี้หมู / ไก่ / เนื้อ</dd></ul></li>
+    <ul><dd><li>ข้าวเปล่า</dd></ul></li>
+<hr>
+<dt><strong>เครื่องดื่ม</strong></dt>
+<ul><dd><li>โค้ก</dd></ul></li>
+<ul><dd><li>น้ำอัดลม</dd></ul></li>
+</dl>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/9304a9c0-9f6f-4e9a-95af-bda13f476089)
 
