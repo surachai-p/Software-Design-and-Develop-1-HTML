@@ -164,6 +164,7 @@
 
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
+- <title>แกลเลอรีสินค้า</title>
 ```html
 [<!DOCTYPE html>
 <html lang="th">
