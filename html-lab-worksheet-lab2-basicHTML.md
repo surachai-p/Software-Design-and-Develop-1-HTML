@@ -50,7 +50,7 @@
     <strong>This text is strong</strong>    
 </body>
 </html>
-
+[วางโค้ด HTML ที่นี่]
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 ![folk2](https://github.com/user-attachments/assets/02e52872-0f81-4313-9e2b-e87954fec1e7)
