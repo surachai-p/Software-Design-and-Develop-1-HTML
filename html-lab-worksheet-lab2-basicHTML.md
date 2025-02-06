@@ -51,7 +51,8 @@
 </html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![lab02](https://github.com/user-attachments/assets/98c4472b-dece-4c4a-a7f2-663a24d56585)
+
+![lab02](https://github.com/user-attachments/assets/d26540ed-05c6-4f21-b9e0-cc669e1b0ee9)
 
 
 
