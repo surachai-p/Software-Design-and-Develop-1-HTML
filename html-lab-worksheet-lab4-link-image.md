@@ -246,6 +246,10 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 ![image](https://github.com/user-attachments/assets/2cf139ce-3c80-4e95-af4a-9ae204db568e)
+![image](https://github.com/user-attachments/assets/578ba25b-7c02-4732-8e95-bcd513b1fd68)
+![image](https://github.com/user-attachments/assets/9250dd2f-9650-4f75-a6cb-329ad684311f)
+
+
 
 
 
