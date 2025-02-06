@@ -62,7 +62,9 @@
 </html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![folk1](https://github.com/user-attachments/assets/633809f1-eef2-4f8b-9870-2efed4822e10)
+
+![folk1](https://github.com/user-attachments/assets/737e930d-5306-4aac-b2d7-a5bf64c7808b)
+
 
 
 
