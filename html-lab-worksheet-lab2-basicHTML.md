@@ -61,8 +61,8 @@
 </body>
 </html>
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]!
-[folk1](https://github.com/user-attachments/assets/60e9fddd-b010-4475-a87c-bf5f97682907)
+[วางภาพ screenshot ที่นี่]
+![folk1](https://github.com/user-attachments/assets/60e9fddd-b010-4475-a87c-bf5f97682907)
 
 
 
