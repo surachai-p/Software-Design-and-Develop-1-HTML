@@ -441,8 +441,8 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
-![lab6 2](https://github.com/user-attachments/assets/9a1edcb0-5ba5-4c74-8d62-281ab921bafe)
 ![lab6 1](https://github.com/user-attachments/assets/ebb3db50-02b4-4a67-a245-025944dac5e2)
+![lab6 2](https://github.com/user-attachments/assets/9a1edcb0-5ba5-4c74-8d62-281ab921bafe)
+
 
 
