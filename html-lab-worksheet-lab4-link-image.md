@@ -166,8 +166,111 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>อหารตามสั่งคนทำตามใจ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .products figure {
+            margin: 0;
+            text-align: center;
+        }
+        .products img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .products figcaption {
+            margin-top: 5px;
+        }
+        #back-to-top {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+    </nav>
+
+    <header id="top">
+        <img src="images/logo/logo.png" alt="โลโก้บริษัท" width="150">
+        <h1>อาหารตามสั่งคนทำตามใจ</h1>
+    </header>
+
+    <section class="products">
+        <figure>
+            <a href="images/products/1.jpg" target="_blank">
+                <img src="images/products/1.jpg" alt="กระเพราหมูสับ">
+            </a>
+            <figcaption>กระเพราหมูสับ</figcaption>
+        </figure>
+        <figure>
+            <a href="images/products/2.jpg" target="_blank">
+                <img src="images/products/2.jpg" alt="ข้าวผัดต้มยำ">
+            </a>
+            <figcaption>ข้าวผัดต้มยำ</figcaption>
+        </figure>
+        <figure>
+            <a href="images/products/3.jpg" target="_blank">
+                <img src="images/products/3.jpg" alt="ข้าวไข่เจียว">
+            </a>
+            <figcaption>ข้าวไข่เจียว</figcaption>
+        </figure>
+        <figure>
+            <a href="images/products/4.jpg" target="_blank">
+                <img src="images/products/4.jpg" alt="ต้มจืด">
+            </a>
+            <figcaption>ต้มจืด</figcaption>
+        </figure>
+    </section>
+
+    <footer>
+        <!-- ลิงก์อีเมล -->
+        <p><a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a></p>
+
+        <!-- ลิงก์โทรศัพท์ -->
+        <p><a href="tel:+66812345678">โทร 081-234-5678</a></p>
+
+        <!-- ลิงก์ดาวน์โหลด -->
+        <p><a href="files/document.pdf" download>ดาวน์โหลดเอกสาร</a></p>
+    </footer>
+
+    <a id="back-to-top" href="#top">กลับด้านบน</a>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
+- ![image](https://github.com/user-attachments/assets/dc2aa6e0-f98f-4ba9-9cd8-d3a1c2032871)
+
 [วางภาพ screenshot ที่นี่]
 
 
