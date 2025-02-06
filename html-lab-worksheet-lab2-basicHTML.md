@@ -34,6 +34,7 @@
 
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
+- <title>My First Web Page</title>
 ```html
 [<!DOCTYPE html>
 <html>
