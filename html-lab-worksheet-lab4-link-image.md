@@ -163,7 +163,8 @@
    - มีปุ่มกลับด้านบน
 
 ### บันทึกผลการทดลอง
-- รหัสเอกสาร HTML ที่เขียน:<!DOCTYPE html>
+- รหัสเอกสาร HTML ที่เขียน:
+- ```<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -223,7 +224,7 @@
 
 </body>
 </html>
-``
+```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
