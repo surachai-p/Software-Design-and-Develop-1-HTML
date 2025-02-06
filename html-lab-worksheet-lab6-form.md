@@ -224,10 +224,224 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        padding: 20px;
+    }
+    .form-container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input, textarea, select, button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    button {
+        background-color: #007BFF;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        border: none;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    .error {
+        color: red;
+        font-size: 14px;
+    }
+</style>
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+    <style></style>
+    <div class="form-container">
+        <h2>สมัครสมาชิกร้านค้าออนไลน์</h2>
+        <form id="signupForm" enctype="multipart/form-data" action="/submit-form" method="POST">
+            <!-- ข้อมูลส่วนตัว -->
+            <div class="form-group">
+                <label for="fullName">ชื่อ-นามสกุล:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+<!--วันเกิด-->
+        <div class="form-group">
+            <label for="dob">วันเกิด:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+<!--เพศ-->
+<div class="form-group">
+    <label>เพศ:</label>
+    <label for="male">ชาย</label>
+    <input type="radio" id="male" name="gender" value="ชาย" required>
+    <label for="female">หญิง</label>
+    <input type="radio" id="female" name="gender" value="หญิง" required>
+        </div>
+    <!--email-->
+        <div class="form-group">
+            <label for="email">อีเมล์:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="passwordError" class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <div id="confirmPasswordError" class="error"></div>
+        </div>
+        
+
+<!--เบอร์-->
+        <div class="form-group">
+            <label for="phone">เบอร์โทร:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            <div id="phoneError" class="error"></div>
+        </div>
+<!--ที่อยู่-->
+        <div class="form-group">
+            <label for="address">ที่อยู่จัดส่ง:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <!-- รูปโปรไฟล์ -->
+        <div class="form-group">
+            <label for="profileImage">รูปโปรไฟล์:</label>
+            <input type="file" id="profileImage" name="profileImage" accept="image/*" required>
+            <div id="imageError" class="error"></div>
+        </div>
+        <!-- ความสนใจในหมวดหมู่สินค้า -->
+        <div class="form-group">
+            <label for="category">ความสนใจในหมวดหมู่สินค้า:</label>
+            <select id="category" name="category" required>
+                <option value="electronics">อิเล็กทรอนิกส์</option>
+                <option value="fashion">แฟชั่น</option>
+                <option value="homeGoods">ของใช้ในบ้าน</option>
+                <option value="books">หนังสือ</option>
+                <option value="other">อื่นๆ</option>
+            </select>
+        </div>
+
+        <!-- การยอมรับเงื่อนไขการใช้งาน -->
+        <div class="form-group">
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                ยอมรับข้อตกลงและเงื่อนไขการใช้งาน
+            </label>
+        </div>
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+</div>
+
+<script>
+    // ฟังก์ชันตรวจสอบอีเมล
+    function validateEmail() {
+        const email = document.getElementById("email").value;
+        const emailError = document.getElementById("emailError");
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email)) {
+            emailError.textContent = "กรุณากรอกอีเมลที่ถูกต้อง";
+            return false;
+        } else {
+            emailError.textContent = "";
+            return true;
+        }
+    }
+
+    // ฟังก์ชันตรวจสอบเบอร์โทร
+    function validatePhone() {
+        const phone = document.getElementById("phone").value;
+        const phoneError = document.getElementById("phoneError");
+        const phoneRegex = /^[0-9]{10}$/;
+        if (!phoneRegex.test(phone)) {
+            phoneError.textContent = "กรุณากรอกเบอร์โทรที่ถูกต้อง";
+            return false;
+        } else {
+            phoneError.textContent = "";
+            return true;
+        }
+    }
+
+    // ฟังก์ชันตรวจสอบขนาดไฟล์รูปภาพ
+    function validateImage() {
+        const fileInput = document.getElementById("profileImage");
+        const imageError = document.getElementById("imageError");
+        const file = fileInput.files[0];
+        if (file && file.size > 2 * 1024 * 1024) { // 2MB
+            imageError.textContent = "ขนาดไฟล์รูปภาพต้องไม่เกิน 2MB";
+            return false;
+        } else {
+            imageError.textContent = "";
+            return true;
+        }
+    }
+
+    // ฟังก์ชันตรวจสอบรหัสผ่าน
+    function validatePassword() {
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+        const passwordError = document.getElementById("passwordError");
+        const confirmPasswordError = document.getElementById("confirmPasswordError");
+
+        if (password.length < 6) {
+            passwordError.textContent = "รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร";
+            return false;
+        } else {
+            passwordError.textContent = "";
+        }
+
+        if (password !== confirmPassword) {
+            confirmPasswordError.textContent = "รหัสผ่านไม่ตรงกัน";
+            return false;
+        } else {
+            confirmPasswordError.textContent = "";
+            return true;
+        }
+    }
+
+    // ฟังก์ชันสำหรับการส่งฟอร์ม
+    document.getElementById("signupForm").onsubmit = function(event) {
+        event.preventDefault();
+        if (validateEmail() && validatePhone() && validateImage() && validatePassword()) {
+            this.submit(); // ส่งฟอร์มเมื่อข้อมูลถูกต้อง
+        }
+    };
+</script>
+
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![lab6 2](https://github.com/user-attachments/assets/9a1edcb0-5ba5-4c74-8d62-281ab921bafe)
+![lab6 1](https://github.com/user-attachments/assets/ebb3db50-02b4-4a67-a245-025944dac5e2)
 
 
