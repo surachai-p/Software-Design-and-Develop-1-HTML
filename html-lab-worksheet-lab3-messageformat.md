@@ -31,9 +31,22 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Suvijak Lawang</h1>
+    <p>Primary School- High School</p>
+    <p>Saint Theresa School Bangkok</p>
+    <p>งานอดิเรก: <strong>ร้องเพลงกับเล่นเกม</strong></p>
+    <h2>เป้าหมายในอนาคต</h2>     
+    <p>อยากเรียนจบและหางานทำ</p>  
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![labhtml3](https://github.com/user-attachments/assets/8fbdcb51-17f6-4354-825b-fe727c73c2b6)
 
 
