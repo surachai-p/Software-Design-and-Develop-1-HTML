@@ -348,9 +348,9 @@
         <input type="password" id="password" name="password" required>
         <label for="password">ยืนยันรหัสผ่าน:</label>
         <input type="password" id="password" name="password" required>
-    </div>
+     ```</div> ```
 
-</fieldset>```
+ ```</fieldset> 
             </div>
         </fieldset>
     </form>
