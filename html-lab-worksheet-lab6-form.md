@@ -222,12 +222,81 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิกพีบีคอร์ด</title>
+</head>
+<body>
+    <h1>สมัครสมาชิกพีบีคอร์ด</h1>
+    <form action="/submit-form" method="POST" enctype="multipart/form-data">
+        <!-- ข้อมูลส่วนตัว -->
+        <label for="fullname">ชื่อ-นามสกุล:</label>
+        <input type="text" id="fullname" name="fullname" required><br>
+
+        <label for="birthdate">วันเกิด:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+
+        <label for="gender">เพศ:</label>
+        <select id="gender" name="gender">
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+        </select><br>
+
+
+        <!-- ข้อมูลการติดต่อ -->
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">เบอร์โทร:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-12]{13}" required><br>
+
+        <label for="address">ที่อยู่จัดส่ง:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+
+        <!-- รูปโปรไฟล์ -->
+        <label for="profilePicture">รูปโปรไฟล์:</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required><br>
+
+
+        <!-- การยืนยันรหัสผ่าน -->
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" minlength="12" required><br>
+
+        <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required><br>
+
+
+        <!-- ความสนใจในหมวดหมู่สินค้า -->
+        <label>ความสนใจในหมวดหมู่สินค้า:</label><br>
+        <input type="checkbox" id="drink" name="interests" value="drink">
+        <label for="drink">เครื่องดื่ม</label><br>
+
+        <input type="checkbox" id="clothing" name="interests" value="clothing">
+        <label for="clothing">เสื้อผ้า</label><br>
+
+        <input type="checkbox" id="sports equipment" name="interests" value="sports equipment">
+        <label for="sports equipment">อุปกรณ์กีฬา</label><br>
+
+
+        <!-- การยอมรับเงื่อนไขการใช้งาน -->
+        <br><input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">ฉันยอมรับเงื่อนไขการใช้งาน</label>
+        
+        
+        <input type="submit" value="สมัครสมาชิก">
+    </form>
+</body>
+</html>
 ```html
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![H7](https://github.com/user-attachments/assets/e1b64210-7127-4e1b-ac86-ebb5a34f18c6)
 
 
 

@@ -165,10 +165,70 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery App</title>
+</head>
+<body>
+
+  <!-- นำทาง -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="files/document.pdf" download>Download Document</a>
+  </nav>
+
+  <button onclick="history.back()">⬅ Back</button>
+
+  <div>
+    <div onclick="showDialog('images/products/product1.jpg', 'A1')">
+      <img src="images/products/A1.jpg" alt="A1" style="width:100%; max-width:250px; height:auto;">
+      <p>A1 </p>
+    </div>
+    <div onclick="showDialog('images/products/product2.jpg', 'A2 ')">
+      <img src="images/products/A2.jpg" alt="A2" style="width:100%; max-width:250px; height:auto;">
+      <p>A2 </p>
+    </div>
+    <div onclick="showDialog('images/products/product3.jpg', 'A3 ')">
+      <img src="images/products/A3.jpg" alt="A3" style="width:100%; max-width:250px; height:auto;">
+      <p>A3 </p>
+    </div>
+    <div onclick="showDialog('images/products/product4.jpg', 'A4')">
+      <img src="images/products/A4.jpg" alt="A4" style="width:100%; max-width:250px; height:auto;">
+      <p>A4 </p>
+    </div>
+  </div>
+
+  <div id="dialog" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); display: flex; align-items: center; justify-content: center;">
+    <div style="background: white; padding: 16px; border-radius: 12px; max-width: 600px; text-align: center;">
+      <img id="dialog-image" src="" alt="" style="width: 100%; border-radius: 12px;">
+      <p id="dialog-description"></p>
+      <button onclick="closeDialog()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    function showDialog(imageSrc, description) {
+      document.getElementById('dialog-image').src = imageSrc;
+      document.getElementById('dialog-description').textContent = description;
+      document.getElementById('dialog').style.display = 'flex';
+    }
+
+    function closeDialog() {
+      document.getElementById('dialog').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+![H4](https://github.com/user-attachments/assets/096ec8f1-d533-439b-91fc-a584b42d47ac)
 
 
 
