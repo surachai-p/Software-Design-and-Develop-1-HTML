@@ -220,5 +220,6 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![image](https://github.com/user-attachments/assets/b55c8423-45a7-460a-a988-40a8b44f2f11)
+![image](https://github.com/user-attachments/assets/3c827b15-09e9-4ecc-af99-4e88989f849c)
+
 
