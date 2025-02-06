@@ -166,9 +166,76 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+<figure>
+    <a href="images/products/colanosugar.png">
+    <img src="images/products/colanosugar.png" 
+    alt="คลิกเพื่อดูรูปขนาดใหญ่"
+    width="200"
+    alt="สินค้าชิ้นที่ 1"
+    width="100"
+    height="200">
+</a>
+    <figcaption>
+    โค้กไม่มีน้ำตาล
+    </figcaption>
+</figure>
+<figure>
+    <a href="images/products/cola.png">
+    <img src="images/products/cola.png" 
+    alt="คลิกเพื่อดูรูปขนาดใหญ่"
+    width="200"
+    alt="สินค้าชิ้นที่ 2"
+    width="100"
+    height="200">
+</a>
+    <figcaption>
+    โค้กรสชาติออริจินัล
+    </figcaption>
+</figure>
+<figure>
+    <a href="images/products/colacanoriginal.png">
+    <img src="images/products/colacanoriginal.png" 
+    alt="คลิกเพื่อดูรูปขนาดใหญ่"
+    width="200"
+    alt="สินค้าชิ้นที่ 3"
+    width="100"
+    height="200">
+</a>
+    <figcaption>
+    โค้กกระป๋องรสชาติออริจินัล
+    </figcaption>
+</figure>
+<figure>
+    <a href="images/products/colancan.png">
+    <img src="images/products/colancan.png" 
+    alt="คลิกเพื่อดูรูปขนาดใหญ่"
+    width="200"
+    alt="สินค้าชิ้นที่ 4"
+    width="100"
+    height="200">
+</a>
+    <figcaption>
+        โค้กกระป๋องไม่มีน้ำตาล
+    </figcaption>
+</figure>
+<a href="#top">
+    <button>กลับด้านบน</button>
+</a>
+
+
+
+
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![lab04](https://github.com/user-attachments/assets/f9b1b2fe-b698-423b-999b-cff002678864)
+
+### ขยายรูปภาพ
+
+![lab4ขยาย](https://github.com/user-attachments/assets/fc3ec689-6900-4330-9977-a38455ece75b)
 
 
 
