@@ -165,7 +165,8 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน: <title>แกลเลอรีสินค้า</title>
 ```html
-[<!DOCTYPE html>
+[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
 <html>
 <head>
     <title>แกลเลอรีสินค้า</title>
@@ -240,7 +241,7 @@
     </figure>
     <a href="#top">กลับด้านบน</a>
 </body>
-</html>]
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
