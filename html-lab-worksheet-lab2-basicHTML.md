@@ -53,18 +53,4 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
-![folk2](https://github.com/user-attachments/assets/3d90018e-c008-4c43-8239-be09d312d1be)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![folk2](https://github.com/user-attachments/assets/8bf356c0-84d0-4226-ab99-9df19a4824d1)
