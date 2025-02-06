@@ -165,10 +165,73 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แกลเลอรีสินค้า</title>
+  <!-- เชื่อมโยงไฟล์ CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>แกลเลอรีสินค้า</h1>
+
+  <div class="gallery">
+    <!-- รูปภาพที่ 1 -->
+    <figure class="gallery-item">
+      <a href="images/gallery/1.png" target="_blank">
+        <img src="images/gallery/1.png" alt="สินค้า 1" width="300" height="300">
+      </a>
+      <figcaption>สินค้า 1 - คำอธิบายเกี่ยวกับสินค้า 1</figcaption>
+    </figure>
+
+    <!-- รูปภาพที่ 2 -->
+    <figure class="gallery-item">
+      <a href="images/gallery/2.png" target="_blank">
+        <img src="images/gallery/2.png" alt="สินค้า 2" width="300" height="300">
+      </a>
+      <figcaption>สินค้า 2 - คำอธิบายเกี่ยวกับสินค้า 2</figcaption>
+    </figure>
+
+    <!-- รูปภาพที่ 3 -->
+    <figure class="gallery-item">
+      <a href="images/gallery/3.png" target="_blank">
+        <img src="images/gallery/3.png" alt="สินค้า 3" width="300" height="300">
+      </a>
+      <figcaption>สินค้า 3 - คำอธิบายเกี่ยวกับสินค้า 3</figcaption>
+    </figure>
+
+    <!-- รูปภาพที่ 4 -->
+    <figure class="gallery-item">
+      <a href="images/gallery/4.png" target="_blank">
+        <img src="images/gallery/4.png" alt="สินค้า 4" width="300" height="300">
+      </a>
+      <figcaption>สินค้า 4 - คำอธิบายเกี่ยวกับสินค้า 4</figcaption>
+    </figure>
+  </div>
+
+  <!-- ปุ่มกลับด้านบน -->
+  <a href="#top" class="back-to-top">กลับด้านบน</a>
+
+  <script>
+    // ฟังก์ชันเปิดรูปในแท็บใหม่เมื่อคลิกที่รูป
+    document.querySelectorAll('.gallery-item a').forEach(item => {
+      item.addEventListener('click', function(event) {
+        window.open(item.href, '_blank');
+        event.preventDefault();
+      });
+    });
+  </script>
+
+</body>
+</html>
+]
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/a9ff4b16-5019-4a72-a8b4-0185545b24be)
 
 
 
