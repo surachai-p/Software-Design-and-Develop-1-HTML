@@ -36,8 +36,24 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Patcharapol Klinon web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
+- ![image](https://github.com/user-attachments/assets/d02ffebe-3df8-4e51-af60-8b33c8d9c53d)
+
 [วางภาพ screenshot ที่นี่]
 
 
