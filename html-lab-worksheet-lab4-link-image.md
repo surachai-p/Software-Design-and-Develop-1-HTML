@@ -165,10 +165,118 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <nav>
+        <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+        
+        <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+        <a href="https://www.google.com" target="_blank">
+            ไปยัง Google
+        </a>
+    </nav>
+
+<!-- รูปภาพในโฟลเดอร์ images -->
+<img src="images/logo.jpg" 
+     alt="โลโก้บริษัท"
+     width="50">
+
+
+
+
+    <!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>ร้านสตาร์บูด</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+
+
+<a href="images/products/product4.jpg">
+    <img src="images/products/product4.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+         <figcaption>
+            น้ำส้มปั้่น
+        </figcaption><br>
+<a href="images/products/product3.jpg">
+    <img src="images/products/product3.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+         <figcaption>
+            ไมโล
+        </figcaption><br>
+<a href="images/products/product2.jpg">
+    <img src="images/products/product2.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+         <figcaption>
+            ไอติม
+        </figcaption><br>
+</a>
+<a href="images/products/product1.jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+         <figcaption>
+            กาแฟดำ
+        </figcaption><br>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<a href="#top">กลับด้านบน</a>
+<a href="#products">ไปยังสินค้า</a>
+
+
+<!-- ลิงก์อีเมล -->
+<a href="67030302@kmitl.ac.th">ส่งอีเมลหาเรา</a>
+
+<!-- ลิงก์โทรศัพท์ -->
+<a href="tel:+66812345678">โทร 0988958597</a>
+
+<!-- ลิงก์ดาวน์โหลด -->
+<a href="files/document.pdf" download>
+    ดาวน์โหลดเอกสาร
+</a>
+
+
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/3c344fda-bc65-4a88-8063-4ec9f00d7614)
+
 
 
 

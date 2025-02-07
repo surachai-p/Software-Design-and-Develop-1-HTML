@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+</head>
+<body>
+    <h2>สมัครสมาชิกร้านค้าออนไลน์</h2>
+    <form id="signupForm" onsubmit="return validateForm()" enctype="multipart/form-data">
+        <h3>ข้อมูลส่วนตัว</h3>
+        <label>ชื่อ-นามสกุล: <input type="text" name="fullname" required></label><br>
+        <label>วันเกิด: <input type="date" name="dob" required></label><br>
+        <label>เพศ:
+            <select name="gender" required>
+                <option value="">-- เลือก --</option>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="other">อื่น ๆ</option>
+            </select>
+        </label><br>
+        
+        <h3>ข้อมูลการติดต่อ</h3>
+        <label>อีเมล: <input type="email" name="email" required></label><br>
+        <label>เบอร์โทร: <input type="text" name="phone" required></label><br>
+        <label>ที่อยู่จัดส่ง: <textarea name="address" required></textarea></label><br>
+        
+        <h3>รูปโปรไฟล์</h3>
+        <label>อัปโหลดรูป: <input type="file" name="profilePic" accept="image/*" required></label><br>
+        
+        <h3>ตั้งค่ารหัสผ่าน</h3>
+        <label>รหัสผ่าน: <input type="password" name="password" required></label><br>
+        <label>ยืนยันรหัสผ่าน: <input type="password" name="confirmPassword" required></label><br>
+        
+        <h3>ความสนใจในหมวดหมู่สินค้า</h3>
+        <label><input type="checkbox" name="interests" value="electronics"> เครื่องใช้ไฟฟ้า</label>
+        <label><input type="checkbox" name="interests" value="fashion"> แฟชั่น</label>
+        <label><input type="checkbox" name="interests" value="beauty"> ความงาม</label><br>
+        
+        <h3>ข้อตกลงและเงื่อนไข</h3>
+        <label><input type="checkbox" name="terms" required> ฉันยอมรับเงื่อนไขการใช้งาน</label><br>
+        
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+    
+    <script>
+        function validateForm() {
+            let form = document.forms["signupForm"];
+            let email = form["email"].value;
+            let phone = form["phone"].value;
+            let password = form["password"].value;
+            let confirmPassword = form["confirmPassword"].value;
+            let file = form["profilePic"].files[0];
+
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("อีเมลไม่ถูกต้อง");
+                return false;
+            }
+
+            let phonePattern = /^\d{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert("เบอร์โทรต้องเป็นตัวเลข 10 หลัก");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร");
+                return false;
+            }
+            
+            if (password !== confirmPassword) {
+                alert("รหัสผ่านไม่ตรงกัน");
+                return false;
+            }
+            
+            if (file && file.size > 2 * 1024 * 1024) {
+                alert("ขนาดไฟล์รูปต้องไม่เกิน 2MB");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
