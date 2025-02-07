@@ -33,12 +33,26 @@
 - `<strong>` ใช้เน้นข้อความ (แสดงเป็นตัวหนา)
 
 ### บันทึกผลการทดลอง
-- รหัสเอกสาร HTML ที่เขียน:
+- รหัสเอกสาร HTML ที่เขียน: <title>My First Web Page</title>
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Tanabordi Boonpamorn web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/f5f3234e-1599-43cd-b565-b8214d9b767e)
 
 
 
