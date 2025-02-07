@@ -163,12 +163,89 @@
    - มีปุ่มกลับด้านบน
 
 ### บันทึกผลการทดลอง
-- รหัสเอกสาร HTML ที่เขียน:
+- รหัสเอกสาร HTML ที่เขียน: <title>แกลเลอรีสินค้า</title>
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีสินค้า</title>
+</head>
+<body>
+    <h1><img src="images/gallery/9.png" width="100" height="70" > แกลเลอรีสินค้าปืนในเกม Valorant</h1>
+    <br>
+    <figure>
+        <a href="images/gallery/1.jpg"> 
+            <img src="images/gallery/1.jpg" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            <strong>➳ Vandal 2900 Point</strong>
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/5.jpg"> 
+            <img src="images/gallery/5.jpg" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            <strong>➳ Phantom 2900 Point</strong>
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/3.png"> 
+            <img src="images/gallery/3.png" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            <strong>➳ Operator 4700 Point</strong>
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/4.png"> 
+            <img src="images/gallery/4.png" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            <strong>➳ Odin 3200 Point</strong>
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/6.png"> 
+            <img src="images/gallery/6.png" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            <strong>➳ Sheriff 800 Point</strong>
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/7.png"> 
+            <img src="images/gallery/7.png" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            <strong>➳ Judge 1600 Point</strong>
+        </figcaption>
+    </figure>
+    <hr>
+    <figure>
+        <a href="images/gallery/8.jpg"> 
+            <img src="images/gallery/8.jpg" alt="คลิกเพื่อดูรูปขนาดใหญ่">
+        </a>
+        <figcaption>
+            <strong>➳ Classic 0 Point</strong>
+        </figcaption>
+    </figure>
+    <hr>
+    <a href="#top">กลับด้านบน</a>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/f882d2d3-1109-46b6-9f36-9d0133c3778b)
+![image](https://github.com/user-attachments/assets/08b55581-87f7-44cb-8e00-a36d271655f2)
+
 
 
 
