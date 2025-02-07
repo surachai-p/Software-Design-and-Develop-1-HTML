@@ -222,12 +222,91 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
-```html
 
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</title>
+</head>
+<body>
+
+    <h1>สมัครสมาชิกร้านค้าออนไลน์</h1>
+        <fieldset>
+            <legend>✎ ข้อมูลส่วนตัว</legend>
+            <label for="first-name">ชื่อ :</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <br>
+            <br>
+            <label for="last-name">นามสกุล :</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <br>
+            <br>
+            <label for="dateofbirth">วันเกิด :</label>
+            <input type="date" id="dateofbirth" name="dateofbirth" required>
+            <br>
+            <br>
+            <label for="gender">เพศ :</label>
+            <select id="gender" name="gender" required>
+                <option value="male">ชาย</option>
+                <option value="female">หญิง</option>
+                <option value="other">อื่นๆ</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>✎ ข้อมูลการติดต่อ</legend>
+            <label for="email">อีเมล :</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="phone">เบอร์โทรศัพท์ :</label>
+            <input type="tel" id="phone" name="phone" pattern="^\d{10}$" required placeholder="กรุณากรอกเบอร์โทร 10 หลัก">
+            <br>
+            <br>
+            <label for="address">ที่อยู่จัดส่ง :</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>✎ โปรไฟล์</legend>
+            <label for="profile-picture">รูปโปรไฟล์ :</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/*" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>✎ การยืนยันรหัสผ่าน</legend>
+            <label for="password">รหัสผ่าน :</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="รหัสผ่านอย่างน้อย 8 ตัวอักษร">
+            <br>
+            <br>
+            <label for="confirm-password">ยืนยันรหัสผ่าน :</label>
+            <input type="password" id="confirm-password" name="confirm-password" required minlength="8">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>✎ ความสนใจในหมวดหมู่สินค้า</legend>
+            <dl><label><input type="checkbox" name="interests" value="clothing"> เสื้อผ้าเเละแฟชั่น</label><br>
+                <label><input type="checkbox" name="interests" value="electronics"> อุปกรณ์อิเล็กทรอนิกส์</label><br>
+                <label><input type="checkbox" name="interests" value="books"> หนังสือ</label><br>
+                <label><input type="checkbox" name="interests" value="Home Decoration"> ของแต่งบ้าน</label><br>
+                <label><input type="checkbox" name="interests" value="Sports and outdoor activities"> กีฬาและกิจกรรมกลางแจ้ง</label><br>
+                <label><input type="checkbox" name="interests" value="Cosmetics and health"> เครื่องสำอางและสุขภาพ</label><br>
+                <label><input type="checkbox" name="interests" value="Mother and child products"> สินค้าแม่และเด็ก</label><br></dl>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label><input type="checkbox" name="terms" required> ยอมรับเงื่อนไขการใช้งาน</label>
+        </fieldset>
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/36f207bb-08d5-41a4-b19f-01c5d8a8fc4e)
 
 
 
