@@ -224,10 +224,77 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>candybai</title>
+</head>
+<body>
+    <h1>สมัครสมาชิก</h1>
+    <form action="/submit-form" method="POST" enctype="multipart/form-data">
+        <!-- ข้อมูลส่วนตัว -->
+        <label for="fullname">ชื่อ-นามสกุล:</label>
+        <input type="text" id="fullname" name="fullname" required><br>
 
+        <label for="birthdate">วันเกิด:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+
+        <label for="gender">เพศ:</label>
+        <select id="gender" name="gender">
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">ไม่ระบุ</option>
+        </select><br>
+
+        <!-- ข้อมูลการติดต่อ -->
+        <label for="email">อีเมล:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">เบอร์โทร:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+        <label for="address">ที่อยู่จัดส่ง:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <!-- รูปโปรไฟล์ -->
+        <label for="profilePicture">รูปโปรไฟล์:</label>
+        <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required><br>
+
+        <!-- การยืนยันรหัสผ่าน -->
+        <label for="password">รหัสผ่าน:</label>
+        <input type="password" id="password" name="password" minlength="8" required><br>
+
+        <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required><br>
+
+        <!-- ความสนใจ -->
+        <label>ความสนใจประเภทดอกไม้:</label><br>
+        <input type="checkbox" id="rose" name="interests" value="rose">
+        <label for="rose">ดอกกุหลาบ</label><br>
+
+        <input type="checkbox" id="sunflower" name="interests" value="sunflower">
+        <label for="sunflower">ดอกทานตะวัน</label><br>
+
+        <input type="checkbox" id="tulips" name="interests" value="tulips">
+        <label for="tulips">ดอกทิวลิป</label><br>
+
+        <input type="checkbox" id="Jasmine" name="interests" value="Jasmine">
+        <label for="Jasmine">ดอกมะลิ</label><br>
+
+        <!-- การยอมรับเงื่อนไขการใช้งาน -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">ฉันยอมรับเงื่อนไขการใช้งาน</label><br>
+
+        <input type="submit" value="สมัครสมาชิก">
+    </form>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab6](https://github.com/user-attachments/assets/c7802314-98c3-463f-bc29-a1617bc91000)
+
 
 
 
