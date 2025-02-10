@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวอย่าง Layout</title>
+    <style>
+        /* การตั้งค่าพื้นฐาน */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        article {
+            width: 70%;
+            padding-right: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* ปรับการแสดงผลสำหรับหน้าจอที่มีความกว้างไม่เกิน 768px */
+        @media (max-width: 768px) {
+            header {
+                text-align: left;
+                padding: 10px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            main {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            article {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            footer {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ชื่อเว็บไซต์</h1>
+        <nav>
+            <ul>
+                <li><a href="/">หน้าแรก</a></li>
+                <li><a href="/about">เกี่ยวกับเรา</a></li>
+                <li><a href="/contact">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>บทความที่ 1</h2>
+            <p>เนื้อหาบทความ...</p>
+        </article>
+
+        <aside>
+            <h3>บทความที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="#">บทความอื่น 1</a></li>
+                <li><a href="#">บทความอื่น 2</a></li>
+                <li><a href="#">บทความอื่น 3</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>ลิขสิทธิ์ © 2024</p>
+    </footer>
+
+</body>
+</html>
