@@ -166,9 +166,142 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PRODUCTS OF AIRPODS</title>
+    <!-- นำเข้า Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        nav, section, figure, figcaption {
+            margin-bottom: 20px;
+        }
+        nav img {
+            vertical-align: middle;
+        }
+        nav a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 700;
+        }
+        figure {
+            text-align: center;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+       
+        <!-- รูปภาพในโฟลเดอร์ images -->
+            <img src="images/logo.png" 
+            alt="โลโก้บริษัท"
+            height="80"
+            width="80">
+            <a href="index.html">หน้าหลัก</a>
+        <a href="test.html">กลับ</a>
+        
+        <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+        <a href="https://www.google.com" target="_blank">
+            ไปยัง Google
+        </a>
+    </nav>
+    <!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>AirPods จาก Apple</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของทางร้านเรา</h2>
+</section>
+
+<!-- กล่องใส่สินค้า -->
+<figure>
+    <!-- รูปภาพที่กดเพื่อดูขนาดใหญ่ -->
+    <a href="images/products/3.jpg">
+        <img src="images/products/3.jpg" 
+             alt="AirPods Pro"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>AirPods Pro</strong>
+        คุณสมบัติ: ระบบตัดเสียงรบกวนแบบ Active, โหมดฟังเสียงภายนอก, กันน้ำและเหงื่อ
+        จุดเด่น:
+        คุณภาพเสียงระดับสูงพร้อม Adaptive EQ
+        ระบบตัดเสียงรบกวนที่ปรับตามสภาพแวดล้อม
+        ชาร์จไร้สายและแบตเตอรี่ใช้ได้นาน</figcaption>
+</figure>
+<hr>
+
+<figure>
+    <a href="images/products/2.jpg">
+        <img src="images/products/2.jpg" 
+             alt="AirPods (รุ่นที่ 3)"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>AirPods (รุ่นที่ 3)</strong>
+        คุณสมบัติ: เสียงรอบทิศทาง, Adaptive EQ, กันน้ำและเหงื่อ
+        จุดเด่น:
+        เสียงทรงพลังและสมดุล
+        ดีไซน์ใหม่ที่กระชับพอดี
+        รองรับการชาร์จ MagSafe</figcaption>
+</figure>
+
+<figure>
+<hr>
+    <a href="images/products/5.jpg">
+    <img src="images/products/5.jpg" 
+         alt="AirPods Max"
+         width="300"
+         height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>AirPods Max</strong>
+        คุณสมบัติ: ระบบตัดเสียงรบกวนแบบ Active, เสียงรอบทิศทาง, โหมดฟังเสียงภายนอก
+        จุดเด่น:
+        คุณภาพเสียง Hi-Fi ระดับสตูดิโอ
+        ดีไซน์พรีเมียมและความสบายเมื่อสวมใส่
+        แบตเตอรี่ใช้งานได้นาน</figcaption>
+</figure>
+
+<hr>
+<figure>
+    <!-- รูปภาพที่กดเพื่อดูขนาดใหญ่ -->
+    <a href="images/products/1.jpg">
+        <img src="images/products/1.jpg" 
+             alt="AirPods (รุ่นที่ 2)"
+             width="300"
+             height="200">
+    </a>
+    <figcaption>รายละเอียดสินค้า</figcaption>
+    <figcaption><strong>AirPods (รุ่นที่ 2)</strong>
+        คุณสมบัติ: ชิป H1, เปิดใช้งาน Siri ด้วยเสียง, แบตเตอรี่ใช้ได้นาน
+        จุดเด่น:
+        สลับอุปกรณ์อย่างราบรื่น
+        คุณภาพเสียงดีและความสะดวกในการใช้งาน
+        ชาร์จเร็วและรองรับชาร์จไร้สาย</figcaption>
+</figure>
+<hr>
+
+</body>
+</html>
+
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](image.png)
 
 
