@@ -35,8 +35,7 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[<!DOCTYPE html>
-<html lang="en">
+[<html>
 <head>
     <title>First Web Page</title>
 </head>
@@ -51,7 +50,7 @@
 </html>]
 ```
 - ภาพผลลัพธ์:
-[![วางภาพ screenshot ที่นี่](img02.png)]
+[![วางภาพ screenshot ที่นี่]![alt text](image-4.png)]
 
 
 

@@ -122,5 +122,5 @@
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image-8.png)
 

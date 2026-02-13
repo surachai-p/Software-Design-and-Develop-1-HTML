@@ -165,11 +165,9 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[<!DOCTYPE html>
-<html lang="en">
+[<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>หน้าหลัก</title>
 </head>
 <body>
@@ -181,29 +179,29 @@
 
     <section>
         <figure>
-            <a href="images/gallery/a110s.webp" target="blank">
-                <img src="images/gallery/a110s.webp" alt="รูป 1"
+            <a href="image/a110s.webp" target="blank">
+                <img src="image/a110s.webp" alt="รูป 1"
                 width="200">
             </a>
             <figcaption>Alpine A110</figcaption>
         </figure>
 
         <figure>
-            <a href="images/gallery/f430.jpg" target="_blank">
-                <img src="images/gallery/f430.jpg" alt="รูป 2"
+            <a href="image/f430.jpg" target="_blank">
+                <img src="image/f430.jpg" alt="รูป 2"
                 width="200">
             </a>
             <figcaption>Ferrari F430</figcaption>
         </figure>
-        <a href="images/gallery/f-18-hornet-2657080_640.jpg" target="_blank">
-            <img src="images/gallery/f-18-hornet-2657080_640.jpg" alt="รูป 3"
+        <a href="image/f-18-hornet-2657080_640.jpg" target="_blank">
+            <img src="image/f-18-hornet-2657080_640.jpg" alt="รูป 3"
             width="200">
         </a>
         <figcaption>F18 Hornet</figcaption>
 
         <figure>
-            <a href="images/gallery/718f2bc0-db45-11f0-bd60-5332627fd119.jpg" target="_blank">
-                <img src="images/gallery/718f2bc0-db45-11f0-bd60-5332627fd119.jpg" alt="รูป 4"
+            <a href="image/718f2bc0-db45-11f0-bd60-5332627fd119.jpg" target="_blank">
+                <img src="image/718f2bc0-db45-11f0-bd60-5332627fd119.jpg" alt="รูป 4"
                 width="200">
             </a>
         </figure>
@@ -219,7 +217,7 @@
 </html>]
 ```
 - ภาพผลลัพธ์:
-[img04.png]
+![alt text](image-6.png)
 
 
 
