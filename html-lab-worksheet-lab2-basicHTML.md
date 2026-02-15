@@ -51,7 +51,7 @@
 </body>
 </html>
 - ภาพผลลัพธ์:
-![alt text](image-6.png)
+![alt text](welcome.png)
 
 
 
