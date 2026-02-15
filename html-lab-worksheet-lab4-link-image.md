@@ -166,9 +166,98 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+
+<nav>
+    <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+    <a href="https://www.google.com" target="_blank">
+        ไปยัง Google
+    </a>
+</nav>
+
+<!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>เนื้อหาส่วนบน</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+
+
+<section id="gallery">
+    <h2>แกลเลอรีสินค้า</h2>
+
+    <!-- รูปที่ 1 -->
+    <figure>
+        <a href="images/products/arc-n2056_01_01.jpg" target="_blank">
+            <img src="images/products/arc-n2056_01_01.jpg" 
+                 alt="สินค้า 1"
+                 width="250">
+        </a>
+        <figcaption>รายละเอียดสินค้า 1 จานไม่มีวันเเตก</figcaption>
+    </figure>
+
+    <!-- รูปที่ 2 -->
+    <figure>
+        <a href="images/products/pngtree-hand-drawn-cartoon-style-minimalist-cup-glass-clipart-png-image_2419162.jpg" target="_blank">
+            <img src="images/products/pngtree-hand-drawn-cartoon-style-minimalist-cup-glass-clipart-png-image_2419162.jpg" 
+                 alt="สินค้า 2"
+                 width="250">
+        </a>
+        <figcaption>รายละเอียดสินค้า 2 ชาไทยสีส้ม</figcaption>
+    </figure>
+
+    <!-- รูปที่ 3 -->
+    <figure>
+        <a href="images/products/206bdf1046ea17ff397766463bd73b86.jpg" target="_blank">
+            <img src="images/products/206bdf1046ea17ff397766463bd73b86.jpg" 
+                 alt="สินค้า 3"
+                 width="250">
+        </a>
+        <figcaption>รายละเอียดสินค้า 3
+            เเมวเป้า v1
+        </figcaption>
+    </figure>
+
+    <!-- รูปที่ 4 -->
+    <figure>
+        <a href="images/products/bee2ed.jpg" target="_blank">
+            <img src="images/products/bee2ed.jpg" 
+                 alt="สินค้า 4"
+                 width="250">
+        </a>
+        <figcaption>รายละเอียดสินค้า 4 หมาเป้า</figcaption>
+    </figure>
+
+</section>
+<!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<a href="#top">กลับด้านบน</a>
+<a href="#products">ไปยังสินค้า</a>
+
+<!-- ลิงก์อีเมล -->
+<a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+
+<!-- ลิงก์โทรศัพท์ -->
+<a href="tel:+66812345678">โทร 081-234-5678</a>
+
+<!-- ลิงก์ดาวน์โหลด -->
+<a href="files/document.pdf" download>
+    ดาวน์โหลดเอกสาร
+</a>
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-2.png)]
 
 
 
