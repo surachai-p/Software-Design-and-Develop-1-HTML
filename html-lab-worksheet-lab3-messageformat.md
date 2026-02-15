@@ -31,9 +31,42 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vasin Kaewmoragot</title>
+    </head>
+    <body>
+        <h1>Vasin Kaewmoragot</h1>
+        
+        <hr>
+
+        <h2>Educational Background</h2>
+        <p>
+            <b>Computer Technology</b>, School of Industrial Education and Technology,<br>
+            King Mongkut's Institute of Technology Ladkrabang
+        </p>
+
+        <hr>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Directing and producing the film</li>
+            <li>Watching movies</li>
+            <li>Reading some History books</li>
+        </ul>
+
+        <hr>
+
+        <h2>Future Goals</h2>
+        <p>
+            1. To be a successful film director and producer<br>
+            2. To create meaningful and impactful films that can inspire and entertain people<br>
+            3. To become a good teacher someday and share my knowledge and experience with others
+        </p>
+    </body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-
+![lab3-result-messageformat](html-workshop/lab3-messageformat/lab3-result-messageformat.png)
 
