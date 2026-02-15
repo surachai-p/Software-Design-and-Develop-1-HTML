@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav {
+        background: #555;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .container {
+        display: flex;
+        padding: 20px;
+    }
+
+    main {
+        flex: 3;
+        padding: 20px;
+        background: #f4f4f4;
+    }
+
+    aside {
+        flex: 1;
+        padding: 20px;
+        background: #ddd;
+    }
+
+    /* Responsive สำหรับหน้าจอเล็ก */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>เว็บไซต์ของฉัน</h1>
+</header>
+
+<nav>
+    <a href="#">หน้าแรก</a>
+    <a href="#">สินค้า</a>
+    <a href="#">ติดต่อเรา</a>
+</nav>
+
+<div class="container">
+    <main>
+        <h2>เนื้อหาหลัก</h2>
+        <p>นี่คือเนื้อหาหลักของเว็บไซต์</p>
+    </main>
+
+    <aside>
+        <h3>ข่าวสาร</h3>
+        <p>เนื้อหาด้านข้าง</p>
+    </aside>
+</div>
+
+<footer>
+    <p>ลิขสิทธิ์ © 2026</p>
+</footer>
+
+</body>
+</html>
