@@ -35,10 +35,23 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Natchpon web page</h1>
+    <p>This is my first web page.</p>
+    <div>Hi,My name is Nat</div>
+    <span>Do you like the work</span>
+    <em>I'm about to do?</em>
+    <strong>Nat8</strong>    
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-1.png)]
 
 
 

@@ -165,10 +165,65 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+
+<body id="top">
+
+    <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา!</h1>
+    <p>นี่คือหน้าหลักของเว็บไซต์ที่เราสร้างขึ้นเพื่อการเรียนรู้ HTML</p>
+
+    <nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        ไปยัง YouTube
+    </a>
+</nav>
+
+<h1>แกลเลอรีสินค้า</h1>
+
+<a href="images/gallery/images.png">
+    <img src="images/gallery/images.png" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+</a>
+<h2>ภาพตัวอย่างสินค้า</h2>
+
+<a href="images/gallery/Screenshot 2025-09-10 085300.png">
+    <img src="images/gallery/Screenshot 2025-09-10 085300.png" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+</a>
+<h2>ภาพตัวอย่างสินค้า 2 </h2>
+
+<a href="images/gallery/Screenshot 2025-06-25 215925.png">
+    <img src="images/gallery/Screenshot 2025-06-25 215925.png" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+</a>
+<h2>ภาพตัวอย่างสินค้า 3 </h2>
+
+<a href="images/gallery/sns_ic8.png">
+    <img src="images/gallery/sns_ic8.png" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+</a>
+<h2>ภาพตัวอย่างสินค้า 4 </h2>
+
+    <a href="#top" class="top-btn">⬆️ กลับด้านบน</a>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-3.png)]
 
 
 
