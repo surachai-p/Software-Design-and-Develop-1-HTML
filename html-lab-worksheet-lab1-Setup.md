@@ -75,5 +75,6 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![lab1-result](html-workshop/lab1-Setup/lab1-result-test.png)
 
 
