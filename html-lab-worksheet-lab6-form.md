@@ -222,12 +222,196 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[    <!-- กำหนดรูปแบบของฟอร์มบางส่วน -->
+  <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+
+    <body>
+        <form action="/register" method="post">
+            <!-- ส่วนข้อมูลส่วนตัว -->
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                
+                <div class="form-group">
+                    <label for="studentId">รหัสนักศึกษา:</label>
+                    <input type="text" id="studentId" name="studentId" 
+                           pattern="[0-9]{8}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="prefix">คำนำหน้า:</label>
+                     <select id="prefix" name="prefix" required>
+                        <option value="">เลือกคำนำหน้า</option>
+                        <option value="mr">นาย</option>
+                        <option value="ms">นางสาว</option>
+                        <option value="mrs">นาง</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="firstName">ชื่อ:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lastName">นามสกุล:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+        
+                <div class="form-group">
+                    <label>เพศ:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+                </div>
+            </fieldset>
+        
+            <!-- ส่วนข้อมูลการติดต่อ -->
+            <fieldset>
+                <legend>ข้อมูลการติดต่อ</legend>
+        
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           pattern="[0-9]{10}" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">ที่อยู่จัดส่ง:</label>
+                    <textarea id="address" name="address" 
+                              rows="3" required></textarea> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+
+            <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+
+            <div class="form-group">
+            <input type="file"
+                id="profileImage"
+                accept="image/png, image/jpeg"
+                required>
+            <small>ขนาดไม่เกิน 2MB (jpg/png)</small>
+            <div id="fileError" class="error"></div>
+            </div>
+
+            </fieldset>
+
+            <fieldset>
+            <legend>ตั้งรหัสผ่าน</legend>
+
+            <div class="form-group">
+            <label>รหัสผ่าน:</label><br>
+            <input type="password" id="password"
+                minlength="6"
+                required>
+            <small>อย่างน้อย 6 ตัวอักษร</small>
+            </div>
+
+            <div class="form-group">
+            <label>ยืนยันรหัสผ่าน:</label><br>
+            <input type="password" id="confirmPassword" required>
+            <div id="passError" class="error"></div>
+            </div>
+
+            </fieldset>
+
+            <!-- ส่วนความสนใจและกิจกรรม -->
+            <fieldset>
+                <legend>ความสนใจและกิจกรรม</legend>
+        
+                <div class="form-group">
+                    <label>ความสนใจ:</label>
+                    <input type="checkbox" id="sport" name="interests" value="sport">
+                    <label for="sport">หนังสื่อ</label>
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">เครื่องดนตรี</label>
+                    <input type="checkbox" id="art" name="interests" value="art">
+                    <label for="art">ของเล่น</label>
+                    <input type="checkbox" id="tech" name="interests" value="tech">
+                    <label for="tech">เทคโนโลยี</label>
+                </div>
+        
+            </fieldset>
+        
+            <!-- ส่วนยืนยันข้อมูล -->
+            <fieldset>
+                <legend>การยืนยัน</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        ข้าพเจ้ายืนยันว่าข้อมูลทั้งหมดเป็นความจริง
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">ลงทะเบียน</button>
+                    <button type="reset">ล้างข้อมูล</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <script>
+document.getElementById("registerForm").addEventListener("submit", function(e){
+
+    // เช็ครหัสผ่านตรงกัน
+    const pass = document.getElementById("password").value;
+    const confirm = document.getElementById("confirmPassword").value;
+    const passError = document.getElementById("passError");
+
+    if(pass !== confirm){
+        e.preventDefault();
+        passError.textContent = "รหัสผ่านไม่ตรงกัน";
+        return;
+    } else {
+        passError.textContent = "";
+    }
+
+    // เช็คขนาดไฟล์
+    const file = document.getElementById("profileImage").files[0];
+    const fileError = document.getElementById("fileError");
+
+    if(file && file.size > 2 * 1024 * 1024){
+        e.preventDefault();
+        fileError.textContent = "ไฟล์ต้องไม่เกิน 2MB";
+    } else {
+        fileError.textContent = "";
+    }
+});
+</script>
+
+</body>
+</html>]
 ```html
 
-```
+
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-5.png)]
 
 
 
