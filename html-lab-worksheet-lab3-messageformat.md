@@ -56,6 +56,6 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![alt text](<Screenshot 2569-02-16 at 13.27.14.png>)
+![alt text](<picture/Screenshot 2569-02-16 at 13.27.14.png>)
 
 
