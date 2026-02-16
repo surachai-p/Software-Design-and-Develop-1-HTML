@@ -66,10 +66,75 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
+### บันทึกผลการทดลอง
+- รหัสเอกสาร HTML ที่เขียน:
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+    <thead>
+        <tr>
+            <th>ชื่อ</th>
+            <th>นามสกุล</th>
+            <th>อายุ</th>
+            <th>ตำแหน่ง</th>
+            <th>ศึกษาที่</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ชิษณุพัศก์</td>
+            <td>วายุสุวรรณวิทย์</td>
+            <td>20</td>
+            <td>Devops</td>
+            <td>KMITL</td>
+            
+            
+        </tr>
+        <tr>
+            <td>Doe</td>
+            <td>Joe</td>
+            <td>40</td>
+            <td>Backend</td>
+            <td>CU</td>
+        </tr>
+        
+    </tbody>
+    
+</table>
 
+<h2>เมนูอาหาร</h2>
+<h3>ประเภทของอาหาร</h3>
+<ul>
+    <li>กับข้าว</li>
+    <li>เมนูเส้น</li>
+    <li>ผัด</li>
+</ul>
+
+<h3></h3>
+<ol>
+    <li>ต้มยำกุ้ง</li>
+    <li>หมี่ได่ฉีด</li>
+    <li>ผัดไทย</li>
+</ol>
+
+<h3>เครื่องดื่ม</h3>
+<dl>
+    <dt>น้ำหวาน</dt>
+    <dd>ชาเขียวหวาน, กาแฟหวาน, </dd>
+    <dt>น้ำเปล่า</dt>
+    <dd>น้ำเปล่า, น้ำเปล่าใส่น้ำแข็ง</dd>
+</dl>
+</body>
+</html>
 ```
+
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image-3.png)
 
