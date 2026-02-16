@@ -68,8 +68,77 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Information and Menu</title>
+    </head>
+    <body>
+        
+        <h3>1. ตารางข้อมูลส่วนตัว</h3>
+        <table border="1">
+            <thead>
+                <tr bgcolor="#f2f2f2">
+                    <th>หัวข้อ</th>
+                    <th>รายละเอียด</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name</td>
+                    <td>Vasin Kaewmoragot</td>
+                </tr>
+                <tr>
+                    <td>Student ID</td>
+                    <td>68030262</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>University</td>
+                    <td>King Mongkut's Institute of Technology Ladkrabang</td>
+                </tr>
+                <tr>
+                    <td>Faculty</td>
+                    <td>School of Industrial Education and Technology</td>
+                </tr>
+            </tbody>
+        </table>
 
+        <hr>
+        
+        <h3>2. รายการเมนูอาหาร</h3>
+        
+        <h4>เมนูแนะนำ</h4>
+        <ul>
+            <li>ข้าวมันไก่ต้ม</li>
+            <li>ข้าวหมูแดงหมูกรอบ</li>
+            <li>ก๋วยเตี๋ยวต้มยำ</li>
+            <li>ผัดไทยกุ้งสด</li>
+        </ul>
+
+        <h4>เมนูเครื่องดื่ม</h4>
+        <ol>
+            <li>ชานมไข่มุก</li>
+            <li>กาแฟเย็น</li>
+            <li>น้ำแดงโซดา</li>
+        </ol>
+
+        <h4>รายละเอียดราคา</h4>
+        <dl>
+            <dt><strong>อาหารจานเดียว</strong></dt>
+            <dd>- ราคา 50 บาท</dd>
+            
+            <dt><strong>เครื่องดื่ม</strong></dt>
+            <dd>- ราคา 30 บาท</dd>
+        </dl>
+
+    </body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab5-result](html-workshop/lab5-table-list/lab5-result.png)
 
