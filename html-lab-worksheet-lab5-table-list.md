@@ -68,8 +68,74 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+    <thead>
+        <tr>
+            <th>ชื่อ</th>
+            <th>นามสกุล</th>
+            <th>ชื่อเล่น</th>
+            <th>อายุ</th>
+            <th>รหัสนักศึกษา</th>
+            <th>คณะ</th>
+            <th>สาขา</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>นัทธพงศ์</td>
+            <td>เหมือนประสาน</td>
+            <td>นัทธ</td>
+            <td>19</td>
+            <td>68030135</td>
+            <td>ครุศาสตร์อุสาหกรรและเทคโนโลยี</td>
+            <td>เทคโนโลยีคอมพิวเตอร์</td>
+        </tr>
+    </tbody>
+</table>
 
+<ul>
+    <li>อาหาร</li>
+</ul>
+
+<ol>
+    <li>ข้าวผัดหมู</li>
+    <li>กะเพราไก่</li>
+    <li>ผัดไทย</li>
+    <li>กะเพราไข่เยี่ยวม้า</li>
+    <li>หมูกรอบผัดพริกแกง</li>
+    <li>สุกี้ทะเล</li>
+    <li>ราดหน้าหมู</li>
+</ol>
+
+<ul>
+    <li>เครื่องดื่ม</li>
+</ul>
+
+<ol>
+    <li>น้ำเปล่า</li>
+    <li>น้ำอัดลม</li>
+    <li>น้ำผลไม้</li>
+    <li>กาแฟ</li>
+    <li>ชา</li>
+</ol>
+
+<dl>
+    <dt>สโลแกน</dt>
+    <dd>อร่อยถูกใจอนามัยถูกลืม</dd>
+    <dt>รสชาติ</dt>
+    <dd>อร่อยไม่ซ้ำจำสูตรไม่ได้</dd>
+</dl>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image-6.png)
 
