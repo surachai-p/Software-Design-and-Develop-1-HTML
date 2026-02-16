@@ -36,7 +36,6 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
 <!DOCTYPE html>
 <html>
 <head>
@@ -51,9 +50,10 @@
     <strong>This text is strong</strong>    
 </body>
 </html>
-
+```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
 ![ผลการทดลอง](index.png)
 
 
