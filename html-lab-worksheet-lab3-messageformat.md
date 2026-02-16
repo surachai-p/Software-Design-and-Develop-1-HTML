@@ -36,4 +36,6 @@
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![ผลลัพธ์](messageformat.png)
+
 
