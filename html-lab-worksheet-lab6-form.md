@@ -224,10 +224,167 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <!-- ข้อมูลส่วนตัว -->
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+
+        <div class="form-group">
+            <label>ชื่อ:</label>
+            <input type="text" name="firstname" required>
+        </div>
+
+        <div class="form-group">
+            <label>นามสกุล:</label>
+            <input type="text" name="lastname" required>
+        </div>
+
+        <div class="form-group">
+            <label>วันเกิด:</label>
+            <input type="date" name="birthday" required>
+        </div>
+
+        <div class="form-group">
+            <label>เพศ:</label>
+            <input type="radio" name="gender" value="male" required> ชาย
+            <input type="radio" name="gender" value="female"> หญิง
+        </div>
+    </fieldset>
+
+
+    <!-- ข้อมูลการติดต่อ -->
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        <div class="form-group">
+            <label>อีเมล:</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>เบอร์โทร:</label>
+            <input type="tel" name="phone"
+                   pattern="[0-9]{10}"
+                   placeholder="เช่น 0812345678"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label>ที่อยู่จัดส่ง:</label>
+            <textarea name="address" rows="3" required></textarea>
+        </div>
+    </fieldset>
+
+
+    <!-- รูปโปรไฟล์ -->
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <div class="form-group">
+            <label>อัปโหลดรูป:</label>
+            <input type="file"
+                   name="profile"
+                   accept="image/*"
+                   required>
+        </div>
+    </fieldset>
+
+
+    <!-- รหัสผ่าน -->
+    <fieldset>
+        <legend>ตั้งค่ารหัสผ่าน</legend>
+
+        <div class="form-group">
+            <label>รหัสผ่าน:</label>
+            <input type="password"
+                   name="password"
+                   minlength="6"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label>ยืนยันรหัสผ่าน:</label>
+            <input type="password"
+                   name="confirm_password"
+                   minlength="6"
+                   required>
+        </div>
+    </fieldset>
+
+
+    <!-- ความสนใจ -->
+    <fieldset>
+        <legend>ความสนใจในสินค้า</legend>
+
+        <div class="form-group">
+            <input type="checkbox" name="interest" value="clothes"> เสื้อผ้า
+            <input type="checkbox" name="interest" value="electronics"> อิเล็กทรอนิกส์
+            <input type="checkbox" name="interest" value="beauty"> ความงาม
+            <input type="checkbox" name="interest" value="sport"> กีฬา
+        </div>
+    </fieldset>
+
+
+    <!-- ยอมรับเงื่อนไข -->
+    <fieldset>
+        <legend>ยืนยันการสมัคร</legend>
+
+        <div class="form-group">
+            <input type="checkbox" name="agree" required>
+            ยอมรับเงื่อนไขการใช้งาน <span class="required">*</span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </fieldset>
+
+</form>
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[วางภาพ screenshot ที่นี่] ![alt text](../image/ผลการทดลองLab6.png)
 
 
 
