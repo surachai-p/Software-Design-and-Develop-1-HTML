@@ -24,6 +24,9 @@
      * [✓] Register Code as an editor for supported file types
      * [✓] Add to PATH
 
+
+
+
 ### ขั้นตอนที่ 2: การติดตั้ง Extension Live Server
 1. เปิดโปรแกรม Visual Studio Code
 2. คลิกไอคอน Extensions ที่แถบด้านซ้าย (รูปสี่เหลี่ยมจตุรัส 4 ชิ้น) หรือกด Ctrl+Shift+X
@@ -74,9 +77,10 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[ภาพบันทึกผลการทดลอง] ![alt text](../image/ผลการทดลองLab1.png)
 
 
+# ใบงานการทดลอง HTML
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
 ### ขั้นตอนการทดลอง
 1. สร้างไฟล์ index.html
@@ -109,15 +113,33 @@
 - `<span>` เป็น inline element ที่ต่อเนื่องในบรรทัดเดียวกัน
 - `<em>` ใช้เน้นข้อความ (แสดงเป็นตัวเอียง)
 - `<strong>` ใช้เน้นข้อความ (แสดงเป็นตัวหนา)
-  
-  ### บันทึกผลการทดลอง
+
+### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Suteemon Wongparram web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[วางภาพ screenshot ที่นี่]![alt text](../image/ผลการทดลองLab2.png)
   
+# ใบงานการทดลอง HTML
+ 
+
+
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
 1. ทดลองใช้ tag ต่างๆ:
@@ -150,9 +172,43 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แนะนำตัวเอง</title>
+</head>
+<body>
+    <h1>แนะนำตัวเอง</h1>
+    <hr>
+    <h2>ชื่อ-นามสกุล</h2>
+    <p>นางสาว สุธีมนต์ วงศ์พระราม</p>
+    <hr>
+    <h2>ประวัติการศึกษา</h2>
+    <p>
+        จบการศึกษาระดับ <strong>ปวช.</strong><br>
+        ปัจจุบันกำลังศึกษาในระดับ <em>ปริญญาตรี</em> สาขาวิทยาการคอมพิวเตอร์
+    </p>
+    <hr>
+    <h2>งานอดิเรก</h2>
+    <p>
+        - ดูหนัง<br>
+        - เล่นกีฬา<br>
+        - ฟังเพลง
+    </p>
+    <hr>
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>
+        อยากเป็นครูที่ดี ที่สามารถเนื้อหาต่างๆให้เด็กเข้าใจได้ง่าย<br>
+        และสร้างผลงานที่เป็นประโยชน์ต่อสังคม
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[วางภาพ screenshot ที่นี่] ![alt text](../image/ผลการทดลองLab3.png)
+
+
+
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -320,10 +376,103 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+
+<!-- เมนูนำทาง -->
+<nav>
+    <a href="index.html">หน้าหลัก</a> |
+    <a href="pages/about.html">เกี่ยวกับเรา</a> |
+    <a href="pages/contact.html">ติดต่อเรา</a> |
+    <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+</nav>
+
+<hr>
+
+<!-- จุดด้านบน -->
+<section id="top">
+    <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+</section>
+
+<hr>
+
+<!-- สินค้า -->
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+
+    <figure>
+        <a href="images/products/product1.jpg">
+            <img src="images/products/product1.jpg" 
+                 alt="คลิกเพื่อดูภาพสินค้าขนาดใหญ่" width="200">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 1</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/product2.jpg">
+            <img src="images/products/product2.jpg" 
+                 alt="คลิกเพื่อดูภาพสินค้าขนาดใหญ่" width="200">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 2</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/product3.jpg">
+            <img src="images/products/product3.jpg" 
+                 alt="คลิกเพื่อดูภาพสินค้าขนาดใหญ่" width="200">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 3</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/product4.jpg">
+            <img src="images/products/product4.jpg" 
+                 alt="คลิกเพื่อดูภาพสินค้าขนาดใหญ่" width="200">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 4</figcaption>
+    </figure>
+
+</section>
+
+<hr>
+
+<!-- ลิงก์พิเศษ -->
+<h3>ติดต่อเรา</h3>
+
+<p>
+    <a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+</p>
+
+<p>
+    <a href="tel:+66812345678">โทร 081-234-5678</a>
+</p>
+
+<p>
+    <a href="files/document.pdf" download>
+        ดาวน์โหลดเอกสาร
+    </a>
+</p>
+
+<hr>
+
+<!-- ปุ่มกลับด้านบน -->
+<a href="#top">⬆ กลับด้านบน</a>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[วางภาพ screenshot ที่นี่]![alt text](../image/ผลการทดลองLab4.png)
 
+
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
 ### วัตถุประสงค์
@@ -393,11 +542,73 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Table and List Example</title>
+</head>
+<body>
+
+    <h2>ตารางข้อมูลส่วนตัว</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>ข้อมูล</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ</td>
+                <td>สุธีมนต์ วงศ์พระราม</td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td>20 ปี</td>
+            </tr>
+            <tr>
+                <td>สาขา</td>
+                <td>เทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+            <tr>
+                <td>งานอดิเรก</td>
+                <td>เล่นเกม ฟังเพลง</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>เมนูอาหาร</h2>
+
+    <h3>เมนูแนะนำ (ไม่เรียงลำดับ)</h3>
+    <ul>
+        <li>ข้าวผัด</li>
+        <li>ก๋วยเตี๋ยว</li>
+        <li>ส้มตำ</li>
+    </ul>
+
+    <h3>เมนูยอดนิยม (เรียงลำดับ)</h3>
+    <ol>
+        <li>ต้มยำกุ้ง</li>
+        <li>ผัดไทย</li>
+        <li>หมูทอดกระเทียม</li>
+    </ol>
+
+    <h3>เครื่องดื่ม</h3>
+    <dl>
+        <dt>ชาเย็น</dt>
+        <dd>ชาหวานเย็นใส่นม</dd>
+
+        <dt>กาแฟ</dt>
+        <dd>กาแฟร้อนหรือเย็นตามชอบ</dd>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[วางภาพ screenshot ที่นี่]![alt text](../image/ผลการทดลองLab5.png)
 
+
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
@@ -622,10 +833,172 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <!-- ข้อมูลส่วนตัว -->
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+
+        <div class="form-group">
+            <label>ชื่อ:</label>
+            <input type="text" name="firstname" required>
+        </div>
+
+        <div class="form-group">
+            <label>นามสกุล:</label>
+            <input type="text" name="lastname" required>
+        </div>
+
+        <div class="form-group">
+            <label>วันเกิด:</label>
+            <input type="date" name="birthday" required>
+        </div>
+
+        <div class="form-group">
+            <label>เพศ:</label>
+            <input type="radio" name="gender" value="male" required> ชาย
+            <input type="radio" name="gender" value="female"> หญิง
+        </div>
+    </fieldset>
+
+
+    <!-- ข้อมูลการติดต่อ -->
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        <div class="form-group">
+            <label>อีเมล:</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>เบอร์โทร:</label>
+            <input type="tel" name="phone"
+                   pattern="[0-9]{10}"
+                   placeholder="เช่น 0812345678"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label>ที่อยู่จัดส่ง:</label>
+            <textarea name="address" rows="3" required></textarea>
+        </div>
+    </fieldset>
+
+
+    <!-- รูปโปรไฟล์ -->
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <div class="form-group">
+            <label>อัปโหลดรูป:</label>
+            <input type="file"
+                   name="profile"
+                   accept="image/*"
+                   required>
+        </div>
+    </fieldset>
+
+
+    <!-- รหัสผ่าน -->
+    <fieldset>
+        <legend>ตั้งค่ารหัสผ่าน</legend>
+
+        <div class="form-group">
+            <label>รหัสผ่าน:</label>
+            <input type="password"
+                   name="password"
+                   minlength="6"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label>ยืนยันรหัสผ่าน:</label>
+            <input type="password"
+                   name="confirm_password"
+                   minlength="6"
+                   required>
+        </div>
+    </fieldset>
+
+
+    <!-- ความสนใจ -->
+    <fieldset>
+        <legend>ความสนใจในสินค้า</legend>
+
+        <div class="form-group">
+            <input type="checkbox" name="interest" value="clothes"> เสื้อผ้า
+            <input type="checkbox" name="interest" value="electronics"> อิเล็กทรอนิกส์
+            <input type="checkbox" name="interest" value="beauty"> ความงาม
+            <input type="checkbox" name="interest" value="sport"> กีฬา
+        </div>
+    </fieldset>
+
+
+    <!-- ยอมรับเงื่อนไข -->
+    <fieldset>
+        <legend>ยืนยันการสมัคร</legend>
+
+        <div class="form-group">
+            <input type="checkbox" name="agree" required>
+            ยอมรับเงื่อนไขการใช้งาน <span class="required">*</span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </fieldset>
+
+</form>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[วางภาพ screenshot ที่นี่] ![alt text](../image/ผลการทดลองLab6.png)
 
+
+
+# ใบงานการทดลอง HTML
 
 ## การทดลองที่ 7: HTML Layout
 ### วัตถุประสงค์
@@ -712,5 +1085,4 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง] ![alt text](../image/ผลการทดลองLab7.png)

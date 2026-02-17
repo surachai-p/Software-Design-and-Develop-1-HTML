@@ -166,9 +166,99 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+
+<!-- เมนูนำทาง -->
+<nav>
+    <a href="index.html">หน้าหลัก</a> |
+    <a href="pages/about.html">เกี่ยวกับเรา</a> |
+    <a href="pages/contact.html">ติดต่อเรา</a> |
+    <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+</nav>
+
+<hr>
+
+<!-- จุดด้านบน -->
+<section id="top">
+    <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+</section>
+
+<hr>
+
+<!-- สินค้า -->
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+
+    <figure>
+        <a href="images/products/product1.jpg">
+            <img src="images/products/product1.jpg" 
+                 alt="คลิกเพื่อดูภาพสินค้าขนาดใหญ่" width="200">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 1</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/product2.jpg">
+            <img src="images/products/product2.jpg" 
+                 alt="คลิกเพื่อดูภาพสินค้าขนาดใหญ่" width="200">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 2</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/product3.jpg">
+            <img src="images/products/product3.jpg" 
+                 alt="คลิกเพื่อดูภาพสินค้าขนาดใหญ่" width="200">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 3</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/product4.jpg">
+            <img src="images/products/product4.jpg" 
+                 alt="คลิกเพื่อดูภาพสินค้าขนาดใหญ่" width="200">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 4</figcaption>
+    </figure>
+
+</section>
+
+<hr>
+
+<!-- ลิงก์พิเศษ -->
+<h3>ติดต่อเรา</h3>
+
+<p>
+    <a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+</p>
+
+<p>
+    <a href="tel:+66812345678">โทร 081-234-5678</a>
+</p>
+
+<p>
+    <a href="files/document.pdf" download>
+        ดาวน์โหลดเอกสาร
+    </a>
+</p>
+
+<hr>
+
+<!-- ปุ่มกลับด้านบน -->
+<a href="#top">⬆ กลับด้านบน</a>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[วางภาพ screenshot ที่นี่]![alt text](../image/ผลการทดลองLab4.png)
 
 
 
