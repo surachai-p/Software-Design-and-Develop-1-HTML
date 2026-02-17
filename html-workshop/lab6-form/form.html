@@ -1,0 +1,47 @@
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    .input-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .required-mark {
+        color: red;
+        margin-left: 5px;
+    }
+</style>
+
+<body>
+    <form action="/register-shop" method="post">
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+    </form>
+</body>
