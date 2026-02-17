@@ -224,10 +224,78 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<form action="/register-shop" method="post" enctype="multipart/form-data">
+    <h2>สมัครสมาชิกร้านค้าออนไลน์</h2>
+
+    <fieldset>
+        <legend>ข้อมูลบัญชีผู้ใช้งาน</legend>
+        <div class="form-group">
+            <label for="reg-email">อีเมล (ใช้เป็นชื่อเข้าใช้):</label>
+            <input type="email" id="reg-email" name="email" placeholder="example@mail.com" required>
+        </div>
+        <div class="form-group">
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password" 
+                   minlength="8" placeholder="อย่างน้อย 8 ตัวอักษร" required>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+        <div class="form-group">
+            <label for="fullname">ชื่อ-นามสกุล:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+            <label for="user-birthdate">วันเกิด:</label>
+            <input type="date" id="user-birthdate" name="user-birthdate">
+        </div>
+        <div class="form-group">
+            <label>เพศ:</label>
+            <input type="radio" id="m" name="user-gender" value="male"> <label for="m">ชาย</label>
+            <input type="radio" id="f" name="user-gender" value="female"> <label for="f">หญิง</label>
+            <input type="radio" id="o" name="user-gender" value="other"> <label for="o">อื่นๆ</label>
+        </div>
+        <div class="form-group">
+            <label for="profile-pic">รูปโปรไฟล์ (ไม่เกิน 2MB):</label>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลการติดต่อและจัดส่ง</legend>
+        <div class="form-group">
+            <label for="user-phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="user-phone" name="phone" 
+                   pattern="[0-9]{10}" placeholder="0123456789" required>
+        </div>
+        <div class="form-group">
+            <label for="shipping-address">ที่อยู่จัดส่งสินค้า:</label>
+            <textarea id="shipping-address" name="address" rows="4" required></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>หมวดหมู่สินค้าที่คุณสนใจ (เลือกได้หลายข้อ)</legend>
+        <input type="checkbox" id="cat-tech" name="fav-cats" value="tech"> <label for="cat-tech">ไอที/คอมพิวเตอร์</label><br>
+        <input type="checkbox" id="cat-fashion" name="fav-cats" value="fashion"> <label for="cat-fashion">แฟชั่น/เสื้อผ้า</label><br>
+        <input type="checkbox" id="cat-home" name="fav-cats" value="home"> <label for="cat-home">ของแต่งบ้าน</label>
+    </fieldset>
+
+    <div style="margin-top: 20px;">
+        <input type="checkbox" id="term-agree" name="term-agree" required>
+        <label for="term-agree">ฉันยอมรับ <a href="#">เงื่อนไขการใช้งาน</a> และนโยบายความเป็นส่วนตัว</label>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <button type="submit" style="padding: 10px 20px; background-color: #28a745; color: white; border: none;">ยืนยันสมัครสมาชิก</button>
+        <button type="reset" style="padding: 10px 20px;">ล้างข้อมูล</button>
+    </div>
+</form>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](<ภาพถ่ายหน้าจอ 2569-02-17 เวลา 19.29.38.jpeg>)]
 
 
 
