@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวอย่าง HTML Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            padding: 10px 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        article {
+            flex: 3;
+            background: #f4f4f4;
+            padding: 15px;
+        }
+
+        aside {
+            flex: 1;
+            background: #ddd;
+            padding: 15px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>เว็บไซต์ของฉัน</h1>
+    <p>ตัวอย่างการใช้ Semantic Layout</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">เกี่ยวกับ</a></li>
+        <li><a href="#">บริการ</a></li>
+        <li><a href="#">ติดต่อ</a></li>
+    </ul>
+</nav>
+
+<main>
+    <article>
+        <h2>บทความหลัก</h2>
+        <p>
+            นี่คือเนื้อหาหลักของเว็บไซต์ ซึ่งอยู่ในส่วน article
+            สามารถอ่านแยกออกจากส่วนอื่นได้
+        </p>
+
+        <section>
+            <h3>หัวข้อย่อย</h3>
+            <p>
+                ส่วนนี้คือ section ที่เกี่ยวข้องกับเนื้อหาหลัก
+            </p>
+        </section>
+    </article>
+
+    <aside>
+        <h3>ข่าวสารเพิ่มเติม</h3>
+        <ul>
+            <li>ข่าวที่ 1</li>
+            <li>ข่าวที่ 2</li>
+            <li>ข่าวที่ 3</li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>ลิขสิทธิ์ © 2026 เว็บไซต์ตัวอย่าง</p>
+</footer>
+
+</body>
+</html>
