@@ -64,6 +64,22 @@
                 <span class="required-mark">*</span>
             </div>
         </fieldset>
+        
+        <fieldset>
+            <legend>ข้อมูลบัญชี</legend>
 
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" pattern=".{8,}" required>
+                <span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm_password">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" pattern=".{8,}" required>
+                <span class="required-mark">*</span>
+            </div>
+
+        </fieldset>
     </form>
 </body>
