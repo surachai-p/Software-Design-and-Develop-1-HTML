@@ -224,10 +224,162 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form action="/signup" method="post" enctype="multipart/form-data">
+
+<!-- ข้อมูลส่วนตัว -->
+<fieldset>
+    <legend>ข้อมูลส่วนตัว</legend>
+
+    <div class="form-group">
+        <label>ชื่อ:</label>
+        <input type="text" name="firstName" required>
+        <span class="required">*</span>
+    </div>
+
+    <div class="form-group">
+        <label>นามสกุล:</label>
+        <input type="text" name="lastName" required>
+        <span class="required">*</span>
+    </div>
+
+    <div class="form-group">
+        <label>วันเกิด:</label>
+        <input type="date" name="birthdate" required>
+    </div>
+
+    <div class="form-group">
+        <label>เพศ:</label>
+        <input type="radio" name="gender" value="male" required> ชาย
+        <input type="radio" name="gender" value="female"> หญิง
+        <input type="radio" name="gender" value="other"> อื่น ๆ
+    </div>
+</fieldset>
+
+<!-- ข้อมูลการติดต่อ -->
+<fieldset>
+    <legend>ข้อมูลการติดต่อ</legend>
+
+    <div class="form-group">
+        <label>อีเมล:</label>
+        <input type="email" name="email" required>
+        <span class="required">*</span>
+    </div>
+
+    <div class="form-group">
+        <label>เบอร์โทรศัพท์:</label>
+        <input type="tel" name="phone"
+               pattern="[0-9]{10}"
+               placeholder="กรอกตัวเลข 10 หลัก"
+               required>
+        <span class="required">*</span>
+    </div>
+
+    <div class="form-group">
+        <label>ที่อยู่จัดส่ง:</label><br>
+        <textarea name="address" rows="3" required></textarea>
+    </div>
+</fieldset>
+
+<!-- บัญชีผู้ใช้ -->
+<fieldset>
+    <legend>บัญชีผู้ใช้</legend>
+
+    <div class="form-group">
+        <label>รหัสผ่าน:</label>
+        <input type="password"
+               name="password"
+               minlength="8"
+               maxlength="20"
+               required>
+        <span class="required">*</span>
+        <small>(8-20 ตัวอักษร)</small>
+    </div>
+
+    <div class="form-group">
+        <label>ยืนยันรหัสผ่าน:</label>
+        <input type="password"
+               name="confirmPassword"
+               minlength="8"
+               maxlength="20"
+               required>
+        <span class="required">*</span>
+    </div>
+</fieldset>
+
+<!-- รูปโปรไฟล์ -->
+<fieldset>
+    <legend>รูปโปรไฟล์</legend>
+
+    <div class="form-group">
+        <label>อัปโหลดรูป:</label>
+        <input type="file"
+               name="profileImage"
+               accept="image/png, image/jpeg"
+               required>
+        <small>(เฉพาะ JPG / PNG ขนาดไม่เกิน 2MB)</small>
+    </div>
+</fieldset>
+
+<!-- ความสนใจ -->
+<fieldset>
+    <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+    <div class="form-group">
+        <input type="checkbox" name="interest" value="electronics"> อิเล็กทรอนิกส์
+        <input type="checkbox" name="interest" value="fashion"> แฟชั่น
+        <input type="checkbox" name="interest" value="books"> หนังสือ
+        <input type="checkbox" name="interest" value="sports"> กีฬา
+    </div>
+</fieldset>
+
+<!-- เงื่อนไข -->
+<fieldset>
+    <legend>การยืนยัน</legend>
+
+    <div class="form-group">
+        <input type="checkbox" name="agree" required>
+        ยอมรับเงื่อนไขการใช้งาน
+        <span class="required">*</span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit">สมัครสมาชิก</button>
+        <button type="reset">ล้างข้อมูล</button>
+    </div>
+</fieldset>
+
+</form>
+
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    fieldset {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+    .form-group {
+        margin-bottom: 12px;
+    }
+    .required {
+        color: red;
+    }
+</style>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](test6.png)
 
 

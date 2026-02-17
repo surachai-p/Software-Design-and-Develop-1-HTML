@@ -52,6 +52,6 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![alt text](html-workshop/test2.png)
+![alt text](test2.png)
 
 

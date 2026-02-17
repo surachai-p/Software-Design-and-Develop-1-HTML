@@ -58,5 +58,5 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![alt text](image.png)
+![alt text](imagee.png)
 
