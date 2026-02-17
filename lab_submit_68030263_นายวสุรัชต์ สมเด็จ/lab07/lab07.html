@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 10px; }
+        header, nav, main, article, section, aside, footer {
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        header { background-color: #ffcccc; }
+        nav    { background-color: #ccffcc; }
+        main   { background-color: #ffffff; border: 2px solid #333; }
+        aside  { background-color: #ccccff; }
+        footer { background-color: #eeeeee; text-align: center; }
+
+        @media (min-width: 600px) {
+            .content-wrapper { display: flex; gap: 20px; }
+            article { flex: 3; }
+            aside { flex: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Awesome Blog</h1>
+        <p>ยินดีต้อนรับสู่บล็อกรวบรวมความรู้ HTML</p>
+    </header>
+
+    <nav>
+        <a href="#">หน้าแรก</a> |
+        <a href="#">บทความ</a> |
+        <a href="#">เกี่ยวกับเรา</a> |
+        <a href="#">ติดต่อ</a>
+    </nav>
+
+    <main>
+        <div class="content-wrapper">
+            
+            <article>
+                <h2>HTML คืออะไร?</h2>
+                <p>ภาษามาร์กอัปมาตรฐานที่ใช้ในการสร้างและกำหนดโครงสร้างเนื้อหาของหน้าเว็บไซต์ โดยทำงานร่วมกับ Web Browser เพื่อแปลโค้ดเป็นข้อความ รูปภาพ วิดีโอ และลิงก์ที่แสดงผลให้ผู้ใช้เห็น</p>
+                <section>
+                    <h3>ข้อดีของการใช้</h3>
+                    <ul>
+                        <li>เรียนรู้และใช้งานง่าย มีโครงสร้างไม่ซับซ้อน เหมาะสำหรับผู้เริ่มต้นพัฒนาเว็บไซต์</li>
+                        <li>เบาและโหลดเร็ว ไฟล์มีขนาดเล็ก ช่วยให้เว็บไซต์ทำงานได้รวดเร็วและมีประสิทธิภาพ</li>
+                        <li>เป็นมิตรกับ SEO โครงสร้างที่ชัดเจนช่วยให้ Search Engine จัดเก็บข้อมูลได้ง่าย</li>
+                    </ul>
+                </section>
+            </article>
+
+            <aside>
+                <h3>แหล่งเรียนรู้ยอดนิยม</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=0hfeNPM7piw&t=1s">สอน HTML เบื้องต้น</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=9H6ubALp8vo">หัดใช้ CSS ใน 10 นาที</a></li>
+                    <li><a href="https://devbanban.com/?p=4586">แจกโค้ดฟรี</a></li>
+                </ul>
+                <hr>
+                <p><em>รับทำเว็บราคาเป็นกันเอง</em></p>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2026 - พัฒนาโดย นายวสุรัชต์ สมเด็จ</p>
+        <address>ติดต่อ: 68030263@kmitl.ac.th</address>
+    </footer>
+
+</body>
+</html>
