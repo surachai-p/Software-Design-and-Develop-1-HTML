@@ -75,7 +75,7 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![alt text](image.png)
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
 ### ขั้นตอนการทดลอง
@@ -113,11 +113,25 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ...... (student name) web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
+
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-  
+![alt text](image-1.png)
+
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
 1. ทดลองใช้ tag ต่างๆ:
@@ -149,10 +163,80 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แนะนำตัว - Kanisorn Netsuwan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 40px;
+            line-height: 1.8;
+        }
+        h1 {
+            color: #1e3a8a;
+            text-align: center;
+        }
+        h2 {
+            color: #2563eb;
+            margin-top: 30px;
+        }
+        p {
+            text-indent: 40px;
+        }
+        hr {
+            border: 1px solid #cbd5e1;
+            margin: 25px 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>ประวัติส่วนตัว</h1>
+    <hr>
+    <h2>ชื่อ - นามสกุล</h2>
+    <p>
+        นายคณิศร เนตรสุวรรณ<br>
+        ชื่อเล่น: โม<br>
+        ปัจจุบันอายุ 18 ปี
+    </p>
+    <hr>
+    <h2>ประวัติการศึกษา</h2>
+    <p>
+        กำลังศึกษาอยู่ที่<br>
+        คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>
+        สาขาเทคโนโลยีคอมพิวเตอร์<br>
+        ชั้นปีที่ 1
+    </p>
+    <hr>
+    <h2>งานอดิเรก</h2>
+    <p>
+        งานอดิเรกของผมคือการศึกษาเทคโนโลยีใหม่ ๆ 
+        ทดลองเขียนโปรแกรม และเรียนรู้เกี่ยวกับระบบคอมพิวเตอร์<br>
+        นอกจากนี้ยังชอบขับรถจักรยานยนต์ท่องเที่ยวด้วย
+    </p>
+    <hr>
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>
+        เป้าหมายของผมในอนาคตคือการเป็นครูด้านเทคโนโลยีคอมพิวเตอร์ 
+        ที่สามารถถ่ายทอดความรู้ให้กับนักเรียนได้อย่างเข้าใจง่าย<br>
+        และต้องการพัฒนาทักษะด้านการเขียนโปรแกรม 
+        เพื่อสร้างสื่อการสอนและนวัตกรรมทางการศึกษาในอนาคต
+    </p>
+</div>
+</body>
+</html>]]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-3.png)]
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +403,124 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีสินค้า</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        figure {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        figure img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        figure img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 10px;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            padding: 10px 15px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #topBtn:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 id="top">แกลเลอรีสินค้า</h1>
+
+<div class="gallery">
+
+    <figure>
+        <a href="images/products/Bn-jelly.jpg" target="_self">
+            <img src="images/products/Bn-jelly.jpg" alt="เยลลี่หมีน้ำตาล">
+        </a>
+        <figcaption>เยลลี่หมีน้ำตาล</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/PP-jelly.jpg" target="_self">
+            <img src="images/products/PP-jelly.jpg" alt="เยลลี่หมีม่วง">
+        </a>
+        <figcaption>เยลลี่หมีม่วง</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/Grn-jelly.jpg" target="_self">
+            <img src="images/products/Grn-jelly.jpg" alt="เยลลี่หมีเขียว">
+        </a>
+        <figcaption>เยลลี่หมีเขียว</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/Pnk-jelly.jpg" target="_self">
+            <img src="images/products/Pnk-jelly.jpg" alt="เยลลี่หมีเขียว">
+        </a>
+        <figcaption>เยลลี่หมีชมพู</figcaption>
+    </figure>
+
+</div>
+
+<button id="topBtn" onclick="goTop()">↑ กลับด้านบน</button>
+
+<script>
+function goTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-5.png)]
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -393,10 +591,133 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>การสร้างตารางและรายการ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.8;
+        }
+
+        h1, h2 {
+            color: #1e3a8a;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #fdaaf9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>การทดลองที่ 5: การสร้างตารางและรายการ</h1>
+
+    <!-- ตารางข้อมูลส่วนตัว -->
+    <h2>ตารางข้อมูลส่วนตัว</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>ข้อมูล</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ-นามสกุล</td>
+                <td>นายคณิศร เนตรสุวรรณ</td>
+            </tr>
+            <tr>
+                <td>ชื่อเล่น</td>
+                <td>โม</td>
+            </tr>
+            <tr>
+                <td>คณะ</td>
+                <td>ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+            </tr>
+            <tr>
+                <td>สาขา</td>
+                <td>เทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+            <tr>
+                <td>ชั้นปี</td>
+                <td>ปีที่ 1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- รายการเมนูอาหาร -->
+ <h2>ตารางรายการอาหาร</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ลำดับ</th>
+            <th>ชื่อเมนู</th>
+            <th>ประเภท</th>
+            <th>ราคา (บาท)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>ข้าวผัดกะเพรา</td>
+            <td>อาหารจานเดียว</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ผัดไทย</td>
+            <td>อาหารจานเดียว</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ต้มยำกุ้ง</td>
+            <td>กับข้าว</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>ส้มตำ</td>
+            <td>อาหารอีสาน</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>ข้าวมันไก่</td>
+            <td>อาหารจานเดียว</td>
+            <td>55</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-7.png)]
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,10 +942,190 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+    }
+
+    fieldset {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    label {
+        display: inline-block;
+        width: 150px;
+    }
+
+    .required {
+        color: red;
+    }
+</style>
+
+<script>
+function validateFileSize(input) {
+    const file = input.files[0];
+    if (file && file.size > 2 * 1024 * 1024) { // 2MB
+        alert("ไฟล์รูปต้องมีขนาดไม่เกิน 2MB");
+        input.value = "";
+    }
+}
+
+function validatePassword() {
+    const pass = document.getElementById("password").value;
+    const confirm = document.getElementById("confirmPassword").value;
+
+    if (pass !== confirm) {
+        alert("รหัสผ่านไม่ตรงกัน");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</head>
+<body>
+
+<h1>สมัครสมาชิกร้านค้าออนไลน์</h1>
+
+<form onsubmit="return validatePassword()">
+
+<!-- ข้อมูลส่วนตัว -->
+<fieldset>
+<legend>ข้อมูลส่วนตัว</legend>
+
+<div class="form-group">
+<label>ชื่อ-นามสกุล:</label>
+<input type="text" name="fullname" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>วันเกิด:</label>
+<input type="date" name="birthdate" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>เพศ:</label>
+<input type="radio" name="gender" value="male" required> ชาย
+<input type="radio" name="gender" value="female"> หญิง
+</div>
+
+</fieldset>
+
+<!-- ข้อมูลการติดต่อ -->
+<fieldset>
+<legend>ข้อมูลการติดต่อ</legend>
+
+<div class="form-group">
+<label>อีเมล:</label>
+<input type="email" name="email" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>เบอร์โทร:</label>
+<input type="tel" name="phone" pattern="[0-9]{10}" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>ที่อยู่จัดส่ง:</label>
+<textarea name="address" rows="3" required></textarea>
+<span class="required">*</span>
+</div>
+
+</fieldset>
+
+<!-- บัญชีผู้ใช้ -->
+<fieldset>
+<legend>ข้อมูลบัญชี</legend>
+
+<div class="form-group">
+<label>รหัสผ่าน:</label>
+<input type="password" id="password" name="password"
+       minlength="6" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>ยืนยันรหัสผ่าน:</label>
+<input type="password" id="confirmPassword"
+       name="confirmPassword" minlength="6" required>
+<span class="required">*</span>
+</div>
+
+</fieldset>
+
+<!-- รูปโปรไฟล์ -->
+<fieldset>
+<legend>รูปโปรไฟล์</legend>
+
+<div class="form-group">
+<label>อัปโหลดรูป:</label>
+<input type="file" name="profile"
+       accept="image/*"
+       onchange="validateFileSize(this)"
+       required>
+<span class="required">*</span>
+</div>
+
+</fieldset>
+
+<!-- ความสนใจ -->
+<fieldset>
+<legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+<div class="form-group">
+<input type="checkbox" name="interest" value="electronics"> อิเล็กทรอนิกส์
+<input type="checkbox" name="interest" value="fashion"> แฟชั่น
+<input type="checkbox" name="interest" value="sports"> กีฬา
+<input type="checkbox" name="interest" value="books"> หนังสือ
+</div>
+
+</fieldset>
+
+<!-- การยืนยัน -->
+<fieldset>
+<legend>ยืนยันเงื่อนไข</legend>
+
+<div class="form-group">
+<input type="checkbox" name="agree" required>
+ยอมรับเงื่อนไขการใช้งาน
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<button type="submit">สมัครสมาชิก</button>
+<button type="reset">ล้างข้อมูล</button>
+</div>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
+]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-9.png)]
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -712,5 +1213,7 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![alt text](image-10.png)
+![alt text](image-11.png)
+]
 
