@@ -165,10 +165,59 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีสินค้า Pokemon TCG</title>
+</head>
+<body>
+
+    <section id="top">
+        <h1>แกลเลอรีสินค้าการ์ดโปเกมอน</h1>
+    </section>
+
+    <section id="gallery">
+
+        <figure>
+            <a href="https://asia.pokemon-card.com/th/wp-content/uploads/sites/4/2025/12/th_top_banner_ma3.png" target="_blank">
+                <img src="https://asia.pokemon-card.com/th/wp-content/uploads/sites/4/2025/12/th_top_banner_ma3.png" alt="Pokemon tcg ภาษาไทย ชุดเมก้าดรีม" width="300">
+            </a>
+            <figcaption>ภาพที่ 1 "Pokemon tcg ภาษาไทย ชุดเมก้าดรีม"</figcaption>
+        </figure>
+
+        <figure>
+            <a href="https://asia.pokemon-card.com/th/wp-content/uploads/sites/4/2025/06/th_top_banner_sv11s.png" target="_blank">
+                <img src="https://asia.pokemon-card.com/th/wp-content/uploads/sites/4/2025/06/th_top_banner_sv11s.png" alt="Pokemon tcg ภาษาไทย ชุดแบล็คแอนด์ไวท์" width="300">
+            </a>
+            <figcaption>ภาพที่ 2 "Pokemon tcg ภาษาไทย ชุดแบล็คแอนด์ไวท์"</figcaption>
+        </figure>
+
+        <figure>
+            <a href="https://asia.pokemon-card.com/th/wp-content/uploads/sites/4/2025/03/th_top_banner_SV9s.png" target="_blank">
+                <img src="https://asia.pokemon-card.com/th/wp-content/uploads/sites/4/2025/03/th_top_banner_SV9s.png" alt="Pokemon tcg ภาษาไทย ชุดสายใยแห่งโชคชะตา" width="300">
+            </a>
+            <figcaption>ภาพที่ 3 "Pokemon tcg ภาษาไทย ชุดสายใยแห่งโชคชะตา"</figcaption>
+        </figure>
+
+        <figure>
+            <a href="https://asia.pokemon-card.com/th/archive/special/card/sv8s/assets/images/hero-visual.jpg" target="_blank">
+                <img src="https://asia.pokemon-card.com/th/archive/special/card/sv8s/assets/images/hero-visual.jpg" alt="Pokemon tcg ภาษาไทย ชุดสเตลลาร์สายฟ้าฟาด" width="300">
+            </a>
+            <figcaption>ภาพที่ 4 "Pokemon tcg ภาษาไทย ชุดสเตลลาร์สายฟ้าฟาด"</figcaption>
+        </figure>
+
+    </section>
+
+    <br><br><hr><br>
+
+    <a href="#top">⬆ กลับด้านบน</a>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-3.png)]
 
 
 
