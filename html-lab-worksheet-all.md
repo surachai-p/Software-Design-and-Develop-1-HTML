@@ -942,10 +942,190 @@ function goTop() {
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+    }
+
+    fieldset {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    label {
+        display: inline-block;
+        width: 150px;
+    }
+
+    .required {
+        color: red;
+    }
+</style>
+
+<script>
+function validateFileSize(input) {
+    const file = input.files[0];
+    if (file && file.size > 2 * 1024 * 1024) { // 2MB
+        alert("ไฟล์รูปต้องมีขนาดไม่เกิน 2MB");
+        input.value = "";
+    }
+}
+
+function validatePassword() {
+    const pass = document.getElementById("password").value;
+    const confirm = document.getElementById("confirmPassword").value;
+
+    if (pass !== confirm) {
+        alert("รหัสผ่านไม่ตรงกัน");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</head>
+<body>
+
+<h1>สมัครสมาชิกร้านค้าออนไลน์</h1>
+
+<form onsubmit="return validatePassword()">
+
+<!-- ข้อมูลส่วนตัว -->
+<fieldset>
+<legend>ข้อมูลส่วนตัว</legend>
+
+<div class="form-group">
+<label>ชื่อ-นามสกุล:</label>
+<input type="text" name="fullname" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>วันเกิด:</label>
+<input type="date" name="birthdate" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>เพศ:</label>
+<input type="radio" name="gender" value="male" required> ชาย
+<input type="radio" name="gender" value="female"> หญิง
+</div>
+
+</fieldset>
+
+<!-- ข้อมูลการติดต่อ -->
+<fieldset>
+<legend>ข้อมูลการติดต่อ</legend>
+
+<div class="form-group">
+<label>อีเมล:</label>
+<input type="email" name="email" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>เบอร์โทร:</label>
+<input type="tel" name="phone" pattern="[0-9]{10}" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>ที่อยู่จัดส่ง:</label>
+<textarea name="address" rows="3" required></textarea>
+<span class="required">*</span>
+</div>
+
+</fieldset>
+
+<!-- บัญชีผู้ใช้ -->
+<fieldset>
+<legend>ข้อมูลบัญชี</legend>
+
+<div class="form-group">
+<label>รหัสผ่าน:</label>
+<input type="password" id="password" name="password"
+       minlength="6" required>
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<label>ยืนยันรหัสผ่าน:</label>
+<input type="password" id="confirmPassword"
+       name="confirmPassword" minlength="6" required>
+<span class="required">*</span>
+</div>
+
+</fieldset>
+
+<!-- รูปโปรไฟล์ -->
+<fieldset>
+<legend>รูปโปรไฟล์</legend>
+
+<div class="form-group">
+<label>อัปโหลดรูป:</label>
+<input type="file" name="profile"
+       accept="image/*"
+       onchange="validateFileSize(this)"
+       required>
+<span class="required">*</span>
+</div>
+
+</fieldset>
+
+<!-- ความสนใจ -->
+<fieldset>
+<legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+<div class="form-group">
+<input type="checkbox" name="interest" value="electronics"> อิเล็กทรอนิกส์
+<input type="checkbox" name="interest" value="fashion"> แฟชั่น
+<input type="checkbox" name="interest" value="sports"> กีฬา
+<input type="checkbox" name="interest" value="books"> หนังสือ
+</div>
+
+</fieldset>
+
+<!-- การยืนยัน -->
+<fieldset>
+<legend>ยืนยันเงื่อนไข</legend>
+
+<div class="form-group">
+<input type="checkbox" name="agree" required>
+ยอมรับเงื่อนไขการใช้งาน
+<span class="required">*</span>
+</div>
+
+<div class="form-group">
+<button type="submit">สมัครสมาชิก</button>
+<button type="reset">ล้างข้อมูล</button>
+</div>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
+]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-9.png)]
 
 
 ## การทดลองที่ 7: HTML Layout
