@@ -91,8 +91,8 @@
 </ul>]
 ```html
 
-```
-- ภาพผลลัพธ์:
+
+ ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 ![alt text](image.png)
 
