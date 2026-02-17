@@ -52,6 +52,6 @@
 </html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![alt text](image.png)
+e:\Html\Software-Design-and-Develop-1-HTML\image.png
 
 
