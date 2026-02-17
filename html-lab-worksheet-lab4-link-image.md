@@ -142,8 +142,8 @@
 
 3. สร้างรูปภาพที่คลิกได้:
 ```html
-<a href="images/products/product1.jpg">
-    <img src="images/products/product1.jpg" 
+<a href="../images/images (8)">
+    <img src="../images/images (8).jfifimages" 
          alt="คลิกเพื่อดูรูปขนาดใหญ่"
          width="200">
 </a>
@@ -166,9 +166,103 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            cursor: pointer;
+        }
+        .gallery-item img:hover {
+            opacity: 0.8;
+        }
+        .back-to-top {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">หน้าหลัก</a> |
+        <a href="pages/about.html">เกี่ยวกับเรา</a> |
+        <a href="pages/contact.html">ติดต่อเรา</a> |
+        <a href="gallery.html">แกลเลอรี</a>
+    </nav>
+    
+    <h1 id="top">แกลเลอรีสินค้า</h1>
+    
+    <p>ยินดีต้อนรับสู่แกลเลอรีของเรา คลิกรูปภาพเพื่อดูรายละเอียดเพิ่มเติม</p>
+    
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="../images/z1.jfif" target="_blank">
+                <img src="../images/z1.jfif" alt="สินค้าชิ้นที่ 1" width="250">
+            </a>
+            <figcaption><strong>ปลากระป๋อง</strong></figcaption>
+            <p>คำอธิบาย: นี่คือสินค้าตัวอย่างแรก</p>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="../images/download (8).jfif" target="_blank">
+                <img src="../images/download (8).jfif" alt="สินค้าชิ้นที่ 2" width="250">
+            </a>
+            <figcaption><strong>อาหารเเมว</strong></figcaption>
+            <p>คำอธิบาย: นี่คือสินค้าตัวอย่างที่สอง</p>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="../images/download (9).jfif" target="_blank">
+                <img src="../images/download (9).jfif" alt="สินค้าชิ้นที่ 3" width="250">
+            </a>
+            <figcaption><strong>อาหารหมากระป๋อง</strong></figcaption>
+            <p>คำอธิบาย: นี่คือสินค้าตัวอย่างที่สาม</p>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="../images/download (10).jfif" target="_blank">
+                <img src="../images/download (10).jfif" alt="สินค้าชิ้นที่ 4" width="250">
+            </a>
+            <figcaption><strong>ผัดกระเพรา</strong></figcaption>
+            <p>คำอธิบาย: นี่คือสินค้าตัวอย่างที่สี่</p>
+        </div>
+    </div>
+    
+    <a href="#top" class="back-to-top">กลับด้านบน</a>
+    
+    <hr>
+    
+    <p><a href="index.html">กลับไปหน้าหลัก</a></p>
+</body>
+</html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](image-3.png)
 
 

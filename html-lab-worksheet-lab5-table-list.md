@@ -68,8 +68,57 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table and List Example</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ-นามสกุล</td>
+                <td>ทีฆทัศน์ พินิจทรัพย์</td>
+            </tr>
+            <tr>
+                <td>วันเกิด</td>
+                <td>20 กุมภาพันธ์ พ.ศ. 2550</td>
+            </tr>
+            <tr>
+                <td>งานอดิเรก</td>
+                <td>เล่นกีต้า, เล่นเกม, สร้างเว็บไซต์, ออกแบบ</td>
+            </tr>
+            <tr>
+                <td>เป้าหมาย</td>
+                <td>สร้างจรวดเพื่อไปดาวอังคาร</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>เมนูอาหาร 1</li>
+        <li>เมนูอาหาร 2</li>
+    </ul>
+
+    <ol>
+        <li>Ordered item 1</li>
+        <li>Ordered item 2</li>
+    </ol>
+
+    <dl>
+        <dt>Term 1</dt>
+        <dd>Definition 1</dd>
+    </dl>
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](image-4.png)
