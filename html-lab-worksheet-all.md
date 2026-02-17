@@ -403,10 +403,124 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีสินค้า</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        figure {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        figure img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        figure img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 10px;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            padding: 10px 15px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #topBtn:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 id="top">แกลเลอรีสินค้า</h1>
+
+<div class="gallery">
+
+    <figure>
+        <a href="images/products/Bn-jelly.jpg" target="_self">
+            <img src="images/products/Bn-jelly.jpg" alt="เยลลี่หมีน้ำตาล">
+        </a>
+        <figcaption>เยลลี่หมีน้ำตาล</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/PP-jelly.jpg" target="_self">
+            <img src="images/products/PP-jelly.jpg" alt="เยลลี่หมีม่วง">
+        </a>
+        <figcaption>เยลลี่หมีม่วง</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/Grn-jelly.jpg" target="_self">
+            <img src="images/products/Grn-jelly.jpg" alt="เยลลี่หมีเขียว">
+        </a>
+        <figcaption>เยลลี่หมีเขียว</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/Pnk-jelly.jpg" target="_self">
+            <img src="images/products/Pnk-jelly.jpg" alt="เยลลี่หมีเขียว">
+        </a>
+        <figcaption>เยลลี่หมีชมพู</figcaption>
+    </figure>
+
+</div>
+
+<button id="topBtn" onclick="goTop()">↑ กลับด้านบน</button>
+
+<script>
+function goTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-5.png)]
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
