@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ตัวอย่าง Semantic Website</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        display: flex;
+        width: 90%;
+        max-width: 1000px;
+        margin: 30px auto;
+        gap: 20px;
+    }
+
+    section {
+        flex: 3;
+        background: white;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    article {
+        margin-bottom: 20px;
+    }
+
+    article h3 {
+        margin-bottom: 5px;
+    }
+
+    aside {
+        flex: 1;
+        background: white;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        text-align: center;
+        background: #333;
+        color: white;
+        padding: 15px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>เว็บไซต์ตัวอย่าง Semantic</h1>
+    <nav>
+        <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">เกี่ยวกับเรา</a></li>
+            <li><a href="#">บทความ</a></li>
+            <li><a href="#">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>บทความล่าสุด</h2>
+
+        <article>
+            <h3>บทความที่ 1</h3>
+            <p>นี่คือตัวอย่างเนื้อหาบทความ สามารถแยกออกไปอ่านเดี่ยว ๆ ได้</p>
+        </article>
+
+        <article>
+            <h3>บทความที่ 2</h3>
+            <p>Semantic Elements ช่วยให้โครงสร้างเว็บชัดเจน และดีต่อ SEO</p>
+        </article>
+    </section>
+
+    <aside>
+        <h3>บทความที่เกี่ยวข้อง</h3>
+        <ul>
+            <li><a href="#">บทความอื่น 1</a></li>
+            <li><a href="#">บทความอื่น 2</a></li>
+            <li><a href="#">บทความอื่น 3</a></li>
+        </ul>
+    </aside>
+
+</main>
+
+<footer>
+    <p>จัดทำโดย นางสาวญาดา แกล้วกล้า</p>
+</footer>
+
+</body>
+</html>

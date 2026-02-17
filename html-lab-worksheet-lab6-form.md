@@ -224,10 +224,202 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>สมัครสมาชิกร้านค้าออนไลน์</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    form {
+        width: 600px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    fieldset {
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 6px;
+    }
+
+    legend {
+        font-weight: bold;
+        padding: 0 10px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="date"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    .required-mark {
+        color: red;
+        margin-left: 5px;
+    }
+
+    button {
+        padding: 8px 18px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button[type="submit"] {
+        background-color: #333;
+        color: white;
+    }
+
+    button[type="reset"] {
+        background-color: #ccc;
+    }
+
+    button:hover {
+        opacity: 0.85;
+    }
+</style>
+</head>
+
+<body>
+
+<form action="/register" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+
+        <div class="form-group">
+            <label>ชื่อ - นามสกุล <span class="required-mark">*</span></label>
+            <input type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label>วันเกิด <span class="required-mark">*</span></label>
+            <input type="date" required>
+        </div>
+
+        <div class="form-group">
+            <label>เพศ <span class="required-mark">*</span></label>
+            <input type="radio" name="gender" required> ชาย
+            <input type="radio" name="gender"> หญิง
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        <div class="form-group">
+            <label>อีเมล <span class="required-mark">*</span></label>
+            <input type="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>เบอร์โทรศัพท์ <span class="required-mark">*</span></label>
+            <input type="tel" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group">
+            <label>ที่อยู่จัดส่ง <span class="required-mark">*</span></label>
+            <textarea rows="3" required></textarea>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลบัญชีผู้ใช้</legend>
+
+        <div class="form-group">
+            <label>รหัสผ่าน (อย่างน้อย 8 ตัว) <span class="required-mark">*</span></label>
+            <input type="password" minlength="8" required>
+        </div>
+
+        <div class="form-group">
+            <label>ยืนยันรหัสผ่าน <span class="required-mark">*</span></label>
+            <input type="password" minlength="8" required>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+
+        <div class="form-group">
+            <input type="checkbox"> อิเล็กทรอนิกส์
+            <input type="checkbox"> แฟชั่น
+            <input type="checkbox"> ความงาม
+            <input type="checkbox"> กีฬา
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <div class="form-group">
+            <input type="file" accept="image/*" required>
+            <span class="required-mark">*</span>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>การยืนยัน</legend>
+
+        <div class="form-group">
+            <input type="checkbox" required>
+            ยอมรับเงื่อนไขการใช้งาน
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </fieldset>
+
+</form>
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](lab6.png)
+![alt text](lab6.1.png)
 
 
