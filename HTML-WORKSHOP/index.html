@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
-    <title>My First Web Page</title>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
 </head>
 <body>
-    <h1>Welcome to ...... Thanakrit web page</h1>
-    <p>This is my first web page.</p>
-    <div>This is a block element</div>
-    <span>This is an inline element</span>
-    <em>This text is emphasized</em>
-    <strong>This text is strong</strong>    
+    <!-- ส่วนของเนื้อหา -->
 </body>
 </html>
+<nav>
+    <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+    <a href="https://www.google.com" target="_blank">
+        ไปยัง Google
+    </a>
+</nav>
+<!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>เนื้อหาส่วนบน</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+
+<!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<a href="#top">กลับด้านบน</a>
+<a href="#products">ไปยังสินค้า</a>
+<!-- ลิงก์อีเมล -->
+<a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+
+<!-- ลิงก์โทรศัพท์ -->
+<a href="tel:+66812345678">โทร 081-234-5678</a>
+
+<!-- ลิงก์ดาวน์โหลด -->
+<a href="files/document.pdf" download>
+    ดาวน์โหลดเอกสาร
+</a>
+<!-- รูปภาพในโฟลเดอร์ images -->
+<img src="images/logo.jpg" 
+     alt="โลโก้บริษัท"
+     width="200">
+
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+<img src="images/products/product1.jpg" 
+     alt="สินค้าชิ้นที่ 1"
+     width="300"
+     height="200">
+     <figure>
+    <img src="images/products/product2.jpg" 
+         alt="สินค้าชิ้นที่ 2">
+    <figcaption>
+        รายละเอียดสินค้าชิ้นที่ 2
+    </figcaption>
+</figure>
+<a href="images/products/product1.jpg">
+    <img src="images/products/product1.jpg" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+</a>
