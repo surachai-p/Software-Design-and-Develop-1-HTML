@@ -591,10 +591,133 @@ function goTop() {
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>การสร้างตารางและรายการ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.8;
+        }
+
+        h1, h2 {
+            color: #1e3a8a;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #fdaaf9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>การทดลองที่ 5: การสร้างตารางและรายการ</h1>
+
+    <!-- ตารางข้อมูลส่วนตัว -->
+    <h2>ตารางข้อมูลส่วนตัว</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>ข้อมูล</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ-นามสกุล</td>
+                <td>นายคณิศร เนตรสุวรรณ</td>
+            </tr>
+            <tr>
+                <td>ชื่อเล่น</td>
+                <td>โม</td>
+            </tr>
+            <tr>
+                <td>คณะ</td>
+                <td>ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+            </tr>
+            <tr>
+                <td>สาขา</td>
+                <td>เทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+            <tr>
+                <td>ชั้นปี</td>
+                <td>ปีที่ 1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- รายการเมนูอาหาร -->
+ <h2>ตารางรายการอาหาร</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ลำดับ</th>
+            <th>ชื่อเมนู</th>
+            <th>ประเภท</th>
+            <th>ราคา (บาท)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>ข้าวผัดกะเพรา</td>
+            <td>อาหารจานเดียว</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>ผัดไทย</td>
+            <td>อาหารจานเดียว</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>ต้มยำกุ้ง</td>
+            <td>กับข้าว</td>
+            <td>120</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>ส้มตำ</td>
+            <td>อาหารอีสาน</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>ข้าวมันไก่</td>
+            <td>อาหารจานเดียว</td>
+            <td>55</td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-7.png)]
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
