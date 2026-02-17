@@ -222,12 +222,187 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แบบฝึกหัดที่ 6: สมัครสมาชิกร้านค้าออนไลน์</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 0 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            min-width: 120px;
+        }
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+        .hint {
+            font-size: 0.85em;
+            color: #666;
+        }
+        button {
+            padding: 8px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h2>
+
+    <form action="/register-member" method="post" id="registerForm">
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="fullName">ชื่อ-นามสกุล:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+                <span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male" style="min-width: auto;">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" style="min-width: auto;">หญิง</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other" style="min-width: auto;">อื่นๆ</label>
+                <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="กรุณากรอกตัวเลข 10 หลัก (เช่น 0812345678)" required>
+                <span class="required-mark">*</span>
+                <span class="hint">(ตัวเลข 10 หลัก)</span>
+            </div>
+
+            <div class="form-group">
+                <label for="address" style="vertical-align: top;">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" cols="40" required></textarea>
+                <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลบัญชีผู้ใช้งาน</legend>
+            <div class="form-group">
+                <label for="profilePic">รูปโปรไฟล์:</label>
+                <input type="file" id="profilePic" name="profilePic" accept="image/jpeg, image/png" required>
+                <span class="required-mark">*</span>
+                <span class="hint">(ไฟล์ .jpg, .png ขนาดไม่เกิน 2MB)</span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <span class="required-mark">*</span>
+                <span class="hint">(อย่างน้อย 8 ตัวอักษร)</span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+                <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ความสนใจและเงื่อนไข</legend>
+            <div class="form-group">
+                <label>หมวดหมู่สินค้าที่สนใจ:</label><br>
+                <input type="checkbox" id="cat1" name="interests" value="electronics">
+                <label for="cat1" style="min-width: auto;">เครื่องใช้ไฟฟ้า</label>
+                <input type="checkbox" id="cat2" name="interests" value="fashion">
+                <label for="cat2" style="min-width: auto;">แฟชั่นและเสื้อผ้า</label>
+                <input type="checkbox" id="cat3" name="interests" value="beauty">
+                <label for="cat3" style="min-width: auto;">สุขภาพและความงาม</label>
+                <input type="checkbox" id="cat4" name="interests" value="home">
+                <label for="cat4" style="min-width: auto;">ของใช้ในบ้าน</label>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" style="min-width: auto;">ข้าพเจ้ายอมรับเงื่อนไขการใช้งานและนโยบายความเป็นส่วนตัว</label>
+                <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+
+    </form>
+
+    <script>
+        // 1. ตรวจสอบรหัสผ่านและยืนยันรหัสผ่านให้ตรงกัน
+        const password = document.getElementById("password");
+        const confirmPassword = document.getElementById("confirmPassword");
+
+        function validatePassword(){
+            if(password.value !== confirmPassword.value) {
+                confirmPassword.setCustomValidity("รหัสผ่านไม่ตรงกัน กรุณาตรวจสอบอีกครั้ง");
+            } else {
+                confirmPassword.setCustomValidity(''); // ผ่านการตรวจสอบ
+            }
+        }
+        password.onchange = validatePassword;
+        confirmPassword.onkeyup = validatePassword;
+
+        // 2. ตรวจสอบขนาดไฟล์รูปภาพ (ต้องไม่เกิน 2MB)
+        const profilePic = document.getElementById("profilePic");
+        profilePic.onchange = function() {
+            const maxSize = 2 * 1024 * 1024; // 2MB ในหน่วย Bytes
+            if(this.files[0].size > maxSize){
+                alert("ไฟล์รูปภาพมีขนาดใหญ่เกินไป กรุณาอัพโหลดไฟล์ขนาดไม่เกิน 2MB");
+                this.value = ""; // ล้างค่าไฟล์ที่เลือกออก
+            }
+        };
+    </script>
+</body>
+</html>]
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-13.png)]
 
 
 

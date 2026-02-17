@@ -74,7 +74,7 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![alt text](image.png)]
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +113,23 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello everyone</title>
+</head>
+<body>
+    <h1>Welcome to seksun phakupat web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-1.png)]
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +162,60 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <h1>สวัสดีครับ ผมชื่อ นาย เสกสรรค์ ผคุโนพาส</h1>
+    
+    <p>ยินดีต้อนรับเข้าสู่หน้าเว็บไซต์แนะนำตัวของผมครับ</p>
+    
+    <hr>
+
+    <h2>ประวัติการศึกษา</h2>
+    <p>
+        <b>ระดับมัธยมศึกษา:</b> โรงเรียนเตรียมอุดมศึกษาเปร็งวิสุธธาธิบดี ประจำจังหวัด ฉะเชิงเทรา <br>
+        <b>ระดับอุดมศึกษา:</b> กำลังศึกษาอยู่คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สาขาเทคโนโลยีคอมพิวเตอร์ <br>
+        สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+    </p>
+
+    <hr>
+
+    <h2>งานอดิเรก</h2>
+    <p>
+        ในเวลาว่าง ผมชอบทำกิจกรรมเหล่านี้:
+    </p>
+    <p>
+        1. <strong>เล่นเกม</strong> เป็นเกม แนววางแผนกลยุธ <br>
+        2. <strong>อ่านหนังสือ:</strong> ชอบอ่านหนังสือการ์ตูน <br>
+        3. <strong>เล่นดนตรี:</strong> เล่นกีตาร์เพื่อผ่อนคลาย
+    </p>
+
+    <hr>
+
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>
+        <i>"ความฝันสูงสุดของผมคือการเป็น ครูที่สอนได้เข้าใจ เเละ รักเด็ก"</i>
+    </p>
+    <p>
+        ผมตั้งใจว่าจะเรียนรู้เทคโนโลยีใหม่ๆ อยู่เสมอ เพื่อที่จะสามารถสร้างประโยชน์ <br>
+        และสามารถแก้ปัญหาให้กับผู้คนได้ในอนาคตครับ
+    </p>
+
+    <hr>
+    
+    <p align="center">ขอบคุณที่เข้ามาเยี่ยมชมครับ</p>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-2.png)]
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +382,163 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านการ์ด Vanguard - สินค้าแนะนำ</title>
+    <style>
+        /* CSS ตกแต่งพื้นฐาน */
+        body { font-family: sans-serif; margin: 20px; background-color: #f4f4f4; }
+        
+        /* ตกแต่งเมนูนำทาง (Nav) */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover { color: #ffcc00; }
+
+        /* จัดระเบียบแกลเลอรี (Grid/Flex) */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* ตกแต่งกรอบสินค้า (Figure) */
+        figure {
+            background: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 220px;
+            text-align: center;
+            margin: 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        figure img {
+            width: 100%;       /* ให้รูปยืดเต็มกรอบ */
+            height: auto;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .price { color: #d00000; font-weight: bold; display: block; margin-top: 5px;}
+
+        /* ปุ่มต่างๆ */
+        .btn-action {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="top"></div>
+
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="#products">สินค้า</a> <a href="#contact">ติดต่อเรา</a>
+        
+        <a href="https://en.cf-vanguard.com/" target="_blank">เว็บ Official Vanguard</a>
+    </nav>
+
+    <h1>Cardfight!! Vanguard Shop</h1>
+    <hr>
+
+    <section id="products">
+        <h2>🔥 สินค้ามาใหม่ (New Arrivals)</h2>
+        
+        <div class="gallery-container">
+            
+            <figure>
+                <a href="image_2.png" target="_blank">
+                    <img src="image_2.png" alt="Prideful Dragon">
+                </a>
+                <figcaption>
+                    <b>Prideful Dragon</b><br>
+                    มังกรทะยานสวรรค์<br>
+                    <span class="price">฿150</span>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="image_3.png" target="_blank">
+                    <img src="image_3.png" alt="Royal Paladin Deck">
+                </a>
+                <figcaption>
+                    <b>V-CD01 Royal Paladin</b><br>
+                    เด็คอัศวินแห่งแสง<br>
+                    <span class="price">฿69</span>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="image_4.png" target="_blank">
+                    <img src="image_4.png" alt="Youthberk">
+                </a>
+                <figcaption>
+                    <b>Youthberk "RevolForm"</b><br>
+                    ร่างฟูลบลาสท์<br>
+                    <span class="price">฿350</span>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <a href="image_5.png" target="_blank">
+                    <img src="image_5.png" alt="Kagero Deck">
+                </a>
+                <figcaption>
+                    <b>V-CD02 Kagero</b><br>
+                    เด็คมังกรเพลิง<br>
+                    <span class="price">฿69</span>
+                </figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <br><hr>
+
+    <section id="contact" style="text-align: center; padding: 20px;">
+        <h2>📞 สั่งซื้อสินค้า</h2>
+        <p>สนใจใบไหนติดต่อได้ทันทีครับ</p>
+        
+        <a href="tel:0812345678" class="btn-action">โทรสั่งซื้อ</a>
+        
+        <a href="mailto:shop@vanguard.com" class="btn-action" style="background-color: #28a745;">ส่งอีเมล</a>
+        
+        <br><br>
+        
+        <a href="#top" style="color: #666;">⬆ กลับสู่ด้านบนสุด</a>
+    </section>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-3.png)]
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -391,12 +607,98 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางข้อมูลส่วนตัวและเมนูอาหาร</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        /* ตกแต่งตารางให้ดูสวยงามอ่านง่ายขึ้น */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>1. ตารางแสดงข้อมูลส่วนตัว</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>รายละเอียด</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>นาย เสกสรรค์ ผคุโนพาส</td>
+            </tr>
+            <tr>
+                <td>สถาบัน</td>
+                <td>สจล.</td>
+            </tr>
+            <tr>
+                <td>คณะ</td>
+                <td>ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+            </tr>
+            <tr>
+                <td>สาขาวิชา</td>
+                <td>เทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>2. รายการเมนูอาหาร</h2>
+
+    <h3>เมนูยอดฮิต (เรียงตามลำดับขายดีด้วย Ordered List)</h3>
+    <ol>
+        <li>ข้าวกะเพราหมูกรอบไข่ดาว</li>
+        <li>ข้าวผัดต้มยำทะเล</li>
+        <li>ผัดไทยกุ้งสด</li>
+    </ol>
+
+    <h3>หมวดหมู่เครื่องดื่ม (ไม่เรียงลำดับด้วย Unordered List)</h3>
+    <ul>
+        <li>ชานมไข่มุก</li>
+        <li>กาแฟอเมริกาโน่เย็น</li>
+        <li>น้ำแตงโมปั่น</li>
+    </ul>
+
+    <h3>เมนูแนะนำพิเศษ (อธิบายรายละเอียดด้วย Description List)</h3>
+    <dl>
+        <dt><strong>สเต็กเนื้อวากิวระดับ A5</strong></dt>
+        <dd>เสิร์ฟพร้อมมันบดสูตรพิเศษและสลัดผักออร์แกนิค</dd>
+        
+        <dt><strong>สปาเก็ตตี้คาโบนาร่า</strong></dt>
+        <dd>ใช้เบคอนรมควันและชีสพาร์เมซานแท้จากอิตาลี</dd>
+    </dl>
+
+</body>
+</html>]
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-5.png)]
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,10 +923,124 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มสมัครสมาชิกร้านค้าออนไลน์</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; background-color: #f9f9f9; }
+        form { background: white; padding: 20px; border-radius: 8px; max-width: 600px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        fieldset { margin-bottom: 20px; border: 1px solid #ddd; border-radius: 5px; padding: 15px; }
+        legend { font-weight: bold; color: #333; padding: 0 5px; background: white; }
+        .form-group { margin-bottom: 15px; }
+        label { display: inline-block; width: 150px; font-weight: bold; vertical-align: top; }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"], textarea {
+            width: 300px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+        }
+        .required-mark { color: red; }
+        button { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;}
+        button[type="submit"] { background-color: #28a745; color: white; }
+        button[type="reset"] { background-color: #dc3545; color: white; margin-left: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>สมัครสมาชิกร้านค้าออนไลน์</h2>
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="fullname">ชื่อ-นามสกุล: <span class="required-mark">*</span></label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">วันเกิด: <span class="required-mark">*</span></label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label>เพศ: <span class="required-mark">*</span></label>
+                <input type="radio" id="gender_m" name="gender" value="male" required> 
+                <label for="gender_m" style="width:auto; font-weight:normal;">ชาย</label>
+                
+                <input type="radio" id="gender_f" name="gender" value="female"> 
+                <label for="gender_f" style="width:auto; font-weight:normal;">หญิง</label>
+                
+                <input type="radio" id="gender_o" name="gender" value="other"> 
+                <label for="gender_o" style="width:auto; font-weight:normal;">อื่นๆ</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <div class="form-group">
+                <label for="email">อีเมล: <span class="required-mark">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์: <span class="required-mark">*</span></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="กรุณากรอกตัวเลข 10 หลักติดกัน" required placeholder="0812345678">
+            </div>
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง: <span class="required-mark">*</span></label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลบัญชีและโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน: <span class="required-mark">*</span></label>
+                <input type="password" id="password" name="password" minlength="8" required title="รหัสผ่านต้องมีความยาวอย่างน้อย 8 ตัวอักษร">
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">ยืนยันรหัสผ่าน: <span class="required-mark">*</span></label>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+            </div>
+            <div class="form-group">
+                <label for="profile_pic">รูปโปรไฟล์: <span class="required-mark">*</span></label>
+                <input type="file" id="profile_pic" name="profile_pic" accept="image/jpeg, image/png" required>
+                <small style="color: gray; display:block; margin-left: 155px; margin-top: 5px;">(ขนาดไม่เกิน 2MB, เฉพาะ JPG/PNG)</small>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ความสนใจ (เลือกได้มากกว่า 1 ข้อ)</legend>
+            <div class="form-group" style="margin-left: 155px;">
+                <input type="checkbox" id="cat_card" name="interests" value="cardgame"> 
+                <label for="cat_card" style="width:auto; font-weight:normal;">การ์ดเกม (Cardfight!! Vanguard)</label><br>
+                
+                <input type="checkbox" id="cat_fashion" name="interests" value="fashion"> 
+                <label for="cat_fashion" style="width:auto; font-weight:normal;">แฟชั่นและเครื่องแต่งกาย</label><br>
+                
+                <input type="checkbox" id="cat_electronics" name="interests" value="electronics"> 
+                <label for="cat_electronics" style="width:auto; font-weight:normal;">อุปกรณ์อิเล็กทรอนิกส์</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>การยืนยันข้อตกลง</legend>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" style="width:auto; font-weight:normal;">
+                    ข้าพเจ้ายอมรับเงื่อนไขการใช้งานและนโยบายความเป็นส่วนตัว <span class="required-mark">*</span>
+                </label>
+            </div>
+            <div class="form-group" style="text-align: center; margin-top: 20px;">
+                <button type="submit">สมัครสมาชิก</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-6.png)]
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -712,5 +1128,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![alt text](image-7.png)]
 
