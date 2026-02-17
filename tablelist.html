@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Table and Lists Examples</title>
+    <style>
+        body{font-family:Arial, sans-serif; padding:20px}
+        table{border-collapse:collapse; margin-bottom:20px}
+        table, th, td{border:1px solid #333; padding:8px}
+        a { color:#0066cc }
+    </style>
+</head>
+<body>
+    <h3>ตารางข้อมูลส่วนตัว</h3>
+    <p>ตารางตัวอย่างแสดงข้อมูลผู้ใช้งาน 3 คน</p>
+    <table>
+        <thead>
+            <tr>
+                <th>ชื่อ</th>
+                <th>อายุ</th>
+                <th>อีเมล</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>สมชาย ใจดี</td>
+                <td>28</td>
+                <td><a href="mailto:somchai@example.com">somchai@example.com</a></td>
+            </tr>
+            <tr>
+                <td>สมหญิง แสนงาม</td>
+                <td>24</td>
+                <td><a href="mailto:somhong@example.com">somhong@example.com</a></td>
+            </tr>
+            <tr>
+                <td>จิตร ภูมิใจ</td>
+                <td>31</td>
+                <td><a href="mailto:jitt@example.com">jitt@example.com</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>2) รายการเมนูอาหาร</h3>
+    <p>ตัวอย่างเมนูแบบไม่เรียงลำดับ (หมวดหมู่)</p>
+    <ul>
+        <li>เมนูจานหลัก
+            <ul>
+                <li>ข้าวผัดกุ้ง — 80 ฿</li>
+                <li>ผัดไทย — 70 ฿</li>
+            </ul>
+        </li>
+        <li>ของทานเล่น
+            <ul>
+                <li>ปอเปี๊ยะทอด — 40 ฿</li>
+                <li>ไก่ทอด — 60 ฿</li>
+            </ul>
+        </li>
+        <li>ของหวาน
+            <ul>
+                <li>ข้าวเหนียวมะม่วง — 90 ฿</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>ตัวอย่างเมนูแบบเรียงลำดับ (Top 3 ยอดนิยม)</p>
+    <ol>
+        <li>ข้าวผัดกุ้ง — 80 ฿</li>
+        <li>ผัดไทย — 70 ฿</li>
+        <li>ข้าวเหนียวมะม่วง — 90 ฿</li>
+    </ol>
+
+    <p>เมนูพร้อมคำอธิบายโดยใช้ `dl`:</p>
+    <dl>
+        <dt>ข้าวผัดกุ้ง</dt>
+        <dd>ข้าวผัดร้อนๆ ใส่กุ้งสด เสิร์ฟพร้อมแตงกวา — 80 ฿</dd>
+        <dt>ผัดไทย</dt>
+        <dd>เส้นผัดสูตรต้นตำรับ โรยถั่วลิสง — 70 ฿</dd>
+    </dl>
+</body>
+</html>
