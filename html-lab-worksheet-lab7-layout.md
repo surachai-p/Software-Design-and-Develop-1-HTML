@@ -86,4 +86,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](<HTML-WORKSHOP/images/Screenshot 2569-02-17 at 23.18.41.png>)
 

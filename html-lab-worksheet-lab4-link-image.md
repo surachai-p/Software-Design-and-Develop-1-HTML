@@ -285,8 +285,8 @@
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![alt text](<Screenshot 2569-02-17 at 22.22.19.png>)
-![alt text](<Screenshot 2569-02-17 at 22.22.46.png>)
+![alt text](<HTML-WORKSHOP/images/Screenshot 2569-02-17 at 22.22.19.png>)
+![alt text](<HTML-WORKSHOP/images/Screenshot 2569-02-17 at 22.22.46.png>)
 
 
 

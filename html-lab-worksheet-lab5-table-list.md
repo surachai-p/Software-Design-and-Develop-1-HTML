@@ -94,5 +94,5 @@
 
  ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![alt text](image.png)
+![alt text](HTML-WORKSHOP/images/image.png)
 

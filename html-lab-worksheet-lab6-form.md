@@ -302,7 +302,7 @@
 
 ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![alt text](image-1.png)
+![alt text](HTML-WORKSHOP/images/image-1.png)
 
 
 
