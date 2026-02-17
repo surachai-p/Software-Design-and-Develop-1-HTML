@@ -2,70 +2,113 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>แนะนำตัว - Kanisorn Netsuwan</title>
+    <title>แกลเลอรีสินค้า</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            margin: 40px;
-            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+            scroll-behavior: smooth;
         }
+
         h1 {
-            color: #1e3a8a;
             text-align: center;
         }
-        h2 {
-            color: #2563eb;
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
             margin-top: 30px;
         }
-        p {
-            text-indent: 40px;
-        }
-        hr {
-            border: 1px solid #cbd5e1;
-            margin: 25px 0;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
+
+        figure {
+            background: #ffffff;
+            padding: 15px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        figure img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        figure img:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            margin-top: 10px;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            padding: 10px 15px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #topBtn:hover {
+            background-color: #005fa3;
         }
     </style>
 </head>
+
 <body>
-<div class="container">
-    <h1>ประวัติส่วนตัว</h1>
-    <hr>
-    <h2>ชื่อ - นามสกุล</h2>
-    <p>
-        นายคณิศร เนตรสุวรรณ<br>
-        ชื่อเล่น: โม<br>
-        ปัจจุบันอายุ 18 ปี
-    </p>
-    <hr>
-    <h2>ประวัติการศึกษา</h2>
-    <p>
-        กำลังศึกษาอยู่ที่<br>
-        คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี<br>
-        สาขาเทคโนโลยีคอมพิวเตอร์<br>
-        ชั้นปีที่ 1
-    </p>
-    <hr>
-    <h2>งานอดิเรก</h2>
-    <p>
-        งานอดิเรกของผมคือการศึกษาเทคโนโลยีใหม่ ๆ 
-        ทดลองเขียนโปรแกรม และเรียนรู้เกี่ยวกับระบบคอมพิวเตอร์<br>
-        นอกจากนี้ยังชอบขับรถจักรยานยนต์ท่องเที่ยวด้วย
-    </p>
-    <hr>
-    <h2>เป้าหมายในอนาคต</h2>
-    <p>
-        เป้าหมายของผมในอนาคตคือการเป็นครูด้านเทคโนโลยีคอมพิวเตอร์ 
-        ที่สามารถถ่ายทอดความรู้ให้กับนักเรียนได้อย่างเข้าใจง่าย<br>
-        และต้องการพัฒนาทักษะด้านการเขียนโปรแกรม 
-        เพื่อสร้างสื่อการสอนและนวัตกรรมทางการศึกษาในอนาคต
-    </p>
+
+<h1 id="top">แกลเลอรีสินค้า</h1>
+
+<div class="gallery">
+
+    <figure>
+        <a href="images/products/Bn-jelly.jpg" target="_self">
+            <img src="images/products/Bn-jelly.jpg" alt="เยลลี่หมีน้ำตาล">
+        </a>
+        <figcaption>เยลลี่หมีน้ำตาล</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/PP-jelly.jpg" target="_self">
+            <img src="images/products/PP-jelly.jpg" alt="เยลลี่หมีม่วง">
+        </a>
+        <figcaption>เยลลี่หมีม่วง</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/Grn-jelly.jpg" target="_self">
+            <img src="images/products/Grn-jelly.jpg" alt="เยลลี่หมีเขียว">
+        </a>
+        <figcaption>เยลลี่หมีเขียว</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/products/Pnk-jelly.jpg" target="_self">
+            <img src="images/products/Pnk-jelly.jpg" alt="เยลลี่หมีเขียว">
+        </a>
+        <figcaption>เยลลี่หมีชมพู</figcaption>
+    </figure>
+
 </div>
+
+<button id="topBtn" onclick="goTop()">↑ กลับด้านบน</button>
+
+<script>
+function goTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
 </body>
 </html>
