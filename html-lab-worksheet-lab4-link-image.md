@@ -165,10 +165,67 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า - Vanguard Card Shop</title>
+    <style>
+        /* CSS จัดรูปแบบให้แกลเลอรีดูสวยงามและเป็นระเบียบ */
+        body { font-family: sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        .gallery-container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px; }
+        figure { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; margin: 0; transition: transform 0.2s; }
+        figure:hover { transform: translateY(-5px); }
+        img { border-radius: 4px; border: 1px solid #ddd; }
+        figcaption { margin-top: 10px; font-weight: bold; color: #333; }
+        .back-to-top { display: block; text-align: center; margin: 40px auto; padding: 10px 20px; background-color: #e60000; color: white; text-decoration: none; border-radius: 5px; width: 120px; font-weight: bold; }
+        .back-to-top:hover { background-color: #cc0000; }
+    </style>
+</head>
+
+<body id="top">
+
+    <h1 style="text-align: center; color: #333;">แกลเลอรีการ์ดหายาก (Rare Cards)</h1>
+    <p style="text-align: center; color: #666;">คลิกที่รูปภาพเพื่อดูขนาดใหญ่แบบเต็มจอ</p>
+
+    <section class="gallery-container">
+        <figure>
+            <a href="images/gallery/card1.jpg" target="_blank">
+                <img src="images/gallery/card1.jpg" alt="การ์ด Blaster Blade" width="200" height="280">
+            </a>
+            <figcaption>1. Blaster Blade (RRR)</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/gallery/card2.jpg" target="_blank">
+                <img src="images/gallery/card2.jpg" alt="การ์ด Dragonic Overlord" width="200" height="280">
+            </a>
+            <figcaption>2. Dragonic Overlord (SP)</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/gallery/card3.jpg" target="_blank">
+                <img src="images/gallery/card3.jpg" alt="การ์ด Phantom Blaster Dragon" width="200" height="280">
+            </a>
+            <figcaption>3. Phantom Blaster Dragon (RRR)</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/gallery/card4.jpg" target="_blank">
+                <img src="images/gallery/card4.jpg" alt="การ์ด Majesty Lord Blaster" width="200" height="280">
+            </a>
+            <figcaption>4. Majesty Lord Blaster (SGR)</figcaption>
+        </figure>
+    </section>
+
+    <a href="#top" class="back-to-top">⬆ กลับด้านบน</a>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-11.png)]
 
 
 
