@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout Lab</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        header{
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav{
+            background: #555;
+            padding: 10px;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav li{
+            margin: 0 15px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+        }
+
+        main{
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        article{
+            flex: 3;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        aside{
+            flex: 1;
+            background: #e2e2e2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer{
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px){
+
+            nav ul{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Website</h1>
+    <p>ทดลองใช้ Semantic Elements</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">บทความ</a></li>
+        <li><a href="#">ติดต่อ</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <article>
+        <h2>บทความหลัก</h2>
+        <p>
+            นี่คือตัวอย่างเนื้อหาหลักของเว็บไซต์ 
+            ใช้แท็ก article ซึ่งเหมาะกับเนื้อหาที่สามารถแยกอ่านได้
+        </p>
+
+        <section>
+            <h3>หัวข้อย่อย</h3>
+            <p>
+                section ใช้แบ่งเนื้อหาที่เกี่ยวข้องกัน 
+                ทำให้โครงสร้างเว็บชัดเจนขึ้น
+            </p>
+        </section>
+    </article>
+
+    <aside>
+        <h3>บทความแนะนำ</h3>
+        <ul>
+            <li><a href="#">HTML เบื้องต้น</a></li>
+            <li><a href="#">CSS สำหรับมือใหม่</a></li>
+            <li><a href="#">Responsive Design</a></li>
+        </ul>
+    </aside>
+
+</main>
+
+<footer>
+    <p>ลิขสิทธิ์ © 2026</p>
+</footer>
+
+</body>
+</html>
