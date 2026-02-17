@@ -224,10 +224,115 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+    </head>
 
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+
+    <body>
+        <form action="/register-shop" method="post">
+            
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                
+                <div class="form-group">
+                    <label for="firstName">ชื่อ:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lastName">นามสกุล:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+        
+                <div class="form-group">
+                    <label>เพศ:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>ข้อมูลการติดต่อ</legend>
+                
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                    <span class="required-mark">*</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">ที่อยู่จัดส่ง:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                    <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>ข้อมูลบัญชี</legend>
+
+                <div class="form-group">
+                    <label for="password">รหัสผ่าน:</label>
+                    <input type="password" id="password" name="password" pattern=".{8,}" required>
+                    <span class="required-mark">*</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm_password">ยืนยันรหัสผ่าน:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" pattern=".{8,}" required>
+                    <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>ข้อตกลงการใช้งาน</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        ยอมรับเงื่อนไขและข้อตกลงการใช้งาน
+                    </label> <span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">Sign in</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
-
+![lab6-result](html-workshop/lab6-form/lab6-result-form.png)
 

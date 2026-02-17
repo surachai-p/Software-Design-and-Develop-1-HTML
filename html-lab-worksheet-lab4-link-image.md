@@ -165,10 +165,110 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vasin Kaewmoragot</title>
+    </head>
+    <body>
+        <h1 id="top">Vasin Kaewmoragot</h1>
+        
+        <hr>
+
+        <h2>Educational Background</h2>
+        <p>
+            <b>Computer Technology</b>, School of Industrial Education and Technology,<br>
+            King Mongkut's Institute of Technology Ladkrabang
+        </p>
+
+        <hr>
+
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Directing and producing the film</li>
+            <li>Watching movies</li>
+            <li>Reading some History books</li>
+        </ul>
+
+        <hr>
+
+        <h2>Future Goals</h2>
+        <p>
+            1. To be a successful film director and producer<br>
+            2. To create meaningful and impactful films that can inspire and entertain people<br>
+            3. To become a good teacher someday and share my knowledge and experience with others
+        </p>
+
+        <hr>
+
+        <h2>My Film Gallery</h2>
+        <h3>From the film HUATAKHE (2026)</h3>
+
+        <a href="https://youtu.be/noauGxGCnhE?si=y1PbfYQiAuN0-o7l" target="_blank">
+        <img src="images/huatakhe_poster.png" alt="HUATAKHE Poster" width="300">
+        </a>
+
+        <p><i>(Click on the images to view full size)</i></p>
+        <figure>
+            <a href="images/huatakhe_01.png">
+                <img src="images/huatakhe_01.png" 
+                     alt="HUATAKHE image 1" 
+                     width="500">
+            </a>
+            <figcaption>
+                ตัวอย่างการใช้เทคนิคการถ่ายภาพใน HUATAKHE
+            </figcaption>
+        </figure>
+        <br>
+
+        <figure>
+            <a href="images/huatakhe_02.png">
+                <img src="images/huatakhe_02.png" 
+                     alt="Description for image 2" 
+                     width="500">
+            </a>
+            <figcaption>
+                ตัวอย่างการใช้เทคนิคการถ่ายภาพใน HUATAKHE
+            </figcaption>
+        </figure>
+        <br>
+
+        <figure>
+            <a href="images/huatakhe_03.png">
+                <img src="images/huatakhe_03.png" 
+                     alt="Description for image 3" 
+                     width="500">
+            </a>
+            <figcaption>
+                ตัวอย่างการใช้เทคนิคการถ่ายภาพใน HUATAKHE
+            </figcaption>
+        </figure>
+        <br>
+
+        <figure>
+            <a href="images/huatakhe_04.png">
+                <img src="images/huatakhe_04.png" 
+                     alt="Description for image 4" 
+                     width="500">
+            </a>
+            <figcaption>
+                ตัวอย่างการใช้เทคนิคการถ่ายภาพใน HUATAKHE
+            </figcaption>
+        </figure>
+
+        <br>
+        <hr>
+
+        <p>
+            <a href="#top">⬆ Back to Top</a>
+        </p>
+
+    </body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab4-result-1](html-workshop/lab4-link-image/lab4-result-1.png)
+![lab4-result-2](html-workshop/lab4-link-image/lab4-result-2.png)
 
 
 
