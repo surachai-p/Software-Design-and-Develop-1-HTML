@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+
+<style>
+.form-group {
+    margin-bottom: 15px;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+.required-mark {
+    color: red;
+    margin-left: 5px;
+}
+</style>
+
+<script>
+function validateForm(){
+    const pass = document.getElementById("password").value;
+    const confirm = document.getElementById("confirmPassword").value;
+    const file = document.getElementById("photo").files[0];
+
+    // ตรวจรหัสผ่านตรงกัน
+    if(pass !== confirm){
+        alert("รหัสผ่านไม่ตรงกัน");
+        return false;
+    }
+
+    // ตรวจขนาดไฟล์รูป
+    if(file && file.size > 2097152){
+        alert("ไฟล์รูปต้องไม่เกิน 2MB");
+        return false;
+    }
+
+    return true;
+}
+</script>
+</head>
+
+<body>
+
+<form action="/register" method="post" onsubmit="return validateForm()">
+
+<!-- ข้อมูลส่วนตัว -->
+<fieldset>
+<legend>ข้อมูลส่วนตัว</legend>
+
+<div class="form-group">
+<label>ชื่อ:</label>
+<input type="text" name="firstName" required>
+</div>
+
+<div class="form-group">
+<label>นามสกุล:</label>
+<input type="text" name="lastName" required>
+</div>
+
+<div class="form-group">
+<label>วันเกิด:</label>
+<input type="date" name="birthdate" required>
+</div>
+
+<div class="form-group">
+<label>เพศ:</label>
+<input type="radio" name="gender" value="male" required> ชาย
+<input type="radio" name="gender" value="female"> หญิง
+</div>
+
+</fieldset>
+
+
+<!-- ข้อมูลการติดต่อ -->
+<fieldset>
+<legend>ข้อมูลการติดต่อ</legend>
+
+<div class="form-group">
+<label>อีเมล:</label>
+<input type="email" name="email" required>
+</div>
+
+<div class="form-group">
+<label>เบอร์โทรศัพท์:</label>
+<input type="tel" name="phone" pattern="[0-9]{10}" required>
+</div>
+
+<div class="form-group">
+<label>ที่อยู่:</label>
+<textarea name="address" rows="3" required></textarea>
+</div>
+
+</fieldset>
+
+
+<!-- รูปโปรไฟล์ -->
+<fieldset>
+<legend>รูปโปรไฟล์</legend>
+
+<div class="form-group">
+<label>อัปโหลดรูป:</label>
+<input type="file" id="photo" name="photo" accept="image/*" required>
+<span class="required-mark">*</span>
+</div>
+
+</fieldset>
+
+
+<!-- รหัสผ่าน -->
+<fieldset>
+<legend>ตั้งค่ารหัสผ่าน</legend>
+
+<div class="form-group">
+<label>รหัสผ่าน:</label>
+<input type="password" id="password" name="password"
+       pattern=".{8,}" title="อย่างน้อย 8 ตัวอักษร" required>
+</div>
+
+<div class="form-group">
+<label>ยืนยันรหัสผ่าน:</label>
+<input type="password" id="confirmPassword" required>
+</div>
+
+</fieldset>
+
+
+<!-- ความสนใจสินค้า -->
+<fieldset>
+<legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+<div class="form-group">
+<input type="checkbox" name="interest" value="fashion"> แฟชั่น
+<input type="checkbox" name="interest" value="tech"> เทคโนโลยี
+<input type="checkbox" name="interest" value="sport"> กีฬา
+<input type="checkbox" name="interest" value="beauty"> ความงาม
+<input type="checkbox" name="interest" value="home"> ของใช้ในบ้าน
+</div>
+
+</fieldset>
+
+
+<!-- การยืนยัน -->
+<fieldset>
+<legend>การยืนยัน</legend>
+
+<div class="form-group">
+<input type="checkbox" required>
+ข้าพเจ้ายอมรับเงื่อนไขการใช้งาน
+</div>
+
+<div class="form-group">
+<button type="submit">สมัครสมาชิก</button>
+<button type="reset">ล้างข้อมูล</button>
+</div>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
