@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Layout</title>
+</head>
+<body>
+    <header>
+        <h1>ชื่อเว็บไซต์</h1>
+        <nav>
+            <ul>
+                <li><a href="/">หน้าแรก</a></li>
+                <li><a href="/about">เกี่ยวกับเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>บทความที่ 1</h2>
+            <p>เนื้อหาบทความ...</p>
+        </article>
+
+        <aside>
+            <h3>บทความหลัก</h3>
+            <ul>
+                <li><a href="#article">บทความหลัก</a></li>
+                
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>ลิขสิทธิ์ © 2024</p>
+    </footer>
+</body>
+</html>
+    </style>
+</head>
+<body>
+    <!-- ส่วนหัวของหน้าเว็บ -->
+    <header>
+        <h1>ชื่อเว็บไซต์: บล็อกเทคโนโลยี</h1>
+        <p>แบ่งปันความรู้และประสบการณ์เกี่ยวกับเทคโนโลยี</p>
+    </header>
+    
+    <!-- ส่วนเมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="introduce.html">เกี่ยวกับฉัน</a></li>
+            <li><a href="index2.html">แกลเลอรี</a></li>
+            <li><a href="tablelist.html">ตารางและรายการ</a></li>
+            <li><a href="form.html">ติดต่อฉัน</a></li>
+        </ul>
+    </nav>
+    
+    <!-- เนื้อหาหลักของหน้าเว็บ -->
+    <main>
+        <!-- บทความหลัก -->
+        <article>
+            <h2>บทความหลัก: ทำความเข้าใจ HTML5</h2>
+            
+            <section>
+                <h3>บทนำ</h3>
+                <p>HTML5 เป็นเวอร์ชันล่าสุดของภาษา HTML ซึ่งได้แนะนำองค์ประกอบเชิงความหมาย (Semantic Elements) ที่ช่วยให้เบราว์เซอร์และเครื่องมือ SEO เข้าใจโครงสร้างของหน้าเว็บได้ดีขึ้น</p>
+            </section>
+            
+            <section>
+                <h3>Semantic Elements หลัก</h3>
+                <p>ต่อไปนี้คือ Semantic Elements ที่ใช้บ่อยในการสร้างหน้าเว็บ:</p>
+                <ul style="margin: 1rem 0 0 2rem;">
+                    <li><strong>&lt;header&gt;</strong> - ส่วนหัวของหน้า</li>
+                    <li><strong>&lt;nav&gt;</strong> - เมนูนำทาง</li>
+                    <li><strong>&lt;main&gt;</strong> - เนื้อหาหลัก</li>
+                    <li><strong>&lt;article&gt;</strong> - บทความ</li>
+                    <li><strong>&lt;section&gt;</strong> - ส่วนของเนื้อหา</li>
+                    <li><strong>&lt;aside&gt;</strong> - เนื้อหาเสริม</li>
+                    <li><strong>&lt;footer&gt;</strong> - ส่วนท้าย</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h3>ประโยชน์ของ Semantic Elements</h3>
+                <p>การใช้ Semantic Elements ให้ประโยชน์หลายประการ:</p>
+                <ol style="margin: 1rem 0 0 2rem;">
+                    <li>ช่วยเพิ่มความเข้าใจสำหรับ Search Engines</li>
+                    <li>ส่งเสริมการเข้าถึงสำหรับผู้ใช้งาน Screen Reader</li>
+                    <li>ทำให้โค้ด HTML อ่านง่ายและดูแลรักษาได้ดีขึ้น</li>
+                    <li>เป็นมาตรฐาน HTML5 ที่นำเสนอโดย W3C</li>
+                </ol>
+            </section>
+            
+            <section>
+                <h3>ตัวอย่างการใช้งาน</h3>
+                <p>ตัวอย่างของการจัดวางหน้าเว็บใช้ Semantic Elements ที่สำคัญเช่น:</p>
+                <pre style="background-color: #f4f4f4; padding: 1rem; border-radius: 4px; overflow-x: auto;">
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;ชื่อเว็บไซต์&lt;/h1&gt;
+        &lt;nav&gt;...&lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;หัวข้อบทความ&lt;/h2&gt;
+            &lt;section&gt;...&lt;/section&gt;
+        &lt;/article&gt;
+        
+        &lt;aside&gt;
+            &lt;h3&gt;เนื้อหาเสริม&lt;/h3&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;ลิขสิทธิ์ © 2024&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;</pre>
+            </section>
+        </article>
+        
+        <!-- เนื้อหาเสริม -->
+        <aside>
+            <h3>บทความที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="#">CSS Grid Layout</a></li>
+                <li><a href="#">Flexbox อธิบายอย่างง่าย</a></li>
+                <li><a href="#">JavaScript สำหรับผู้เริ่มต้น</a></li>
+                <li><a href="#">Web Accessibility Tips</a></li>
+                <li><a href="#">Progressive Web Apps</a></li>
+            </ul>
+            
+            <h3 style="margin-top: 2rem;">ติดตามเรา</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </aside>
+    </main>
+    
+    <!-- ส่วนท้ายของหน้าเว็บ -->
+    <footer>
+        <p>&copy; 2024 บล็อกเทคโนโลยี. สงวนลิขสิทธิ์ทั้งหมด</p>
+        <p>
+            <a href="#">นโยบายความเป็นส่วนตัว</a> | 
+            <a href="#">เงื่อนไขการใช้งาน</a> | 
+            <a href="#">ติดต่อเรา</a>
+        </p>
+        <p>ที่อยู่: กรุงเทพมหานคร | อีเมล: info@example.com | โทร: 081-234-5678</p>
+    </footer>
+</body>
+</html>
