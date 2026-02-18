@@ -166,9 +166,59 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีของน่ากินวันตรุษจีน</title>
+</head>
+<body>
+
+    <!-- จุดบนสุด -->
+    <a id="top"></a>
+
+    <h1>แกลเลอรีของน่ากินวันตรุษจีน</h1>
+    <hr>
+
+    <!-- รูปที่ 1 -->
+    <a href="images/gallery/pic1.jpg" target="_blank">
+        <img src="images/gallery/pic1.jpg" width="200">
+    </a>
+    <p>สินค้าแบบที่ 1 ขนมเทียน</p>
+    <hr>
+
+    <!-- รูปที่ 2 -->
+    <a href="images/gallery/pic2.jpg" target="_blank">
+        <img src="images/gallery/pic2.jpg" width="200">
+    </a>
+    <p>สินค้าแบบที่ 2 ขนมเข่ง</p>
+    <hr>
+
+    <!-- รูปที่ 3 -->
+    <a href="images/gallery/pic3.jpg" target="_blank">
+        <img src="images/gallery/pic3.jpg" width="200">
+    </a>
+    <p>สินค้าแบบที่ 3 หัวหมู</p>
+    <hr>
+
+    <!-- รูปที่ 4 -->
+    <a href="images/gallery/pic4.jpg" target="_blank">
+        <img src="images/gallery/pic4.jpg" width="200">
+    </a>
+    <p>สินค้าแบบที่ 4 ขนมเปี๊ยะ</p>
+    <hr>
+
+    <!-- ปุ่มกลับด้านบน -->
+    <a href="#top">⬆ กลับด้านบน</a>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![ผลลัพธ์](link-image.png)
 
 
 

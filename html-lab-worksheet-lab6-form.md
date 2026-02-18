@@ -224,10 +224,170 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>สมัครสมาชิกร้านค้าออนไลน์</title>
+
+<style>
+    .form-group { margin-bottom: 15px; }
+    .required { color: red; }
+</style>
+
+<script>
+function validateFileSize(input) {
+    const file = input.files[0];
+    if (file && file.size > 2 * 1024 * 1024) { 
+        alert("ไฟล์ต้องมีขนาดไม่เกิน 2MB");
+        input.value = "";
+    }
+}
+
+function validatePassword() {
+    const pass = document.getElementById("password").value;
+    const confirm = document.getElementById("confirmPassword").value;
+
+    if (pass !== confirm) {
+        alert("รหัสผ่านไม่ตรงกัน");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</head>
+<body>
+
+<h1>สมัครสมาชิก</h1>
+<hr>
+
+<form onsubmit="return validatePassword()">
+
+<!-- ข้อมูลส่วนตัว -->
+<fieldset>
+<legend>ข้อมูลส่วนตัว</legend>
+
+<div class="form-group">
+<label>ชื่อ:</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>นามสกุล:</label>
+<input type="text" required>
+</div>
+
+<div class="form-group">
+<label>วันเกิด:</label>
+<input type="date" required>
+</div>
+
+<div class="form-group">
+<label>เพศ:</label>
+<input type="radio" name="gender" required> ชาย
+<input type="radio" name="gender"> หญิง
+</div>
+
+</fieldset>
+
+<hr>
+
+<!-- ข้อมูลการติดต่อ -->
+<fieldset>
+<legend>ข้อมูลการติดต่อ</legend>
+
+<div class="form-group">
+<label>อีเมล:</label>
+<input type="email" required>
+</div>
+
+<div class="form-group">
+<label>เบอร์โทร:</label>
+<input type="tel" pattern="[0-9]{10}" 
+title="กรอกเบอร์ 10 หลัก" required>
+</div>
+
+<div class="form-group">
+<label>ที่อยู่จัดส่ง:</label><br>
+<textarea rows="3" required></textarea>
+</div>
+
+</fieldset>
+
+<hr>
+
+<!-- รูปโปรไฟล์ -->
+<fieldset>
+<legend>รูปโปรไฟล์</legend>
+
+<div class="form-group">
+<input type="file" accept="image/*" 
+onchange="validateFileSize(this)" required>
+</div>
+
+</fieldset>
+
+<hr>
+
+<!-- รหัสผ่าน -->
+<fieldset>
+<legend>ตั้งรหัสผ่าน</legend>
+
+<div class="form-group">
+<label>รหัสผ่าน:</label>
+<input type="password" id="password" 
+minlength="6" required>
+</div>
+
+<div class="form-group">
+<label>ยืนยันรหัสผ่าน:</label>
+<input type="password" id="confirmPassword" 
+minlength="6" required>
+</div>
+
+</fieldset>
+
+<hr>
+
+<!-- ความสนใจ -->
+<fieldset>
+<legend>หมวดหมู่ที่สนใจ</legend>
+
+<input type="checkbox"> เสื้อผ้า
+<input type="checkbox"> อุปกรณ์กีฬา
+<input type="checkbox"> เทคโนโลยี
+<input type="checkbox"> หนังสือ
+
+</fieldset>
+
+<hr>
+
+<!-- ยอมรับเงื่อนไข -->
+<fieldset>
+
+<div class="form-group">
+<input type="checkbox" required>
+ยอมรับเงื่อนไขการใช้งาน
+</div>
+
+<div class="form-group">
+<button type="submit">สมัครสมาชิก</button>
+<button type="reset">ล้างข้อมูล</button>
+</div>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![ผลลัพธ์](form.png)
 
 
 
