@@ -165,10 +165,65 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก - HTML Workshop</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        nav { background: #eee; padding: 10px; margin-bottom: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: #0066cc; }
+        .product-list { display: flex; gap: 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+        <a href="https://www.google.com" target="_blank">ไป Google</a>
+    </nav>
+
+    <header id="top">
+        <img src="images/logo.png" alt="โลโก้บริษัท" width="100">
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+    </header>
+
+    <section id="products">
+        <h2>สินค้าแนะนำ</h2>
+        <div class="product-list">
+            <figure>
+                <a href="images/products/product1.jpg" target="_blank">
+                    <img src="images/products/product1.jpg" alt="Product 1" width="150">
+                </a>
+                <figcaption>สินค้าชิ้นที่ 1</figcaption>
+            </figure>
+            <figure>
+                <a href="images/products/product2.jpg" target="_blank">
+                    <img src="images/products/product2.jpg" alt="Product 2" width="150">
+                </a>
+                <figcaption>สินค้าชิ้นที่ 2</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>ติดต่อสอบถาม: <a href="mailto:info@example.com">ส่งอีเมล</a> | 
+           โทร: <a href="tel:0812345678">081-xxx-xxxx</a></p>
+        <p>ดาวน์โหลดเอกสาร: <a href="files/document.pdf" download>คลิกที่นี่</a></p>
+        <a href="#top">กลับไปด้านบน</a>
+    </footer>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="637" height="836" alt="Lab04" src="https://github.com/user-attachments/assets/1100b633-12e9-499e-ba98-414b9dd65aeb" />
+
 
 
 
