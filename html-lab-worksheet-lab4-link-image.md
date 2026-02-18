@@ -165,10 +165,56 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <section>
+        <h1>Product Gallery</h1>
+    </section>
+
+    <section>
+        <h2>สินค้าของเรา</h2>
+    </section>
+
+    <figure>
+        <a href="images/gallery/pic1.jpg">
+        <img src="images/gallery/pic1.jpg" alt="สินค้าชิ้นที่ 1" width="300" height="200">
+        </a>
+        <figcaption>Crew Dragon</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/gallery/pic2.jpg">
+            <img src="images/gallery/pic2.jpg" alt="สินค้าชิ้นที่ 2" width="300" height="200">
+        </a>
+        <figcaption>SpaceX Starship</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/gallery/pic3.jpg">
+            <img src="images/gallery/pic3.jpg" alt="สินค้าชิ้นที่ 3" width="300" height="200">
+        </a>
+        <figcaption>SpaceX Starship</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/gallery/pic4.jpg">
+            <img src="images/gallery/pic4.jpg" alt="สินค้าชิ้นที่ 4" width="300" height="200">
+        </a>
+        <figcaption>SpaceX Starship</figcaption>
+    </figure>
+
+    <a href="#top">กลับไปด้านบน</a>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image-5.png)
 
 
 
