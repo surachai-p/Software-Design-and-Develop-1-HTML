@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT-R Legacy Layout</title>
+    <style>
+        /* --- CSS เดิม (ไม่เปลี่ยนแปลง) --- */
+        body { font-family: 'Sarabun', sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; scroll-behavior: smooth; }
+        nav { background-color: #222; padding: 15px; text-align: center; }
+        nav ul { padding: 0; margin: 0; list-style: none; }
+        nav li { display: inline; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; transition: color 0.3s; }
+        nav a:hover { color: #ffcc00; }
+        header { background-color: #fff; padding: 30px 20px; text-align: center; border-bottom: 4px solid #ddd; }
+        h1 { color: #333; margin: 0; font-size: 2.5em; }
+        main { display: flex; flex-wrap: wrap; max-width: 1200px; margin: 20px auto; padding: 0 20px; gap: 20px; }
+        article { flex: 3; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        aside { flex: 1; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); height: fit-content; }
+        @media (max-width: 768px) { main { flex-direction: column; } figure { width: 100% !important; } }
+        .gallery-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+        figure { background: #fff; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 45%; text-align: center; margin: 0; transition: transform 0.2s; }
+        figure:hover { transform: translateY(-5px); box-shadow: 0 8px 12px rgba(0,0,0,0.2); }
+        figure img { width: 100%; height: 180px; object-fit: cover; border-radius: 5px; cursor: zoom-in; }
+        figcaption { margin-top: 15px; font-size: 1em; color: #444; font-weight: bold; }
+        figcaption span { display: block; font-size: 0.85em; color: #777; font-weight: normal; margin-top: 5px; }
+        .button-group { display: flex; justify-content: center; gap: 20px; margin-top: 30px; }
+        .btn { display: inline-block; padding: 10px 20px; text-decoration: none; color: white; border-radius: 50px; font-weight: bold; transition: transform 0.2s; }
+        .btn:hover { transform: scale(1.05); }
+        .btn-green { background-color: #28a745; }
+        .btn-blue { background-color: #007bff; }
+        .modal { display: none; position: fixed; z-index: 999; padding-top: 50px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9); }
+        .modal-content { margin: auto; display: block; width: 80%; max-width: 900px; max-height: 80vh; object-fit: contain; animation: zoom 0.3s; }
+        @keyframes zoom { from {transform:scale(0)} to {transform:scale(1)} }
+        .close { position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; }
+        #caption { margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; }
+        footer { background-color: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body id="top">
+
+    <header>
+        <h1>GT-R Legacy Gallery</h1>
+        <p>รวมตำนานรถสปอร์ตตระกูล Skyline และ GT-R</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">หน้าหลัก</a></li>
+            <li><a href="#">ประวัติความเป็นมา</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2 style="border-left: 5px solid #ffcc00; padding-left: 10px;">แกลเลอรีสินค้าแนะนำ</h2>
+            <p style="color: #666; margin-bottom: 20px;">(คลิกที่รูปภาพเพื่อขยายดู)</p>
+
+            <div class="gallery-container">
+                
+                <figure>
+                    <img src="images/products/1986_nissan_skyline_gt-r_R32.webp" alt="Nissan Skyline GT-R (R32)" onclick="openModal(this)">
+                    <figcaption>Nissan Skyline GT-R (R32)<span>Godzilla รุ่นบุกเบิก</span></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/products/001-nissan-skyline-r33-gtr-dai33-greddy-top-rank-turn-14_header.jpg" alt="Nissan Skyline GT-R (R33)" onclick="openModal(this)">
+                    <figcaption>Nissan Skyline GT-R (R33)<span>ชุดแต่ง Greddy</span></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/products/OIP.webp" alt="Nissan Skyline GT-R (R34)" onclick="openModal(this)">
+                    <figcaption>Nissan Skyline GT-R (R34)<span>Calsonic Blue</span></figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/products/2024-nissan-gt-r-nismo-special-edition.jpg" alt="Nissan GT-R Nismo (R35)" onclick="openModal(this)">
+                    <figcaption>Nissan GT-R Nismo (R35)<span>2024 Special Edition</span></figcaption>
+                </figure>
+
+            </div>
+
+            <div class="button-group">
+                <a href="#" class="btn btn-green">🏠 กลับหน้าหลัก</a>
+                <a href="#top" class="btn btn-blue">⬆ กลับด้านบน</a>
+            </div>
+        </article>
+
+        <aside>
+            <h3 style="color: #333;">รุ่นอื่นๆ ที่เกี่ยวข้อง</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom:10px;"><a href="#" style="color:#007bff; text-decoration:none;">Nissan Skyline 2000GT-R</a></li>
+                <li style="margin-bottom:10px;"><a href="#" style="color:#007bff; text-decoration:none;">Nissan R390 GT1</a></li>
+                <li style="margin-bottom:10px;"><a href="#" style="color:#007bff; text-decoration:none;">Nismo 400R</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GT-R Workshop Project. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("myModal");

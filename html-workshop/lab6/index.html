@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - ร้านค้าออนไลน์</title>
+    <style>
+        /* CSS เดิมของคุณ */
+        body { font-family: 'Sarabun', sans-serif; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        .input-wrapper { display: flex; align-items: center; }
+        .required-mark { color: red; margin-left: 5px; }
+        
+        /* เพิ่มเติมเล็กน้อยเพื่อความสวยงาม */
+        fieldset { border: 1px solid #ddd; border-radius: 5px; margin-bottom: 20px; padding: 15px; }
+        legend { font-weight: bold; color: #333; padding: 0 5px; }
+        input[type="text"], input[type="email"], input[type="password"], 
+        input[type="tel"], input[type="date"], select, textarea {
+            width: 100%; max-width: 400px; padding: 8px; box-sizing: border-box;
+        }
+        .error-message { color: red; font-size: 0.9em; display: none; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>สมัครสมาชิกใหม่</h1>
+
+    <form action="/register_shop" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+        
+        <fieldset>
+            <legend>ข้อมูลบัญชีและการเข้าระบบ</legend>
+            
+            <div class="form-group">
+                <label for="email">อีเมล (ใช้เป็นชื่อผู้ใช้):</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+                <span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="8" required placeholder="ความยาวอย่างน้อย 8 ตัวอักษร">
+                <span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm_password">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                <span class="required-mark">*</span>
+                <div id="passwordError" class="error-message">รหัสผ่านไม่ตรงกัน</div>
+            </div>
+
+            <div class="form-group">
+                <label for="profile_pic">รูปโปรไฟล์ (ไม่เกิน 2MB):</label>
+                <input type="file" id="profile_pic" name="profile_pic" accept="image/*" onchange="validateFileSize(this)">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required> <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required> <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required> <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male"> <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female"> <label for="female">หญิง</label>
+                <input type="radio" id="other" name="gender" value="other"> <label for="other">อื่นๆ</label>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>ข้อมูลการจัดส่งสินค้า</legend>
+    
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์มือถือ:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="08xxxxxxxx">
+                <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" required></textarea> <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+            <div class="form-group">
+                <input type="checkbox" id="cat_fashion" name="interests" value="fashion">
+                <label for="cat_fashion">เสื้อผ้าและแฟชั่น</label><br>
+                
+                <input type="checkbox" id="cat_electronics" name="interests" value="electronics">
+                <label for="cat_electronics">อุปกรณ์อิเล็กทรอนิกส์</label><br>
+                
+                <input type="checkbox" id="cat_beauty" name="interests" value="beauty">
+                <label for="cat_beauty">ความงามและของใช้ส่วนตัว</label><br>
+                
+                <input type="checkbox" id="cat_home" name="interests" value="home">
+                <label for="cat_home">ของแต่งบ้าน</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>การยืนยัน</legend>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">ฉันยอมรับ <a href="#">เงื่อนไขการใช้งาน</a> และนโยบายความเป็นส่วนตัว</label>
+                <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group" style="margin-top: 20px;">
+                <button type="submit" style="padding: 10px 20px; cursor: pointer;">ลงทะเบียนสมาชิก</button>
+                <button type="reset" style="padding: 10px 20px; cursor: pointer;">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+
+    </form>
+
+    <script>
+        // 1. ตรวจสอบขนาดไฟล์รูปภาพ
+        function validateFileSize(input) {
+            const fileSize = input.files[0].size / 1024 / 1024; // แปลงหน่วยเป็น MB
+            if (fileSize > 2) {
+                alert('ขนาดไฟล์ต้องไม่เกิน 2 MB');
+                input.value = ''; // ล้างค่าไฟล์ที่เลือก
+            }
+        }
+
+        // 2. ตรวจสอบก่อนส่งฟอร์ม (Submit)
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm_password").value;
+            var errorMsg = document.getElementById("passwordError");
+
+            // ตรวจสอบว่ารหัสผ่านตรงกันหรือไม่
+            if (password !== confirmPassword) {
+                errorMsg.style.display = "block";
+                alert("กรุณายืนยันรหัสผ่านให้ถูกต้อง");
+                return false; // ห้ามส่งฟอร์ม
+            } else {
+                errorMsg.style.display = "none";
+                return true; // อนุญาตให้ส่งฟอร์ม
+            }
+        }
+    </script>
+
+</body>
+</html>
+
