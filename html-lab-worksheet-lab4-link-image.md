@@ -165,10 +165,70 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+<figure>
+    <a href="images/gallery/25.Potal (2000R).png">
+        <img src="images/gallery/25.Potal (2000R).png" 
+            alt="คลิกเพื่อดูรูปขนาดใหญ่"
+            width="200">
+    </a>
+    <figcaption>
+        portal fruit
+    </figcaption>
+
+</figure>
+
+<figure>
+    <a href="images/gallery/26.Rumble (2100R).png">
+        <img src="images/gallery/26.Rumble (2100R).png" 
+            alt="คลิกเพื่อดูรูปขนาดใหญ่"
+            width="200">
+    </a>
+    <figcaption>
+        rumble fruit
+    </figcaption>
+
+</figure>
+
+<figure>
+    <a href="images/gallery/27.Paw (2200R).png">
+        <img src="images/gallery/27.Paw (2200R).png" 
+            alt="คลิกเพื่อดูรูปขนาดใหญ่"
+            width="200">
+    </a>
+    <figcaption>
+        paw fruit
+    </figcaption>
+
+</figure>
+
+<figure>
+    <a href="images/gallery/28.Blizzard (2550R).png">
+        <img src="images/gallery/28.Blizzard (2550R).png" 
+            alt="คลิกเพื่อดูรูปขนาดใหญ่"
+            width="200">
+    </a>
+    <figcaption>
+        blizzard fruit
+    </figcaption>
+
+</figure>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![Lab4](lab-result/Lab4.png)
 
 
 
