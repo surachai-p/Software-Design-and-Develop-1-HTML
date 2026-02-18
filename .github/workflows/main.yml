@@ -40,12 +40,12 @@ jobs:
                 repo: context.repo.repo,
                 issue_number: prNumber,
                 body: `⚠️ **Submission Deadline Exceeded**
-                  This pull request was submitted after the due date (**Febluary 18, 2026 at 23:59:59 UTC**) and has been automatically closed.
+                  This pull request was submitted after the due date (**February 18, 2026 at 23:59:59 UTC**) and has been automatically closed.
                     **Submission Details:**
 - PR Title: ${prTitle}
 - Author: @${prAuthor}
 - Submitted: ${{ github.event.pull_request.created_at }}
-- Due Date: September 22, 2025 23:59:59 UTC
+- Due Date: February 18, 2026 23:59:59 UTC
 
 If you believe this was closed in error or have any questions, please contact the instructor.`
               });
