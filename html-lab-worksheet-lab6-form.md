@@ -223,11 +223,143 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
-```html
+```<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านเก้าอี้มหัศจรรย์</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+
+        /* ตกแต่งเพิ่มเติมเพื่อให้ดูเป็นร้านค้าออนไลน์ */
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        fieldset { border: 1px solid #df0882; border-radius: 8px; margin-bottom: 20px; }
+        legend { font-weight: bold; padding: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>แบบฟอร์มสมัครสมาชิกร้านเก้าอี้มหัศจรรย์🪑</h2>
+    <form action="/register" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            
+            <div class="form-group">
+                <label for="firstName">ชื่อ-นามสกุล:</label>
+                <input type="text" id="firstName" name="fullName" placeholder="ชื่อ และ นามสกุล" required>
+                <span class="required-mark">*</span>
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">วัน/เดือน/ปีเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">ไม่ระบุ</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+    
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" placeholder="somchai@mail.com" required>
+                <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" 
+                       pattern="[0-9]{10}" title="กรุณากรอกเบอร์โทรศัพท์เป็นตัวเลข 10 หลัก" 
+                       placeholder="08XXXXXXXX" required>
+                <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label><br>
+                <textarea id="address" name="address" rows="3" cols="40" required></textarea>
+                <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>รหัสผ่าน</legend>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <small>(อย่างน้อย 8 ตัวอักษร)</small>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>รูปโปรไฟล์</legend>
+            <div class="form-group">
+                <label for="photo">อัพโหลดรูปภาพ:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+            <div class="form-group">
+                <input type="checkbox" id="cat1" name="interests" >
+                <label for="cat1">เก้าอี้แลบลิ้น</label>
+                <input type="checkbox" id="cat2" name="interests" >
+                <label for="cat2">เก้าอี้อ้าปาก</label>
+                <input type="checkbox" id="cat3" name="interests" >
+                <label for="cat3">เก้าอี้ขากิ้งกือ</label>
+                <input type="checkbox" id="cat4" name="interests" >
+                <label for="cat4">เก้าอี้หัวกุ๊กกู๋</label>
+                <input type="checkbox" id="cat5" name="interests" >
+                <label for="cat5">เก้าอี้มีไฟ</label>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">ฉันยอมรับ <a href="#">เงื่อนไขการใช้งาน</a> และนโยบายความเป็นส่วนตัว</label>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">ยืนยันการสมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+        
+    </form>
+
+</body>
+</html>
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-6.png)]
 
 
 
