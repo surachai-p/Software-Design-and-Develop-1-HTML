@@ -242,9 +242,9 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![alt text](../images/screenshots/lab4-1.png)
-![alt text](../images/screenshots/lab4-2.png)
-![alt text](../images/screenshots/lab4-3.png)
+![screenshot-lab4-1](../images/screenshots/lab4-1.png)
+![screenshot-lab4-2](../images/screenshots/lab4-2.png)
+![screenshot-lab4-3](../images/screenshots/lab4-3.png)
 
 
 

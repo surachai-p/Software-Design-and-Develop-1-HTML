@@ -75,6 +75,6 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![alt text](../images/screenshots/lab3.png)
+![screenshot-lab3](../images/screenshots/lab3.png)
 
 

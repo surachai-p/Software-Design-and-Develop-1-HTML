@@ -71,5 +71,5 @@
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![screenshot-lab5](../images/screenshots/lab5.png)
 
