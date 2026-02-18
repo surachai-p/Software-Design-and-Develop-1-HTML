@@ -165,10 +165,140 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด : การสร้างลิงก์และการแทรกรูปภาพ</title>
+    <style>
+        /* จัดการ Font และ Layout พื้นฐาน */
+        body { 
+            font-family: 'Tahoma', sans-serif; 
+            text-align: center; 
+            background-color: #f4f4f4; 
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ส่วนหัวของหน้า */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        /* แกลเลอรีสินค้า */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* การ์ดสินค้าแต่ละชิ้น */
+        .item { 
+            width: 250px; 
+            background: white; 
+            padding: 15px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover { 
+            transform: translateY(-10px); 
+        }
+
+        /* จัดการขนาดรูปภาพ */
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* ให้รูปพอดีกรอบโดยไม่เสียสัดส่วน */
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* คำอธิบายใต้รูป */
+        .caption { 
+            margin-top: 15px; 
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50; 
+        }
+
+        /* ปุ่มกลับด้านบน */
+        .back-to-top {
+            display: inline-block;
+            margin: 50px 0;
+            padding: 12px 25px;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="top-anchor">
+        <h1>แกลเลอรีสินค้า</h1>
+        <p>เมนูน้ำจิ้ม Freeze-Dried</p>
+    </header>
+
+    <div class="gallery">
+        <div class="item">
+            <a href="gallery/sukiyaki.png" target="_blank">
+                <img src="gallery/sukiyaki.png" alt="น้ำจิ้มสุกี้">
+            </a>
+            <p class="caption">น้ำจิ้มสุกี้ (Sukiyaki)</p>
+        </div>
+
+        <div class="item">
+            <a href="gallery/chicken.png" target="_blank">
+                <img src="gallery/chicken.png" alt="น้ำจิ้มไก่">
+            </a>
+            <p class="caption">น้ำจิ้มไก่ (Chicken Sauce)</p>
+        </div>
+
+        <div class="item">
+            <a href="gallery/jeaw.png" target="_blank">
+                <img src="gallery/jeaw.png" alt="น้ำจิ้มแจ่ว">
+            </a>
+            <p class="caption">น้ำจิ้มแจ่ว (Jaew Sauce)</p>
+        </div>
+
+        <div class="item">
+            <a href="gallery/seafood.png" target="_blank">
+                <img src="gallery/seafood.png" alt="น้ำจิ้มซีฟู้ด">
+            </a>
+            <p class="caption">น้ำจิ้มซีฟู้ด (Seafood)</p>
+        </div>
+    </div>
+
+    <a href="#top-anchor" class="back-to-top">กลับสู่ด้านบน</a>
+
+    <footer style="padding: 20px; color: #888;">
+        <p>&copy; 2026 freeze-dried sauces</p>
+    </footer>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+<img width="1905" height="901" alt="Screenshot 2026-02-18 155410" src="https://github.com/user-attachments/assets/1084f6bb-b1ff-4c7b-ade2-904e6d07a491" />
+
 
 
 
