@@ -165,10 +165,47 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <h1>แกลเลอรีสินค้า (แบบฝึกหัด)</h1>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <figure>
+            <a href="images/gallery/photo1.jpg" target="_blank">
+                <img src="images/gallery/photo1.jpg" width="150" alt="แกลเลอรี 1">
+            </a>
+            <figcaption>อิชิตัน ชาเขียวชิซึโอกะสูตรหวานน้อย440มล</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/gallery/photo2.jpg" target="_blank">
+                <img src="images/gallery/photo2.jpg" width="150" alt="แกลเลอรี 2">
+            </a>
+            <figcaption>อิชิตัน ชาเขียวพร้อมดื่ม รสน้ำผึ้งผสมมะนาว 420 มล.</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/gallery/photo3.jpg" target="_blank">
+                <img src="images/gallery/photo3.jpg" width="150" alt="แกลเลอรี 3">
+            </a>
+            <figcaption>อิชิตัน ชาเขียว รสจมูกข้าว 420 มล.</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/gallery/photo4.jpg" target="_blank">
+                <img src="images/gallery/photo4.jpg" width="150" alt="แกลเลอรี 4">
+            </a>
+            <figcaption>อิชิตัน ชาอู่หลง ผสมคาเตชิน สูตรไม่มีน้ำตาล 420 มล.</figcaption>
+        </figure>
+    </div>
+
+    <p><a href="#top">กลับด้านบน</a></p>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](image-4.png)
 
 
