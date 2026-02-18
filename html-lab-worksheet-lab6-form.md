@@ -224,10 +224,127 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+</head>
+<body>
 
+    <h1>สมัครสมาชิก</h1>
+    <hr>
+
+    <form id="registerForm">
+
+        <h2>ข้อมูลส่วนตัว</h2>
+
+        ชื่อ-นามสกุล:
+        <input type="text" name="fullname" required>
+        <br><br>
+
+        วันเกิด:
+        <input type="date" name="birthday" required>
+        <br><br>
+
+        เพศ:
+        <input type="radio" name="gender" value="ชาย" required> ชาย
+        <input type="radio" name="gender" value="หญิง"> หญิง
+        <input type="radio" name="gender" value="อื่นๆ"> อื่นๆ
+        <br><br>
+
+        <hr>
+
+        <h2>ข้อมูลการติดต่อ</h2>
+
+        อีเมล:
+        <input type="email" name="email" required>
+        <br><br>
+
+        เบอร์โทร:
+        <input type="tel" name="phone"
+               pattern="[0-9]{10}"
+               placeholder="กรอกเบอร์ 10 หลัก"
+               required>
+        <br><br>
+
+        ที่อยู่จัดส่ง:
+        <br>
+        <textarea name="address" rows="4" cols="40" required></textarea>
+        <br><br>
+
+        <hr>
+
+        <h2>รูปโปรไฟล์</h2>
+        <input type="file" id="profileImage" accept="image/*" required>
+        <br><br>
+
+        <hr>
+
+        <h2>ตั้งค่ารหัสผ่าน</h2>
+
+        รหัสผ่าน:
+        <input type="password" id="password"
+               minlength="6"
+               required>
+        <br><br>
+
+        ยืนยันรหัสผ่าน:
+        <input type="password" id="confirmPassword"
+               required>
+        <br><br>
+
+        <hr>
+
+        <h2>หมวดหมู่สินค้าที่สนใจ</h2>
+
+        <input type="checkbox" name="interest" value="เสื้อผ้า"> เสื้อผ้า
+        <input type="checkbox" name="interest" value="อุปกรณ์ไอที"> อุปกรณ์ไอที
+        <input type="checkbox" name="interest" value="เครื่องสำอาง"> เครื่องสำอาง
+        <input type="checkbox" name="interest" value="อาหาร"> อาหาร
+        <br><br>
+
+        <hr>
+
+        <input type="checkbox" id="terms" required>
+        ฉันยอมรับเงื่อนไขการใช้งาน
+        <br><br>
+
+        <button type="submit">สมัครสมาชิก</button>
+
+    </form>
+
+    <script>
+        const form = document.getElementById("registerForm");
+
+        form.addEventListener("submit", function(event) {
+
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const image = document.getElementById("profileImage").files[0];
+
+            if (password !== confirmPassword) {
+                alert("รหัสผ่านไม่ตรงกัน");
+                event.preventDefault();
+                return;
+            }
+
+            if (image && image.size > 2 * 1024 * 1024) {
+                alert("ไฟล์รูปภาพต้องไม่เกิน 2MB");
+                event.preventDefault();
+                return;
+            }
+
+            alert("สมัครสมาชิกสำเร็จ!");
+        });
+    </script>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-4.png)]
+[![alt text](image-5.png)]
 
 
 

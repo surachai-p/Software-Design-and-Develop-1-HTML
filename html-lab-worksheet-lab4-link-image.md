@@ -165,7 +165,64 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+
+    <section id="top">
+        <h1>รูป</h1>
+    </section>  
+    <hr>
+
+<section>
+    <figure>
+        <a href="images/ผัดไทย-1024x683.jpg" target="_blank">
+            <img src="images/ผัดไทย-1024x683.jpg"
+            width="200">
+        </a>
+        <p>ผัดไทยกุ้งสด</p>
+    </figure>
+
+    <hr>
+
+    <figure>
+        <a href="images/B6FtNKtgSqRqbnNsbKFRA9Hw1ddaiN8vczDH5awGUi4JQ7XTjwF2YTlnGfAZTGUAcQDXv.jpg" target="_blank">
+            <img src="images/B6FtNKtgSqRqbnNsbKFRA9Hw1ddaiN8vczDH5awGUi4JQ7XTjwF2YTlnGfAZTGUAcQDXv.jpg" width="200">
+        </a>
+        <p>ต้มยำกุ้ง</p>
+    </figure>
+
+    <hr>
+
+    <figure>
+        <a href="images/16b6c2f7-63b9-4cfe-8601-41c47ca32eea.jpg" target="_blank">
+            <img src="images/16b6c2f7-63b9-4cfe-8601-41c47ca32eea.jpg" width="200">
+        </a>
+        <p>ผัดกะเพราหมูสับไข่ดาว</p>
+    </figure>
+
+    <hr>
+
+    <figure>
+        <a href="images/497a5dbd-4189-40a8-b841-535fbfec8db4.jpg" target="_blank">
+            <img src="images/497a5dbd-4189-40a8-b841-535fbfec8db4.jpg" width="200">
+        </a>
+        <p>ยำวุ้นเส้นหมูสับ</p>
+    </figure>
+</section>
+
+    <hr>
+
+    <a href="#top">
+        <button>กลับด้านบน</button>
+    </a>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
