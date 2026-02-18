@@ -166,9 +166,81 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก - ลิงก์และรูปภาพ</title>
+</head>
+<body>
+    <h1>เว็บไซต์สินค้าไดโนเสาร์</h1>
+    
+    <nav>
+        <h2>เมนูนำทาง</h2>
+        <a href="index.html">หน้าหลัก</a> |
+        <a href="pages/about.html">เกี่ยวกับเรา</a> |
+        <a href="pages/contact.html">ติดต่อเรา</a> |
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </nav>
+    
+    <h2>ยินดีต้อนรับสู่คอลเลคชั่นไดโนเสาร์</h2>
+    <p>เรามี <strong>สินค้าไดโนเสาร์</strong> ที่สุดหลากหลาย</p>
+    
+    <h3>แกลเลอรี่สินค้า</h3>
+    
+    <h4>ไดโนเสาร์ชุดที่ 1</h4>
+    <figure>
+        <img src="product/images/gallery/dino1.jpg.png" 
+             alt="ไดโนเสาร์ T-Rex"
+             width="200">
+        <figcaption>T-Rex - ราชันแห่งไดโนเสาร์</figcaption>
+    </figure>
+
+
+    <h4>ไดโนเสาร์ชุดที่ 2</h4>
+    <figure>
+        <img src="product/images/gallery/dino2.jpg.png" 
+             alt="ไดโนเสาร์ Triceratops"
+             width="200">
+        <figcaption>Triceratops - ไดโนเสาร์เขาสามเหลี่ยม</figcaption>
+    </figure>
+  
+    
+    <h4>ไดโนเสาร์ชุดที่ 3</h4>
+    <figure>
+        <img src="product/images/gallery/dino3.jpg.png" 
+             alt="ไดโนเสาร์ Stegosaurus"
+             width="200">
+        <figcaption>Stegosaurus - ไดโนเสาร์มีหลังกลม</figcaption>
+    </figure>
+  
+    
+    <h4>ไดโนเสาร์ชุดที่ 4</h4>
+    <figure>
+        <img src="product/images/gallery/dino4.jpg.png" 
+             alt="ไดโนเสาร์ Brachiosaurus"
+             width="200">
+        <figcaption>Brachiosaurus - ไดโนเสาร์ยักษ์</figcaption>
+    </figure>
+
+    
+    <hr>
+    
+    <h3>ลิงก์ต่างๆ</h3>
+    <ul>
+        <li><a href="teetach@dinosaur.com">ส่งอีเมลหาเรา</a></li>
+        <li><a href="tel:+66971144072">โทร 097-1144-072</a></li>
+        <li><a href="files/document.pdf" download>ดาวน์โหลดเอกสาร</a></li>
+        <li><a href="#top">กลับด้านบน</a></li>
+    </ul>
+    
+    <hr>
+    <p>สร้างขึ้นโดย: นายธีธัช คัคคนัมพร</p>
+</body>
+</html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+![alt text](<สกรีนช็อต 2026-02-18 112934.png>)
 
-
+![alt text](<สกรีนช็อต 2026-02-18 112928.png>)
