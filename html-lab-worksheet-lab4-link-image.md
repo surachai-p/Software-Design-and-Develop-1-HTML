@@ -165,10 +165,63 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรีสินค้าของฉัน</title>
+</head>
+<body>
+
+    <h1 id="top-page">ยินดีต้อนรับสู่ร้านค้าของฉัน</h1>
+    
+    <hr>
+
+    <h2>สินค้าแนะนำ</h2>
+
+    <figure>
+        <a href="images/product/products1.jpg">
+            <img src="images/product/products1.jpg" width="200" alt="รูปสินค้าชิ้นที่ 1">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 1: เก้าอี้สุดเท่</figcaption>
+    </figure>
+
+    <hr>
+
+    <figure>
+        <a href="images/product/products2.jpg">
+            <img src="images/product/products2.jpg" width="200" alt="รูปสินค้าชิ้นที่ 2">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 2: โต๊ะสุดเท่</figcaption>
+    </figure>
+
+    <hr>
+
+    <figure>
+        <a href="images/product/products3.jpg">
+            <img src="images/product/products3.jpg" width="200" alt="รูปสินค้าชิ้นที่ 3">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 3: Pick สุดเท่</figcaption>
+    </figure>
+
+    <hr>
+
+    <figure>
+        <a href="images/product/products4.jpg">
+            <img src="images/product/products4.jpg" width="200" alt="รูปสินค้าชิ้นที่ 4">
+        </a>
+        <figcaption>สินค้าชิ้นที่ 4: ระเบิดสุดเท่</figcaption>
+    </figure>
+
+    <br><br>
+    
+    <a href="#top-page">กลับไปด้านบนสุด</a>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![ผลการทดลองที่ 4](images/image-3.png)
 
 
 
