@@ -165,10 +165,40 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<h3>แกลเลอรีสินค้า</h3>
+<div id="top"></div>
+
+<figure>
+    <a href="images/products/image.png" target="_blank">
+        <img src="images/products/image.png" alt="รูปที่ 1" width="200">  
+    </a>
+    <figcaption>silk pla, silk filament - Kingroon</figcaption>
+</figure>
+
+<figure>
+    <a href="images/products/image1.png" target="_blank">
+        <img src="images/products/image1.png" alt="รูปที่ 2" width="200">
+    </a>
+    <figcaption>PLA Magic SILK - Spectrum Filaments</figcaption>
+</figure>
+
+<figure>
+    <a href="images/products/image2.png" target="_blank">
+        <img src="images/products/image2.png" alt="รูปที่ 3" width="200">
+    </a>
+    <figcaption>ใหม่ Silk PLA Filament สีโลหะ Silk Filament eSUN 3D</figcaption>
+</figure>
+
+<figure>
+    <a href="images/products/image3.png" target="_blank">
+        <img src="images/products/image3.png" alt="รูปที่ 4" width="200">
+    </a>
+    <figcaption>ZIRO Silk PLA Filament 1.75mm, Silver – ZIRO 3D</figcaption>
+</figure>
+<a href="#top">กลับด้านบน</a>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](html-workshop/images/products/4.png)
 
 
 
