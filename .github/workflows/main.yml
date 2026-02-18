@@ -3,6 +3,10 @@ on:
   pull_request:
     types: [opened]
 
+permissions:
+  pull-requests: write
+  issues: write
+
 jobs:
   close_late_pr:
     runs-on: ubuntu-latest
@@ -10,18 +14,21 @@ jobs:
       - name: Check if PR is late
         id: check_date
         run: |
+          # กำหนดวันกำหนดส่ง (ISO 8601 format)
           DUE_DATE="2026-02-18T23:59:59Z"
-          PR_DATE=$(date -d '${{ github.event.pull_request.created_at }}' -u +"%Y-%m-%dT%H:%M:%SZ")
+          # ดึงเวลาที่สร้าง PR
+          PR_DATE="${{ github.event.pull_request.created_at }}"
           
           echo "Due date: ${DUE_DATE}"
           echo "PR created: ${PR_DATE}"
           
+          # เปรียบเทียบ String (เนื่องจากเป็น ISO 8601 สามารถเทียบกันตรงๆ ได้)
           if [[ "${PR_DATE}" > "${DUE_DATE}" ]]; then
             echo "is_late=true" >> $GITHUB_OUTPUT
-            echo "PR is late!"
+            echo "Result: PR is late!"
           else
             echo "is_late=false" >> $GITHUB_OUTPUT
-            echo "PR is on time."
+            echo "Result: PR is on time."
           fi
 
       - name: Close late PR
@@ -29,28 +36,21 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const prNumber = context.payload.pull_request.number;
+            const prTitle = context.payload.pull_request.title;
+            const prAuthor = context.payload.pull_request.user.login;
+            const createdAt = context.payload.pull_request.created_at;
+
             try {
-              const prNumber = context.payload.pull_request.number;
-              const prTitle = context.payload.pull_request.title;
-              const prAuthor = context.payload.pull_request.user.login;
-              
-              // Add comment explaining why PR was closed
+              // 1. เพิ่ม Comment
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: prNumber,
-                body: `⚠️ **Submission Deadline Exceeded**
-                  This pull request was submitted after the due date (**February 18, 2026 at 23:59:59 UTC**) and has been automatically closed.
-                    **Submission Details:**
-- PR Title: ${prTitle}
-- Author: @${prAuthor}
-- Submitted: ${{ github.event.pull_request.created_at }}
-- Due Date: February 18, 2026 23:59:59 UTC
-
-If you believe this was closed in error or have any questions, please contact the instructor.`
+                body: `⚠️ **Submission Deadline Exceeded**\n\nThis pull request was submitted after the due date (**February 18, 2026 at 23:59:59 UTC**) and has been automatically closed.\n\n**Submission Details:**\n- PR Title: ${prTitle}\n- Author: @${prAuthor}\n- Submitted: ${createdAt}\n- Due Date: February 18, 2026 23:59:59 UTC\n\nIf you believe this was closed in error, please contact the instructor.`
               });
               
-              // Close the pull request
+              // 2. ปิด PR
               await github.rest.pulls.update({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -58,9 +58,7 @@ If you believe this was closed in error or have any questions, please contact th
                 state: 'closed'
               });
               
-              console.log(`✅ PR #${prNumber} by ${prAuthor} was closed due to late submission.`);
-              
+              console.log(`✅ PR #${prNumber} closed successfully.`);
             } catch (error) {
-              core.setFailed(`❌ Failed to close late PR: ${error.message}`);
-              throw error;
+              core.setFailed(`❌ Error: ${error.message}`);
             }
