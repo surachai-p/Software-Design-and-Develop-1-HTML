@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7: HTML Layout - Semantic Elements</title>
+    <style>
+        /* ส่วนนี้คือ CSS เพื่อช่วยให้เห็นภาพ Layout ชัดเจนขึ้น */
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* 1. Header: ส่วนหัว */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 2. Nav: เมนูนำทาง */
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        /* 3. Main: ส่วนเนื้อหาหลัก จัดให้มี Sidebar ด้วย Flexbox */
+        main {
+            display: flex; /* จัดให้ Article กับ Aside อยู่คู่กัน */
+            flex: 1;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto; /* จัดกึ่งกลางหน้าจอ */
+            gap: 20px;
+            width: 90%;
+        }
+
+        /* 4. Article: เนื้อหาบทความ */
+        article {
+            flex: 3; /* กินพื้นที่ 3 ส่วน (75%) */
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* 5. Aside: เนื้อหาด้านข้าง */
+        aside {
+            flex: 1; /* กินพื้นที่ 1 ส่วน (25%) */
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* 6. Footer: ส่วนท้าย */
+        footer {
+            background-color: #222;
+            color: gray;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+        }
+
+        /* Responsive: เมื่อจอเล็กให้เรียงลงมาแนวตั้ง */
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Website Layout</h1>
+        <p>ตัวอย่างการใช้ Semantic Elements ใน HTML5</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">หน้าแรก (Home)</a></li>
+            <li><a href="#">บทความ (Articles)</a></li>
+            <li><a href="#">เกี่ยวกับเรา (About)</a></li>
+            <li><a href="#">ติดต่อ (Contact)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Semantic Elements คืออะไร?</h2>
+            <p><strong>Semantic Elements</strong> คือ Elements ใน HTML5 ที่มีความหมายในตัวเอง (Meaningful tags) ซึ่งช่วยให้ทั้ง Web Browser และ Developer เข้าใจโครงสร้างของหน้าเว็บได้ชัดเจนยิ่งขึ้น</p>
+            <p>ตัวอย่างเช่น การใช้ <code>&lt;header&gt;</code> แทนที่จะใช้ <code>&lt;div class="header"&gt;</code> หรือการใช้ <code>&lt;article&gt;</code> แทน <code>&lt;div class="post"&gt;</code></p>
+            <p>ข้อดีคือช่วยเรื่อง <strong>SEO (Search Engine Optimization)</strong> ทำให้ Google เข้าใจเนื้อหาเว็บเราได้ดีขึ้น และช่วยเรื่อง <strong>Accessibility</strong> สำหรับผู้พิการทางสายตาที่ใช้โปรแกรมอ่านหน้าจอ</p>
+        </article>
+
+        <aside>
+            <h3>บทความที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="#">โครงสร้าง HTML5</a></li>
+                <li><a href="#">การเขียน CSS เบื้องต้น</a></li>
+                <li><a href="#">เทคนิค SEO</a></li>
+            </ul>
+            <hr>
+            <h3>โฆษณา / ข่าวสาร</h3>
+            <p>พื้นที่สำหรับวางแบนเนอร์หรือข่าวประชาสัมพันธ์สั้นๆ</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>จัดทำโดย: นายวีระภัทร อ่วมเกษม (68030271) | ลิขสิทธิ์ © 2024</p>
+    </footer>
+
+</body>
+</html>
