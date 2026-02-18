@@ -51,7 +51,7 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-![ผลการทดลอง Lab 2](image-1.png)
+![ผลการทดลอง Lab 2](images/image-1.png)
 
 
 
