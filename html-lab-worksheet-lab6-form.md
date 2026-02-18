@@ -224,10 +224,93 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: inline-block; width: 150px; font-weight: bold; }
+        fieldset { margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        legend { padding: 0 10px; font-weight: bold; color: #2c3e50; }
+        .required { color: red; }
+    </style>
+</head>
+<body>
 
+    <h2>สมัครสมาชิกร้านค้าออนไลน์</h2>
+
+    <form action="/submit-registration" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="fullname">ชื่อ-นามสกุล <span class="required">*</span>:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">วันเกิด <span class="required">*</span>:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="m" name="gender" value="male"> <label for="m" style="width:auto">ชาย</label>
+                <input type="radio" id="f" name="gender" value="female"> <label for="f" style="width:auto">หญิง</label>
+            </div>
+            <div class="form-group">
+                <label for="profile">รูปโปรไฟล์:</label>
+                <input type="file" id="profile" name="profile" accept="image/*">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อและบัญชี</legend>
+            <div class="form-group">
+                <label for="u-email">อีเมล <span class="required">*</span>:</label>
+                <input type="email" id="u-email" name="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="u-tel">เบอร์โทรศัพท์ <span class="required">*</span>:</label>
+                <input type="tel" id="u-tel" name="phone" pattern="[0-9]{10}" placeholder="08XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน <span class="required">*</span>:</label>
+                <input type="password" id="password" name="password" minlength="8" placeholder="อย่างน้อย 8 ตัวอักษร" required>
+            </div>
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง <span class="required">*</span>:</label>
+                <textarea id="address" name="address" rows="3" style="width: 300px;" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลเพิ่มเติม</legend>
+            <div class="form-group">
+                <label>หมวดหมู่ที่สนใจ:</label>
+                <input type="checkbox" name="interest" value="fashion"> แฟชั่น
+                <input type="checkbox" name="interest" value="gadget"> ไอที/แกดเจ็ต
+                <input type="checkbox" name="interest" value="home"> บ้านและสวน
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" style="width:auto"> ยอมรับเงื่อนไขการใช้งาน <span class="required">*</span></label>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](LAB6.png)
 
 
 

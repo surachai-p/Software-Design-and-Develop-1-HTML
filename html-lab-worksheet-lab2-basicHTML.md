@@ -35,10 +35,22 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>  
+    <head>
+    <title>My Web Page</title>
+    </head>
+    <body>
+        <h1>Welcome to Woraprach boonmee web page</h1>
+        <p>this is my first web page.</p>
+        <div>This is block element</div>
+        <span>This is inline element</span>
+        <em>This is emphasized text</em>
+        <strong>This is strong text</strong>
+    </body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-
+![alt text](LAB2pic1.png)
 
 
