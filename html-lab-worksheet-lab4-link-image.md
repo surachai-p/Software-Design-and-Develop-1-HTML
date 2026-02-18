@@ -165,10 +165,38 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<h3>แกลเลอรีสินค้า</h3>
+<div id="top"></div>
+
+<figure>
+    <a href="C:\Users\Thana\Pictures\80_-_2026-01-22T180832.633.png" target="_blank">
+        <img src="C:\Users\Thana\Pictures\80_-_2026-01-22T180832.633.png" alt="รูปที่ 1" width="200">  
+    </a>
+    <figcaption>Set 1</figcaption>
+</figure>
+
+<figure>
+    <a href="C:\Users\Thana\Pictures\80_-_2026-01-19T012808.867.png" target="_blank">
+        <img src="C:\Users\Thana\Pictures\80_-_2026-01-19T012808.867.png" alt="รูปที่ 2" width="200">
+    </a>
+    <figcaption>Set 2</figcaption>
+</figure>
+
+<figure>
+    <a href="C:\Users\Thana\Pictures\80_-_2026-01-19T012813.714.png" target="_blank">
+        <img src="C:\Users\Thana\Pictures\80_-_2026-01-19T012813.714.png" alt="รูปที่ 3" width="200">
+    </a>
+    <figcaption>Set 3</figcaption>
+</figure>
+
+<figure>
+    <a href="C:\Users\Thana\Pictures\80_-_2025-12-29T183810.742.png" target="_blank">
+        <img src="C:\Users\Thana\Pictures\80_-_2025-12-29T183810.742.png" alt="รูปที่ 4" width="200">
+    </a>
+    <figcaption>Set 4</figcaption>
+</figure>
+<a href="#top">กลับด้านบน</a>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
-
-
+![alt text](image.png)
