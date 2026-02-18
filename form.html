@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>สมัครสมาชิก</title>
+
+<style>
+.form-group{
+margin-bottom:15px;
+}
+.required{
+color:red;
+}
+</style>
+
+</head>
+<body>
+
+<h1>สมัครสมาชิก</h1>
+
+<form>
+
+<fieldset>
+<legend>ข้อมูลส่วนตัว</legend>
+
+<div class="form-group">
+ชื่อ:
+<input type="text" required>
+</div>
+
+<div class="form-group">
+นามสกุล:
+<input type="text" required>
+</div>
+
+<div class="form-group">
+วันเกิด:
+<input type="date" required>
+</div>
+
+<div class="form-group">
+เพศ:
+<input type="radio" name="gender" required> ชาย
+<input type="radio" name="gender"> หญิง
+</div>
+
+</fieldset>
+
+<hr>
+
+<fieldset>
+<legend>ข้อมูลติดต่อ</legend>
+
+<div class="form-group">
+อีเมล:
+<input type="email" required>
+</div>
+
+<div class="form-group">
+เบอร์โทร:
+<input type="tel" pattern="[0-9]{10}" required>
+</div>
+
+<div class="form-group">
+ที่อยู่จัดส่ง:
+<br>
+<textarea rows="3" required></textarea>
+</div>
+
+</fieldset>
+
+<hr>
+
+<fieldset>
+<legend>บัญชีผู้ใช้</legend>
+
+<div class="form-group">
+รหัสผ่าน:
+<input type="password" minlength="6" required>
+</div>
+
+<div class="form-group">
+ยืนยันรหัสผ่าน:
+<input type="password" minlength="6" required>
+</div>
+
+</fieldset>
+
+<hr>
+
+<fieldset>
+<legend>โปรไฟล์</legend>
+
+<div class="form-group">
+รูปโปรไฟล์:
+<input type="file" accept="image/*" required>
+</div>
+
+</fieldset>
+
+<hr>
+
+<fieldset>
+<legend>ความสนใจสินค้า</legend>
+
+<input type="checkbox"> เสื้อผ้า
+<input type="checkbox"> อุปกรณ์ไอที
+<input type="checkbox"> เกม
+<input type="checkbox"> เครื่องใช้ไฟฟ้า
+
+</fieldset>
+
+<hr>
+
+<div class="form-group">
+<input type="checkbox" required>
+ยอมรับเงื่อนไขการใช้งาน
+</div>
+
+<button type="submit">สมัครสมาชิก</button>
+<button type="reset">ล้างข้อมูล</button>
+
+</form>
+
+</body>
+</html>
