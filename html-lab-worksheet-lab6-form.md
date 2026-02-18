@@ -222,12 +222,129 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Shop Registration</title>
+    <style>
+        .form-group { margin-bottom: 12px; }
+        .required-mark { color: red; }
+    </style>
+</head>
+<body>
+
+<form action="/signup" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+
+        <div class="form-group">
+            <label>ชื่อ-นามสกุล:</label>
+            <input type="text" name="fullname" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label>วันเกิด:</label>
+            <input type="date" name="birthdate" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label>เพศ:</label>
+            <input type="radio" name="gender" value="male" required> ชาย
+            <input type="radio" name="gender" value="female"> หญิง
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        <div class="form-group">
+            <label>อีเมล:</label>
+            <input type="email" name="email" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label>เบอร์โทร:</label>
+            <input type="tel" name="phone" pattern="[0-9]{10}" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label>ที่อยู่จัดส่ง:</label><br>
+            <textarea name="address" rows="3" required></textarea>
+            <span class="required-mark">*</span>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>ความปลอดภัยบัญชี</legend>
+
+        <div class="form-group">
+            <label>รหัสผ่าน:</label>
+            <input type="password" name="password"
+                   minlength="8" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label>ยืนยันรหัสผ่าน:</label>
+            <input type="password" name="confirm_password"
+                   minlength="8" required>
+            <span class="required-mark">*</span>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <div class="form-group">
+            <input type="file" name="profile"
+                   accept="image/*" required>
+            <span class="required-mark">*</span>
+            <small>(เฉพาะไฟล์รูปภาพ)</small>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>ความสนใจสินค้า</legend>
+
+        <div class="form-group">
+            <input type="checkbox" name="interest" value="fashion"> แฟชั่น
+            <input type="checkbox" name="interest" value="tech"> เทคโนโลยี
+            <input type="checkbox" name="interest" value="beauty"> ความงาม
+            <input type="checkbox" name="interest" value="sport"> กีฬา
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>การยืนยัน</legend>
+
+        <div class="form-group">
+            <input type="checkbox" name="agree" required>
+            ยอมรับเงื่อนไขการใช้งาน
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </fieldset>
+
+</form>
+
+</body>
+</html>
+]
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-7.png)]
 
 
 

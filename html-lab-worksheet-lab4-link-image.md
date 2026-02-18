@@ -165,10 +165,128 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+
+<body>
+
+<!-- จุดบนสุดของหน้า -->
+<section id="top"></section>
+
+<!-- โลโก้บริษัท (บนสุด) -->
+<header>
+    <img src="images/logo.jpg" 
+         alt="โลโก้บริษัท"
+         width="200">
+</header>
+
+<hr>
+
+<!-- เมนูนำทาง -->
+<nav>
+    <a href="index.html">หน้าหลัก</a> |
+    <a href="pages/about.html">เกี่ยวกับเรา</a> |
+    <a href="pages/contact.html">ติดต่อเรา</a> |
+    <a href="https://www.google.com" target="_blank">
+        ไปยัง Google
+    </a>
+</nav>
+
+<hr>
+
+<!-- เนื้อหาส่วนบน -->
+<section>
+    <h1>เนื้อหาส่วนบน</h1>
+    <p>ยินดีต้อนรับสู่เว็บไซต์ของเรา</p>
+</section>
+
+<hr>
+
+<!-- ส่วนสินค้า -->
+<section>
+    <h2>แกลเลอรีรูปภาพ</h2>
+
+    <figure>
+        <a href="images/product/product1.jpg" target="_blank">
+            <img src="images\product\product1.jpg" 
+                 alt="ภาพที่ 1"
+                 width="250">
+        </a>
+        <figcaption>ภาพที่ 1</figcaption>
+        <figcaption>ขวดน้ำหอมทรงกลมสีชมพูอ่อน ดีไซน์เรียบหรู ดูอ่อนหวาน ให้ความรู้สึกสดใสและโรแมนติก</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/product/product2.jpg" target="_blank">
+            <img src="images\product\product2.jpg" 
+                 alt="ภาพที่ 2"
+                 width="250">
+        </a>
+        <figcaption>ภาพที่ 2</figcaption>
+        <figcaption>ขวดน้ำหอมทรงสี่เหลี่ยมสีชมพู ตกแต่งด้วยโบว์สีดำ ดูหรูหรา น่ารัก และมีความเป็นแฟชั่น</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/product/product3.jpg" target="_blank">
+            <img src="images\product\product3.jpg" 
+                 alt="ภาพที่ 3"
+                 width="250">
+        </a>
+        <figcaption>ภาพที่ 3</figcaption>
+        <figcaption>ขวดน้ำหอมสีฟ้าใส ถูกถืออยู่กลางท้องฟ้า ให้ความรู้สึกสดชื่น สะอาด และทันสมัย</figcaption>
+    </figure>
+
+    <figure>
+        <a href="images/product/product4.jpg" target="_blank">
+            <img src="images\product\product4.jpg" 
+                 alt="ภาพที่ 4"
+                 width="250">
+        </a>
+        <figcaption>ภาพที่ 4</figcaption>
+        <figcaption>ขวดน้ำหอมสีเขียวอ่อน ดีไซน์เรียบหรู ดูสบายตา ให้ความรู้สึกสดชื่นและเป็นธรรมชาติ</figcaption>
+    </figure>
+
+<hr>
+
+<!-- ลิงก์ภายในหน้า -->
+<p>
+    <a href="#top">กลับด้านบน</a> |
+    <a href="#products">ไปยังสินค้า</a>
+</p>
+
+<hr>
+
+<!-- ดาวน์โหลดเอกสาร -->
+<section>
+    <h2>เอกสาร</h2>
+    <a href="files/document.pdf" download>
+        ดาวน์โหลดเอกสาร
+    </a>
+</section>
+
+<hr>
+
+<hr>
+
+<!-- ข้อมูลติดต่อ (ล่างสุด) -->
+<footer>
+    <h2>ติดต่อเรา</h2>
+    <p>
+        <a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a><br>
+        <a href="tel:+66812345678">โทร 081-234-5678</a>
+    </p>
+</footer>
+
+</body>
+</html>
+]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-
+[![alt text](image-5.png)]
+![alt text](image-4.png)
 
 

@@ -8,4 +8,4 @@
 - [Lab4 Link and Image](html-lab-worksheet-lab4-link-image.md)
 - [Lab5 Table and List](html-lab-worksheet-lab5-table-list.md)
 - [Lab6 Form](html-lab-worksheet-lab6-form.md)
-- [Lab7 Layout](html-lab-worksheet-lab7-layout.md)
+- [Lab7 Layout](html-lab-worksheetlab7-layout.md)
