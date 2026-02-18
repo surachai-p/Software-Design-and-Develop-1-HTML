@@ -39,7 +39,7 @@
 ```<!DOCTYPE html>
 <html>
 <head>
-    <title>weerapat uamkasemy First Web Page</title>
+    <title>weerapat uamkasemy  Web Page</title>
 </head>
 <body>
     <h1>Welcome to weerapat uamkasem web page</h1>
@@ -52,6 +52,6 @@
 </html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-e:\Html\Software-Design-and-Develop-1-HTML\image.png
+
 
 
