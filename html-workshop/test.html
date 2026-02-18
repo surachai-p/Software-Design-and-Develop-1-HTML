@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ใบงานทดลอง HTML รวมหน้าเดียว</title>
+
+<style>
+body { font-family: Arial; margin: 40px; line-height: 1.6; }
+section { margin-bottom: 50px; padding: 20px; border: 1px solid #ccc; }
+h2 { background: #f2f2f2; padding: 10px; }
+table { border-collapse: collapse; width: 60%; }
+table, th, td { border: 1px solid black; padding: 8px; }
+</style>
+
+</head>
+<body>
+
+<h1>รวมใบงานทดลอง HTML</h1>
+
+<!-- ====================== -->
+<!-- การทดลองที่ 2 -->
+<!-- ====================== -->
+<section id="exp2">
+<h2>การทดลองที่ 2 : โครงสร้าง HTML พื้นฐาน</h2>
+
+<h3>Welcome to My Web Page</h3>
+<p>This is my first web page.</p>
+
+<div>ตัวอย่าง block element</div>
+<span>ตัวอย่าง inline element</span><br>
+
+<em>ข้อความเอียง</em><br>
+<strong>ข้อความหนา</strong>
+
+</section>
+
+
+<!-- ====================== -->
+<!-- การทดลองที่ 3 -->
+<!-- ====================== -->
+<section id="exp3">
+<h2>การทดลองที่ 3 : การจัดรูปแบบข้อความ</h2>
+
+<h1>หัวข้อระดับ 1</h1>
+<h2>หัวข้อระดับ 2</h2>
+
+<p>ข้อความ <strong>ตัวหนา</strong> และ <em>ตัวเอียง</em></p>
+
+<p>ขึ้นบรรทัดใหม่<br>ด้วย br</p>
+
+<hr>
+
+<pre>
+ข้อความที่ต้องการ
+รักษารูปแบบ
+การเว้นวรรค
+</pre>
+
+</section>
+
+
+<!-- ====================== -->
+<!-- การทดลองที่ 4 -->
+<!-- ====================== -->
+<section id="exp4">
+<h2>การทดลองที่ 4 : ลิงก์และรูปภาพ</h2>
+
+<h3>ลิงก์</h3>
+<a href="#top">ลิงก์ภายในหน้า</a><br>
+<a href="https://google.com" target="_blank">ลิงก์ภายนอก</a><br>
+<a href="mailto:test@email.com">ส่งอีเมล</a>
+
+<h3>รูปภาพ</h3>
+<img src="https://via.placeholder.com/200" alt="sample">
+
+<figure>
+<img src="https://via.placeholder.com/150">
+<figcaption>ตัวอย่างคำอธิบายภาพ</figcaption>
+</figure>
+
+</section>
+
+
+<!-- ====================== -->
+<!-- การทดลองที่ 5 -->
+<!-- ====================== -->
+<section id="exp5">
+<h2>การทดลองที่ 5 : ตารางและรายการ</h2>
+
+<h3>ตาราง</h3>
+<table>
+<tr>
+<th>ชื่อ</th>
+<th>คะแนน</th>
+</tr>
+<tr>
+<td>เอ</td>
+<td>85</td>
+</tr>
+<tr>
+<td>บี</td>
+<td>92</td>
+</tr>
+</table>
+
+<h3>รายการ</h3>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+
+<ol>
+<li>ขั้นตอนที่ 1</li>
+<li>ขั้นตอนที่ 2</li>
+</ol>
+
+<dl>
+<dt>HTML</dt>
+<dd>ภาษาสร้างเว็บ</dd>
+</dl>
+
+</section>
+
+
+<!-- ====================== -->
+<!-- การทดลองที่ 6 -->
+<!-- ====================== -->
+<section id="exp6">
+<h2>การทดลองที่ 6 : ฟอร์ม</h2>
+
+<form>
+
+ชื่อ:
+<input type="text" required><br><br>
+
+อีเมล:
+<input type="email" required><br><br>
+
+วันเกิด:
+<input type="date"><br><br>
+
+เพศ:
+<input type="radio" name="g"> ชาย
+<input type="radio" name="g"> หญิง
+<br><br>
+
+ความสนใจ:
+<input type="checkbox"> กีฬา
+<input type="checkbox"> ดนตรี
+<input type="checkbox"> เทคโนโลยี
+<br><br>
+
+<textarea rows="4" cols="40"></textarea><br><br>
+
+<button type="submit">ส่ง</button>
+<button type="reset">ล้าง</button>
+
+</form>
+
+</section>
+
+
+<!-- ====================== -->
+<!-- การทดลองที่ 7 -->
+<!-- ====================== -->
+<section id="exp7">
+<h2>การทดลองที่ 7 : Semantic Layout</h2>
+
+<header>
+<h3>Header ส่วนหัว</h3>
+</header>
+
+<nav>
+เมนูนำทาง
+</nav>
+
+<main>
+<article>
+<h4>Article</h4>
+<p>เนื้อหาหลัก</p>
+</article>
+
+<aside
