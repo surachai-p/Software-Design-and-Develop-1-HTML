@@ -167,8 +167,118 @@
 ```html
 [วางโค้ด HTML ที่นี่]
 ```
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์ตัวอย่าง</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+    <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+</nav>
+
+<section id="top">
+    <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+    <p>นี่คือตัวอย่างหน้าเว็บที่จัดรูปแบบให้ดูเรียบร้อยมากขึ้น</p>
+</section>
+
+<hr>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+
+    <figure>
+        <img src="images/products/download (11).jpg" width="300">
+        <figcaption>Run Star Hike Canvas Platform
+            3,600.00 THB</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/products/download (12).jpg" width="300">
+        <figcaption>Chuck 70 Canvas
+            3,290.00 THB</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/products/download (13).jpg" width="300">
+        <figcaption>Chuck 70 sneakers
+            3,290.00 THB</figcaption>
+    </figure>
+
+</section>
+
+<hr>
+
+<section>
+    <a href="#top">กลับด้านบน</a> |
+    <a href="#products">ไปยังสินค้า</a>
+</section>
+
+<footer>
+    <p>ติดต่อเรา:</p>
+    <a href="mailto:68030072@kmitl.ac.th">ส่งอีเมล</a> |
+    <a href="tel:+6698647975">โทร 098-647-9715</a> |
+    <a href="files/document.pdf" download>ดาวน์โหลดเอกสาร</a>
+</footer>
+
+</body>
+</html>
+
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![alt text](4.PNG)
 
 
 

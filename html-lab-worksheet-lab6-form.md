@@ -224,10 +224,163 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</title>
+
+
+</head>
+
+<body>
+
+<form action="/register" method="post" enctype="multipart/form-data">
+
+    <!-- ข้อมูลส่วนตัว -->
+    <fieldset>
+        <legend>แบบฟอร์มสมัครสมาชิกออนไลน์</legend>
+
+        <div class="form-group">
+            <label for="firstname">ชื่อ:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="lastname">นามสกุล:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="birthdate">วันเกิด:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label>เพศ:</label>
+            <input type="radio" name="gender" value="male" required> ชาย
+            <input type="radio" name="gender" value="female"> หญิง
+            <span class="required-mark">*</span>
+        </div>
+    </fieldset>
+
+    <!-- ข้อมูลการติดต่อ -->
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        <div class="form-group">
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{10}"
+                   placeholder="กรอกตัวเลข 10 หลัก"
+                   required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="address">ที่อยู่จัดส่ง:</label>
+            <textarea id="address" name="address"
+                      rows="3" required></textarea>
+            <span class="required-mark">*</span>
+        </div>
+    </fieldset>
+
+    <!-- ตั้งค่ารหัสผ่าน -->
+    <fieldset>
+        <legend>ตั้งค่ารหัสผ่าน</legend>
+
+        <div class="form-group">
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password"
+                   minlength="8" maxlength="20"
+                   required>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+            <input type="password" id="confirmPassword"
+                   name="confirmPassword"
+                   minlength="8" maxlength="20"
+                   required>
+            <span class="required-mark">*</span>
+        </div>
+    </fieldset>
+
+    <!-- รูปโปรไฟล์ -->
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <div class="form-group">
+            <label for="profileImage">อัปโหลดรูปภาพ:</label>
+            <input type="file" id="profileImage"
+                   name="profileImage"
+                   accept="image/*"
+                   required>
+            <span class="required-mark">*</span>
+            <small>(ขนาดไม่เกิน 2MB)</small>
+        </div>
+    </fieldset>
+
+    <!-- หมวดหมู่ที่สนใจ -->
+    <fieldset>
+        <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+        <div class="form-group">
+            <input type="checkbox" name="interest" value="fashion"> แฟชั่น
+            <input type="checkbox" name="interest" value="electronics"> อิเล็กทรอนิกส์
+            <input type="checkbox" name="interest" value="beauty"> ความงาม
+            <input type="checkbox" name="interest" value="sport"> กีฬา
+        </div>
+    </fieldset>
+
+    <!-- การยืนยัน -->
+    <fieldset>
+        <legend>การยอมรับเงื่อนไข</legend>
+
+        <div class="form-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">ยอมรับเงื่อนไขการใช้งาน</label>
+            <span class="required-mark">*</span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </fieldset>
+
+</form>
+
+<!-- ตรวจสอบขนาดไฟล์รูปภาพ -->
+<script>
+document.getElementById("profileImage").addEventListener("change", function() {
+    const file = this.files[0];
+    if (file && file.size > 2 * 1024 * 1024) {
+        alert("ไฟล์รูปภาพต้องมีขนาดไม่เกิน 2MB");
+        this.value = "";
+    }
+});
+</script>
+
+</body>
+</html>
+
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+
+![alt text](6.PNG)
 
 
 
