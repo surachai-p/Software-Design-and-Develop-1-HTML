@@ -1,4 +1,4 @@
-# ใบงานการทดลอง HTML
+    # ใบงานการทดลอง HTML
 
 ## จุดประสงค์การเรียนรู้
 1. อธิบายโครงสร้างของ HTML ได้
@@ -75,6 +75,7 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/df95db17-688f-4fd4-a9db-d299601448e5" />
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +114,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[วางโค้ด HTML ที่นี่]<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Sorrawich Somton web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="1821" height="1079" alt="image" src="https://github.com/user-attachments/assets/65223b8c-5b1d-4761-9364-4ff59b5d789c" />
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -150,9 +165,58 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แนะนำตัว</title>
+</head>
+<body>
+
+    <h1>แนะนำตัว</h1>
+
+    <h2>ชื่อ-นามสกุล</h2>
+    <p><strong>นายสรวิชญ์ สมตน</strong></p>
+
+    <h2>ประวัติการศึกษา</h2>
+    <p>จบการศึกษาระดับมัธยมศึกษาปีที่ 6</p>
+
+    <h2>งานอดิเรก</h2>
+    <p>ฟังเพลง และเรียนรู้เทคโนโลยีใหม่ ๆ</p>
+
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>
+        เป้าหมายของฉันคือการเป็น <strong>ครูสอนคอมพิวเตอร์ระดับมัธยมศึกษาตอนปลาย</strong>
+        เพื่อถ่ายทอดความรู้ด้านเทคโนโลยีและการเขียนโปรแกรม<br>
+        และช่วยพัฒนาทักษะดิจิทัลให้กับนักเรียนในอนาคต
+    </p>
+
+    <hr>
+
+    <h3>ทักษะที่สนใจ</h3>
+    <p>HTML, CSS</p>
+
+    <pre>
+รักการเรียนรู้
+พัฒนาตนเองเสมอ
+มุ่งมั่นสู่อนาคต
+    </pre>
+
+</body>
+</html>
+
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+<img width="1919" height="955" alt="image" src="https://github.com/user-attachments/assets/45e1de3e-ceb9-4f83-ba57-a75bbc1105bf" />
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
