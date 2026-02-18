@@ -74,7 +74,7 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+[![alt text](image.png)]
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +113,22 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<html>
+<head>
+    <title>First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Tanatap web page</h1>
+    <p>This is my first web page</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This is strong</strong>
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[[alt text](image-4.png)]
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +161,22 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<html>
+<head>
+    <title>First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Tanatap web page</h1>
+    <p>This is my first web page</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This is strong</strong>
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image.png)]
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +343,59 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+[<DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <section id="top">
+        <h1>รูป</h1>
+    </section>
+
+    <hr>
+
+    <section>
+        <figure>
+            <a href="image/a110s.webp" target="blank">
+                <img src="image/a110s.webp" alt="รูป 1"
+                width="200">
+            </a>
+            <figcaption>Alpine A110</figcaption>
+        </figure>
+
+        <figure>
+            <a href="image/f430.jpg" target="_blank">
+                <img src="image/f430.jpg" alt="รูป 2"
+                width="200">
+            </a>
+            <figcaption>Ferrari F430</figcaption>
+        </figure>
+        <a href="image/f-18-hornet-2657080_640.jpg" target="_blank">
+            <img src="image/f-18-hornet-2657080_640.jpg" alt="รูป 3"
+            width="200">
+        </a>
+        <figcaption>F18 Hornet</figcaption>
+
+        <figure>
+            <a href="image/718f2bc0-db45-11f0-bd60-5332627fd119.jpg" target="_blank">
+                <img src="image/718f2bc0-db45-11f0-bd60-5332627fd119.jpg" alt="รูป 4"
+                width="200">
+            </a>
+        </figure>
+        <figcaption>F1 2026 Conpect</figcaption>
+
+    </section>
+
+    <hr>
+
+    <a href="#top">กลับไป</a>
+    
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-1.png)]
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -391,12 +464,63 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
+[<html>
+    <head>
+        <title>ตารางแสดงข้อมูลส่วนตัว</title>
+
+    </head>
+    <body>
+        <h1>ข้อมูลส่วนตัว</h1>
+        <hr>
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>หัวข้อ</th>
+                <th>รายละเอียด</th>
+            </tr>
+            <tr>
+                <td>ชื่อ-นามสกุล</td>
+                <td>นายธนาเทพ ธีรปกรณ์</td>
+            </tr>
+            <tr>
+                <td>ชื่อเล่น</td>
+                <td>ไอซ์</td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td>19 ปี</td>
+            </tr>
+            <tr>
+                <td>สาขาเรียน</td>
+                <td>สาขาเทคโนโลยีคอมะพิวเตอร์</td>
+            </tr>
+        </table>
+         <hr>
+
+    <h1>รายการเมนูอาหาร</h1>
+
+    <!-- รายการแบบไม่มีลำดับ -->
+    <h2>เมนูแนะนำ</h2>
+    <ul>
+        <li>ข้าวผัดอเมริกัน</li>
+        <li>ต้มยำกุ้ง</li>
+        <li>แกงเขียว</li>
+        <li>ไก่ย่าง</li>
+    </ul>
+
+    <!-- รายการแบบมีลำดับ -->
+    <h2>เมนูขายดี (อันดับ)</h2>
+    <ol>
+        <li>ข้าวมันไก่</li>
+        <li>กระเพราหมูกรอบ</li>
+        <li>ก๋วยเตี๋ยวเรือ</li>
+    </ol>
+    </body>
+</html>]
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-6.png)]
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -621,10 +745,177 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="date"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="reset"] {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h2>
+
+<form>
+
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+
+        ชื่อ-นามสกุล:
+        <input type="text" name="fullname" required>
+
+        วันเกิด:
+        <input type="date" name="birthdate" required>
+
+        เพศ:
+        <input type="radio" name="gender" value="male" required> ชาย
+        <input type="radio" name="gender" value="female"> หญิง
+        <input type="radio" name="gender" value="other"> อื่น ๆ
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        อีเมล:
+        <input type="email" name="email" required>
+
+        เบอร์โทร (10 หลัก):
+        <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+
+        ที่อยู่จัดส่ง:
+        <textarea name="address" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>รหัสผ่าน</legend>
+
+        รหัสผ่าน (อย่างน้อย 8 ตัวอักษร):
+        <input type="password" name="password" minlength="8" required>
+
+        ยืนยันรหัสผ่าน:
+        <input type="password" name="confirm_password" minlength="8" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <input type="file" name="profile" accept="image/*" required>
+        <small>หมายเหตุ: ควรมีขนาดไม่เกิน 2MB</small>
+    </fieldset>
+
+    <fieldset>
+        <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+        <input type="checkbox" name="interest" value="fashion"> เสื้อผ้า<br>
+        <input type="checkbox" name="interest" value="electronics"> อุปกรณ์อิเล็กทรอนิกส์<br>
+        <input type="checkbox" name="interest" value="cosmetics"> เครื่องสำอาง<br>
+        <input type="checkbox" name="interest" value="books"> หนังสือ
+    </fieldset>
+
+    <input type="checkbox" name="terms" required>
+    ฉันยอมรับเงื่อนไขการใช้งาน
+    <br><br>
+
+    <input type="submit" value="สมัครสมาชิก">
+    <input type="reset" value="ล้างข้อมูล">
+
+</form>
+
+</div>
+
+</body>
+</html>]
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image-2.png)
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -712,5 +1003,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](image-9.png)
 

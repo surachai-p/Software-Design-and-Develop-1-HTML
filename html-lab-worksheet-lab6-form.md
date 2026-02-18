@@ -222,12 +222,182 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 500px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            border-radius: 6px;
+            padding: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="date"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="reset"] {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h2>
+
+<form>
+
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+
+        ชื่อ-นามสกุล:
+        <input type="text" name="fullname" required>
+
+        วันเกิด:
+        <input type="date" name="birthdate" required>
+
+        เพศ:
+        <input type="radio" name="gender" value="male" required> ชาย
+        <input type="radio" name="gender" value="female"> หญิง
+        <input type="radio" name="gender" value="other"> อื่น ๆ
+    </fieldset>
+
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        อีเมล:
+        <input type="email" name="email" required>
+
+        เบอร์โทร (10 หลัก):
+        <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+
+        ที่อยู่จัดส่ง:
+        <textarea name="address" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>รหัสผ่าน</legend>
+
+        รหัสผ่าน (อย่างน้อย 8 ตัวอักษร):
+        <input type="password" name="password" minlength="8" required>
+
+        ยืนยันรหัสผ่าน:
+        <input type="password" name="confirm_password" minlength="8" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <input type="file" name="profile" accept="image/*" required>
+        <small>หมายเหตุ: ควรมีขนาดไม่เกิน 2MB</small>
+    </fieldset>
+
+    <fieldset>
+        <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+        <input type="checkbox" name="interest" value="fashion"> เสื้อผ้า<br>
+        <input type="checkbox" name="interest" value="electronics"> อุปกรณ์อิเล็กทรอนิกส์<br>
+        <input type="checkbox" name="interest" value="cosmetics"> เครื่องสำอาง<br>
+        <input type="checkbox" name="interest" value="books"> หนังสือ
+    </fieldset>
+
+    <input type="checkbox" name="terms" required>
+    ฉันยอมรับเงื่อนไขการใช้งาน
+    <br><br>
+
+    <input type="submit" value="สมัครสมาชิก">
+    <input type="reset" value="ล้างข้อมูล">
+
+</form>
+
+</div>
+
+</body>
+</html>
+
+]
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image-2.png)
+
 
 
 
