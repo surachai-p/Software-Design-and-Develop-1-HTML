@@ -165,10 +165,77 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก - ศุภโชค (Pokoman)</title>
+</head>
+<body>
+
+    <section id="top">
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของศุภโชค</h1>
+    </section>
+
+    <nav>
+        <a href="index.html">หน้าหลัก</a> | 
+        <a href="pages/about.html">เกี่ยวกับเรา</a> | 
+        <a href="pages/contact.html">ติดต่อเรา</a> | 
+        <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <h2>แนะนำตัวเบื้องต้น</h2>
+        <p>ผมชื่อ <strong>ศุภโชค หอมสมบัติ</strong> นักศึกษาจาก KMITL ครับ</p>
+        
+        <p>นี่คือโลโก้ประจำตัวของผม:</p>
+        <img src="images/logo.jpg" alt="โลโก้ของศุภโชค" width="200">
+
+        <hr>
+
+        <section id="products">
+            <h2>ผลงานของผม</h2>
+            <div style="display: flex; gap: 20px;">
+                <figure>
+                    <a href="images/products/product1.jpg" target="_blank">
+                        <img src="images/products/product1.jpg" alt="โมเดลเรือบด" width="300">
+                    </a>
+                    <figcaption>รูปที่ 1: โมเดลเรือบดจิ๋ว (คลิกเพื่อขยาย)</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/products/product2.jpg" alt="โปรเจกต์ Smart Farm" width="300">
+                    <figcaption>รูปที่ 2: ระบบควบคุม Smart Farm</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact-links">
+            <h2>ติดต่อและดาวน์โหลด</h2>
+            <ul>
+                <li>ส่งอีเมลหาผม: <a href="mailto:contact@example.com">contact@example.com</a></li>
+                <li>โทรศัพท์: <a href="tel:+66812345678">081-234-5678</a></li>
+                <li>ดาวน์โหลด Resume: <a href="files/document.pdf" download>คลิกเพื่อดาวน์โหลด PDF</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <a href="#top">กลับด้านบน</a>
+        <p>© 2026 Supachok Homsombat - Computer Technology, KMITL</p>
+    </footer>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[/LAB4/LAB4.png]
 
 
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การทดลองที่ 7: HTML Layout</title>
+    <style>
+        /* ตกแต่งเบื้องต้นเพื่อให้เห็น Layout ชัดเจน */
+        body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        header { background: #333; color: white; padding: 1rem; text-align: center; }
+        nav ul { background: #444; padding: 0; list-style: none; display: flex; justify-content: center; }
+        nav a { color: white; padding: 15px 20px; display: block; text-decoration: none; }
+        nav a:hover { background: #555; }
+        main { display: flex; padding: 20px; gap: 20px; }
+        article { flex: 3; background: #f4f4f4; padding: 15px; border-radius: 5px; }
+        aside { flex: 1; background: #e2e2e2; padding: 15px; border-radius: 5px; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; }
+        
+        /* Responsive เบื้องต้น */
+        @media (max-width: 600px) {
+            main { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pokoman Photography Studio</h1>
+        <p>บันทึกทุกความทรงจำผ่านเลนส์</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="#gallery">ผลงาน</a></li>
+            <li><a href="#about">เกี่ยวกับเรา</a></li>
+            <li><a href="pages/contact.html">ติดต่อสอบถาม</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="gallery">
+            <h2>ศิลปะการถ่ายภาพ Landscape</h2>
+            <p>การถ่ายภาพวิวทิวทัศน์ไม่ใช่แค่การกดชัตเตอร์ แต่คือการรอคอยแสงและจังหวะที่เหมาะสม...</p>
+            <p>ในฐานะช่างภาพเหรียญทอง ผมให้ความสำคัญกับองค์ประกอบศิลป์ (Composition) เป็นอย่างมาก</p>
+            
+            <section>
+                <h3>เทคนิคการจัดองค์ประกอบ</h3>
+                <p>เรามักใช้กฎสามส่วน (Rule of Thirds) เพื่อสร้างจุดดึงดูดสายตาในภาพ</p>
+            </section>
+        </article>
+
+        <aside>
+            <h3>เพจที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="https://facebook.com/hiw.makmakkub" target="_blank">hiw.makmakkub</a></li>
+                <li><a href="#">อุปกรณ์ถ่ายภาพ</a></li>
+                <li><a href="#">เทคนิคตัดต่อวิดีโอ</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>ลิขสิทธิ์ © 2026 Supachok Homsombat - Computer Technology, KMITL</p>
+    </footer>
+
+</body>
+</html>
