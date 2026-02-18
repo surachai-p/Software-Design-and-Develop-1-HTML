@@ -224,7 +224,88 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ลงทะเบียนนักศึกษา</title>
+    <style>
+        .form-group { margin-bottom: 15px; }
+        .required-mark { color: red; margin-left: 5px; }
+        fieldset { margin-bottom: 20px; padding: 15px; border-radius: 8px; border: 1px solid #ccc; }
+        legend { font-weight: bold; padding: 0 10px; }
+    </style>
+</head>
+<body>
+    <h2>แบบฟอร์มลงทะเบียนนักศึกษา</h2>
+    <form action="/register" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="studentId">รหัสนักศึกษา:</label>
+                <input type="text" id="studentId" name="studentId" pattern="[0-9]{8}" placeholder="เช่น 66010001" required>
+            </div>
+            <div class="form-group">
+                <label for="prefix">คำนำหน้า:</label>
+                <select id="prefix" name="prefix" required>
+                    <option value="">เลือกคำนำหน้า</option>
+                    <option value="mr">นาย</option>
+                    <option value="ms">นางสาว</option>
+                    <option value="mrs">นาง</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName" style="margin-left: 10px;">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required> <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female"> <label for="female">หญิง</label>
+            </div>
+        </fieldset>
 
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="08XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="address">ที่อยู่:</label><span class="required-mark">*</span><br>
+                <textarea id="address" name="address" rows="3" style="width: 100%;" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>เอกสารประกอบ</legend>
+            <div class="form-group">
+                <label for="photo">รูปถ่าย:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">ข้าพเจ้ายืนยันว่าข้อมูลทั้งหมดเป็นความจริง</label>
+        </div>
+
+        <button type="submit">ลงทะเบียน</button>
+        <button type="reset">ล้างข้อมูล</button>
+    </form>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
