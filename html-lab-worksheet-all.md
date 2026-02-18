@@ -10,7 +10,6 @@
 2. Web Browser 
 3. Extension Live Server
 
-
 ## การทดลองที่ 1: การติดตั้งและเตรียมเครื่องมือ
 
 ### ขั้นตอนที่ 1: การติดตั้ง Visual Studio Code
