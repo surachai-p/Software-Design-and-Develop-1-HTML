@@ -68,8 +68,70 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>การทดลองที่ 5: ตารางและรายการ</title>
+</head>
+<body>
 
+    <h1>1. ข้อมูลส่วนตัว</h1>
+    
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>รายละเอียด</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>ชื่อ-นามสกุล</strong></td>
+                <td>นายจิตรเทพ พะชำนิ</td>
+            </tr>
+            <tr>
+                <td><strong>รหัสนักศึกษา</strong></td>
+                <td>68030040</td>
+            </tr>
+            <tr>
+                <td><strong>สาขาวิชา</strong></td>
+                <td>เทคโนโลคอมพิวเตอร์</td>
+            </tr>
+            <tr>
+                <td><strong>อีเมล</strong></td>
+                <td>68030040@kmitl.ac.th</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>2. รายการเมนูอาหาร</h1>
+
+    <h3> 3 อันดับเมนูแนะนำ </h3>
+    <ol>
+        <li>ข้าวกะเพราหมูสับไข่ดาว</li>
+        <li>ต้มยำกุ้งน้ำข้น</li>
+        <li>หมูทอดกระเทียม</li>
+    </ol>
+
+    <h3>เลือกท็อปปิ้งเพิ่มเติม</h3>
+    <ul>
+        <li>ไข่ดาว</li>
+        <li>ไข่เจียว</li>
+        <li>กุนเชียง</li>
+    </ul>
+
+    <h3>รายละเอียดเมนูพิเศษ</h3>
+    <dl>
+        <dt><strong>แกงเขียวหวาน</strong></dt> <dd>- รสชาติกลมกล่อม หอมกะทิและเครื่องแกง</dd> <dt><strong>ส้มตำไทย</strong></dt>
+        <dd>- รสชาติเปรี้ยวหวาน เผ็ดกำลังดี ใส่ถั่วลิสงคั่วใหม่ๆ</dd>
+    </dl>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![ผลการทดลองที่ 5](images/image-4.png)
 
