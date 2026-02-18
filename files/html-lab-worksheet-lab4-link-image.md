@@ -165,10 +165,86 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ร้านค้า</title>
+</head>
+
+<body>
+<nav>
+    <a href="../index.html">หน้าหลัก</a>
+</nav>
+    <h1>ร้านค้า</h1>
+
+    <!-- สินค้าชิ้นที่ 1 -->
+   <figure>
+    <a href="../images/gallery/banana.jpg">
+    <img src="../images/gallery/banana.jpg"
+         alt="รูปภาพกล้วย">
+    </a>
+
+    <figcaption>
+        กล้วย (Banana) ผลไม้ที่มีรสหวานและเนื้อสัมผัสนุ่ม มักใช้ในการทำขนมและเครื่องดื่มต่าง ๆ
+    </figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- สินค้าชิ้นที่ 2 -->
+    <figure>
+    <a href="../images/gallery/Doraemon.png">
+    <img src="../images/gallery/Doraemon.png" 
+         alt="รูปภาพโดราเอม่อน">
+    </a>
+
+    <figcaption>
+        โดราเอม่อน (Doraemon) ตัวละครในนิยายการ์ตูนญี่ปุ่น ที่มีความสามารถพิเศษมากมาย
+    </figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- สินค้าชิ้นที่ 3 -->
+    <figure>
+    <a href="../images/gallery/manface-shirt.jpg">
+    <img src="../images/gallery/manface-shirt.jpg"
+        width="280"
+        height="300"
+         alt="รูปภาพเสื้อผ้าหน้าหล่อ">
+    </a>
+
+    <figcaption>
+        เสื้อผ้าหน้าหล่อ (Manface Shirt) ชุดเสื้อผ้าที่มีลวดลายหน้าหล่อ ใช้สำหรับแต่งตัวในวันพิเศษ
+    </figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- สินค้าชิ้นที่ 4 -->
+    <figure>
+    <a href="../images/gallery/suit.jpg">
+    <img src="../images/gallery/suit.jpg"
+        width="280"
+        height="380"
+         alt="รูปภาพชุดสูท">
+    </a>
+
+    <figcaption>
+        ชุดสูท (Suit) ชุดเสื้อผ้าที่มีลวดลายหรือสีสันสวยงาม ใช้สำหรับแต่งตัวในโอกาสพิเศษ
+    </figcaption>
+    </figure>
+
+</body>
+
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](../images/screenshots/lab4-1.png)
+![alt text](../images/screenshots/lab4-2.png)
+![alt text](../images/screenshots/lab4-3.png)
 
 
 
