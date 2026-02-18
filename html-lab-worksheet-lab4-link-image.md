@@ -166,9 +166,223 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>WELLCOME MATCHA SHOP BY SASITORN</title>
+
+</head>
+
+
+<body>
+
+
+<!-- จุดบนสุด -->
+
+<section id="top">
+
+<h1>🍵 WELLCOME MATCHA SHOP BY SASITORN</h1>
+
+</section>
+
+
+
+<!-- เมนู -->
+
+<nav>
+
+<a href="index.html">หน้าหลัก</a> |
+
+<a href="pages/about.html">เกี่ยวกับเรา</a> |
+
+<a href="pages/contact.html">ติดต่อเรา</a> |
+
+<a href="https://www.google.com" target="_blank">
+
+Google
+
+</a>
+
+</nav>
+
+
+<hr>
+
+<h2>ร้านมัทฉะของศศิธร</h2>
+
+<img src="images/logo.png"
+
+alt="โลโก้"
+
+width="200">
+
+
+<hr>
+
+
+<section id="products">
+
+<h2>สินค้า</h2>
+
+
+<figure>
+
+<a href="images/products/product1.jpg">
+
+<img src="images/products/product1.jpg"
+
+width="300">
+
+</a>
+
+
+<figcaption>
+
+MATCHA 
+
+</figcaption>
+
+
+</figure>
+
+
+</section>
+
+
+
+<hr>
+
+
+
+<h2>แกลเลอรีสินค้าของเรา</h2>
+
+
+<figure>
+
+<a href="images/gallery/g1.jpg">
+
+<img src="images/gallery/g1.jpg"
+
+width="200">
+
+</a>
+
+</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+<a href="images/gallery/g2.jpg">
+
+<img src="images/gallery/g2.jpg"
+
+width="200">
+
+</a>
+
+
+</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+<a href="images/gallery/g3.jpg">
+
+<img src="images/gallery/g3.jpg"
+
+width="200">
+
+</a>
+
+
+</figcaption>
+
+</figure>
+
+
+
+<figure>
+
+<a href="images/gallery/g4.jpg">
+
+<img src="images/gallery/g4.jpg"
+
+width="200">
+
+</a>
+
+<figcaption>
+
+</figure>
+
+
+
+<hr>
+
+
+
+<h2>ติดต่อเรา</h2>
+
+
+<a href="GMAIL: 68030275@kmitl.ac.th">
+
+เมลร้าน
+
+</a>
+
+
+<br><br>
+
+
+<a href="tel:0812345678">
+
+เบอร์ร้าน
+
+</a>
+
+
+<br><br>
+
+
+<a href="files/document.pdf"
+
+download>
+
+ดาวน์โหลดเอกสาร
+
+</a>
+
+
+<hr>
+
+
+<a href="#top">
+
+⬆ กลับด้านบน
+
+</a>
+
+
+
+</body>
+
+
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+<img width="1574" height="1297" alt="Screenshot 2026-02-19 012449" src="https://github.com/user-attachments/assets/671b7939-5e0d-4385-9553-b2ae8d95b914" />
+<img width="2215" height="1600" alt="image" src="https://github.com/user-attachments/assets/66989dd8-a0b3-4dc4-a372-7a7444358b9a" />
 
 
