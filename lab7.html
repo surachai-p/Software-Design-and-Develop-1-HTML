@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>การทดลองที่ 7 : HTML Layout</title>
+
+    <style>
+        /* Reset */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Tahoma, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        /* Header */
+        header{
+            background:#2c3e50;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        /* Navigation */
+        nav{
+            background:#34495e;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+        }
+
+        nav ul li{
+            padding:15px 20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li:hover{
+            background:#2c3e50;
+        }
+
+        /* Layout */
+        main{
+            display:flex;
+            gap:20px;
+            padding:20px;
+        }
+
+        article{
+            flex:3;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        aside{
+            flex:1;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        section{
+            margin-top:15px;
+        }
+
+        /* Footer */
+        footer{
+            text-align:center;
+            background:#2c3e50;
+            color:white;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            main{
+                flex-direction:column;
+            }
+
+            nav ul{
+                flex-direction:column;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ส่วนหัวเว็บไซต์ -->
+    <header>
+        <h1>เว็บไซต์ตัวอย่าง HTML Layout</h1>
+        <p>การทดลองใช้ Semantic Elements</p>
+    </header>
+
+    <!-- เมนูนำทาง -->
+    <nav>
+        <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">บทความ</a></li>
+            <li><a href="#">เกี่ยวกับ</a></li>
+            <li><a href="#">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <!-- เนื้อหาหลัก -->
+    <main>
+
+        <!-- บทความ -->
+        <article>
+            <h2>บทความหลัก</h2>
+            <p>
+                นี่คือส่วนของเนื้อหาหลักของเว็บไซต์ ซึ่งใช้แท็ก article
+                เพื่อแสดงเนื้อหาที่สามารถอ่านแยกออกจากส่วนอื่นได้
+            </p>
+
+            <section>
+                <h3>หัวข้อย่อย</h3>
+                <p>
+                    section ใช้แบ่งเนื้อหาที่เกี่ยวข้องกัน
+                    เพื่อให้โครงสร้างเว็บชัดเจนและเป็นระเบียบ
+                </p>
+            </section>
+
+            <section>
+                <h3>ประโยชน์ของ Semantic</h3>
+                <p>
+                    ช่วยให้ Search Engine เข้าใจโครงสร้างเว็บ
+                    และช่วยให้ Screen Reader อ่านข้อมูลได้ถูกต้อง
+                </p>
+            </section>
+        </article>
+
+        <!-- เนื้อหาด้านข้าง -->
+        <aside>
+            <h3>บทความแนะนำ</h3>
+            <ul>
+                <li>HTML เบื้องต้น</li>
+                <li>CSS Layout</li>
+                <li>Responsive Design</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- ส่วนท้าย -->
+    <footer>
+        <p>จัดทำโดย : (Titikarn Rattanaiem)</p>
+    </footer>
+
+</body>
+</html>
