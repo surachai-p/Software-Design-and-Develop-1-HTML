@@ -224,10 +224,88 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<form action="#" method="post" enctype="multipart/form-data">
 
+    <h3>ข้อมูลส่วนตัว</h3>
+
+    <label>ชื่อ-นามสกุล:</label><br>
+    <input type="text" name="fullname" required><br><br>
+
+    <label>วันเกิด:</label><br>
+    <input type="date" name="birthdate" required><br><br>
+
+    <label>เพศ:</label><br>
+    <input type="radio" name="gender" value="ชาย" required> ชาย
+    <input type="radio" name="gender" value="หญิง"> หญิง
+    <input type="radio" name="gender" value="อื่นๆ"> อื่นๆ
+    <br><br>
+
+    <hr>
+
+    <h3>ข้อมูลการติดต่อ</h3>
+
+    <label>อีเมล:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>เบอร์โทร:</label><br>
+    <input type="tel" name="phone"
+           pattern="[0-9]{10}"
+           placeholder="กรอกเบอร์ 10 หลัก"
+           required>
+    <br><br>
+
+    <label>ที่อยู่จัดส่ง:</label><br>
+    <textarea name="address" rows="3" required></textarea>
+    <br><br>
+
+    <hr>
+
+    <h3>รูปโปรไฟล์</h3>
+
+    <input type="file" name="profile"
+           accept="image/*"
+           required>
+            <small>ขนาดไฟล์ไม่เกิน 5MB</small>
+    <br><br>
+
+    <hr>
+
+
+    <h3>ตั้งรหัสผ่าน</h3>
+
+    <label>รหัสผ่าน:</label><br>
+    <input type="password" name="password"
+           minlength="6"
+           required>
+    <br><br>
+
+    <label>ยืนยันรหัสผ่าน:</label><br>
+    <input type="password" name="confirm_password"
+           minlength="6"
+           required>
+    <br><br>
+
+    <hr>
+
+
+<h3>ความสนใจในหมวดหมู่สินค้า</h3>
+
+    <input type="checkbox" name="interest" value="อุปกรณ์คอมพิวเตอร์"> อุปกรณ์คอมพิวเตอร์<br>
+    <input type="checkbox" name="interest" value="เกมมิ่งเกียร์"> เกมมิ่งเกียร์ (Gaming Gear)<br>
+    <input type="checkbox" name="interest" value="วงจรอิเล็กทรอนิกส์"> วงจรอิเล็กทรอนิกส์<br>
+    <input type="checkbox" name="interest" value="หนังสือโปรแกรมมิ่ง"> หนังสือเขียนโปรแกรม<br><br>
+
+    <input type="checkbox" required>
+    ฉันยอมรับเงื่อนไขการใช้งาน
+    <br><br>
+
+    <button type="submit">สมัครสมาชิก</button>
+    <button type="reset">ล้างข้อมูล</button>
+
+</form>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab6](lab-result/Lab6.png)
 
 
 
