@@ -35,10 +35,27 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Chitsanupat's web page </h1>
+    This is my first web page.
+    <div>
+        This is a block element
+        <span>This is an inline element This text is emphasized 
+            <strong> This text is strong </strong>
+        </span>
+    </div>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![วางภาพ screenshot ที่นี่](image-2.png)
 
 
 

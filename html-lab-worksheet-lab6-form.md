@@ -224,10 +224,142 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
-
+    <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มสมัครสมาชิก</title>
+</head>
+<body>
+    <h1>แบบฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h1>
+    
+    <form action="/register" method="post" enctype="multipart/form-data" onsubmit="validateForm(event)">
+    
+        <h2>ข้อมูลส่วนตัว</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label for="firstName">ชื่อ *</label></td>
+                <td><input type="text" id="firstName" name="firstName" placeholder="กรุณากรอกชื่อ" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">นามสกุล *</label></td>
+                <td><input type="text" id="lastName" name="lastName" placeholder="กรุณากรอกนามสกุล" required></td>
+            </tr>
+            <tr>
+                <td><label for="birthdate">วันเกิด *</label></td>
+                <td><input type="date" id="birthdate" name="birthdate" required></td>
+            </tr>
+            <tr>
+                <td><label>เพศ *</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required> <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="female"> <label for="female">หญิง</label>
+                    <input type="radio" id="other" name="gender" value="other"> <label for="other">อื่น ๆ</label>
+                </td>
+            </tr>
+        </table>
+    
+        <h2>ข้อมูลการติดต่อ</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label for="email">อีเมล *</label></td>
+                <td><input type="email" id="email" name="email" placeholder="example@email.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">เบอร์โทรศัพท์ *</label></td>
+                <td><input type="tel" id="phone" name="phone" placeholder="0812345678" pattern="0[0-9]{9}" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">ที่อยู่จัดส่ง *</label></td>
+                <td><textarea id="address" name="address" rows="4" cols="30" placeholder="กรุณากรอกที่อยู่เต็มที่" required></textarea></td>
+            </tr>
+        </table>
+    
+        <h2>รูปโปรไฟล์</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label for="profile_pic">อัพโหลดรูปโปรไฟล์ *</label></td>
+                <td>
+                    <input type="file" id="profile_pic" name="profile_pic" accept="image/*" required onchange="validateImageFile(this)">
+                    <br><small>รองรับไฟล์: JPG, PNG, GIF (ขนาดสูงสุด 5 MB)</small>
+                    <div id="profile_pic_error" style="color: red; display: none;"></div>
+                </td>
+            </tr>
+        </table>
+    
+        <h2>รหัสผ่าน</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label for="password">รหัสผ่าน *</label></td>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="กรุณากรอกรหัสผ่าน" minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$" required onkeyup="validatePassword(this)">
+                    <br><small>ต้องมีอย่างน้อย 8 ตัวอักษร, ตัวพิมพ์เล็ก, ตัวพิมพ์ใหญ่, และตัวเลข</small>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="confirm_password">ยืนยันรหัสผ่าน *</label></td>
+                <td>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="กรุณากรอกรหัสผ่านอีกครั้ง" required onkeyup="comparePasswords()">
+                    <div id="password_match_error" style="color: red; display: none;"></div>
+                </td>
+            </tr>
+        </table>
+    
+        <h2>ความสนใจในหมวดหมู่สินค้า</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label>เลือกหมวดหมู่ที่คุณสนใจ *</label></td>
+                <td>
+                    <input type="checkbox" name="categories" value="electronics"> อุปกรณ์อิเล็กทรอนิกส์
+                    <br><input type="checkbox" name="categories" value="fashion"> แฟชั่นและเสื้อผ้า
+                    <br><input type="checkbox" name="categories" value="home"> สินค้าเพื่อบ้านและครอบครัว
+                    <br><input type="checkbox" name="categories" value="sports"> กีฬาและสุขภาพ
+                    <br><input type="checkbox" name="categories" value="books"> หนังสือและการศึกษา
+                    <br><input type="checkbox" name="categories" value="food"> อาหารและเครื่องดื่ม
+                    <div id="categories_error" style="color: red; display: none;"></div>
+                </td>
+            </tr>
+        </table>
+    
+        <h2>เงื่อนไขการใช้งาน</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label>การยอมรับ *</label></td>
+                <td>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">ฉันยอมรับ<a href="#" target="_blank"> เงื่อนไขการใช้งาน</a>และ<a href="#" target="_blank"> นโยบายความเป็นส่วนตัว</a></label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>ข้อมูลข่าวสาร</label></td>
+                <td>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">ฉันต้องการรับข้อมูลข่าวสารและสิ่งโปรโมชั่นจากบริษัท</label>
+                </td>
+            </tr>
+        </table>
+    
+        <h2>ส่งแบบฟอร์ม</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <td colspan="2">
+                    <button type="submit">สมัครสมาชิก</button>
+                    <button type="reset">ล้างข้อมูล</button>
+                </td>
+            </tr>
+        </table>
+    
+    </form>
+    
+   
+        
+        
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image-5.png)
 
 
 
