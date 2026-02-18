@@ -1,0 +1,244 @@
+# ใบงานการทดลอง HTML
+
+## การทดลองที่ 7: HTML Layout
+### วัตถุประสงค์
+- จัดวางองค์ประกอบในหน้าเว็บได้
+- ใช้ semantic elements
+- สร้าง responsive layout ได้
+
+### ขั้นตอนการทดลอง
+1. เรียนรู้ semantic elements:
+semantic elements คือ elements ใน HTML5 ที่มีความหมายในตัวเอง ช่วยอธิบายโครงสร้างและความหมายของเนื้อหาในหน้าเว็บ
+    ตัวอย่าง Semantic Elements หลักๆ:
+
+```html
+<header>      <!-- ส่วนหัวของหน้าเว็บหรือส่วน -->
+<nav>         <!-- ส่วนเมนูนำทาง -->
+<main>        <!-- เนื้อหาหลักของหน้าเว็บ -->
+<article>     <!-- เนื้อหาที่เป็นบทความ สามารถแยกออกมาอ่านเดี่ยวๆ ได้ -->
+<section>     <!-- ส่วนของเนื้อหาที่เกี่ยวข้องกัน -->
+<aside>       <!-- เนื้อหาที่เกี่ยวข้องแต่ไม่ใช่เนื้อหาหลัก -->
+<footer>      <!-- ส่วนท้ายของหน้าเว็บหรือส่วน -->
+```
+
+### ข้อดีของการใช้ Semantic Elements:
+
+
+### SEO (Search Engine Optimization):
+
+```html 
+<!-- แบบไม่ใช้ Semantic -->
+<div class="header">
+    <div class="nav">...</div>
+</div>
+
+<!-- แบบใช้ Semantic - Search Engine เข้าใจโครงสร้างได้ดีกว่า -->
+<header>
+    <nav>...</nav>
+</header>
+```
+
+### Accessibility:
+
+```html
+<!-- Screen reader จะอ่านและเข้าใจโครงสร้างได้ดีขึ้น -->
+<main>
+    <article>
+        <h1>หัวข้อบทความ</h1>
+        <p>เนื้อหา...</p>
+    </article>
+</main>
+```
+### ตัวอย่างการใช้งาน
+```html
+<body>
+    <header>
+        <h1>ชื่อเว็บไซต์</h1>
+        <nav>
+            <ul>
+                <li><a href="/">หน้าแรก</a></li>
+                <li><a href="/about">เกี่ยวกับเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>บทความที่ 1</h2>
+            <p>เนื้อหาบทความ...</p>
+        </article>
+
+        <aside>
+            <h3>บทความที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="#">บทความอื่น 1</a></li>
+                <li><a href="#">บทความอื่น 2</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>ลิขสิทธิ์ © 2024</p>
+    </footer>
+</body>
+```
+
+
+### บันทึกผลการทดลอง
+```html
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* ทำให้ footer ลงล่างเสมอ */
+            background-color: #f5f6fa;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4e73df, #1cc88a);
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            flex: 1;
+            /* ดัน footer ลงล่าง */
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            /* max-width: 1100px;
+            margin: auto; */
+        }
+
+        article {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article h2 {
+            margin-top: 0;
+        }
+
+        aside {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #2e2e2e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>เว็บไซต์ตัวอย่าง</h1>
+        <nav>
+            <ul>
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+                <li><a href="#">บริการ</a></li>
+                <li><a href="#">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>บทความหลัก</h2>
+            <p>
+                นี่คือเนื้อหาหลักของเว็บไซต์ ใช้ semantic elements
+                เพื่อช่วยให้โครงสร้างชัดเจนและเหมาะกับ SEO
+            </p>
+
+            <section>
+                <h3>หัวข้อย่อย</h3>
+                <p>
+                    Layout นี้ใช้ Flexbox ทำให้จัดตำแหน่งง่าย
+                    และสามารถ Responsive ได้อัตโนมัติ
+                </p>
+            </section>
+        </article>
+
+        <aside>
+            <h3>ข่าวที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="#">บทความแนะนำ 1</a></li>
+                <li><a href="#">บทความแนะนำ 2</a></li>
+                <li><a href="#">บทความแนะนำ 3</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>ลิขสิทธิ์ © 2024 MangoSite.com</p>
+    </footer>
+
+</body>
+
+</html>
+```
+![alt text](image.png)
