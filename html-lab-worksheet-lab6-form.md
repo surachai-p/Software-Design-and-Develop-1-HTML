@@ -222,6 +222,7 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
+```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -449,11 +450,9 @@
     </script>
 </body>
 </html>
-```html
-
 ```
 - ภาพผลลัพธ์:
-<img width="727" height="905" alt="Screenshot 2026-02-18 144018" src="https://github.com/user-attachments/assets/3f1ce31d-dd28-474d-a9eb-17252d379fc8" />
+ <img width="727" height="905" alt="Screenshot 2026-02-18 144018" src="https://github.com/user-attachments/assets/3f1ce31d-dd28-474d-a9eb-17252d379fc8" />
 
 
 <img width="801" height="825" alt="Screenshot 2026-02-18 144039" src="https://github.com/user-attachments/assets/fcd07f6c-0bd9-4519-87f8-f4d7804e0e36" />
