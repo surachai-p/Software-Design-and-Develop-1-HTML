@@ -36,9 +36,30 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ทีฆทัศน์ พินิจทรัพย์ web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>
+
+    <nav>
+        <a href="lab2-basicHTML.html">หน้าหลัก</a>
+        <a href="lab4-link-image.html">เกี่ยวกับเรา</a>
+        <a href="lab4-link-image.html">ติดต่อเรา</a>
+        <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+    </nav>
+</body>
+</html>
+
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](image-1.png)
 
 
