@@ -222,12 +222,14 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+(http://127.0.0.1:5500/Lab6.html)
 ```html
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+
+<img width="1696" height="873" alt="image" src="https://github.com/user-attachments/assets/73140fa7-a969-4237-a04e-a2ac5053af85" />
 
 

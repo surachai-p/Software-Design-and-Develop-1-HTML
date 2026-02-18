@@ -35,10 +35,11 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+http://127.0.0.1:5500/index.html
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
 
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/353bac6e-4445-4972-b1ad-983c55f95104" />
 

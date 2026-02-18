@@ -66,10 +66,11 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
+(http://127.0.0.1:5500/tablelist.html)
 ```html
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+<img width="1919" height="1020" alt="image" src="https://github.com/user-attachments/assets/229cec2a-7fa6-49f1-9a94-1fd83178793d" />

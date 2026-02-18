@@ -31,9 +31,10 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+http://127.0.0.1:5500/LAB3.html
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
 
+<img width="1828" height="817" alt="image" src="https://github.com/user-attachments/assets/3afbbf74-96d4-4ca1-a057-cac44f984112" />
 
