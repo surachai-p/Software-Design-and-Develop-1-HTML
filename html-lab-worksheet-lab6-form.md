@@ -224,10 +224,115 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิก - ร้านค้าออนไลน์</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 20px auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: inline-block; width: 150px; vertical-align: top; }
+        input[type="radio"], input[type="checkbox"] { width: auto; margin-right: 5px; }
+        .hint { font-size: 0.8em; color: gray; }
+        button { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button[type="reset"] { background-color: #f44336; }
+    </style>
+</head>
+<body>
 
+    <h1>สมัครสมาชิกร้านค้าออนไลน์</h1>
+
+    <form action="/submit-register" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            
+            <div class="form-group">
+                <label for="fullname">ชื่อ-นามสกุล:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="สมชาย ใจเลว">
+            </div>
+
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required> <label style="width:auto" for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female"> <label style="width:auto" for="female">หญิง</label>
+                <input type="radio" id="other" name="gender" value="other"> <label style="width:auto" for="other">อื่นๆ</label>
+            </div>
+
+            <div class="form-group">
+                <label for="profile_pic">รูปโปรไฟล์:</label>
+                <input type="file" id="profile_pic" name="profile_pic" accept="image/*">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลบัญชี</legend>
+
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required placeholder="user@example.com">
+                <div class="hint">* ระบบจะตรวจสอบรูปแบบอีเมลให้อัตโนมัติ</div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <div class="hint">* ต้องมีความยาวอย่างน้อย 8 ตัวอักษร</div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm_password">ยืนยันรหัสผ่าน:</label>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0812345678" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>เพิ่มเติม</legend>
+
+            <div class="form-group">
+                <label>สนใจสินค้าหมวด:</label><br>
+                <input type="checkbox" id="cat1" name="interest" value="electronics"> <label style="width:auto" for="cat1">อุปกรณ์ไอที</label><br>
+                <input type="checkbox" id="cat2" name="interest" value="clothing"> <label style="width:auto" for="cat2">เสื้อผ้าแฟชั่น</label><br>
+                <input type="checkbox" id="cat3" name="interest" value="home"> <label style="width:auto" for="cat3">ของใช้ในบ้าน</label>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label style="width:auto; color:red;" for="terms">
+                    ฉันยอมรับเงื่อนไขการใช้งานและนโยบายความเป็นส่วนตัว *
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">ลงทะเบียนสมาชิก</button>
+                <button type="reset">ล้างค่า</button>
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![ผลการทดลองที่ 6](images/image-5.png)
 
 
 
