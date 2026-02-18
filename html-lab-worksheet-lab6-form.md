@@ -222,12 +222,193 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ฟอร์มลงทะเบียน</title>
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="post">
+        <!-- ส่วนข้อมูลส่วนตัว -->
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            
+            <div class="form-group">
+                <label for="studentId">รหัสนักศึกษา:</label>
+                <input type="text" id="studentId" name="studentId" 
+                       pattern="[0-9]{8}" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="prefix">คำนำหน้า:</label>
+                 <select id="prefix" name="prefix" required>
+                    <option value="">เลือกคำนำหน้า</option>
+                    <option value="mr">นาย</option>
+                    <option value="ms">นางสาว</option>
+                    <option value="mrs">นาง</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="firstName">ชื่อ:</label>
+                <input type="text" id="firstName" name="firstName" 
+                       value="ณัทภพ" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="lastName">นามสกุล:</label>
+                <input type="text" id="lastName" name="lastName" 
+                       value="เกษมสานต์" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="birthdate">วันเกิด:</label>
+                <input type="date" id="birthdate" name="birthdate" 
+                       value="2549-12-10" required>
+            </div>
+    
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">หญิง</label>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนข้อมูลการติดต่อ -->
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+    
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="phone" name="phone" 
+                       pattern="[0-9]{10}" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="address">ที่อยู่:</label>
+                <textarea id="address" name="address" 
+                          rows="3" required></textarea> <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนข้อมูลการศึกษา -->
+        <fieldset>
+            <legend>ข้อมูลการศึกษา</legend>
+    
+            <div class="form-group">
+                <label for="faculty">คณะ:</label>
+                <select id="faculty" name="faculty" required>
+                    <option value="">เลือกคณะ</option>
+                    <option value="siet">ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</option>
+                    <option value="engineering">วิศวกรรมศาสตร์</option>
+                    <option value="science">วิทยาศาสตร์</option>
+                </select> <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="major">สาขาวิชา:</label>
+                <select id="major" name="major" required>
+                    <option value="">เลือกสาขาวิชา</option>
+                </select> <span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="gpa">เกรดเฉลี่ยสะสม:</label>
+                <input type="number" id="gpa" name="gpa" 
+                       min="0" max="4" step="0.01" required> <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนความสนใจและกิจกรรม -->
+        <fieldset>
+            <legend>ความสนใจและกิจกรรม</legend>
+    
+            <div class="form-group">
+                <label>ความสนใจ:</label>
+                <input type="checkbox" id="sport" name="interests" value="sport">
+                <label for="sport">กีฬา</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">ดนตรี</label>
+                <input type="checkbox" id="art" name="interests" value="art">
+                <label for="art">ศิลปะ</label>
+                <input type="checkbox" id="tech" name="interests" value="tech" checked>
+                <label for="tech">เทคโนโลยี</label>
+            </div>
+    
+            <div class="form-group">
+                <label for="club">ชมรมที่สนใจ:</label>
+                <select id="club" name="club" multiple>
+                    <option value="computer">ชมรมคอมพิวเตอร์</option>
+                    <option value="robot">ชมรมหุ่นยนต์</option>
+                    <option value="sport">ชมรมกีฬา</option>
+                    <option value="music">ชมรมดนตรี</option>
+                </select>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนอัพโหลดเอกสาร -->
+        <fieldset>
+            <legend>เอกสารประกอบ</legend>
+            <div class="form-group">
+                <label for="photo">รูปถ่าย:</label>
+                <input type="file" id="photo" name="photo" 
+                       accept="image/*" required><span class="required-mark">*</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="transcript">ใบแสดงผลการเรียน:</label>
+                <input type="file" id="transcript" name="transcript" 
+                       accept=".pdf,.doc,.docx" required>
+                       <span class="required-mark">*</span>
+            </div>
+        </fieldset>
+    
+        <!-- ส่วนยืนยันข้อมูล -->
+        <fieldset>
+            <legend>การยืนยัน</legend>
+    
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">
+                    ข้าพเจ้ายืนยันว่าข้อมูลทั้งหมดเป็นความจริง
+                </label>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit">ลงทะเบียน</button>
+                <button type="reset">ล้างข้อมูล</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
 ```html
 
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+/gallery/6.png
 
 

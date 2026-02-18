@@ -165,10 +165,103 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            cursor: pointer;
+        }
+        .gallery-item img:hover {
+            opacity: 0.8;
+        }
+        .back-to-top {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">หน้าหลัก</a> |
+        <a href="introduce.html">เกี่ยวกับเรา</a> |
+        <a href="tablelist.html">ติดต่อเรา</a> |
+    </nav>
+    
+    <h1 id="top">แกลเลอรีสินค้า</h1>
+    
+    <p>ยินดีต้อนรับสู่แกลเลอรีของเรา คลิกรูปภาพเพื่อดูรายละเอียดเพิ่มเติม</p>
+    
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="gallery/download_1.jpg" target="_blank">
+                <img src="gallery/download_1.jpg" alt="สินค้าชิ้นที่ 1" width="250">
+            </a>
+            <figcaption><strong>ควาย</strong></figcaption>
+            <p>คำอธิบาย: ควายปกติ</p>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="gallery/download-_1_.jpg" target="_blank">
+                <img src="gallery/download-_1_.jpg" alt="สินค้าชิ้นที่ 2" width="250">
+            </a>
+            <figcaption><strong>ควายสีขาว</strong></figcaption>
+            <p>คำอธิบาย: เหมือนควายปกติเเค่สีขาว</p>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="gallery/download-_2_.jpg" target="_blank">
+                <img src="gallery/download-_2_.jpg" alt="สินค้าชิ้นที่ 3" width="250">
+            </a>
+            <figcaption><strong>ควาย</strong></figcaption>
+            <p>คำอธิบาย: เหมือนควายปกติเเต่ชอบเล่นน้ำ</p>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="gallery/images.jpg" target="_blank">
+                <img src="gallery/images.jpg" alt="สินค้าชิ้นที่ 4" width="250">
+            </a>
+            <figcaption><strong>ควาย</strong></figcaption>
+            <p>คำอธิบาย: เหมือนควายปกติเเค่กินหญ้าเยอะ</p>
+        </div>
+    </div>
+    
+    <a href="#top" class="back-to-top">กลับด้านบน</a>
+    
+    <hr>
+    
+    <p><a href="index.html">กลับไปหน้าหลัก</a></p>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+/gallery/4.png
 
 
