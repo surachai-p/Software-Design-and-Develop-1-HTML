@@ -165,10 +165,92 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <h1>WELLCOME TO <em>HYPERCAR SHOWROOM</em><a href="images/logo.png"target="_blank">
+    <img src="images/logo.png" 
+     alt="โลโก้บริษัท"
+     width="200"></h1>
+    <nav>
+    <a href="gallery.html">แกลเลอรี่</a>
+    </nav>
+    <hr>
+    <h5>ยินดีต้อนรับสู่โลกแห่งความเร็ว ความหรูหรา และนวัตกรรมขั้นสูงสุด 
+    Hypercar Showroom คือพื้นที่สำหรับผู้ที่หลงใหลในยนตรกรรมระดับไฮเอนด์ 
+    ที่ผสานสมรรถนะเหนือขีดจำกัดเข้ากับดีไซน์อันโดดเด่นอย่างไร้ที่ติ</h5>
+    <p> ทุกคันที่จัดแสดงได้รับการคัดสรรอย่างพิถีพิถัน 
+    เพื่อสะท้อนถึงพลัง ความแม่นยำ และเอกลักษณ์ที่ไม่เหมือนใคร 
+    เพราะไฮเปอร์คาร์ไม่ใช่เพียงรถยนต์ แต่คือสัญลักษณ์ของความสำเร็จและความหลงใหล</p>
+</body>
+</html>\
+```
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรี่</title>
+</head>
+<body>
+    <h1>WELLCOME TO <em>HYPERCAR SHOWROOM</em><a href="images/logo.png"target="_blank">
+    <img src="images/logo.png" 
+     alt="โลโก้บริษัท"
+     width="200"></h1>
+    <nav>
+    <a href="home.html">หน้าหลัก</a>
+    </nav>
+    <hr>
+    <figure>
+        <a
+        href="images/product1.png"target="_blank">
+        <img src="images/product1.png" 
+        alt="Bugatti Chiron Super Sport 300+ "
+         width="200">
+        <figcaption>
+        Bugatti Chiron Super Sport 300+ 
+        </figcaption>
+    </a>
+    </figure>
+    <figure>
+        <a href="images/product2.png"target="_blank">
+        <img src="images/product2.png" 
+        alt="Hennessey Venom F5"
+         width="200">
+        <figcaption>
+        Hennessey Venom F5
+        </figcaption>
+    </a>
+    </figure>
+    <figure>
+        <a href="images/product3.png"target="_blank">
+        <img src="images/product3.png" 
+        alt="SSC Tuatara"
+         width="200">
+        <figcaption>
+        SSC Tuatara
+        </figcaption>
+    </a>
+    </figure>
+    <figure>
+        <a href="images/product4.png"target="_blank">
+        <img src="images/product4.png" 
+        alt="Bugatti Bolide"
+         width="200">
+        <figcaption>
+        Bugatti Bolide
+        </figcaption>
+    </a>
+    </figure>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab4](images/lab4.png)
 
 
 
