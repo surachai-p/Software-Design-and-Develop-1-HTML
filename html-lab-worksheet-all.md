@@ -74,7 +74,7 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="412" height="197" alt="Screenshot 2026-02-18 000947" src="https://github.com/user-attachments/assets/48a95204-4c35-4695-bebc-6c715a6bfdaf" />
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +113,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Pathittaya web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="592" height="208" alt="Screenshot 2026-02-18 001320" src="https://github.com/user-attachments/assets/8b968d24-4683-456f-8607-c28e721ff3ec" />
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +163,39 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pathittaya Web Page</title>
+</head>
+<body>
+    <h1>แนะนำตัวเอง (About Me)</h1>
+    <h2>ชื่อ-นามสกุล</h2>
+    <hr><p>นางสาวปทิตญา ภูกิจคุณาเดชากร</p>
+
+    <h2>ประวัติการศึกษา</h2>
+    <hr><pre>
+    มัธยมศึกษาตอนต้น <em> แผนการเรียนวิทยาศาสตร์ คณิตศาสตร์ และเทคโนโลยีสิ่งแวดล้อม (SMTE) </em><strong> โรงเรียนสมุทรสาครบูรณะ</strong><br>
+    มัธยมศึกษาตอนปลาย <em> แผนการเรียนภาษาอังกฤษ-คอมพิวเตอร์ </em><strong> โรงเรียนสมุทรสาครบูรณะ</strong><br>
+    ปริญญาตรี <em> สาขาวิชาเทคโนโลยีคอมพิวเตอร์ คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี </em><strong> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</strong></p>
+</pre>
+
+    <h2>งานอดิเรก</h2>
+    <hr><p>ในเวลาว่างชอบ<strong> ฟังเพลง ร้องเพลง ดูคลิปวิดีโอเกี่ยวกับการออกแบบต่างๆและฝึกทำ </strong><br></p>
+
+    <h2>เป้าหมายในอนาคต</h2>
+    <hr><pre>
+    1. เป็นครูที่ดี ที่น่ารัก และคอยซัพพอร์ตนักเรียนอย่างเต็มที่
+    2. พัฒนาทักษะการสอนและความรู้ในสายงานเทคโนโลยีอย่างต่อเนื่อง
+    3. มีบ้านที่อบอุ่น ให้คนในครอบครัวอยู่ด้วยกันพร้อมหน้าอย่างมีความสุข
+    </pre>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="1906" height="777" alt="Screenshot 2026-02-18 011419" src="https://github.com/user-attachments/assets/b0d0ab20-d3a0-4abc-9b19-3ad76bfbd5da" />
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +362,143 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด : การสร้างลิงก์และการแทรกรูปภาพ</title>
+    <style>
+        /* จัดการ Font และ Layout พื้นฐาน */
+        body { 
+            font-family: 'Tahoma', sans-serif; 
+            text-align: center; 
+            background-color: #f4f4f4; 
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ส่วนหัวของหน้า */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        /* แกลเลอรีสินค้า */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* การ์ดสินค้าแต่ละชิ้น */
+        .item { 
+            width: 250px; 
+            background: white; 
+            padding: 15px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .item:hover { 
+            transform: translateY(-10px); 
+        }
+
+        /* จัดการขนาดรูปภาพ */
+        .item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* ให้รูปพอดีกรอบโดยไม่เสียสัดส่วน */
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* คำอธิบายใต้รูป */
+        .caption { 
+            margin-top: 15px; 
+            font-size: 16px;
+            font-weight: bold;
+            color: #2c3e50; 
+        }
+
+        /* ปุ่มกลับด้านบน */
+        .back-to-top {
+            display: inline-block;
+            margin: 50px 0;
+            padding: 12px 25px;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-to-top:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="top-anchor">
+        <h1>แกลเลอรีสินค้า</h1>
+        <p>เมนูน้ำจิ้ม Freeze-Dried</p>
+    </header>
+
+    <div class="gallery">
+        <div class="item">
+            <a href="gallery/sukiyaki.png" target="_blank">
+                <img src="gallery/sukiyaki.png" alt="น้ำจิ้มสุกี้">
+            </a>
+            <p class="caption">น้ำจิ้มสุกี้ (Sukiyaki)</p>
+        </div>
+
+        <div class="item">
+            <a href="gallery/chicken.png" target="_blank">
+                <img src="gallery/chicken.png" alt="น้ำจิ้มไก่">
+            </a>
+            <p class="caption">น้ำจิ้มไก่ (Chicken Sauce)</p>
+        </div>
+
+        <div class="item">
+            <a href="gallery/jeaw.png" target="_blank">
+                <img src="gallery/jeaw.png" alt="น้ำจิ้มแจ่ว">
+            </a>
+            <p class="caption">น้ำจิ้มแจ่ว (Jaew Sauce)</p>
+        </div>
+
+        <div class="item">
+            <a href="gallery/seafood.png" target="_blank">
+                <img src="gallery/seafood.png" alt="น้ำจิ้มซีฟู้ด">
+            </a>
+            <p class="caption">น้ำจิ้มซีฟู้ด (Seafood)</p>
+        </div>
+    </div>
+
+    <a href="#top-anchor" class="back-to-top">กลับสู่ด้านบน</a>
+
+    <footer style="padding: 20px; color: #888;">
+        <p>&copy; 2026 freeze-dried sauces</p>
+    </footer>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+<img width="1905" height="901" alt="Screenshot 2026-02-18 155410" src="https://github.com/user-attachments/assets/950d4658-e682-4d5b-93fc-f4abc16b3942" />
+
+
+
+<img width="1903" height="947" alt="Screenshot 2026-02-18 155606" src="https://github.com/user-attachments/assets/50f1c11e-30f5-465d-8228-59baad3fb91b" />
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -391,13 +567,141 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด HTML: ตารางข้อมูลส่วนตัวและรายการเมนูอาหาร</title>
+    <style>
+        body { 
+            font-family: 'Sarabun', sans-serif; 
+            line-height: 1.6; 
+            padding: 40px; 
+            background-color: #f8f9fa; 
+            display: flex;
+            justify-content: center;
+        }
 
+        .content-card {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 { text-align: center; color: #333; margin-bottom: 25px; }
+        
+        .section-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 30px;
+            color: #1a73e8;
+            border-left: 5px solid #1a73e8;
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* สไตล์ตาราง */
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-bottom: 20px; 
+        }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { background-color: #f2f2f2; width: 35%; }
+
+        /* สไตล์รายการเมนูอาหาร */
+        .menu-container {
+            background-color: #fafafa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px dashed #ccc;
+        }
+        ul, ol { margin-left: 20px; }
+        li { margin-bottom: 8px; }
+        .price { color: #d32f2f; font-weight: bold; margin-left: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="content-card">
+        <h2>ตารางข้อมูลส่วนตัวและรายการเมนูอาหาร</h2>
+
+        <div class="section-title">1. ตารางแสดงข้อมูลส่วนตัว</div>
+        <table>
+            <tbody>
+                <tr>
+                    <th>ชื่อ-นามสกุล</th>
+                    <td>ปทิตญา ภูกิจคุณาเดชากร</td>
+                </tr>
+                <tr>
+                    <th>ชื่อเล่น</th>
+                    <td>เนม</td>
+                </tr>
+                <tr>
+                    <th>วันเกิด</th>
+                    <td>25 สิงหาคม 2549</td>
+                </tr>
+                <tr>
+                    <th>สาขา</th>
+                    <td>เทคโนโลยีคอมพิวเตอร์</td>
+                </tr>
+                <tr>
+                    <th>คณะ</th>
+                    <td>ครุศาสตร์อุตสาหกรรมและเทคโนโลยี</td>
+                </tr>
+                <tr>
+                    <th>สถาบัน</th>
+                    <td>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-title">2. รายการเมนูอาหาร</div>
+        <div class="menu-container">
+            <p><strong>เมนูอาหารคาว (แบบมีลำดับเลข):</strong></p>
+            <ol>
+                <li>ข้าวผัดกะเพราเนื้อไข่ดาว <span class="price">65 บาท</span></li>
+                <li>เส้นเล็กน้ำตกหมู <span class="price">50 บาท</span></li>
+                <li>ข้าวมันไก่ผสม <span class="price">55 บาท</span></li>
+            </ol>
+
+            <p><strong>เมนูเครื่องดื่ม (แบบสัญลักษณ์):</strong></p>
+            <ul>
+                <li>ชาไทยเย็น <span class="price">35 บาท</span></li>
+                <li>อเมริกาโน่น้ำส้ม <span class="price">55 บาท</span></li>
+                <li>น้ำเปล่าแช่เย็น <span class="price">10 บาท</span></li>
+            </ul>
+
+            <p><strong>รายละเอียดการสั่งซื้อ (Definition List):</strong></p>
+            <dl>
+                <dt><strong>Take away</strong></dt>
+                <dd>- บริการห่อกลับบ้าน</dd>
+                <dt><strong>Delivery</strong></dt>
+                <dd>- บริการจัดส่งถึงบ้าน (ค่าส่งตามระยะทาง)</dd>
+            </dl>
+        </div>
+    </div>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="832" height="597" alt="Screenshot 2026-02-18 151701" src="https://github.com/user-attachments/assets/88141296-5005-43fd-b638-61e7184421c9" />
 
+
+
+
+
+<img width="830" height="742" alt="Screenshot 2026-02-18 151726" src="https://github.com/user-attachments/assets/c28a0ebe-b464-45c1-ba1c-c1aaa8a6df29" />
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์
@@ -621,10 +925,244 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฝึกหัด: ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</title>
+    <style>
+        body { 
+            font-family: 'Sarabun', sans-serif; 
+            line-height: 1.6; 
+            padding: 40px 20px; 
+            background-color: #f0f2f5; 
+            display: flex;
+            justify-content: center; /* จัดกึ่งกลางแนวนอน */
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #regForm {
+            width: 100%;
+            max-width: 500px; /* ปรับความกว้างฟอร์มให้เล็กลง */
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 { text-align: center; color: #1a73e8; margin-bottom: 25px; }
+        
+        .form-group { margin-bottom: 15px; }
+        .required-mark { color: red; margin-left: 5px; font-weight: bold; }
+        
+        fieldset { 
+            border: 1px solid #e0e0e0; 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin-bottom: 20px; 
+        }
+        
+        legend { font-weight: bold; padding: 0 10px; color: #555; font-size: 0.95em; }
+
+        /* ส่วนความสนใจแบบเลื่อนได้ */
+        .scroll-box {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            height: 120px;
+            overflow-y: scroll;
+            padding: 10px;
+            background: #fafafa;
+            margin-top: 5px;
+        }
+        .interest-item { display: block; margin-bottom: 8px; font-size: 0.9em; }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], textarea, select {
+            width: 100%; 
+            padding: 10px; 
+            margin-top: 5px; 
+            border: 1px solid #ddd; 
+            border-radius: 6px; 
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #1a73e8;
+            outline: none;
+        }
+
+        .error-text { color: red; font-size: 0.8em; display: none; margin-top: 5px; }
+
+        .button-container { 
+            display: flex; 
+            gap: 10px; 
+            justify-content: center; 
+            margin-top: 20px;
+        }
+
+        button { 
+            flex: 1;
+            cursor: pointer; 
+            padding: 12px; 
+            border: none; 
+            border-radius: 6px; 
+            font-weight: bold;
+            transition: opacity 0.3s, transform 0.1s;
+        }
+
+        .btn-submit { background-color: #28a745; color: white; }
+        .btn-reset { background-color: #6c757d; color: white; }
+        
+        button:hover { opacity: 0.9; transform: translateY(-1px); }
+        button:active { transform: translateY(0); }
+
+        .terms-container { text-align: center; font-size: 0.9em; margin: 15px 0; }
+    </style>
+</head>
+<body>
+
+    <form action="/register" method="post" enctype="multipart/form-data" id="regForm">
+        <h2>สมัครสมาชิก</h2>
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="fullName">ชื่อ-นามสกุล:</label><span class="required-mark">*</span>
+                <input type="text" id="fullName" name="fullName" placeholder="เช่น นายสมชาย ใจดี" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="birthdate">วันเกิด (วว/ดด/ปปปป):</label><span class="required-mark">*</span>
+                <input type="text" id="birthdate" name="birthdate" placeholder="DD/MM/YYYY" maxlength="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">เพศ:</label><span class="required-mark">*</span>
+                <select id="gender" name="gender" required>
+                    <option value="">-- เลือกเพศ --</option>
+                    <option value="male">ชาย</option>
+                    <option value="female">หญิง</option>
+                    <option value="other">อื่นๆ / ไม่ระบุ</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <div class="form-group">
+                <label for="email">อีเมล:</label><span class="required-mark">*</span>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์:</label><span class="required-mark">*</span>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="081xxxxxxx" required>
+            </div>
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label><span class="required-mark">*</span>
+                <textarea id="address" name="address" rows="2" placeholder="ระบุที่อยู่..." required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ความสนใจสินค้า <span class="required-mark">*</span></legend>
+            <div class="scroll-box">
+                <label class="interest-item"><input type="checkbox" name="interest" value="fashion"> แฟชั่น</label>
+                <label class="interest-item"><input type="checkbox" name="interest" value="electronics"> เครื่องใช้ไฟฟ้า</label>
+                <label class="interest-item"><input type="checkbox" name="interest" value="home"> บ้านและสวน</label>
+                <label class="interest-item"><input type="checkbox" name="interest" value="beauty"> ความงาม</label>
+                <label class="interest-item"><input type="checkbox" name="interest" value="sport"> อุปกรณ์กีฬา</label>
+                <label class="interest-item"><input type="checkbox" name="interest" value="food"> อาหารและเครื่องดื่ม</label>
+                <label class="interest-item"><input type="checkbox" name="interest" value="gadget"> ไอทีและเกมมิ่ง</label>
+                <label class="interest-item">
+                    <input type="checkbox" id="checkOther" name="interest" value="other"> อื่นๆ: 
+                    <input type="text" id="otherText" name="otherInterest" placeholder="ระบุ..." style="width: 60%; padding: 4px; display:inline-block;">
+                </label>
+            </div>
+            <p id="interestError" class="error-text">⚠️ โปรดเลือกอย่างน้อย 1 รายการ</p>
+        </fieldset>
+
+        <fieldset>
+            <legend>โปรไฟล์และรหัสผ่าน</legend>
+            <div class="form-group">
+                <label for="photo">รูปโปรไฟล์:</label><span class="required-mark">*</span>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+                <p id="fileError" class="error-text">⚠️ ไฟล์ต้องไม่เกิน 2MB</p>
+            </div>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label><span class="required-mark">*</span>
+                <input type="password" id="password" name="password" minlength="8" placeholder="อย่างน้อย 8 ตัวอักษร" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">ยืนยันรหัสผ่าน:</label><span class="required-mark">*</span>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="กรอกรหัสอีกครั้ง" required>
+                <p id="passError" class="error-text">⚠️ รหัสผ่านไม่ตรงกัน</p>
+            </div>
+        </fieldset>
+
+        <div class="terms-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">ยอมรับเงื่อนไขการใช้งาน</label><span class="required-mark">*</span>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" class="btn-submit">ยืนยันสมัครสมาชิก</button>
+            <button type="reset" class="btn-reset">ล้างข้อมูล</button>
+        </div>
+    </form>
+
+    <script>
+        // เติม / ให้อัตโนมัติในช่องวันเกิด
+        const birthInput = document.getElementById('birthdate');
+        birthInput.addEventListener('input', (e) => {
+            let v = e.target.value.replace(/\D/g,'');
+            if (v.length > 2) v = v.slice(0,2) + '/' + v.slice(2);
+            if (v.length > 5) v = v.slice(0,5) + '/' + v.slice(5,9);
+            e.target.value = v;
+        });
+
+        // ตรวจสอบฟอร์มก่อนส่ง
+        document.getElementById('regForm').onsubmit = function(e) {
+            let valid = true;
+            
+            if(document.getElementById('password').value !== document.getElementById('confirmPassword').value) {
+                document.getElementById('passError').style.display = 'block';
+                valid = false;
+            } else { document.getElementById('passError').style.display = 'none'; }
+
+            const file = document.getElementById('photo').files[0];
+            if(file && file.size > 2*1024*1024) {
+                document.getElementById('fileError').style.display = 'block';
+                valid = false;
+            } else { document.getElementById('fileError').style.display = 'none'; }
+
+            const checked = document.querySelectorAll('input[name="interest"]:checked');
+            if(checked.length === 0) {
+                document.getElementById('interestError').style.display = 'block';
+                valid = false;
+            } else { document.getElementById('interestError').style.display = 'none'; }
+
+            if(!valid) { 
+                e.preventDefault(); 
+                alert('กรุณาตรวจสอบข้อมูลที่มีเครื่องหมาย * ให้ถูกต้อง'); 
+            }
+        };
+    </script>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+
+<img width="698" height="905" alt="Screenshot 2026-02-18 144018" src="https://github.com/user-attachments/assets/884bcd19-1ede-4a9b-870d-b9a81c428332" />
+
+
+
+
+
+<img width="694" height="818" alt="Screenshot 2026-02-18 144039" src="https://github.com/user-attachments/assets/52dec78e-7c6f-43c9-be40-69655100ffba" />
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -712,5 +1250,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="413" height="523" alt="Screenshot 2026-02-18 014524" src="https://github.com/user-attachments/assets/33253981-b885-4457-a354-baced6bf1cc7" />
 
