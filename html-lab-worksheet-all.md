@@ -74,7 +74,7 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![lab1](images/lab1.png)
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +113,28 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ...... (WANITCHA  JABPRANG) web page</h1>
+    <p>Hello! My name is Wanitcha Jabprang (Mook). 
+        I am a first-year student majoring in Computer Technology 
+        at the School of Industrial Education and Technology.</p>
+    <div> I am interested in programming, web development, 
+        and educational technology.</div>
+    <span>My goal is to become a professional computer technology teacher in the future.</span>
+    <br>
+    <em>I believe that technology can enhance learning and create new opportunities.</em>
+    <br>
+    <strong>Thank you for visiting my personal web page.</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab2](images/lab2.png)
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +167,45 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WANITCHA INTRODUCTION</title>
+</head>
+<body>
+    <h1>INTRODUCTION MYSELF</h1>
+    <hr>
+    <h2>About Me</h2><hr>
+    <h3>ข้อมูลส่วนตัว</h3>
+    <p><strong>ชื่อ-สกุล:</strong> นางสาววณิชชา จับปรั่ง (Miss Wanitcha Jabprang)</p>
+    <p><strong>ชื่อเล่น:</strong> มุก (Mook)</p><hr>
+    <h3>ประวัติการศึกษา</h3>
+    <pre>
+    <em><strong>-ระดับปฐมวัย</strong></em> โรงเรียนทับเที่ยงฮั่วเฉียว จังหวัดตรัง
+
+    <em><strong>-ระดับประถมศึกษา</strong></em> โรงเรียนบ้านนาป้อ จังหวัดตรัง
+
+    <em><strong>-ระดับมัธยมศึกษาตอนต้นและตอนปลาย</strong></em> โรงเรียนวิเชียรมาตุ จังหวัดตรัง
+
+    <em><strong>-ปัจจุบันกำลังศึกษาระดับปริญญาตรี</strong></em> สาขาเทคโนโลยีคอมพิวเตอร์ คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</pre>
+    <hr>
+    <h3>งานอดิเรก</h3>
+    <pre>
+    -ดูหนัง/ซีรี่ย์<br>
+    -ฟังเพลง<br>
+    -เล่นเกม<br>
+    -อ่านหนังสือ<br>
+    </pre><hr>
+    <h3>เป้าหมายในอนาคต</h3>
+    <p>อยากทำงานแบบอิสระ มีความยืดหยุ่นเรื่องเวลาเพื่อให้มีเวลาให้ตัวเอง ครอบครัว และคนรอบข้างมากขึ้น
+    และใช้ชีวิตอย่างไม่เร่งรีบจนเกินไป ถ้าเป็นไปได้และหากตนเองมีความสามารถมากพอ อยากเป็นเจ้าของธุรกิจ</p>
+    <hr>
+    <h1>THANK YOU FOR ATTENTION</h1>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab3](images/lab3.png)
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -319,10 +372,92 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <h1>WELLCOME TO <em>HYPERCAR SHOWROOM</em><a href="images/logo.png"target="_blank">
+    <img src="images/logo.png" 
+     alt="โลโก้บริษัท"
+     width="200"></h1>
+    <nav>
+    <a href="gallery.html">แกลเลอรี่</a>
+    </nav>
+    <hr>
+    <h5>ยินดีต้อนรับสู่โลกแห่งความเร็ว ความหรูหรา และนวัตกรรมขั้นสูงสุด 
+    Hypercar Showroom คือพื้นที่สำหรับผู้ที่หลงใหลในยนตรกรรมระดับไฮเอนด์ 
+    ที่ผสานสมรรถนะเหนือขีดจำกัดเข้ากับดีไซน์อันโดดเด่นอย่างไร้ที่ติ</h5>
+    <p> ทุกคันที่จัดแสดงได้รับการคัดสรรอย่างพิถีพิถัน 
+    เพื่อสะท้อนถึงพลัง ความแม่นยำ และเอกลักษณ์ที่ไม่เหมือนใคร 
+    เพราะไฮเปอร์คาร์ไม่ใช่เพียงรถยนต์ แต่คือสัญลักษณ์ของความสำเร็จและความหลงใหล</p>
+</body>
+</html>\
+```
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกลเลอรี่</title>
+</head>
+<body>
+    <h1>WELLCOME TO <em>HYPERCAR SHOWROOM</em><a href="images/logo.png"target="_blank">
+    <img src="images/logo.png" 
+     alt="โลโก้บริษัท"
+     width="200"></h1>
+    <nav>
+    <a href="home.html">หน้าหลัก</a>
+    </nav>
+    <hr>
+    <figure>
+        <a
+        href="images/product1.png"target="_blank">
+        <img src="images/product1.png" 
+        alt="Bugatti Chiron Super Sport 300+ "
+         width="200">
+        <figcaption>
+        Bugatti Chiron Super Sport 300+ 
+        </figcaption>
+    </a>
+    </figure>
+    <figure>
+        <a href="images/product2.png"target="_blank">
+        <img src="images/product2.png" 
+        alt="Hennessey Venom F5"
+         width="200">
+        <figcaption>
+        Hennessey Venom F5
+        </figcaption>
+    </a>
+    </figure>
+    <figure>
+        <a href="images/product3.png"target="_blank">
+        <img src="images/product3.png" 
+        alt="SSC Tuatara"
+         width="200">
+        <figcaption>
+        SSC Tuatara
+        </figcaption>
+    </a>
+    </figure>
+    <figure>
+        <a href="images/product4.png"target="_blank">
+        <img src="images/product4.png" 
+        alt="Bugatti Bolide"
+         width="200">
+        <figcaption>
+        Bugatti Bolide
+        </figcaption>
+    </a>
+    </figure>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab4](images/lab4.png)
 
 
 ## การทดลองที่ 5: การสร้างตารางและรายการ
@@ -393,10 +528,39 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<!DOCTYPE html>
+<html lang="th">
+<h2>ตารางแสดงข้อมูลส่วนตัว</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>ชื่อ-นามสกุล</th>
+            <th>รหัสนักศึกษา</th>
+            <th>สาขาวิชา</th>
+            <th>ชั้นปี</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>นางสาววณิชชา จับปรั่ง</td>
+            <td>68030251</td>
+            <td>เทคโนโลยีคอมพิวเตอร์</td>
+            <td>ปีที่ 1</td>
+        </tr>
+    </tbody>
+</table>
+<h2>รายการอาหาร</h2>
+<ul>
+    <li>ข้าวผัดกุ้ง</li>
+        <li>ผัดกะเพราไก่</li>
+        <li>ต้มยำกุ้ง</li>
+        <li>ไอศกรีม</li>
+        <li>เค้กช็อกโกแลต</li>
+        <li>บัวลอย</li>
+</ul>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab5](images/lab5.png)
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
@@ -622,9 +786,138 @@
 
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
+```html
+<h1>สมัครสมาชิกร้านค้าออนไลน์</h1>
+<style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .input-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        
+        .required-mark {
+            color: red;
+            margin-left: 5px;
+        }
+    </style>
+
+    <body>
+        <form action="/register" method="post">
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+        
+                <div class="form-group">
+                    <label for="prefix">คำนำหน้า:</label>
+                     <select id="prefix" name="prefix" required>
+                        <option value="">เลือกคำนำหน้า</option>
+                        <option value="mr">นาย</option>
+                        <option value="ms">นางสาว</option>
+                        <option value="mrs">นาง</option>
+                    </select><span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="firstName">ชื่อ:</label>
+                    <input type="text" id="firstName" name="firstName" required><span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="lastName">นามสกุล:</label>
+                    <input type="text" id="lastName" name="lastName" required><span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="birthdate">วันเกิด:</label>
+                    <input type="date" id="birthdate" name="birthdate" >
+                </div>
+        
+                <div class="form-group">
+                    <label>เพศ:</label>
+                    <input type="radio" id="male" name="gender" value="male" >
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">หญิง</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>ข้อมูลการติดต่อ</legend>
+        
+                <div class="form-group">
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required><span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์:</label>
+                    <input type="tel" id="phone" name="phone" 
+                           pattern="[0-9]{10}" required><span class="required-mark">*</span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">ที่อยู่จัดส่ง:</label>
+                    <textarea id="address" name="address" 
+                              rows="3" required></textarea> <span class="required-mark">*</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>รูปโปรไฟล์</legend>
+                <div class="form-group">
+                    <label for="photo">แนบรูปโปรไฟล์ที่ต้องการ:</label>
+                    <input type="file" id="photo" name="photo" 
+                           accept="image/*" >
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>ตั้งค่ารหัสผ่าน</legend>
+                    <div class="form-group">
+                        <label for="password">รหัสผ่าน:</label>
+                        <input type="password" minlength="8" id="password" name="password" required><span class="required-mark">*</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">ยืนยันรหัสผ่าน:</label>
+                        <input type="password" minlength="8" id="confirm_password" name="confirm_password" required><span class="required-mark">*</span>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+        
+                <div class="form-group">
+                    <label>ความสนใจ:</label>
+                    <input type="checkbox" id="Track Hypercar" name="interests" value="Track Hypercar">
+                    <label for="Track Hypercar">Track Hypercar</label>
+                    <input type="checkbox" id="Road-Legal Hypercar" name="interests" value="Road-Legal Hypercar">
+                    <label for="Road-Legal Hypercar">Road-Legal Hypercar</label>
+                    <input type="checkbox" id="Hybrid Hypercar" name="interests" value="Hybrid Hypercar">
+                    <label for="Hybrid Hypercar">Hybrid Hypercar</label>
+                    <input type="checkbox" id="Limited Edition Hypercar" name="interests" value="Limited Edition Hypercar">
+                    <label for="Limited Edition Hypercar">Limited Edition Hypercar</label>
+                </div>
+
+            </fieldset>
+        
+    
+            <fieldset>
+                <legend>การยอมรับเงื่อนไขการใช้งาน</legend>
+        
+                <div class="form-group">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">
+                        ข้าพเจ้ายืนยันว่าข้อมูลทั้งหมดเป็นความจริงและยอมรับเงื่อนไขการใช้งานของร้านค้าออนไลน์นี้
+                    </label>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">ลงทะเบียน</button>
+                    <button type="reset">ล้างข้อมูล</button>
+                </div>
+            </fieldset>
+        </form>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab6](images/lab6.png)
 
 
 ## การทดลองที่ 7: HTML Layout
@@ -712,5 +1005,5 @@ semantic elements คือ elements ใน HTML5 ที่มีความห
 
 
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![lab7](images/lab7.png)
 
