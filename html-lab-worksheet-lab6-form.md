@@ -224,10 +224,46 @@
 ### บันทึกผลการทดลอง
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<form action="#" method="post">
+    <fieldset>
+        <legend>สมัครสมาชิกร้านค้า</legend>
+        
+        <p>
+            <label>ชื่อ-นามสกุล: </label>
+            <input type="text" name="fullname" required>
+        </p>
+        
+        <p>
+            <label>อีเมล: </label>
+            <input type="email" name="email" required placeholder="example@mail.com">
+        </p>
+        
+        <p>
+            <label>รหัสผ่าน: </label>
+            <input type="password" name="pwd" minlength="8" required>
+        </p>
+        
+        <p>
+            <label>เบอร์โทรศัพท์: </label>
+            <input type="tel" name="phone" pattern="[0-9]{10}" required>
+        </p>
+        
+        <p>
+            <label>รูปโปรไฟล์: </label>
+            <input type="file" name="profile" accept="image/*">
+        </p>
+        
+        <p>
+            <input type="checkbox" id="accept" required>
+            <label for="accept">ยอมรับเงื่อนไขการใช้งาน</label>
+        </p>
+        
+        <button type="submit">สมัครสมาชิก</button>
+    </fieldset>
+</form>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](html-workshop/images/products/6.png)
 
 
 
