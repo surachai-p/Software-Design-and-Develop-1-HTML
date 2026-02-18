@@ -65,6 +65,6 @@
 </html>
 ```
 - ภาพผลลัพธ์:
-[![alt text](image-2.png)]
+[![alt text](image-5.png)]
 
 
