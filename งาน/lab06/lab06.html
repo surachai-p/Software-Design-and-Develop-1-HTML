@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้า - Lab 06</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        fieldset { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 8px; }
+        legend { font-weight: bold; color: #333; }
+        .form-group { margin-bottom: 12px; }
+        label { display: inline-block; width: 150px; }
+        input[type="text"], input[type="email"], input[type="password"], select, textarea {
+            padding: 5px; width: 250px;
+        }
+        .btn-group { margin-top: 20px; }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>สมัครสมาชิกร้านค้าออนไลน์</h1>
+    <p>กรุณากรอกข้อมูลให้ครบถ้วนเพื่อสิทธิประโยชน์ของท่าน</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <div class="form-group">
+                <label for="fullname">ชื่อ-นามสกุล:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="นายสมชาย ใจดี">
+            </div>
+            <div class="form-group">
+                <label for="birthday">วันเกิด:</label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <div class="form-group">
+                <label>เพศ:</label>
+                <input type="radio" id="male" name="gender" value="male"> <label for="male" style="width:auto">ชาย</label>
+                <input type="radio" id="female" name="gender" value="female"> <label for="female" style="width:auto">หญิง</label>
+            </div>
+            <div class="form-group">
+                <label for="profile_pic">รูปโปรไฟล์:</label>
+                <input type="file" id="profile_pic" name="profile_pic" accept="image/*">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <div class="form-group">
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+                <label for="tel">เบอร์โทรศัพท์:</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="08XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+                <label for="address">ที่อยู่จัดส่ง:</label><br>
+                <textarea id="address" name="address" rows="3" style="width: 400px;" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ความสนใจและความปลอดภัย</legend>
+            <div class="form-group">
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <label>หมวดหมู่ที่สนใจ:</label><br>
+                <input type="checkbox" id="it" name="interest" value="it"> <label for="it" style="width:auto">ไอที/คอมพิวเตอร์</label>
+                <input type="checkbox" id="fashion" name="interest" value="fashion"> <label for="fashion" style="width:auto">แฟชั่น</label>
+                <input type="checkbox" id="home" name="interest" value="home"> <label for="home" style="width:auto">บ้านและสวน</label>
+            </div>
+        </fieldset>
+
+        <div class="form-group">
+            <input type="checkbox" id="accept" name="accept" required>
+            <label for="accept" style="width:auto">ฉันยอมรับเงื่อนไขการใช้งาน</label>
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" style="background-color: #4CAF50; color: white; border: none;">ยืนยันการสมัคร</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
