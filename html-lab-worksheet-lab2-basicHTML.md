@@ -37,8 +37,47 @@
 ```html
 [วางโค้ด HTML ที่นี่]
 ```
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+                .park{
+                    margin-top: 15%;
+                }
+                h1{
+                    margin-top: 5px;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="park">
+        <img style="width: 500px; height:500px; border-radius:100%" src="/park.jpg" alt="">
+        <h1 >Hello My Name is Anawin Boonchuay</h1>
+        <h2 style="margin-top:10px;">Student ID 68030311</h2>
+        <h2 style="margin-top:8px;"> Studying at KMILT</h2>
+        <h2 style="margin-top:8px;"> Faculty of Industrial Education and Technology</h2>
+        <h2 style="margin-top:8px;">Computer Technology branch</h2>
+    </div>
+</body>
+</html>
+
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image-1.png)
+
+
 
 
 
