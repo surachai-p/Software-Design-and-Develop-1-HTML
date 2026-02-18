@@ -75,6 +75,7 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6db38f01-a1de-4bb3-b0d2-dea53b0290e8" />
 
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
@@ -113,10 +114,24 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Akkarapon Aroon web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a5e9dfca-40f9-4b1c-89fa-5ae7fb0eecfe" />
+
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +164,41 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แนะนำตัว</title>
+</head>
+<body>
+
+    <h1>แนะนำตัว</h1>
+
+    <h2>ชื่อ-นามสกุล</h2>
+    <p><strong>นายอัครพนธ์ อรุณ</strong></p>
+
+    <h2>ประวัติการศึกษา</h2>
+    <p>จบการศึกษาระดับมัธยมศึกษาปีที่ 6</p>
+
+    <h2>งานอดิเรก</h2>
+    <p>ฟังเพลง เล่นกีฬา</p>
+
+    <h2>เป้าหมายในอนาคต</h2>
+    <p>
+        เป้าหมายของฉันคือการเป็น <strong>ครูสอนคอมพิวเตอร์ระดับมัธยมศึกษาตอนปลาย</strong>
+        เพื่อถ่ายทอดความรู้ด้านเทคโนโลยีและการเขียนโปรแกรม<br>
+        และช่วยพัฒนาทักษะดิจิทัลให้กับนักเรียนในอนาคต
+    </p>
+
+    <hr>
+
+    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7beb9eef-4d8b-4b16-b402-16f05a4d2e12" />
+
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -391,12 +437,13 @@
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
 
-[วางโค้ด HTML ที่นี่]
+http://127.0.0.1:5500/index.html#top-page
 ```html
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/09c2b8ad-3209-4d8a-a96e-0ecf85073380" />
+
 
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
