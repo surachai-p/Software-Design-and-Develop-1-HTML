@@ -164,11 +164,63 @@
 
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
-```html
-[วางโค้ด HTML ที่นี่]
+```<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ร้านเก้าอี้มหัศจรรย์ - Amazing chair Gallery</title>
+</head>
+<body>
+
+    <div id="top"></div>
+    <h1>Amazing Chair Gallery ร้านเก้าอี้มหัศจรรย์</h1>
+    <p>ยินดีต้อนรับสู่ร้านขายเก้าอี้ของเรา เชิญชมสินค้าสุดแปลก และแหวกแนวได้ที่นี่เลยค่าาา</p>
+    <hr>
+
+    <figure>
+        <a href="http://www.infinitydesign.in.th/wp-content/uploads/2014/10/A-11-445x450.jpg">
+            <img src="http://www.infinitydesign.in.th/wp-content/uploads/2014/10/A-11-445x450.jpg" alt="เก้าอี้แลบลิ้น" width="500">
+        </a>
+        <figcaption>เก้าอี้แลบลิ้น แพร่บ แพร่บ - <strong>ราคา 175,000 บาท</strong></figcaption>
+    </figure>
+
+    <figure>
+        <a href="http://www.infinitydesign.in.th/wp-content/uploads/2014/10/A-1.jpg">
+            <img src="http://www.infinitydesign.in.th/wp-content/uploads/2014/10/A-1.jpg" alt="เก้าอี้อ้าปาก" width="500">
+        </a>
+        <figcaption>เก้าอี้อ้าปากเห็นฟัน - <strong>ราคา 109,000 บาท</strong></figcaption>
+    </figure>
+
+    <figure>
+        <a href="http://www.infinitydesign.in.th/wp-content/uploads/2014/10/A-26-450x421.jpg">
+            <img src="http://www.infinitydesign.in.th/wp-content/uploads/2014/10/A-26-450x421.jpg" alt="เก้าอี้หัวกุ๊กกู๋" width="500">
+        </a>
+        <figcaption>เก้าอี้หัวกุ๊กกู๋ ระวังผีหลอก - <strong>ราคา 65,000 บาท</strong></figcaption>
+    </figure>
+
+    <figure>
+        <a href="http://www.infinitydesign.in.th/wp-content/uploads/2014/10/A-9-450x450.jpg">
+            <img src="http://www.infinitydesign.in.th/wp-content/uploads/2014/10/A-9-450x450.jpg" alt="เก้าอี้ขากิ้งกือ" width="500">
+        </a>
+        <figcaption>เก้าอี้ขากิ้งกือ - <strong>ราคา 72,000 บาท</strong></figcaption>
+    </figure>
+
+    <figure>
+        <a href="https://i0.wp.com/marketeeronline.co/wp-content/uploads/2016/06/659555-650-1455021498-rocking-chair.jpg?w=650&ssl=1">
+            <img src="https://i0.wp.com/marketeeronline.co/wp-content/uploads/2016/06/659555-650-1455021498-rocking-chair.jpg?w=650&ssl=1" alt="เก้าอี้ไม้วิเศษ" width="500">
+        </a>
+        <figcaption>เก้าอี้มีไฟ วิบ วิบ - <strong>ราคา 119,000 บาท</strong></figcaption>
+    </figure>
+
+    <hr>
+
+    <p><a href="#top">กลับไปด้านบนสุด</a></p>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-2.png)]
 
 
 
