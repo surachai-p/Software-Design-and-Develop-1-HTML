@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ฟอร์มสมัครสมาชิก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            padding: 5px;
+            width: 250px;
+        }
+        .inline {
+            width: auto;
+        }
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>สมัครสมาชิกร้านค้าออนไลน์</h1>
+
+<form action="/register" method="post" enctype="multipart/form-data">
+
+    <!-- ข้อมูลส่วนตัว -->
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+
+        <div class="form-group">
+            <label for="firstname">ชื่อ:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <span class="required">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="lastname">นามสกุล:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <span class="required">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="birthdate">วันเกิด:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            <span class="required">*</span>
+        </div>
+
+        <div class="form-group">
+            <label>เพศ:</label>
+            <input type="radio" name="gender" value="male" required class="inline"> ชาย
+            <input type="radio" name="gender" value="female" class="inline"> หญิง
+            <span class="required">*</span>
+        </div>
+    </fieldset>
+
+    <!-- ข้อมูลการติดต่อ -->
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        <div class="form-group">
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="required">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" name="phone"
+                   pattern="[0-9]{10}"
+                   placeholder="0812345678"
+                   required>
+            <span class="required">*</span>
+        </div>
+
+        <div class="form-group">
+            <label for="address">ที่อยู่จัดส่ง:</label><br>
+            <textarea id="address" name="address" rows="3" required></textarea>
+            <span class="required">*</span>
+        </div>
+    </fieldset>
+
+    <!-- รหัสผ่าน -->
+    <fieldset>
+        <legend>ตั้งค่ารหัสผ่าน</legend>
+
+        <div class="form-group">
+            <label for="password">รหัสผ่าน:</label>
+            <input type="password" id="password" name="password"
+                   minlength="8"
+                   maxlength="20"
+                   required>
+            <span class="required">*</span>
+            <small>(อย่างน้อย 8 ตัวอักษร)</small>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">ยืนยันรหัสผ่าน:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"
+                   minlength="8"
+                   maxlength="20"
+                   required>
+            <span class="required">*</span>
+        </div>
+    </fieldset>
+
+    <!-- ความสนใจ -->
+    <fieldset>
+        <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+        <div class="form-group">
+            <input type="checkbox" name="interest" value="fashion" class="inline"> แฟชั่น
+            <input type="checkbox" name="interest" value="electronics" class="inline"> อิเล็กทรอนิกส์
+            <input type="checkbox" name="interest" value="beauty" class="inline"> ความงาม
+            <input type="checkbox" name="interest" value="sports" class="inline"> กีฬา
+        </div>
+    </fieldset>
+
+    <!-- อัปโหลดรูปโปรไฟล์ -->
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <div class="form-group">
+            <label for="profile">อัปโหลดรูป:</label>
+            <input type="file" id="profile" name="profile"
+                   accept="image/png, image/jpeg"
+                   required>
+            <span class="required">*</span>
+            <small>(ไฟล์ .jpg หรือ .png เท่านั้น)</small>
+        </div>
+    </fieldset>
+
+    <!-- ยอมรับเงื่อนไข -->
+    <fieldset>
+        <legend>เงื่อนไขการใช้งาน</legend>
+
+        <div class="form-group">
+            <input type="checkbox" id="agree" name="agree" required class="inline">
+            <label for="agree">
+                ฉันยอมรับเงื่อนไขการใช้งาน
+            </label>
+            <span class="required">*</span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">สมัครสมาชิก</button>
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+    </fieldset>
+
+</form>
+
+</body>
+</html>
