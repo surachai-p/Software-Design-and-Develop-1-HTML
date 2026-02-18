@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        fieldset{
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .form-group{
+            margin-bottom: 12px;
+        }
+
+        label{
+            display: inline-block;
+            width: 150px;
+        }
+
+        input, select, textarea{
+            padding: 5px;
+        }
+
+        button{
+            padding: 8px 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h2>
+
+<form>
+
+    <!-- ข้อมูลส่วนตัว -->
+    <fieldset>
+        <legend>ข้อมูลส่วนตัว</legend>
+
+        <div class="form-group">
+            <label>ชื่อ:</label>
+            <input type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label>นามสกุล:</label>
+            <input type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label>วันเกิด:</label>
+            <input type="date" required>
+        </div>
+
+        <div class="form-group">
+            <label>เพศ:</label>
+            <input type="radio" name="gender" required> ชาย
+            <input type="radio" name="gender"> หญิง
+        </div>
+    </fieldset>
+
+
+    <!-- ข้อมูลการติดต่อ -->
+    <fieldset>
+        <legend>ข้อมูลการติดต่อ</legend>
+
+        <div class="form-group">
+            <label>อีเมล:</label>
+            <input type="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>เบอร์โทร:</label>
+            <input type="tel" pattern="[0-9]{10}" 
+                   placeholder="0812345678"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label>ที่อยู่จัดส่ง:</label><br>
+            <textarea rows="3" cols="40" required></textarea>
+        </div>
+    </fieldset>
+
+
+    <!-- รูปโปรไฟล์ -->
+    <fieldset>
+        <legend>รูปโปรไฟล์</legend>
+
+        <div class="form-group">
+            <label>อัพโหลดรูป:</label>
+            <input type="file"
+                   accept="image/*"
+                   required>
+            <small>ขนาดไม่เกิน 2MB</small>
+        </div>
+    </fieldset>
+
+
+    <!-- รหัสผ่าน -->
+    <fieldset>
+        <legend>ตั้งค่ารหัสผ่าน</legend>
+
+        <div class="form-group">
+            <label>รหัสผ่าน:</label>
+            <input type="password"
+                   minlength="6"
+                   maxlength="12"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label>ยืนยันรหัสผ่าน:</label>
+            <input type="password"
+                   minlength="6"
+                   maxlength="12"
+                   required>
+        </div>
+    </fieldset>
+
+
+    <!-- ความสนใจ -->
+    <fieldset>
+        <legend>หมวดหมู่สินค้าที่สนใจ</legend>
+
+        <input type="checkbox"> เสื้อผ้า
+        <input type="checkbox"> อุปกรณ์ไอที
+        <input type="checkbox"> เครื่องสำอาง
+        <input type="checkbox"> อาหาร
+    </fieldset>
+
+
+    <!-- ยอมรับเงื่อนไข -->
+    <fieldset>
+        <legend>การยืนยัน</legend>
+
+        <input type="checkbox" required>
+        ฉันยอมรับเงื่อนไขการใช้งาน
+
+        <br><br>
+
+        <button type="submit">สมัครสมาชิก</button>
+        <button type="reset">ล้างข้อมูล</button>
+    </fieldset>
+
+</form>
+
+</body>
+</html>
