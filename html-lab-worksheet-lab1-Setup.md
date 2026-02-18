@@ -74,6 +74,7 @@
 #### หมายเหตุ สามารถติดตั้ง Live Preview ของไมโครซอฟต์ แทนการใช้ Live Server เมื่อติดตั้งแล้ว สามารถคลิกเมาส์ด้านขวาที่ไฟล์ HTML เลือกเมนู Show Preview เพื่อดูผลลัพธ์ HTML ได้เช่นกัน
   
 ### บันทึกผลการทดลอง
-[บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+<img width="256" height="72" alt="1 1" src="https://github.com/user-attachments/assets/4b3ae29a-1ce4-4131-a173-cd707e383fe9" />
 
+<img width="328" height="143" alt="1" src="https://github.com/user-attachments/assets/afb65d67-7d7d-4777-b2e4-9c81d3997080" />
 
