@@ -230,5 +230,6 @@
 [วางภาพ screenshot ที่นี่]
 
 
-<img width="1919" height="1032" alt="image" src="https://github.com/user-attachments/assets/57a74b68-70e9-48d8-afbf-a671a9395494" />
+<img width="1696" height="873" alt="image" src="https://github.com/user-attachments/assets/73140fa7-a969-4237-a04e-a2ac5053af85" />
+
 
