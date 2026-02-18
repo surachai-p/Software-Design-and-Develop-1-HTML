@@ -67,9 +67,67 @@
 2. สร้างรายการเมนูอาหาร
 
 [วางโค้ด HTML ที่นี่]
-```html
+```<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ข้อมูลส่วนตัวและเมนูอาหาร</title>
+</head>
+<body>
 
+    <h2>1. ข้อมูลส่วนตัว</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>หัวข้อ</th>
+                <th>รายละเอียด</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ชื่อ</td>
+                <td>วัฒนพงศ์</td>
+            </tr>
+            <tr>
+                <td>นามสกุล</td>
+                <td>พรหมภิราม</td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td>19 ปี</td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปีเกิด</td>
+                <td>18 ตุลาคม 2549</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>2. รายการเมนูอาหาร</h2>
+    
+    <ul>
+        <li><strong>เมนูข้าว</strong>
+            <ul>
+                <li>ข้าวหมูแดง</li>
+                <li>ข้าวหมูกรอบ</li>
+                <li>ข้าวขาหมู</li>
+            </ul>
+        </li>
+        <br>
+        <li><strong>เมนูเส้น</strong>
+            <ul>
+                <li>ผัดซีอิ้ว</li>
+                <li>ผัดหมี่โคราช</li>
+                <li>ผัดไท</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+[![alt text](image-4.png)]
 
