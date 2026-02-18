@@ -164,11 +164,179 @@
 
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
+
+index.html
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery figure {
+            width: 200px;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .back-top {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- จุดบนสุด -->
+    <section id="top">
+        <h1>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h1>
+    </section>
+
+    <!-- เมนูนำทาง -->
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+        <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+    </nav>
+
+    <hr>
+
+    <!-- ลิงก์พิเศษ -->
+    <h2>ลิงก์พิเศษ</h2>
+    <p>
+        <a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a><br>
+        <a href="tel:+66812345678">โทร 081-234-5678</a><br>
+        <a href="files/document.pdf" download>ดาวน์โหลดเอกสาร</a>
+    </p>
+
+    <hr>
+
+    <!-- ส่วนสินค้า -->
+    <section id="products">
+        <h2>สินค้าของเรา</h2>
+
+        <!-- รูปภาพพื้นฐาน -->
+        <img src="images/logo.jpg" alt="โลโก้บริษัท" width="200">
+
+        <figure>
+            <a href="images/products/product1.jpg">
+                <img src="images/products/product1.jpg" alt="สินค้าชิ้นที่ 1" width="200">
+            </a>
+            <figcaption>รายละเอียดสินค้าชิ้นที่ 1</figcaption>
+        </figure>
+
+        <figure>
+            <a href="images/products/product2.webp">
+                <img src="images/products/product2.webp" alt="สินค้าชิ้นที่ 2" width="200">
+            </a>
+            <figcaption>รายละเอียดสินค้าชิ้นที่ 2</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <!-- แกลเลอรี (แบบฝึกหัด) -->
+    <section id="gallery">
+        <h2>แกลเลอรีสินค้า</h2>
+
+        <div class="gallery">
+            <figure>
+                <a href="images/gallery/Baoloy.png">
+                    <img src="images/gallery/Baoloy.png" alt="แกลเลอรีรูปที่ 1">
+                </a>
+                <figcaption>รูปที่ 1</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/gallery/Baoloy2.png">
+                    <img src="images/gallery/Baoloy2.png" alt="แกลเลอรีรูปที่ 2">
+                </a>
+                <figcaption>รูปที่ 2</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/gallery/Baoloy3.png">
+                    <img src="images/gallery/Baoloy3.png" alt="แกลเลอรีรูปที่ 3">
+                </a>
+                <figcaption>รูปที่ 3</figcaption>
+            </figure>
+
+            <figure>
+                <a href="images/gallery/Baoloy4.png">
+                    <img src="images/gallery/Baoloy4.png" alt="แกลเลอรีรูปที่ 4">
+                </a>
+                <figcaption>รูปที่ 4</figcaption>
+            </figure>
+        </div>
+
+        <div class="back-top">
+            <a href="#top">กลับด้านบน</a>
+        </div>
+    </section>
+
+</body>
+
+</html>
+```
+
+pages/about.html
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เกี่ยวกับเรา</title>
+</head>
+<body>
+
+<h1>เกี่ยวกับเรา</h1>
+<p>นี่คือหน้าข้อมูลเกี่ยวกับบริษัท</p>
+
+<a href="../index.html">กลับหน้าหลัก</a>
+
+</body>
+</html>
+```
+
+pages/contact.html
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ติดต่อเรา</title>
+</head>
+<body>
+
+<h1>ติดต่อเรา</h1>
+<p>ข้อมูลติดต่อของเรา</p>
+
+<a href="../index.html">กลับหน้าหลัก</a>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image.png)
 
 
 

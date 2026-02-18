@@ -31,9 +31,29 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>นาย ณัฐพงค์ จันทร์วัตร</h1>
+    <h2>สำเร็จการศึกษาจาก วิทยาลัยเทคนิคโพธาราม</h2>
+    <hr>
+
+    <p>งานอดิเรก</p>
+    <p>ชอบกิน <strong>มะม่วง</strong> และ <em>นอนหลับฝันดี</em></p>
+    <p>เป้าหมายในอนาคต<br>1. มีงานที่ดี<br>2. มีเงินเยอะๆ<br>3. มีความสุข<br>4. มะม่วงไม่จำกัด</p>
+
+</body>
+
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](image.png)
 
 
