@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5: การสร้างตารางและรายการ</title>
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            margin: 20px;
+            padding-bottom: 50px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        /* Style สำหรับตาราง */
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Style สำหรับกล่องเมนู */
+        .menu-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fffcf5;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>การทดลองที่ 5: การสร้างตารางและรายการ</h1>
+    <p><strong>ผู้จัดทำ:</strong> นายวีระภัทร อ่วมเกษม (68030271)</p>
+
+    <h2>1. ตัวอย่างการสร้างตาราง (Table)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. ตัวอย่างการสร้างรายการ (Lists)</h2>
+    
+    <h3>รายการแบบไม่เรียงลำดับ (Unordered List)</h3>
+    <ul>
+        <li>Unordered item 1</li>
+        <li>Unordered item 2</li>
+    </ul>
+
+    <h3>รายการแบบเรียงลำดับ (Ordered List)</h3>
+    <ol>
+        <li>Ordered item 1</li>
+        <li>Ordered item 2</li>
+    </ol>
+
+    <h3>รายการแบบคำจำกัดความ (Definition List)</h3>
+    <dl>
+        <dt>Term 1</dt>
+        <dd>Definition 1</dd>
+        <dt>Term 2</dt>
+        <dd>Definition 2</dd>
+    </dl>
+
+    <br><hr><br>
+
+    <h2>แบบฝึกหัด 1: ตารางแสดงข้อมูลส่วนตัว</h2>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" style="background-color: #4CAF50; color: white; text-align: center;">
+                    ข้อมูลนักศึกษา
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th width="30%">ชื่อ-นามสกุล</th>
+                <td>นายวีระภัทร อ่วมเกษม</td>
+            </tr>
+            <tr>
+                <th>รหัสนักศึกษา</th>
+                <td>68030271</td>
+            </tr>
+            <tr>
+                <th>สาขาวิชา</th>
+                <td>เทคโนโลยีคอมพิวเตอร์</td>
+            </tr>
+            <tr>
+                <th>อีเมล</th>
+                <td>68030271@kmitl.ac.th</td>
+            </tr>
+            <tr>
+                <th>สิ่งที่ชอบ</th>
+                <td>ถ่ายภาพ, Network, เล่นเกมวางแผน</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>แบบฝึกหัด 2: รายการเมนูอาหาร (Nested List)</h2>
+    
+    <div class="menu-box">
+        <h3>🍽️ เมนูแนะนำวันนี้</h3>
+        
+        <ol>
+            <li>
+                <strong>ข้าวมันไก่ (Chicken Rice)</strong>
+                <ul>
+                    <li>ไก่ต้ม (Boiled)</li>
+                    <li>ไก่ทอด (Fried)</li>
+                    <li>ไก่ย่าง (Roasted)</li>
+                </ul>
+            </li>
+            
+            <li>
+                <strong>ก๋วยเตี๋ยวต้มยำ (Tom Yum Noodles)</strong>
+                <ul>
+                    <li>เส้นเล็ก</li>
+                    <li>เส้นหมี่</li>
+                    <li>วุ้นเส้น</li>
+                </ul>
+            </li>
+            
+            <li>
+                <strong>เครื่องดื่ม (Drinks)</strong>
+                <ul>
+                    <li>น้ำเปล่า</li>
+                    <li>ชานมเย็น</li>
+                    <li>กาแฟโบราณ</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>

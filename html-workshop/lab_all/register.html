@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+</head>
+<body>
+    <h1>สมัครสมาชิก (Member Registration)</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <label>ชื่อ-นามสกุล:</label> 
+            <input type="text" name="fullname" required><br><br>
+            
+            <label>วันเกิด:</label> 
+            <input type="date" name="dob"><br><br>
+            
+            <label>เพศ:</label>
+            <input type="radio" name="gender" value="male"> ชาย
+            <input type="radio" name="gender" value="female"> หญิง
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลการติดต่อ</legend>
+            <label>อีเมล:</label> 
+            <input type="email" name="email" required placeholder="name@email.com"><br><br>
+            
+            <label>เบอร์โทร:</label> 
+            <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="08xxxxxxxx" required><br><br>
+            
+            <label>ที่อยู่จัดส่ง:</label><br>
+            <textarea name="address" rows="3" cols="30"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>ตั้งค่าบัญชี</legend>
+            <label>รูปโปรไฟล์:</label> 
+            <input type="file" name="profile_pic" accept="image/*"><br><br>
+            
+            <label>รหัสผ่าน:</label> 
+            <input type="password" name="pwd" minlength="8" required> (อย่างน้อย 8 ตัวอักษร)<br><br>
+            
+            <label>ความสนใจ:</label><br>
+            <input type="checkbox" name="interest" value="it"> อุปกรณ์ IT
+            <input type="checkbox" name="interest" value="camera"> กล้องถ่ายรูป
+            <input type="checkbox" name="interest" value="game"> เกม
+        </fieldset>
+
+        <br>
+        <input type="checkbox" name="terms" required> ยอมรับเงื่อนไขการใช้งาน <br><br>
+        <button type="submit">สมัครสมาชิก</button>
+        <button type="reset">ยกเลิก</button>
+    </form>
+</body>
+</html>

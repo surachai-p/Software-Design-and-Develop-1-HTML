@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Semantic Layout</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; }
+        header { background: #333; color: white; padding: 20px; text-align: center; }
+        nav { background: #444; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        main { display: flex; padding: 20px; gap: 20px; }
+        article { flex: 3; background: #f4f4f4; padding: 20px; }
+        aside { flex: 1; background: #ddd; padding: 20px; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>เว็บไซต์ของ วีระภัทร</h1>
+        <p>ยินดีต้อนรับสู่หน้าเว็บ Layout มาตรฐาน</p>
+    </header>
+
+    <nav>
+        <a href="#">หน้าแรก</a>
+        <a href="#">บทความ</a>
+        <a href="#">เกี่ยวกับเรา</a>
+        <a href="#">ติดต่อ</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>บทความหลัก: Semantic Elements</h2>
+            <p>การใช้ Semantic Elements เช่น &lt;header&gt;, &lt;nav&gt;, &lt;main&gt; ช่วยให้:</p>
+            <ul>
+                <li>Google (SEO) เข้าใจโครงสร้างเว็บได้ดีขึ้น</li>
+                <li>โปรแกรมอ่านหน้าจอ (Screen Reader) ทำงานได้ถูกต้อง</li>
+                <li>Code อ่านง่ายและเป็นระเบียบ</li>
+            </ul>
+        </article>
+
+        <aside>
+            <h3>เมนูข้าง</h3>
+            <ul>
+                <li>ข่าวสารล่าสุด</li>
+                <li>ลิงก์แนะนำ</li>
+                <li>โฆษณา</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright © 2025 Weerapat Uamkasem. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

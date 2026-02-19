@@ -166,9 +166,177 @@
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
 [วางโค้ด HTML ที่นี่]
-```
+```<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง - Weerapat Uamkasem</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            scroll-behavior: smooth; /* ทำให้การเลื่อนหน้าเว็บนุ่มนวล */
+        }
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        header, section, footer {
+            margin-bottom: 20px;
+        }
+        /* จัดรูปแบบแกลเลอรี */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 3px;
+            transition: transform 0.3s;
+        }
+        figure img:hover {
+            transform: scale(1.05); /* ขยายรูปเล็กน้อยเมื่อเอาเมาส์ชี้ */
+        }
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #eee;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: gray;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body id="top"> <nav>
+        <a href="index.html">หน้าหลัก</a> |
+        <a href="pages/about.html">เกี่ยวกับเรา</a> |
+        <a href="pages/contact.html">ติดต่อเรา</a> |
+        <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+    </nav>
+
+    <header>
+        <h1>ยินดีต้อนรับสู่หน้าเว็บ</h1>
+        <p>สวัสดีครับ! ผมชื่อ <strong>วีระภัทร อ่วมเกษม (Weerapat Uamkasem)</strong></p>
+    </header>
+    
+    <hr>
+
+    <section>
+        <h2>ประวัติการศึกษา</h2>
+        <p>
+            <strong>ระดับมัธยมศึกษา:</strong> โรงเรียนเบญจมราชรังสฤษฎิ์ 2 <br>
+            <strong>ระดับปริญญาตรี:</strong> สาขาวิชาเทคโนโลยีคอมพิวเตอร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>งานอดิเรก</h2>
+        <p>
+            ในเวลาว่าง ผมมักจะใช้เวลาไปกับการ <em>ถ่ายภาพ</em> และ <em>ฝึกทำระบบ Network</em> <br>
+            นอกจากนี้ผมยังชอบ:
+        </p>
+        <ul>
+            <li>เล่นเกมวางแผน</li>
+            <li>ออกกำลังกายตอนเย็น</li>
+            <li>ฟังเพลง Lo-fi</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section id="goals">
+        <h2>เป้าหมายในอนาคต</h2>
+        <div>
+            เป้าหมายสูงสุดของผมคือการเป็น <strong>Network Engineer</strong> ที่เชี่ยวชาญ 
+            และสร้างสรรค์ผลงานที่มีประโยชน์ต่อผู้ใช้งานในวงกว้าง
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="gallery">
+        <h3>แกลเลอรีผลงาน (คลิกรูปเพื่อดูขนาดใหญ่)</h3>
+        
+        <div class="gallery">
+            <figure>
+                <a href="images/products/product1.jpg" target="_blank">
+                    <img src="image.png" alt="สินค้าตัวอย่าง 1" width="200">
+                </a>
+                <figcaption>รายละเอียดสินค้าชิ้นที่ 1</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/products/product2.jpg" target="_blank">
+                    <img src="IMG_20251218_152822.jpg" alt="สินค้าตัวอย่าง 2" width="200">
+                </a>
+                <figcaption>รายละเอียดสินค้าชิ้นที่ 2</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/products/product3.jpg" target="_blank">
+                    <img src="S__10272772.jpg" alt="สินค้าตัวอย่าง 3" width="200">
+                </a>
+                <figcaption>รายละเอียดสินค้าชิ้นที่ 3</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="images/products/product4.jpg" target="_blank">
+                    <img src="Gemini_Generated_Image_ientyaientyaient.png" alt="สินค้าตัวอย่าง 4" width="200">
+                </a>
+                <figcaption>รายละเอียดสินค้าชิ้นที่ 4</figcaption>
+            </figure>
+        </div>
+
+        <p style="text-align: center; margin-top: 30px;">
+            <strong>ช่องทางการติดต่อ:</strong><br>
+            <a href="mailto:68030271@kmitl.ac.th">📧 ส่งอีเมลหาผม</a> หรือ 
+            <a href="tel:+66812345678">📞 โทร ***-***-****</a>
+        </p>
+    </section>
+
+    <a href="#top" class="back-to-top">⬆ กลับสู่ด้านบนสุด</a>
+
+    <footer>
+        <p>ขอบคุณที่เข้ามาเยี่ยมชมหน้าเว็บแรกของผมครับ!</p>
+    </footer>
+
+</body>
+</html>
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](image.png)
 
 
