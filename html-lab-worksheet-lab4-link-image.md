@@ -165,10 +165,49 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<header id="top">
+    <h1>คลังภาพสินค้าของเรา (Product Gallery)</h1>
+    <hr>
+</header>
+
+<section id="gallery-section" style="display: flex; flex-wrap: wrap; gap: 20px;">
+    
+    <figure style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+        <a href="https://i.pinimg.com/736x/0e/9f/63/0e9f63caff0f70a6a29757cbe7cbd47c.jpg" target="_blank">
+            <img src="https://i.pinimg.com/736x/0e/9f/63/0e9f63caff0f70a6a29757cbe7cbd47c.jpg" alt="สินค้าชิ้นที่ 1" width="200">
+        </a>
+        <figcaption>Sakura Mochi (ซากุระ โมจิ)</figcaption>
+    </figure>
+
+    <figure style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+        <a href="https://i.pinimg.com/736x/50/d9/fe/50d9fef34d89a007a091e2945d6eb0d1.jpg" target="_blank">
+            <img src="https://i.pinimg.com/736x/50/d9/fe/50d9fef34d89a007a091e2945d6eb0d1.jpg" alt="สินค้าชิ้นที่ 2" width="200">
+        </a>
+        <figcaption>Nerikiri (เนริกิริ)</figcaption>
+    </figure>
+
+    <figure style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+        <a href="https://i.pinimg.com/1200x/ba/ef/04/baef040b1f35c64393e79bba69c874ad.jpg" target="_blank">
+            <img src="https://i.pinimg.com/1200x/ba/ef/04/baef040b1f35c64393e79bba69c874ad.jpg" alt="สินค้าชิ้นที่ 3" width="200">
+        </a>
+        <figcaption>Strawberry Roll Cake (สตรอว์เบอร์รี โรล เค้ก)</figcaption>
+    </figure>
+
+    <figure style="border: 1px solid #ccc; padding: 10px; text-align: center;">
+        <a href="https://i.pinimg.com/736x/3f/09/91/3f099177164d266eeddbb0f2973f3cb0.jpg" target="_blank">
+            <img src="https://i.pinimg.com/736x/3f/09/91/3f099177164d266eeddbb0f2973f3cb0.jpg" alt="สินค้าชิ้นที่ 4" width="200">
+        </a>
+        <figcaption>Taiyaki Ice Cream (ไทยากิ ไอศกรีม)</figcaption>
+    </figure>
+
+</section>
+
+<footer style="margin-top: 50px; padding: 20px;">
+    <a href="#top" style="background-color: #b15858; color: rgb(255, 255, 255); padding: 10px 20px; text-decoration: none; border-radius: 7px;">
+        ↑ back
+    </a>
+</footer>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-
-
+[![alt text](<ภาพถ่ายหน้าจอ 2569-02-17 เวลา 19.13.38.jpeg>)]
 
