@@ -222,12 +222,88 @@
    - ตรวจสอบขนาดไฟล์รูปภาพ
 
 ### บันทึกผลการทดลอง
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>สมัครสมาชิกร้านค้าออนไลน์</title>
+</head>
+<body>
+  <h2>ฟอร์มสมัครสมาชิกร้านค้าออนไลน์</h2>
+  <form action="/register" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>ข้อมูลส่วนตัว</legend>
+      <label for="firstname">ชื่อ:</label>
+      <input type="text" id="firstname" name="firstname" required>
+      <br>
+      <label for="lastname">นามสกุล:</label>
+      <input type="text" id="lastname" name="lastname" required>
+      <br>
+      <label for="birthdate">วันเกิด:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+      <br>
+      <label>เพศ:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">ชาย</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">หญิง</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>ข้อมูลการติดต่อ</legend>
+      <label for="email">อีเมล:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="phone">เบอร์โทร:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      <br>
+      <label for="address">ที่อยู่จัดส่ง:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>รูปโปรไฟล์</legend>
+      <input type="file" id="profile" name="profile" accept="image/*" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>ตั้งรหัสผ่าน</legend>
+      <label for="password">รหัสผ่าน:</label>
+      <input type="password" id="password" name="password" minlength="6" required>
+      <br>
+      <label for="confirm">ยืนยันรหัสผ่าน:</label>
+      <input type="password" id="confirm" name="confirm" minlength="6" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>ความสนใจในหมวดหมู่สินค้า</legend>
+      <input type="checkbox" id="fashion" name="interests" value="fashion">
+      <label for="fashion">แฟชั่น</label>
+      <input type="checkbox" id="tech" name="interests" value="tech">
+      <label for="tech">เทคโนโลยี</label>
+      <input type="checkbox" id="food" name="interests" value="food">
+      <label for="food">อาหาร</label>
+    </fieldset>
+
+
+    <fieldset>
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">ยอมรับเงื่อนไขการใช้งาน</label>
+    </fieldset>
+
+    <button type="submit">สมัครสมาชิก</button>
+    <button type="reset">ล้างข้อมูล</button>
+  </form>
+</body>
+</html>
+]
 ```html
 
-```
-- ภาพผลลัพธ์:
+
+ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![alt text](HTML-WORKSHOP/images/image-1.png)
+
 
 
 

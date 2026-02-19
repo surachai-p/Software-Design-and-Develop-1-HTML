@@ -165,10 +165,128 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าหลัก</title>
+</head>
+<body>
+    <!-- ส่วนของเนื้อหา -->
+</body>
+</html>
+<nav>
+    <!-- ลิงก์ภายใน - ไปยังหน้าในเว็บไซต์เดียวกัน -->
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+    
+    <!-- ลิงก์ภายนอก - เปิดในแท็บใหม่ -->
+    <a href="https://www.google.com" target="_blank">
+        ไปยัง Google
+    </a>
+</nav>
+<!-- สร้างจุดเชื่อมโยง -->
+<section id="top">
+    <h1>เนื้อหาส่วนบน</h1>
+</section>
+
+<section id="products">
+    <h2>สินค้าของเรา</h2>
+</section>
+
+<!-- ลิงก์ไปยังจุดเชื่อมโยง -->
+<a href="#top">กลับด้านบน</a>
+<a href="#products">ไปยังสินค้า</a>
+<!-- ลิงก์อีเมล -->
+<a href="mailto:contact@example.com">ส่งอีเมลหาเรา</a>
+
+<!-- ลิงก์โทรศัพท์ -->
+<a href="tel:+66812345678">โทร 081-234-5678</a>
+
+<!-- ลิงก์ดาวน์โหลด -->
+<a href="files/document.pdf" download>
+    ดาวน์โหลดเอกสาร
+</a>
+<!-- รูปภาพในโฟลเดอร์ images -->
+<img src="images/gallery/gallery1.png" 
+     alt="โลโก้บริษัท"
+     width="200">
+
+<!-- รูปภาพในโฟลเดอร์ย่อย products -->
+<img src="images/gallery/gallery4.png" 
+     alt="สินค้าชิ้นที่ 1"
+     width="300"
+     height="200">
+     <figure>
+    <img src="images/gallery/gallery3.png" 
+         alt="สินค้าชิ้นที่ 2">
+    <figcaption>
+        รายละเอียดสินค้าชิ้นที่ 2
+    </figcaption>
+</figure>
+<a href="images/gallery/gallery1.png">
+    <img src="images/gallery/gallery1.png" 
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+</a>
+<!-- แกลเลอรีสินค้า -->
+<section id="gallery">
+    <h2>แกลเลอรีสินค้า</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <figure style="text-align: center; width: 200px;">
+            <a href="images/gallery/gallery1.png" target="_blank">
+                <img src="images/gallery/gallery1.png" alt="สินค้า 1" width="200">
+            </a>
+            <figcaption>สินค้าแกลเลอรี 1</figcaption>
+        </figure>
+        <figure style="text-align: center; width: 200px;">
+            <a href="images/gallery/gallery2.png" target="_blank">
+                <img src="images/gallery/gallery2.png" alt="สินค้า 2" width="200">
+            </a>
+            <figcaption>สินค้าแกลเลอรี 2</figcaption>
+        </figure>
+        <figure style="text-align: center; width: 200px;">
+            <a href="images/gallery/gallery3.png" target="_blank">
+                <img src="images/gallery/gallery3.png" alt="สินค้า 3" width="200">
+            </a>
+            <figcaption>สินค้าแกลเลอรี 3</figcaption>
+        </figure>
+        <figure style="text-align: center; width: 200px;">
+            <a href="images/gallery/gallery4.png" target="_blank">
+                <img src="images/gallery/gallery4.png" alt="สินค้า 4" width="200">
+            </a>
+            <figcaption>สินค้าแกลเลอรี 4</figcaption>
+        </figure>
+    </div>
+    <br>
+</section>
+
+<h2>ตัวอย่างรูปภาพสินค้า (แบบมือใหม่)</h2>
+<figure>
+  <img src="images/gallery/gallery1.png" alt="สินค้า 1" width="200">
+  <figcaption>สินค้า 1</figcaption>
+</figure>
+<figure>
+  <img src="images/gallery/gallery2.png" alt="สินค้า 2" width="200">
+  <figcaption>สินค้า 2</figcaption>
+</figure>
+<figure>
+  <img src="images/gallery/gallery3.png" alt="สินค้า 3" width="200">
+  <figcaption>สินค้า 3</figcaption>
+</figure>
+<figure>
+  <img src="images/gallery/gallery4.png" alt="สินค้า 4" width="200">
+  <figcaption>สินค้า 4</figcaption>
+</figure>
+<p>
+  <a href="#top">กลับด้านบน</a>
+</p>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![alt text](<HTML-WORKSHOP/images/Screenshot 2569-02-17 at 22.22.19.png>)
+![alt text](<HTML-WORKSHOP/images/Screenshot 2569-02-17 at 22.22.46.png>)
 
 
 
