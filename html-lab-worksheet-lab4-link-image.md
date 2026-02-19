@@ -165,10 +165,177 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>เว็บไซต์สินค้า</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .logo img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figure img {
+            width: 100%;
+        }
+
+        .btn-links {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .btn-links a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- เมนู -->
+    <nav>
+        <a href="index.html">หน้าหลัก</a>
+        <a href="pages/about.html">เกี่ยวกับเรา</a>
+        <a href="pages/contact.html">ติดต่อเรา</a>
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ส่วนบน -->
+        <section id="top">
+            <h1>Welcome to yada house</h1>
+            <p style="text-align:center;">
+                ยินดีต้อนรับสู่ yada house
+            </p>
+        </section>
+
+        <!-- โลโก้ -->
+        <div class="logo">
+            <img src="images/Logo.png"
+                 alt="โลโก้เว็บไซต์">
+        </div>
+
+        <!-- สินค้า -->
+        <section id="products">
+            <h2>สินค้าของเรา</h2>
+
+            <div class="product-grid">
+
+                <figure>
+                    <a href="images/products/image1.png">
+                        <img src="images/products/image1.png" alt="สินค้าชิ้นที่ 1">
+                    </a>
+                    <figcaption>สินค้าชิ้นที่ 1</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/products/image2.png">
+                        <img src="images/products/image2.png" alt="สินค้าชิ้นที่ 2">
+                    </a>
+                    <figcaption>สินค้าชิ้นที่ 2</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/products/image3.png">
+                        <img src="images/products/image3.png" alt="สินค้าชิ้นที่ 3">
+                    </a>
+                    <figcaption>สินค้าชิ้นที่ 3</figcaption>
+                </figure>
+
+                <figure>
+                    <a href="images/products/image4.png">
+                        <img src="images/products/image4.png" alt="สินค้าชิ้นที่ 4">
+                    </a>
+                    <figcaption>สินค้าชิ้นที่ 4</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- ลิงก์ภายใน -->
+        <div class="btn-links">
+            <a href="#top">กลับด้านบน</a>
+            <a href="#products">ไปยังสินค้า</a>
+        </div>
+
+        <!-- ติดต่อ -->
+        <section style="text-align:center;">
+            <h2>ติดต่อเรา</h2>
+            <p>
+                <a href="mailto:contact@example.com">ส่งอีเมล</a><br>
+                <a href="tel:+66812345678">โทร 081-234-5678</a><br>
+                <a href="files/document.pdf" download>
+                    ดาวน์โหลดเอกสาร
+                </a>
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        © 2026 เว็บไซต์ตัวอย่างเพื่อการศึกษา
+    </footer>
+
+</body>
+</html>
+
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
-
+![alt text](lab4.png)
+![alt text](lab4.1.png)
 
