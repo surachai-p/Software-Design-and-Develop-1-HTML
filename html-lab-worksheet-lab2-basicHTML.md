@@ -35,10 +35,28 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ...... (WANITCHA  JABPRANG) web page</h1>
+    <p>Hello! My name is Wanitcha Jabprang (Mook). 
+        I am a first-year student majoring in Computer Technology 
+        at the School of Industrial Education and Technology.</p>
+    <div> I am interested in programming, web development, 
+        and educational technology.</div>
+    <span>My goal is to become a professional computer technology teacher in the future.</span>
+    <br>
+    <em>I believe that technology can enhance learning and create new opportunities.</em>
+    <br>
+    <strong>Thank you for visiting my personal web page.</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![lab2](images/lab2.png)
 
 
 
