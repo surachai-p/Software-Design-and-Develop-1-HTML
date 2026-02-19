@@ -75,7 +75,7 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![alt text](/test.png)
 
 ## การทดลองที่ 2: โครงสร้างพื้นฐาน HTML
 ### ขั้นตอนการทดลอง
@@ -113,10 +113,23 @@
   ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to Arunchai web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
+![alt text](test2.png)
   
 ## การทดลองที่ 3: การจัดการข้อความและการจัดรูปแบบ
 ### ขั้นตอนการทดลอง
@@ -149,10 +162,34 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test3</title>
+</head>
+<body>
+    <h1>นายอรัญชัย คำเพ็ญ</h1><hr><br>
+    <h2>ประวัติการศึกษา</h2>
+    <p>มัธยมต้นศึกษาที่โรงเรียนเทพลีลา</p>
+    <p>มัธยมปลายศึกษาที่โรงเรียนเทพลีลา</p>
+    <p>อุดมศึกษาที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร</p><hr>
+    <p>งานอดิเรก</p>
+    <pre>
+ - เล่นเกม
+ - ดูหนัง
+ - ฟังเพลง
+ - วาดรูป
+ - เหม่อมองฟ้า
+    </pre>
+    <hr>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![alt text](imagee.png)
 
 ## การทดลองที่ 4: การสร้างลิงก์และการแทรกรูปภาพ
 
@@ -393,11 +430,61 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="pages/about.html">เกี่ยวกับเรา</a>
+    <a href="pages/contact.html">ติดต่อเรา</a>
+    <a href="https://www.google.com" target="_blank">ไปยัง Google</a>
+    </nav>
+    </a>
+    <h1>Welcome to Arunchai web page</h1>
+    <p>This is my first web page.</p>
+    <div>This is a block element</div>
+    <span>This is an inline element</span>
+    <em>This text is emphasized</em>
+    <strong>This text is strong</strong>
+    <hr>
+    <br>
+    <figure> 
+    <a href="images/gallery/1.png">
+    <img src="images/gallery/1.png"
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+         <figcaption>คลิกเพื่อดูรูปขนาดใหญ่</figcaption>
+    </figure>
+    <figure> 
+    <a href="images/gallery/2.png">
+    <img src="images/gallery/2.png"
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+         <figcaption>คลิกเพื่อดูรูปขนาดใหญ่</figcaption>
+    </figure> 
+    <figure> 
+    <a href="images/gallery/3.png">
+    <img src="images/gallery/3.png"
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+         <figcaption>คลิกเพื่อดูรูปขนาดใหญ่</figcaption>
+    </figure> 
+    <figure>
+    <a href="images/gallery/4.png">
+    <img src="images/gallery/4.png"
+         alt="คลิกเพื่อดูรูปขนาดใหญ่"
+         width="200">
+         <figcaption>คลิกเพื่อดูรูปขนาดใหญ่</figcaption>
+    </figure> 
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](test4.png)
 
 ## การทดลองที่ 6: การสร้างฟอร์ม
 ### วัตถุประสงค์

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7777</title>
+</head>
+<body>
+<header>
+    <h1>เว็บไซต์ตัวอย่าง</h1>
+    <nav>
+        <a href="#">หน้าแรก</a> |
+        <a href="#">บทความ</a> |
+        <a href="#">ติดต่อ</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>บทความหลัก</h2>
+        <p>นี่คือเนื้อหาหลักของหน้าเว็บ</p>
+    </article>
+
+    <aside>
+        <h3>เนื้อหาเพิ่มเติม</h3>
+        <p>ลิงก์หรือข้อมูลเสริม</p>
+    </aside>
+</main>
+
+<footer>
+    <p>ลิขสิทธิ์ © 2026</p>
+</footer>
+
+</body>
+</html>
+<style>
+    main {
+        display: flex;
+    }
+
+    article {
+        flex: 3;
+        padding: 10px;
+    }
+
+    aside {
+        flex: 1;
+        padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            flex-direction: column;
+        }
+    }
+</style>

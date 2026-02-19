@@ -31,9 +31,32 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test3</title>
+</head>
+<body>
+    <h1>นายอรัญชัย คำเพ็ญ</h1><hr><br>
+    <h2>ประวัติการศึกษา</h2>
+    <p>มัธยมต้นศึกษาที่โรงเรียนเทพลีลา</p>
+    <p>มัธยมปลายศึกษาที่โรงเรียนเทพลีลา</p>
+    <p>อุดมศึกษาที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร</p><hr>
+    <p>งานอดิเรก</p>
+    <pre>
+ - เล่นเกม
+ - ดูหนัง
+ - ฟังเพลง
+ - วาดรูป
+ - เหม่อมองฟ้า
+    </pre>
+    <hr>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](imagee.png)
 

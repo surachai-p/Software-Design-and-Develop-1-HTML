@@ -68,8 +68,59 @@
 
 [วางโค้ด HTML ที่นี่]
 ```html
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabletable</title>
+</head>
+<body>
+    <br>
+    <table border="1">
+    <thead>
+        <tr>
+            <th>ชื่อ</th>
+            <th>นามสกุล</th>
+            <th>อายุ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>อรัญชัย</td>
+            <td>คำเพ็ญ</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Bili</td>
+            <td>Bili</td>
+            <td>67</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h2>เมนูอาหาร</h2>
+<h3>ประเภทของอาหาร</h3>
+<ul>
+    <li>แกง</li>
+    <li>ต้ม</li>
+    <li>ยำ</li>
+</ul>
+<ol>
+    <li>ผัดพริกแกงไก่</li>
+    <li>ต้มเลือดหมู</li>
+    <li>ยำมาม่า</li>
+</ol>
+<h3>เครื่องดื่ม</h3>
+<dl>
+    <dt>น้ำอร่อย</dt>
+        <dd>โอเลี้ยง, เก๊กฮวยมีฟอง, โค้ก</dd>
+    <dt>น้ำ</dt>
+        <dd>น้ำเปล่า</dd>
+</dl>
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](test5.png)
