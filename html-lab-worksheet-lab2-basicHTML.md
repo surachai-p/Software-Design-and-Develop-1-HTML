@@ -35,10 +35,23 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Welcome to ชญานิศ web page</h1>
+    <p>สวัสดีค่ะ ดิฉันเป็นนักศึกษาชั้นปีที่1 สาขาเทโนโลยีคอมพิวเตอร์</p>
+    <div>คณะครุศาสตร์อุตสาหกรรมและเทคโนโลยี</div>
+    <span>สถานะปัจจุบัน:</span>
+    <em>กำลังศึกษา</em>
+    <strong>(ภาคเรียนที่ 2/2568)</strong>    
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-
+![alt text](<Screenshot 2026-02-18 201138.png>)
 
 
