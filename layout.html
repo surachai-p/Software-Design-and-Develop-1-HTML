@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Semantic Layout</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #1e3a8a;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        background: #2563eb;
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    main {
+        display: flex;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    article {
+        flex: 3;
+        background: #f3f4f6;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    aside {
+        flex: 1;
+        background: #e5e7eb;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    footer {
+        background: #1e3a8a;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    /* Responsive สำหรับหน้าจอเล็ก */
+    @media (max-width: 768px) {
+        main {
+            flex-direction: column;
+        }
+
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>เว็บไซต์ของฉัน</h1>
+    <p>ตัวอย่างการใช้ Semantic Elements</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">บทความ</a></li>
+        <li><a href="#">เกี่ยวกับเรา</a></li>
+        <li><a href="#">ติดต่อ</a></li>
+    </ul>
+</nav>
+
+<main>
+    <article>
+        <section>
+            <h2>บทความที่ 1</h2>
+            <p>
+                นี่คือเนื้อหาหลักของเว็บไซต์ ใช้แท็ก &lt;article&gt; 
+                เพราะเป็นเนื้อหาที่สามารถแยกออกไปอ่านเดี่ยว ๆ ได้
+            </p>
+        </section>
+
+        <section>
+            <h2>บทความที่ 2</h2>
+            <p>
+                ส่วนนี้ใช้แท็ก &lt;section&gt; เพื่อแบ่งเนื้อหาออกเป็นหมวดหมู่
+                ทำให้โครงสร้างชัดเจนมากขึ้น
+            </p>
+        </section>
+    </article>
+
+    <aside>
+        <h3>ข่าวสารล่าสุด</h3>
+        <ul>
+            <li><a href="#">กิจกรรมประจำเดือน</a></li>
+            <li><a href="#">ประกาศสำคัญ</a></li>
+            <li><a href="#">บทความยอดนิยม</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>ลิขสิทธิ์ © 2026 โดย Kanisorn Netsuwan</p>
+</footer>
+
+</body>
+</html>
